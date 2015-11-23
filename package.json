@@ -1,0 +1,50 @@
+{
+  "name": "@charlespeters/obsidian",
+  "version": "0.0.1",
+  "description": "Modular CSS",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "sheetify index.css | cssnext > dest/bundle.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obsidiancss/obsidian.git"
+  },
+  "bugs": {
+    "url": "https://github.com/obsidiancss/obsidian/issues"
+  },
+  "homepage": "https://github.com/obsidiancss/obsidian#readme",
+  "devDependencies": {
+    "browser-sync": "^2.7.13",
+    "cssnext": "^1.8.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-cssnext": "^1.0.1",
+    "gulp-postcss": "^6.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.0.0",
+    "postcss-import": "^7.0.0",
+    "postcss-selector-not": "^1.2.1",
+    "sheetify": "^2.0.0"
+  },
+  "dependencies": {
+    "obsidian.align": "0.0.1",
+    "obsidian.colors": "0.0.2",
+    "obsidian.corners": "0.0.1",
+    "obsidian.display": "0.0.1",
+    "obsidian.mq": "0.0.1",
+    "obsidian.overflow": "0.0.1",
+    "obsidian.position": "0.0.1",
+    "obsidian.reset": "^0.1.1",
+    "obsidian.settings": "0.0.4",
+    "obsidian.spacing": "0.0.1",
+    "obsidian.tables": "^0.1.0",
+    "obsidian.text-columns": "0.0.1",
+    "obsidian.typography": "^0.1.0",
+    "obsidian.zindex": "0.0.1"
+  }
+}
