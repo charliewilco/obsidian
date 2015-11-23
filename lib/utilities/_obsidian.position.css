@@ -1,0 +1,6 @@
+/*----------Position Utilities----------*/
+
+.u-pos-abs  { position: absolute; }
+.u-pos-fix  { position: fixed; }
+.u-pos-stat { position: static; }
+.u-pos-rel  { position: relative; }

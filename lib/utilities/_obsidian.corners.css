@@ -1,0 +1,13 @@
+/*----------Corner / Border Radius Utilities----------*/
+
+
+.u-br-1 { border-radius: calc(var(--base__spacing) * .25); }
+.u-br-2 { border-radius: calc(var(--base__spacing) * .5);  }
+.u-br-3 { border-radius: calc(var(--base__spacing) * 1);   }
+.u-br-4 { border-radius: calc(var(--base__spacing) * 1.5); }
+.u-br-5 { border-radius: calc(var(--base__spacing) * 2);   }
+
+
+.u-br-quarter { border-radius: 25%;  }
+.u-br-half    { border-radius: 50%;  }
+.u-br-full    { border-radius: 100%; }

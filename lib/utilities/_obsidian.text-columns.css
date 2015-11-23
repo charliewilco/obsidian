@@ -1,0 +1,20 @@
+:root {
+  --mxw: 75rem;
+}
+
+.u-tcl-2 {
+  columns: 2 calc(var(--mxw)/3 - ((var(--base__spacing) * 2) * 1));
+  column-gap: calc(var(--base__spacing) * 2);
+}
+
+.u-tcl-3 {
+  columns: 3 calc(var(--mxw)/3 - ((var(--base__spacing) * 3) * 2));
+  column-gap: calc(var(--base__spacing) * 3);
+}
+
+
+.u-tcl-4 {
+  columns: 4 calc(var(--mxw)/3 - ((var(--base__spacing) * 4) * 3));
+  column-gap: calc(var(--base__spacing) * 4);
+}
+

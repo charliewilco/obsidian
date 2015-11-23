@@ -1,0 +1,16 @@
+:root {
+  --col-mxw: 20rem;
+}
+
+.o-grid__col { max-width: 100%; }
+
+.o-grid__col-0 { flex: 0 1 var(--col-mxw); }
+.o-grid__col-1 { flex: 1 0 var(--col-mxw); }
+.o-grid__col-2 { flex: 2 0 var(--col-mxw); }
+.o-grid__col-3 { flex: 3 0 var(--col-mxw); }
+.o-grid__col-4 { flex: 4 0 var(--col-mxw); }
+.o-grid__col-5 { flex: 5 0 var(--col-mxw); }
+.o-grid__col-6 { flex: 6 0 var(--col-mxw); }
+.o-grid__col-7 { flex: 7 0 var(--col-mxw); }
+.o-grid__col-8 { flex: 8 0 var(--col-mxw); }
+.o-grid__col-9 { flex: 9 0 var(--col-mxw); }

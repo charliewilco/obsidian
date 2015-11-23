@@ -1,0 +1,17 @@
+.o-flex { display: flex; }
+
+.o-flex__wrap { flex-wrap: wrap; }
+
+.o-flex__dir-row { flex-direction: row; }
+.o-flex__dir-col { flex-direction: column; }
+
+.o-flex__center-h { align-items: center; }
+.o-flex__center-v {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.o-flex__center-items { justify-content: center; }
+
+.o-flex__space { justify-content: space-between; }

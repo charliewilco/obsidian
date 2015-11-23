@@ -1,0 +1,11 @@
+:root {
+  --o-container-base: 80rem; /* approx 1280px */ 
+  --cb: var(--o-container-base);
+}
+
+[class*="container"] { width: 100vw; }
+
+.o-container-full { max-width: var(--cb); }
+.o-container-lg   { max-width: calc(var(--cb) * .75); }
+.o-container-md   { max-width: calc(var(--cb) * .625); }
+.o-container-sm   { max-width: calc(var(--cb) * .375); }
