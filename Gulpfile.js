@@ -9,7 +9,11 @@ const partials     = require('postcss-partial-import');
 const atImport     = require('postcss-import');
 const not          = require('postcss-selector-not');
 const modularScale = require('postcss-modular-scale');
+const reporter     = require('postcss-reporter');
+const stylelint    = require('stylelint');
 const bs           = require('browser-sync').create();
+
+const lintconfig = require('./style-config');
 
 const processors = [
     atImport,
@@ -28,6 +32,14 @@ gulp.task('styles', ()=> {
     .pipe(gulp.dest('./dest/'))
     .pipe(size({ gzip: true, pretty: true }))
     .pipe(bs.stream());
+});
+
+gulp.task('lint', ()=> {
+  return gulp.src(['./index.css', './lib/**/*.css'])
+    .pipe(postcss([
+      stylelint({ 'rules': lintconfig.rules }),
+      reporter({ clearMessages: true })
+    ]))
 });
 
 gulp.task('connect', ()=> {
