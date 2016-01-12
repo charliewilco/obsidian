@@ -1,54 +1,36 @@
-var gulp         = require('gulp');
-var size         = require('gulp-size');
-var rename       = require('gulp-rename');
-var minify       = require('gulp-cssmin');
-var postcss      = require('gulp-postcss');
-var autoprefixer = require('gulp-autoprefixer');
-var cssnext      = require('gulp-cssnext');
-var atImport     = require('postcss-import');
-var not          = require('postcss-selector-not');
-var bs           = require('browser-sync').create();
+const gulp         = require('gulp');
+const size         = require('gulp-size');
+const rename       = require('gulp-rename');
+const postcss      = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const nano         = require('cssnano');
+const cssnext      = require('postcss-cssnext');
+const partials     = require('postcss-partial-import');
+const atImport     = require('postcss-import');
+const not          = require('postcss-selector-not');
+const modularScale = require('postcss-modular-scale');
+const bs           = require('browser-sync').create();
 
-gulp.task('styles', function() {
-  var processors = [
+const processors = [
     atImport,
-    not
-  ];
+    autoprefixer({ browsers: ['last 2 version']}),
+    not,
+    cssnext,
+    partials,
+    modularScale,
+    nano({ mergeRules: false }),
+];
+
+gulp.task('styles', ()=> { 
   return gulp.src('./*.css')
     .pipe(postcss(processors))
-    .pipe(cssnext({
-      compress: true,
-      features: {
-        pixrem: false
-      }
-    }))
-    .pipe(autoprefixer({browsers: ['last 2 version']}))
     .pipe(rename('bundle.css'))
     .pipe(gulp.dest('./dest/'))
-    .pipe(size())
+    .pipe(size({ gzip: true, pretty: true }))
     .pipe(bs.stream());
 });
 
-gulp.task('styles:min', function() {
-  var processors = [
-    atImport,
-    not
-  ];
-  return gulp.src('./*.css')
-    .pipe(postcss(processors))
-    .pipe(cssnext())
-    .pipe(autoprefixer({browsers: ['last 2 version']}))
-    .pipe(minify())
-    .pipe(rename('bundle.css'))
-    .pipe(gulp.dest('./dest/'))
-    .pipe(size({ gzip: true }))
-    .pipe(bs.stream());
-});
-
-
-
-
-gulp.task('connect', function() {
+gulp.task('connect', ()=> {
   bs.init({
     server: {
       baseDir: './dest'
@@ -56,14 +38,14 @@ gulp.task('connect', function() {
   });
 });
 
-gulp.task('html', function() {
+gulp.task('html', ()=> {
   return gulp.src('./test/index.html')
   .pipe(gulp.dest('./dest/'))
     .pipe(bs.stream());
 });
 
 
-gulp.task('watch', function() {
+gulp.task('watch', ()=> {
   gulp.watch(['./*.css', './lib/**/*.css'], ['styles']);
   gulp.watch('./test/index.html', ['html']);
 });
