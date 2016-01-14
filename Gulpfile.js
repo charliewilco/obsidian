@@ -5,10 +5,10 @@ const postcss      = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const nano         = require('cssnano');
 const cssnext      = require('postcss-cssnext');
+const strip        = require('postcss-strip-units');
 const partials     = require('postcss-partial-import');
 const atImport     = require('postcss-import');
 const not          = require('postcss-selector-not');
-const modularScale = require('postcss-modular-scale');
 const reporter     = require('postcss-reporter');
 const stylelint    = require('stylelint');
 const bs           = require('browser-sync').create();
@@ -17,15 +17,15 @@ const lintconfig = require('./style-config');
 
 const processors = [
     atImport,
-    autoprefixer({ browsers: ['last 2 version']}),
+    autoprefixer({ browsers: ['last 2 version'] }),
     not,
     cssnext,
     partials,
-    modularScale,
+    strip,
     nano({ mergeRules: false }),
 ];
 
-gulp.task('styles', ()=> { 
+gulp.task('styles', ()=> {
   return gulp.src('./*.css')
     .pipe(postcss(processors))
     .pipe(rename('bundle.css'))
@@ -39,7 +39,7 @@ gulp.task('lint', ()=> {
     .pipe(postcss([
       stylelint({ 'rules': lintconfig.rules }),
       reporter({ clearMessages: true })
-    ]))
+    ]));
 });
 
 gulp.task('connect', ()=> {
@@ -52,10 +52,9 @@ gulp.task('connect', ()=> {
 
 gulp.task('html', ()=> {
   return gulp.src('./test/index.html')
-  .pipe(gulp.dest('./dest/'))
+    .pipe(gulp.dest('./dest/'))
     .pipe(bs.stream());
 });
-
 
 gulp.task('watch', ()=> {
   gulp.watch(['./*.css', './lib/**/*.css'], ['styles']);

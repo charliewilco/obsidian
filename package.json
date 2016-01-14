@@ -4,8 +4,8 @@
   "description": "Modular CSS",
   "main": "index.css",
   "scripts": {
-    "test": "",
-    "bundle": "gulp styles:min"
+    "start": "gulp",
+    "bundle": "gulp styles"
   },
   "author": "",
   "license": "ISC",
@@ -26,10 +26,10 @@
     "gulp-size": "^2.0.0",
     "postcss-cssnext": "^2.4.0",
     "postcss-import": "^7.0.0",
-    "postcss-modular-scale": "^2.5.1",
     "postcss-partial-import": "^1.3.0",
     "postcss-reporter": "^1.3.0",
     "postcss-selector-not": "^1.2.1",
+    "postcss-strip-units": "^1.1.0",
     "stylelint": "^2.3.4"
   },
   "dependencies": {

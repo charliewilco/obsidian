@@ -11,10 +11,9 @@
 
 /* Family */
 
-.u-sf   { font-family: var(--ff__serif); }
-.u-ssf  { font-family: var(--ff__sans-serif); }
-.u-mono { font-family: var(--ff__mono); }
-
+.u-serif { font-family: var(--ff-serif); }
+.u-sans  { font-family: var(--ff-sans-serif); }
+.u-mono  { font-family: var(--ff-mono); }
 
 /* Font Features Settings */
 
@@ -23,26 +22,23 @@
 .u-ffs-frac  { font-feature-settings: 'frac'; }
 .u-ffs-swsh  { font-feature-settings: 'swsh' 2; }
 
-
 /* Line Height */
 
 .u-lh-1    { line-height: 1; }
 .u-lh-auto { line-height: auto; }
-
 
 /* Case */
 
 .u-caps  { text-transform: uppercase; }
 .u-lower { text-transform: lowercase; }
 
-
 /* Weights */
 
-.u-w-100 { font-weight: 100; }
-.u-w-300 { font-weight: 300; }
-.u-w-400 { font-weight: 400; }
-.u-w-600 { font-weight: 600; }
-.u-w-700 { font-weight: 700; }
+.u-w100 { font-weight: 100; }
+.u-w300 { font-weight: 300; }
+.u-w400 { font-weight: 400; }
+.u-w600 { font-weight: 600; }
+.u-w700 { font-weight: 700; }
 
 
 /* Tracking */
