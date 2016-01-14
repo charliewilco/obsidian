@@ -4,8 +4,8 @@
   "description": "Modular CSS",
   "main": "index.css",
   "scripts": {
-    "test": "",
-    "bundle": "gulp styles:min"
+    "start": "gulp",
+    "bundle": "gulp styles"
   },
   "author": "",
   "license": "ISC",
