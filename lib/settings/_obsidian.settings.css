@@ -1,19 +1,39 @@
 :root {
   /* Spacing */
-  --base__spacing: 1rem;
+  --base-spacing: 1rem;
+  --base-container: 75rem;
+  --spacing-1: calc(var(--base-spacing) / 4);
+  --spacing-2: calc(var(--base-spacing) / 2);
+  --spacing-3: calc(var(--base-spacing));
+  --spacing-4: calc(var(--base-spacing) * 2);
+  --spacing-5: calc(var(--base-spacing) * 2.4);
+  --spacing-6: calc(var(--base-spacing) * 4);
 
   /* Typography */
-  --ff__init-size: 100%;
-  --ff__sans-serif: -apple-system, '.SFNSText-Regular', 'SF UI Text', 'San Francisco', 'Roboto', 'Noto Sans', 'Droid Sans', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
-  --ff__serif: 'Athelas', 'Hoefler Text', 'Baskerville', 'Droid Serif', 'Georgia', 'Times', serif;
-  --ff__mono: 'Input Mono', 'Source Code Pro', 'Menlo', monospace;
-  --ff__w: 300;
-  --mod-scale: 1.3;
+  --ff-init-size: 100%;
+  --ff-sans-serif: -apple-system, '.SFNSText-Regular', 'SF UI Text', 'San Francisco', 'Roboto', 'Noto Sans', 'Droid Sans', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  --ff-serif: 'Athelas', 'Hoefler Text', 'Baskerville', 'Droid Serif', 'Georgia', 'Times', serif;
+  --ff-mono: 'Input Mono', 'Source Code Pro', 'Menlo', monospace;
+  --ff-w: 300;
   --lh: 1.6;
 
-  --link: var(--blue);
+  /* Headline Sizes */
+  --headline-1: 3.125rem;
+  --headline-2: 2.5rem;
+  --headline-3: 2.125rem;
+  --headline-4: 1.75rem;
+  --headline-5: 1.5rem;
+  --headline-6: 1.25rem;
 
   /* Duration */
-  --base__dur: 375ms;
-  --base__timing-function: linear;
+  --base-dur: 375ms;
+  --base-timing-function: linear;
+
+  /* Color Defaults */
+  --link: var(--blue);
 }
+
+/* Custom Selectors */
+
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
+@custom-selector :--headlingsClasses .h1, .h2, .h3, .h4, .h5, .h6;
