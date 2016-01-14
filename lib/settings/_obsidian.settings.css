@@ -1,13 +1,17 @@
 :root {
   /* Spacing */
   --base-spacing: 1rem;
-  --base-container: 75rem;
   --spacing-1: calc(var(--base-spacing) / 4);
   --spacing-2: calc(var(--base-spacing) / 2);
   --spacing-3: calc(var(--base-spacing));
   --spacing-4: calc(var(--base-spacing) * 2);
   --spacing-5: calc(var(--base-spacing) * 2.4);
   --spacing-6: calc(var(--base-spacing) * 4);
+
+  --base-container: 75rem;
+  --container-lg: calc(var(--base-container) * .75);
+  --container-md: calc(var(--base-container) * .625);
+  --container-sm: calc(var(--base-container) * .375);
 
   /* Typography */
   --ff-init-size: 100%;
@@ -37,3 +41,5 @@
 
 @custom-selector :--headings h1, h2, h3, h4, h5, h6;
 @custom-selector :--headlingsClasses .h1, .h2, .h3, .h4, .h5, .h6;
+@custom-selector :--blocks article, aside, figcaption, figure, footer, header, hgroup, main, menu, nav, section;
+@custom-selector :--mediaObjects audio, canvas, progress, video;
