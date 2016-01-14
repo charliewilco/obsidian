@@ -1,11 +1,18 @@
-:root {
-  --o-container-base: 80rem; /* approx 1280px */ 
-  --cb: var(--o-container-base);
+/*----------Containers / Wrappers----------*/
+
+[class*="container"] { width: 100%; }
+
+.o-container--full {
+  max-width: var(--base-container);
 }
 
-[class*="container"] { width: 100vw; }
+.o-container--lg {
+  max-width: var(--container-lg);
+}
+.o-container--md {
+  max-width: var(--container-md);
+}
 
-.o-container-full { max-width: var(--cb); }
-.o-container-lg   { max-width: calc(var(--cb) * .75); }
-.o-container-md   { max-width: calc(var(--cb) * .625); }
-.o-container-sm   { max-width: calc(var(--cb) * .375); }
+.o-container--sm {
+  max-width: var(--container-sm);
+}
