@@ -1,8 +1,8 @@
 /* Sizes */
 
-/* Based off the Golden Ratio and 1rem being modified at each break point
+/* Originally based off the Golden Ratio and 1rem being modified at each break point
  *
- * For Reference: 
+ * For Reference:
   .hl-jumbo { font-size: calc(var(--base__spacing) * 6.275); }
   .hl-xl    { font-size: calc(var(--base__spacing) * 4.827); }
   .hl-lg    { font-size: calc(var(--base__spacing) * 3.713); }
@@ -12,41 +12,67 @@
   .hl-xs    { font-size: calc(var(--base__spacing) * 1);}
 */
 
-.hl-jumbo { font-size: calc((var(--base__spacing) * .75) * 6.275); }
-.hl-xl    { font-size: calc((var(--base__spacing) * .75) * 4.827); }
-.hl-lg    { font-size: calc((var(--base__spacing) * .75) * 3.713); }
-.hl-md    { font-size: calc((var(--base__spacing) * .75) * 2.856); }
-.hl-b     { font-size: calc((var(--base__spacing) * .75) * 2.197); }
-.hl-sm    { font-size: calc((var(--base__spacing) * .75) * 1.69); }
-.hl-xs    { font-size: calc((var(--base__spacing) * .75) * 1);}
+:root {
+  --lh-1: 1.125;
+  --lh-2: 1.25;
+  --lh-3: 1.5;
 
+  --sm-multiplier: .875;
+  --md-multiplier: 1;
+  --lg-multiplier: 1.125;
 
-@media (--sm) {
-  .hl-jumbo { font-size: calc((var(--base__spacing) * .875) * 6.275); }
-  .hl-xl    { font-size: calc((var(--base__spacing) * .875) * 4.827); }
-  .hl-lg    { font-size: calc((var(--base__spacing) * .875) * 3.713); }
-  .hl-md    { font-size: calc((var(--base__spacing) * .875) * 2.856); }
-  .hl-b     { font-size: calc((var(--base__spacing) * .875) * 2.197); }
-  .hl-sm    { font-size: calc((var(--base__spacing) * .875) * 1.69); }
-  .hl-xs    { font-size: calc((var(--base__spacing) * .875) * 1);}
+  --headline-1-sm: calc(var(--headline-1) * var(--sm-multiplier));
+  --headline-2-sm: calc(var(--headline-2) * var(--sm-multiplier));
+  --headline-3-sm: calc(var(--headline-3) * var(--sm-multiplier));
+  --headline-4-sm: calc(var(--headline-4) * var(--sm-multiplier));
+  --headline-5-sm: calc(var(--headline-5) * var(--sm-multiplier));
+  --headline-6-sm: calc(var(--headline-6) * var(--sm-multiplier));
+
+  --headline-1-md: calc(var(--headline-1) * var(--md-multiplier));
+  --headline-2-md: calc(var(--headline-2) * var(--md-multiplier));
+  --headline-3-md: calc(var(--headline-3) * var(--md-multiplier));
+  --headline-4-md: calc(var(--headline-4) * var(--md-multiplier));
+  --headline-5-md: calc(var(--headline-5) * var(--md-multiplier));
+  --headline-6-md: calc(var(--headline-6) * var(--md-multiplier));
+
+  --headline-1-lg: calc(var(--headline-1) * var(--lg-multiplier));
+  --headline-2-lg: calc(var(--headline-2) * var(--lg-multiplier));
+  --headline-3-lg: calc(var(--headline-3) * var(--lg-multiplier));
+  --headline-4-lg: calc(var(--headline-4) * var(--lg-multiplier));
+  --headline-5-lg: calc(var(--headline-5) * var(--lg-multiplier));
+  --headline-6-lg: calc(var(--headline-6) * var(--lg-multiplier));
+}
+
+h1, .h1 { font-size: var(--headline-1-sm); }
+h2, .h2 { font-size: var(--headline-2-sm); }
+h3, .h3 { font-size: var(--headline-3-sm); }
+h4, .h4 { font-size: var(--headline-4-sm); }
+h5, .h5 { font-size: var(--headline-5-sm); }
+h6, .h6 { font-size: var(--headline-6-sm); }
+
+:--headings {
+  margin: 0;
+  line-height: var(--lh-3);
+}
+:--headlingsClasses {
+  margin: 0;
+  line-height: var(--lh-3);
 }
 
 @media (--md) {
-  .hl-jumbo { font-size: calc((var(--base__spacing) * .925) * 6.275); }
-  .hl-xl    { font-size: calc((var(--base__spacing) * .925) * 4.827); }
-  .hl-lg    { font-size: calc((var(--base__spacing) * .925) * 3.713); }
-  .hl-md    { font-size: calc((var(--base__spacing) * .925) * 2.856); }
-  .hl-b     { font-size: calc((var(--base__spacing) * .925) * 2.197); }
-  .hl-sm    { font-size: calc((var(--base__spacing) * .925) * 1.69); }
-  .hl-xs    { font-size: calc((var(--base__spacing) * .925) * 1);}
+  h1, .h1 { font-size: var(--headline-1-md); }
+  h2, .h2 { font-size: var(--headline-2-md); }
+  h3, .h3 { font-size: var(--headline-3-md); }
+  h4, .h4 { font-size: var(--headline-4-md); }
+  h5, .h5 { font-size: var(--headline-5-md); }
+  h6, .h6 { font-size: var(--headline-6-md); }
 }
 
 @media (--lg) {
-  .hl-jumbo { font-size: calc(var(--base__spacing) * 6.275); }
-  .hl-xl    { font-size: calc(var(--base__spacing) * 4.827); }
-  .hl-lg    { font-size: calc(var(--base__spacing) * 3.713); }
-  .hl-md    { font-size: calc(var(--base__spacing) * 2.856); }
-  .hl-b     { font-size: calc(var(--base__spacing) * 2.197); }
-  .hl-sm    { font-size: calc(var(--base__spacing) * 1.69); }
-  .hl-xs    { font-size: calc(var(--base__spacing) * 1); }
+  h1, .h1 { font-size: var(--headline-1-lg); }
+  h2, .h2 { font-size: var(--headline-2-lg); }
+  h3, .h3 { font-size: var(--headline-3-lg); }
+  h4, .h4 { font-size: var(--headline-4-lg); }
+  h5, .h5 { font-size: var(--headline-5-lg); }
+  h6, .h6 { font-size: var(--headline-6-lg); }
 }
