@@ -6,7 +6,6 @@ module.exports = {
     "block-closing-brace-newline-before": [ 2, "always-multi-line" ],
     "block-closing-brace-space-before": [ 2, "always-single-line" ],
     "block-opening-brace-newline-after": [ 2, "always-multi-line" ],
-    "block-opening-brace-space-before": [ 2, "always" ],
     "color-no-invalid-hex": 2,
     "custom-property-no-outside-root": 2,
     "declaration-bang-space-after": [ 2, "never" ],
