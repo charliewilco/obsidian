@@ -1,4 +1,7 @@
-/*----------Containers / Wrappers----------*/
+/*----------Containers / Wrapper Object----------*/
+/*
+ * Needs `.u-mx-auto` to center container
+ */
 
 [class*='container'] { width: 100%; }
 
