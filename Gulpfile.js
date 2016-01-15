@@ -13,7 +13,7 @@ const reporter     = require('postcss-reporter');
 const stylelint    = require('stylelint');
 const bs           = require('browser-sync').create();
 
-const lintconfig = require('./style-config');
+const lintconfig = require('./stylelint.config');
 
 const processors = [
     atImport,
