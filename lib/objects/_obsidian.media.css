@@ -1,0 +1,18 @@
+/*--------Media Block----------*/
+/*
+  Media Object - Solved by Flexbox by Philip Walton
+  https://philipwalton.github.io/solved-by-flexbox/demos/media-object/
+  TODO: refine magic numbers
+*/
+
+.o-media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.o-media__figure {
+  margin-right: 1em;
+  max-width: 5rem;
+}
+
+.o-media__body { flex: 1; }

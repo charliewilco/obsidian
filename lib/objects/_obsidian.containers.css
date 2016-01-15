@@ -1,18 +1,8 @@
 /*----------Containers / Wrappers----------*/
 
-[class*="container"] { width: 100%; }
+[class*='container'] { width: 100%; }
 
-.o-container--full {
-  max-width: var(--base-container);
-}
-
-.o-container--lg {
-  max-width: var(--container-lg);
-}
-.o-container--md {
-  max-width: var(--container-md);
-}
-
-.o-container--sm {
-  max-width: var(--container-sm);
-}
+.o-container--full { max-width: var(--base-container); }
+.o-container--lg   { max-width: var(--container-lg); }
+.o-container--md   { max-width: var(--container-md); }
+.o-container--sm   { max-width: var(--container-sm); }

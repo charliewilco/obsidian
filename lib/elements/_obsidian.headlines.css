@@ -54,6 +54,7 @@ h6, .h6 { font-size: var(--headline-6-sm); }
   margin: 0;
   line-height: var(--lh-3);
 }
+
 :--headlingsClasses {
   margin: 0;
   line-height: var(--lh-3);

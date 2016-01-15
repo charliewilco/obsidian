@@ -27,11 +27,11 @@ input[disabled] {
 
 /* Input Fields */
 
-input[type="search"],
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="password"] {
+input[type='search'],
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='password'] {
   appearance: none;
 }
 
@@ -52,9 +52,9 @@ optgroup { font-weight: bold; }
 button { overflow: visible; }
 
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   cursor: pointer;
 }
 

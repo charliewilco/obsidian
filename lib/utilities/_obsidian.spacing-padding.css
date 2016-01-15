@@ -141,7 +141,7 @@
 
 @media (--sm) {
 
-/* Spacing Level 0 */
+  /* Spacing Level 0 */
 
   .u-p0\@sm { padding: 0; }
   .u-pt0\@sm { padding-top: 0; }
@@ -159,7 +159,7 @@
     padding-bottom: 0;
   }
 
-/* Spacing Level 1 */
+  /* Spacing Level 1 */
 
   .u-p1\@sm { padding: var(--spacing-1); }
   .u-pt1\@sm { padding-top: var(--spacing-1); }
@@ -177,7 +177,7 @@
     padding-bottom: var(--spacing-1);
   }
 
-/* Spacing Level 2 */
+  /* Spacing Level 2 */
 
   .u-p2\@sm { padding: var(--spacing-2); }
   .u-pt2\@sm { padding-top: var(--spacing-2); }
@@ -195,7 +195,7 @@
     padding-bottom: var(--spacing-2);
   }
 
-/* Spacing Level 3 */
+  /* Spacing Level 3 */
 
   .u-p3\@sm { padding: var(--spacing-3); }
   .u-pt3\@sm { padding-top: var(--spacing-3); }
@@ -213,7 +213,7 @@
     padding-bottom: var(--spacing-3);
   }
 
-/* Spacing Level 4 */
+  /* Spacing Level 4 */
 
   .u-p4\@sm { padding: var(--spacing-4); }
   .u-pt4\@sm { padding-top: var(--spacing-4); }
@@ -231,7 +231,7 @@
     padding-bottom: var(--spacing-4);
   }
 
-/* Spacing Level 4 */
+  /* Spacing Level 4 */
 
   .u-p5\@sm { padding: var(--spacing-5); }
   .u-pt5\@sm { padding-top: var(--spacing-5); }
@@ -249,7 +249,7 @@
     padding-bottom: var(--spacing-5);
   }
 
-/* Spacing Level 6 */
+  /* Spacing Level 6 */
 
   .u-p6\@sm { padding: var(--spacing-6); }
   .u-pt6\@sm { padding-top: var(--spacing-6); }
@@ -267,7 +267,7 @@
     padding-bottom: var(--spacing-6);
   }
 
-/* Spacing Auto */
+  /* Spacing Auto */
 
   .u-px-auto\@sm {
     padding-right: auto;
@@ -282,7 +282,7 @@
 
 @media (--md) {
 
-/* Spacing Level 0 */
+  /* Spacing Level 0 */
 
   .u-p0\@md { padding: 0; }
   .u-pt0\@md { padding-top: 0; }
@@ -300,7 +300,7 @@
     padding-bottom: 0;
   }
 
-/* Spacing Level 1 */
+  /* Spacing Level 1 */
 
   .u-p1\@md { padding: var(--spacing-1); }
   .u-pt1\@md { padding-top: var(--spacing-1); }
@@ -318,7 +318,7 @@
     padding-bottom: var(--spacing-1);
   }
 
-/* Spacing Level 2 */
+  /* Spacing Level 2 */
 
   .u-p2\@md { padding: var(--spacing-2); }
   .u-pt2\@md { padding-top: var(--spacing-2); }
@@ -336,7 +336,7 @@
     padding-bottom: var(--spacing-2);
   }
 
-/* Spacing Level 3 */
+  /* Spacing Level 3 */
 
   .u-p3\@md { padding: var(--spacing-3); }
   .u-pt3\@md { padding-top: var(--spacing-3); }
@@ -354,7 +354,7 @@
     padding-bottom: var(--spacing-3);
   }
 
-/* Spacing Level 4 */
+  /* Spacing Level 4 */
 
   .u-p4\@md { padding: var(--spacing-4); }
   .u-pt4\@md { padding-top: var(--spacing-4); }
@@ -372,7 +372,7 @@
     padding-bottom: var(--spacing-4);
   }
 
-/* Spacing Level 5 */
+  /* Spacing Level 5 */
 
   .u-p5\@md { padding: var(--spacing-5); }
   .u-pt5\@md { padding-top: var(--spacing-5); }
@@ -390,7 +390,7 @@
     padding-bottom: var(--spacing-5);
   }
 
-/* Spacing Level 6 */
+  /* Spacing Level 6 */
 
   .u-p6\@md { padding: var(--spacing-6); }
   .u-pt6\@md { padding-top: var(--spacing-6); }
@@ -408,7 +408,7 @@
     padding-bottom: var(--spacing-6);
   }
 
-/* Spacing Auto */
+  /* Spacing Auto */
 
   .u-px-auto\@md {
     padding-right: auto;
@@ -423,7 +423,7 @@
 
 @media (--lg) {
 
-/* Spacing Level 0 */
+  /* Spacing Level 0 */
 
   .u-p0\@lg { padding: 0; }
   .u-pt0\@lg { padding-top: 0; }
@@ -441,7 +441,7 @@
     padding-bottom: 0;
   }
 
-/* Spacing Level 1 */
+  /* Spacing Level 1 */
 
   .u-p1\@lg { padding: var(--spacing-1); }
   .u-pt1\@lg { padding-top: var(--spacing-1); }
@@ -459,7 +459,7 @@
     padding-bottom: var(--spacing-1);
   }
 
-/* Spacing Level 2 */
+  /* Spacing Level 2 */
 
   .u-p2\@lg { padding: var(--spacing-2); }
   .u-pt2\@lg { padding-top: var(--spacing-2); }
@@ -477,7 +477,7 @@
     padding-bottom: var(--spacing-2);
   }
 
-/* Spacing Level 3 */
+  /* Spacing Level 3 */
 
   .u-p3\@lg { padding: var(--spacing-3); }
   .u-pt3\@lg { padding-top: var(--spacing-3); }
@@ -511,8 +511,7 @@
     padding-bottom: var(--spacing-4);
   }
 
-/* Spacing Level 5 */
-
+  /* Spacing Level 5 */
 
   .u-p5\@lg { padding: var(--spacing-5); }
   .u-pt5\@lg { padding-top: var(--spacing-5); }
@@ -548,7 +547,7 @@
     padding-bottom: var(--spacing-6);
   }
 
-/* Spacing Auto */
+  /* Spacing Auto */
 
   .u-px-auto\@lg {
     padding-right: auto;

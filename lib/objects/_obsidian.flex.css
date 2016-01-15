@@ -1,17 +1,29 @@
-.o-flex { display: flex; }
+/*----------Flex Objects----------*/
+/*
+  TODO: BEM Lint
+  TODO: Consolidate Flex Container
+*/
 
+/* Flex Container */
+
+.o-flex { display: flex; }
 .o-flex__wrap { flex-wrap: wrap; }
+
+/* Directions for Flex Container */
 
 .o-flex__dir-row { flex-direction: row; }
 .o-flex__dir-col { flex-direction: column; }
 
-.o-flex__center-h { align-items: center; }
+/* Centering Flex Objects */
+
+.o-flex__space        { justify-content: space-between; }
+.o-flex__center-sa    { justify-content: space-around; }
+.o-flex__center-items { justify-content: center; }
+.o-flex__center-h     { align-items: center; }
+
+
 .o-flex__center-v {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-.o-flex__center-items { justify-content: center; }
-
-.o-flex__space { justify-content: space-between; }

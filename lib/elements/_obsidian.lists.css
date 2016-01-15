@@ -5,6 +5,6 @@ li > ol { margin-bottom: 0; }
 
 ul, ol { list-style-position: inside; }
 
-.list {}
+.list { }
 
 .list--reset {  list-style: inside none; }

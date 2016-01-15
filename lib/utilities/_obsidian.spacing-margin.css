@@ -141,7 +141,7 @@
 
 @media (--sm) {
 
-/* Spacing Level 0 */
+  /* Spacing Level 0 */
 
   .u-m0\@sm { margin: 0; }
   .u-mt0\@sm { margin-top: 0; }
@@ -159,7 +159,7 @@
     margin-bottom: 0;
   }
 
-/* Spacing Level 1 */
+  /* Spacing Level 1 */
 
   .u-m1\@sm { margin: var(--spacing-1); }
   .u-mt1\@sm { margin-top: var(--spacing-1); }
@@ -177,7 +177,7 @@
     margin-bottom: var(--spacing-1);
   }
 
-/* Spacing Level 2 */
+  /* Spacing Level 2 */
 
   .u-m2\@sm { margin: var(--spacing-2); }
   .u-mt2\@sm { margin-top: var(--spacing-2); }
@@ -195,7 +195,7 @@
     margin-bottom: var(--spacing-2);
   }
 
-/* Spacing Level 3 */
+  /* Spacing Level 3 */
 
   .u-m3\@sm { margin: var(--spacing-3); }
   .u-mt3\@sm { margin-top: var(--spacing-3); }
@@ -213,7 +213,7 @@
     margin-bottom: var(--spacing-3);
   }
 
-/* Spacing Level 4 */
+  /* Spacing Level 4 */
 
   .u-m4\@sm { margin: var(--spacing-4); }
   .u-mt4\@sm { margin-top: var(--spacing-4); }
@@ -231,7 +231,7 @@
     margin-bottom: var(--spacing-4);
   }
 
-/* Spacing Level 4 */
+  /* Spacing Level 4 */
 
   .u-m5\@sm { margin: var(--spacing-5); }
   .u-mt5\@sm { margin-top: var(--spacing-5); }
@@ -249,7 +249,7 @@
     margin-bottom: var(--spacing-5);
   }
 
-/* Spacing Level 6 */
+  /* Spacing Level 6 */
 
   .u-m6\@sm { margin: var(--spacing-6); }
   .u-mt6\@sm { margin-top: var(--spacing-6); }
@@ -267,7 +267,7 @@
     margin-bottom: var(--spacing-6);
   }
 
-/* Spacing Auto */
+  /* Spacing Auto */
 
   .u-mx-auto\@sm {
     margin-right: auto;
@@ -282,7 +282,7 @@
 
 @media (--md) {
 
-/* Spacing Level 0 */
+  /* Spacing Level 0 */
 
   .u-m0\@md { margin: 0; }
   .u-mt0\@md { margin-top: 0; }
@@ -300,7 +300,7 @@
     margin-bottom: 0;
   }
 
-/* Spacing Level 1 */
+  /* Spacing Level 1 */
 
   .u-m1\@md { margin: var(--spacing-1); }
   .u-mt1\@md { margin-top: var(--spacing-1); }
@@ -318,7 +318,7 @@
     margin-bottom: var(--spacing-1);
   }
 
-/* Spacing Level 2 */
+  /* Spacing Level 2 */
 
   .u-m2\@md { margin: var(--spacing-2); }
   .u-mt2\@md { margin-top: var(--spacing-2); }
@@ -336,7 +336,7 @@
     margin-bottom: var(--spacing-2);
   }
 
-/* Spacing Level 3 */
+  /* Spacing Level 3 */
 
   .u-m3\@md { margin: var(--spacing-3); }
   .u-mt3\@md { margin-top: var(--spacing-3); }
@@ -354,7 +354,7 @@
     margin-bottom: var(--spacing-3);
   }
 
-/* Spacing Level 4 */
+  /* Spacing Level 4 */
 
   .u-m4\@md { margin: var(--spacing-4); }
   .u-mt4\@md { margin-top: var(--spacing-4); }
@@ -372,7 +372,7 @@
     margin-bottom: var(--spacing-4);
   }
 
-/* Spacing Level 5 */
+  /* Spacing Level 5 */
 
   .u-m5\@md { margin: var(--spacing-5); }
   .u-mt5\@md { margin-top: var(--spacing-5); }
@@ -390,7 +390,7 @@
     margin-bottom: var(--spacing-5);
   }
 
-/* Spacing Level 6 */
+  /* Spacing Level 6 */
 
   .u-m6\@md { margin: var(--spacing-6); }
   .u-mt6\@md { margin-top: var(--spacing-6); }
@@ -408,7 +408,7 @@
     margin-bottom: var(--spacing-6);
   }
 
-/* Spacing Auto */
+  /* Spacing Auto */
 
   .u-mx-auto\@md {
     margin-right: auto;
@@ -423,7 +423,7 @@
 
 @media (--lg) {
 
-/* Spacing Level 0 */
+  /* Spacing Level 0 */
 
   .u-m0\@lg { margin: 0; }
   .u-mt0\@lg { margin-top: 0; }
@@ -441,7 +441,7 @@
     margin-bottom: 0;
   }
 
-/* Spacing Level 1 */
+  /* Spacing Level 1 */
 
   .u-m1\@lg { margin: var(--spacing-1); }
   .u-mt1\@lg { margin-top: var(--spacing-1); }
@@ -459,7 +459,7 @@
     margin-bottom: var(--spacing-1);
   }
 
-/* Spacing Level 2 */
+  /* Spacing Level 2 */
 
   .u-m2\@lg { margin: var(--spacing-2); }
   .u-mt2\@lg { margin-top: var(--spacing-2); }
@@ -477,7 +477,7 @@
     margin-bottom: var(--spacing-2);
   }
 
-/* Spacing Level 3 */
+  /* Spacing Level 3 */
 
   .u-m3\@lg { margin: var(--spacing-3); }
   .u-mt3\@lg { margin-top: var(--spacing-3); }
@@ -495,6 +495,8 @@
     margin-bottom: var(--spacing-3);
   }
 
+  /* Spacing Level 4 */
+
   .u-m4\@lg { margin: var(--spacing-4); }
   .u-mt4\@lg { margin-top: var(--spacing-4); }
   .u-mr4\@lg { margin-right: var(--spacing-4); }
@@ -511,8 +513,7 @@
     margin-bottom: var(--spacing-4);
   }
 
-/* Spacing Level 5 */
-
+  /* Spacing Level 5 */
 
   .u-m5\@lg { margin: var(--spacing-5); }
   .u-mt5\@lg { margin-top: var(--spacing-5); }
@@ -548,7 +549,7 @@
     margin-bottom: var(--spacing-6);
   }
 
-/* Spacing Auto */
+  /* Spacing Auto */
 
   .u-mx-auto\@lg {
     margin-right: auto;

@@ -10,24 +10,33 @@ const partials     = require('postcss-partial-import');
 const atImport     = require('postcss-import');
 const not          = require('postcss-selector-not');
 const reporter     = require('postcss-reporter');
+const bemLinter    = require('postcss-bem-linter');
 const stylelint    = require('stylelint');
 const bs           = require('browser-sync').create();
 
-const lintconfig = require('./style-config');
+const lintconfig = require('./stylelint.config');
 
-const processors = [
-    atImport,
-    autoprefixer({ browsers: ['last 2 version'] }),
-    not,
-    cssnext,
-    partials,
-    strip,
-    nano({ mergeRules: false }),
+const mainProcessors = [
+  atImport,
+  autoprefixer({ browsers: ['last 2 version'] }),
+  not,
+  cssnext,
+  partials,
+  strip,
+  nano({ mergeRules: false }),
 ];
+
+const linters = [
+  stylelint({ rules: lintconfig.rules }),
+  bemLinter('bem'),
+  reporter({ clearMessages: true }),
+];
+
+const allProcessors = mainProcessors.concat(linters);
 
 gulp.task('styles', ()=> {
   return gulp.src('./*.css')
-    .pipe(postcss(processors))
+    .pipe(postcss(mainProcessors))
     .pipe(rename('bundle.css'))
     .pipe(gulp.dest('./dest/'))
     .pipe(size({ gzip: true, pretty: true }))
@@ -36,10 +45,7 @@ gulp.task('styles', ()=> {
 
 gulp.task('lint', ()=> {
   return gulp.src(['./index.css', './lib/**/*.css'])
-    .pipe(postcss([
-      stylelint({ 'rules': lintconfig.rules }),
-      reporter({ clearMessages: true })
-    ]));
+    .pipe(postcss(linters));
 });
 
 gulp.task('connect', ()=> {
@@ -57,7 +63,7 @@ gulp.task('html', ()=> {
 });
 
 gulp.task('watch', ()=> {
-  gulp.watch(['./*.css', './lib/**/*.css'], ['styles']);
+  gulp.watch(['./*.css', './lib/**/*.css'], ['styles', 'lint']);
   gulp.watch('./test/index.html', ['html']);
 });
 

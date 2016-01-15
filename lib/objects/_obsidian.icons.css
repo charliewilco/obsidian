@@ -1,0 +1,7 @@
+/*---------Icons----------*/
+
+.o-icon {
+  width: var(--icon-w);
+  height: var(--icon-h);
+  fill: currentColor;
+}
