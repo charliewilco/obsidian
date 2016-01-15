@@ -5,7 +5,6 @@ module.exports = {
     "block-closing-brace-newline-after": [ 2, "always" ],
     "block-closing-brace-newline-before": [ 2, "always-multi-line" ],
     "block-closing-brace-space-before": [ 2, "always-single-line" ],
-    "block-no-empty": 2,
     "block-opening-brace-newline-after": [ 2, "always-multi-line" ],
     "block-opening-brace-space-before": [ 2, "always" ],
     "color-no-invalid-hex": 2,
