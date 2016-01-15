@@ -1,0 +1,5 @@
+/*----------Object Fit Utilities----------*/
+
+.u-of-fill { object-fit: fill; }
+.u-of-contain { object-fit: contain; }
+.u-of-cover { object-fit: cover; }

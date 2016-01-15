@@ -1,0 +1,16 @@
+/*----------Image Elements----------*/
+
+img {
+  max-width: 100%;
+  font-style: italic;
+  vertical-align: middle;
+  border: 0;
+}
+
+svg:not(:root) { overflow: hidden; }
+
+svg {
+  fill: currentColor;
+  pointer-events: none;
+  max-height: 100%
+}
