@@ -37,7 +37,7 @@ gulp.task('styles', ()=> {
 gulp.task('lint', ()=> {
   return gulp.src(['./index.css', './lib/**/*.css'])
     .pipe(postcss([
-      stylelint({ 'rules': lintconfig.rules }),
+      stylelint({ rules: lintconfig.rules }),
       reporter({ clearMessages: true })
     ]));
 });
