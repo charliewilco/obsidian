@@ -17,6 +17,7 @@
 .u-clr-ltgray    { color: var(--litegray); }
 
 /* Hover States */
+
 .u-clrh-offwhite:hover  { color: var(--offwhite); }
 .u-clrh-black:hover     { color: var(--black); }
 .u-clrh-red:hover       { color: var(--red); }
@@ -34,6 +35,7 @@
 .u-clrh-ltgray:hover    { color: var(--litegray); }
 
 /* Focus States */
+
 .u-clrf-offwhite:focus  { color: var(--offwhite); }
 .u-clrf-black:focus     { color: var(--black); }
 .u-clrf-red:focus       { color: var(--red); }
@@ -51,6 +53,7 @@
 .u-clrf-ltgray:focus    { color: var(--litegray); }
 
 /* Border Colors */
+
 .u-clrb-offwhite  { border-color: var(--offwhite); }
 .u-clrb-black     { border-color: var(--black); }
 .u-clrb-red       { border-color: var(--red); }

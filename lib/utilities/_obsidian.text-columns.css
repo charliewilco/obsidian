@@ -1,20 +1,23 @@
+/*---------Text Column Utilties----------*/
+
 :root {
-  --mxw: 75rem;
+  /* NOTE: there is no 1 for column sizes */
+  --column-size-2: calc(var(--base-container) / 3 - ((var(--base-spacing) * 2) * 1));
+  --column-size-3: calc(var(--base-container) / 3 - ((var(--base-spacing) * 3) * 2));
+  --column-size-4: calc(var(--base-container) / 3 - ((var(--base-spacing) * 4) * 3));
 }
 
-.u-tcl-2 {
-  columns: 2 calc(var(--mxw)/3 - ((var(--base__spacing) * 2) * 1));
-  column-gap: calc(var(--base__spacing) * 2);
+.u-tclm-2 {
+  columns: 2 var(--column-size-2);
+  column-gap: calc(var(--base-spacing) * 2);
 }
 
-.u-tcl-3 {
-  columns: 3 calc(var(--mxw)/3 - ((var(--base__spacing) * 3) * 2));
-  column-gap: calc(var(--base__spacing) * 3);
+.u-tclm-3 {
+  columns: 3 var(--column-size-3));
+  column-gap: calc(var(--base-spacing) * 3);
 }
 
-
-.u-tcl-4 {
-  columns: 4 calc(var(--mxw)/3 - ((var(--base__spacing) * 4) * 3));
-  column-gap: calc(var(--base__spacing) * 4);
+.u-tclm-4 {
+  columns: 4 var(--column-size-4);
+  column-gap: calc(var(--base-spacing) * 4);
 }
-

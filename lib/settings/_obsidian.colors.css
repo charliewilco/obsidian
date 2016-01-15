@@ -1,5 +1,10 @@
+/*----------Obsidian Default Colors----------*/
+/*
+ * Default colors, can be overwritten easily
+ */
+
 :root {
-  --offwhite: #f0f0f0;
+  --offwhite: #fdfdfd;
   --black: #202020;
   --red: #d04d36;
   --blue: #147AAB;
@@ -11,7 +16,7 @@
   --purple: #834f91;
   --indigo: #675997;
   --fuchsia: #FA5E5B;
-  --gray: #ccc;
+  --gray: #cccccc;
   --text: #484848;
   --litegray: #bcbcbc;
 }

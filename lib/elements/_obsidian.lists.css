@@ -1,6 +1,10 @@
-/*----------Lists----------*/
+/*----------List & List Item Elements---------*/
 
-li > ul, li > ol { margin-bottom: 0; }
+li > ul,
+li > ol { margin-bottom: 0; }
 
-.ls { list-style-position: inside; }
-.ls__reset {  list-style: inside none; }
+ul, ol { list-style-position: inside; }
+
+.list { }
+
+.list--reset {  list-style: inside none; }

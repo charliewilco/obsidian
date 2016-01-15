@@ -1,0 +1,12 @@
+/*---------Link Defaults / Anchor Element----------*/
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: var(--blue);
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}

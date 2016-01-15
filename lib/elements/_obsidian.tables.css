@@ -1,4 +1,4 @@
-/* Tables */
+/*----------Table Element----------*/
 
 table {
   border-collapse: collapse;
@@ -7,7 +7,9 @@ table {
 
 td, th { padding: 0; }
 
-.table { width: 100%; }
+/* Responsive Table Implementation */
+
+.table  { width: 100%; }
 
 .table__heading { display: none; }
 .table__content { display: block; }
@@ -24,12 +26,11 @@ td, th { padding: 0; }
   text-align: left;
 }
 
-
 .table__row:not(:last-of-type) {
   border-bottom: 1px solid color(var(--blue) blackness(+20%));
 }
 
 @media (--md) {
-  .table__content, .table__heading  { display: table-cell; }
+  .table__content, .table__heading { display: table-cell; }
   .table__content:before { display: none; }
 }

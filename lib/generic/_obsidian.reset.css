@@ -1,8 +1,7 @@
 /*---------Reset----------*/
-
-@custom-selector :--blocks article, aside, figcaption, figure, footer, header, hgroup, main, menu, nav, section;
-
-/* Reset Modified from Normalize.css */
+/*
+ * Modified from normalize.css
+ */
 
 /* Base Reset */
 
@@ -11,24 +10,26 @@
   padding: 0;
 }
 
-*, *:before, *:after { box-sizing: inherit; }
-
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 html {
-  overflow-y: scroll;
-  min-height: 100%;
   box-sizing: border-box;
   text-size-adjust: 100%;
-  font: var(--ff__w) 100%/var(--lh) var(--ff__sans-serif);
+  font: var(--ff-w) var(--ff-init-size) / var(--lh) var(--ff-sans-serif);
   -webkit-tap-highlight-color: transparent;
   color: var(--text);
 }
 
 :--blocks { display: block; }
-
+[hidden], template { display: none; }
 
 /* Media */
-audio, canvas, progress, video {
+
+:--mediaObjects {
   display: inline-block;
   vertical-align: baseline;
 }
@@ -38,55 +39,32 @@ audio:not([controls]) {
   height: 0;
 }
 
-/* Images */
-
-[hidden], template { display: none; }
-
-img {
-  max-width: 100%;
-  font-style: italic;
-  vertical-align: middle;
-  border: 0;
-}
-
-svg:not(:root) { overflow: hidden; }
-
-svg {
-  pointer-events: none;
-  max-height: 100%
-}
-
-
-/* Links */
-
-a {
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:active, a:hover { outline: 0; }
-
 /* Text Selectors */
 
-abbr[title] { border-bottom: 1px dotted; }
-b, strong   { font-weight: bold; }
-i, em       { font-weight: italic; }
+abbr[title] { border-bottom: calc(var(--base-border) / 2) dotted; }
+
+b, strong { font-weight: bold; }
+
+i, em { font-weight: italic; }
+
+p:not(:last-of-type) {
+  margin-bottom: var(--base-spacing);
+}
 
 /* Content */
 
 figure {
-  margin-top: var(--base__spacing);
-  margin-bottom: var(--base__spacing);
+  margin-top: var(--base-spacing);
+  margin-bottom: var(--base-spacing);
 }
 
-
-hr { height: 2px; }
+hr { height: var(--base-border); }
 
 /* Code Blocks */
 
 pre { overflow: auto; }
 
 code, pre {
-  font-family: var(--ff__mono);
-  font-size: var(--base__spacing);
+  font-family: var(--ff-mono);
+  font-size: 100%;
 }

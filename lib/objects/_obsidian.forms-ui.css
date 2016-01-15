@@ -1,0 +1,35 @@
+/*----------Forms UI----------*/
+
+/* Text Inputs Fields */
+
+.o-input {
+  padding: var(--base-form-innerSpacing);
+  border: var(--base-form-border);
+  max-width: var(--base-form-mxw);
+  border-radius: var(--base-form-radius);
+}
+
+.o-input__text { resize: none; }
+
+.o-input:focus {
+  background: var(--offwhite);
+  color: var(--base-form-color);
+  outline: 5px auto var(--blue);
+}
+
+/* Label Elements */
+
+.o-label {
+  letter-spacing: 4px;
+  color: var(--base-form-offsetColor);
+}
+
+/* Select Elements */
+
+.o-select {
+  padding: var(--base-form-innerSpacing);
+  max-width: var(--base-form-mxw);
+  height: var(--base-form-height);
+  border: var(--base-form-border);
+  border-radius: var(--base-form-radius);
+}

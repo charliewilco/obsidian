@@ -1,0 +1,33 @@
+/*----------Button UI Object----------*/
+/*
+ * Default UI Pattern for Buttons
+ */
+
+.o-btn {
+  background: var(--base-form-color);
+  color: white;
+  border: var(--base-form-border);
+  padding: var(--base-form-innerSpacing);
+  max-width: var(--base-form-mxw);
+  border-radius: var(--base-form-radius);
+  transition: color var(--base-dur) linear, background var(--base-dur) linear, border var(--base-dur) linear;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.o-btn:hover {
+  border: var(--base-border) solid;
+  color: var(--base-form-color);
+  background: none;
+}
+
+.o-btn--outline {
+  border: var(--base-border) solid;
+  color: var(--base-form-color);
+  padding: var(--base-form-innerSpacing);
+  max-width: var(--base-form-mxw);
+  border-radius: var(--base-form-radius);
+  background: none;
+  display: inline-block;
+  cursor: pointer;
+}
