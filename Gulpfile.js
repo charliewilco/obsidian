@@ -10,6 +10,7 @@ const partials     = require('postcss-partial-import');
 const atImport     = require('postcss-import');
 const not          = require('postcss-selector-not');
 const reporter     = require('postcss-reporter');
+const bemLinter    = require('postcss-bem-linter');
 const stylelint    = require('stylelint');
 const bs           = require('browser-sync').create();
 
@@ -27,6 +28,7 @@ const mainProcessors = [
 
 const linters = [
   stylelint({ rules: lintconfig.rules }),
+  bemLinter('bem'),
   reporter({ clearMessages: true }),
 ];
 
