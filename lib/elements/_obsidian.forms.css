@@ -53,6 +53,7 @@ input[type='button'],
 input[type='reset'],
 input[type='submit'] {
   cursor: pointer;
+  appearance: none;
 }
 
 /* Other */
