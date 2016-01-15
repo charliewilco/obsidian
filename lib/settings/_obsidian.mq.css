@@ -1,3 +1,5 @@
+/*----------Obsidian Media Queries----------*/
+
 @custom-media --sm (width >= 31.25rem);
 @custom-media --md (width >= 48rem);
 @custom-media --lg (width >= 57.75rem);

@@ -1,3 +1,5 @@
+/*----------Obsidian Default Settings----------*/
+
 :root {
   /* Spacing */
   --base-spacing: 1rem;
@@ -8,6 +10,7 @@
   --spacing-5: calc(var(--base-spacing) * 2.4);
   --spacing-6: calc(var(--base-spacing) * 4);
 
+  /* Containers */
   --base-container: 75rem;
   --container-lg: calc(var(--base-container) * .75);
   --container-md: calc(var(--base-container) * .625);

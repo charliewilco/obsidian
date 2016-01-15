@@ -1,8 +1,10 @@
+/*----------Grid (Flexbox)----------*/
+
 :root {
   --col-mxw: 20rem;
 }
 
-.o-grid__col { max-width: 100%; }
+[class*='grid__col'] { max-width: 100%; }
 
 .o-grid__col-0 { flex: 0 1 var(--col-mxw); }
 .o-grid__col-1 { flex: 1 0 var(--col-mxw); }
