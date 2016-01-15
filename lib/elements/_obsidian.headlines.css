@@ -1,4 +1,4 @@
-/* Sizes */
+/*----------Headline Elements----------*/
 
 /* Originally based off the Golden Ratio and 1rem being modified at each break point
  *
@@ -12,6 +12,7 @@
   .hl-xs    { font-size: calc(var(--base-spacing) * 1);}
 */
 
+/* Sizes */
 :root {
   --lh-1: 1.125;
   --lh-2: 1.25;

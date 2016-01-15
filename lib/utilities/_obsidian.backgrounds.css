@@ -1,6 +1,5 @@
 /*----------Background Value Utilities----------*/
 
-
 .u-bkg-none      { background: none; }
 .u-bkg-offwhite  { background-color: var(--offwhite); }
 .u-bkg-black     { background-color: var(--black); }
@@ -17,5 +16,3 @@
 .u-bkg-gray      { background-color: var(--gray); }
 .u-bkg-text      { background-color: var(--text); }
 .u-bkg-ltgray    { background-color: var(--litegray); }
-
-

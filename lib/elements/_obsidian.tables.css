@@ -1,4 +1,4 @@
-/* Tables */
+/*----------Table Element----------*/
 
 table {
   border-collapse: collapse;
@@ -7,7 +7,7 @@ table {
 
 td, th { padding: 0; }
 
-/* Responsive Table Design */
+/* Responsive Table Implementation */
 
 .table  { width: 100%; }
 
