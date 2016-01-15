@@ -35,6 +35,24 @@
 
   /* Color Defaults */
   --link: var(--blue);
+
+  /* Border Radii */
+  --radius-1: calc(var(--base-spacing) * .25);
+  --radius-2: calc(var(--base-spacing) * .5);
+  --radius-3: calc(var(--base-spacing) * 1);
+  --radius-4: calc(var(--base-spacing) * 1.5);
+  --radius-5: calc(var(--base-spacing) * 2);
+
+  /* Form Defaults */
+  --base-border: 2px;
+  --base-form-color: var(--blue);
+  --base-form-offsetColor: var(--litegray);
+  --base-form-radius: .25rem;
+  --base-form-innerSpacing: var(--spacing-2) var(--base-spacing);
+  --base-form-border: var(--base-border) solid var(--base-form-color);
+  --base-form-width: 100%;
+  --base-form-mxw: 25rem;
+  --base-form-height: 45px; /* TODO: Compute this better */
 }
 
 /* Custom Selectors */
