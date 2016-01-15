@@ -46,7 +46,3 @@
 @import 'lib/utilities/_obsidian.spacing-padding';
 @import 'lib/utilities/_obsidian.text-columns';
 @import 'lib/utilities/_obsidian.typography';
-
-:root {
-  --base-form-width: 100%;
-}
