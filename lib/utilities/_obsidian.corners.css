@@ -6,8 +6,9 @@
 .u-br-4 { border-radius: var(--radius-4); }
 .u-br-5 { border-radius: var(--radius-5); }
 
+/* Named Percentage Sizes */
 
-.u-br-quarter { border-radius: 25%;  }
+.u-br-quarter { border-radius: 25%; }
 .u-br-third   { border-radius: 33.3333%; }
-.u-br-half    { border-radius: 50%;  }
+.u-br-half    { border-radius: 50%; }
 .u-br-full    { border-radius: 100%; }
