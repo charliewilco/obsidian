@@ -26,7 +26,6 @@ module.exports = {
     "media-feature-colon-space-after": [ 2, "always" ],
     "media-feature-colon-space-before": [ 2, "never" ],
     "no-missing-eof-newline": 2,
-    "number-leading-zero": [ 2, "always" ],
     "number-no-trailing-zeros": 2,
     "number-zero-length-no-unit": 2,
     "rule-no-duplicate-properties": 2,
