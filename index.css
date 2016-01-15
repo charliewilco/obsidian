@@ -16,7 +16,6 @@
 @import 'lib/elements/_obsidian.lists';
 @import 'lib/elements/_obsidian.links';
 @import 'lib/elements/_obsidian.images';
-@import 'lib/elements/_obsidian.media';
 
 /* Objects */
 
@@ -26,6 +25,7 @@
 @import 'lib/objects/_obsidian.intrinsic';
 @import 'lib/objects/_obsidian.flex';
 @import 'lib/objects/_obsidian.btns';
+@import 'lib/objects/_obsidian.media';
 @import 'lib/objects/_obsidian.forms-ui';
 
 /* Components */
