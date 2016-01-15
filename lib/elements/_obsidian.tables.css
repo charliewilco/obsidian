@@ -30,6 +30,6 @@ td, th { padding: 0; }
 }
 
 @media (--md) {
-  .table__content, .table__heading  { display: table-cell; }
+  .table__content, .table__heading { display: table-cell; }
   .table__content:before { display: none; }
 }
