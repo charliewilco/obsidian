@@ -24,8 +24,9 @@
 @import 'lib/objects/_obsidian.containers';
 @import 'lib/objects/_obsidian.grid';
 @import 'lib/objects/_obsidian.intrinsic';
-@import 'lib/objects/_obsidian.btns';
 @import 'lib/objects/_obsidian.flex';
+@import 'lib/objects/_obsidian.btns';
+@import 'lib/objects/_obsidian.forms-ui';
 
 /* Components */
 
@@ -45,3 +46,7 @@
 @import 'lib/utilities/_obsidian.spacing-padding';
 @import 'lib/utilities/_obsidian.text-columns';
 @import 'lib/utilities/_obsidian.typography';
+
+:root {
+  --base-form-width: 100%;
+}
