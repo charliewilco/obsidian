@@ -1,31 +1,31 @@
 /*----------Align Utilities----------*/
 
-.u-al-left { text-align: left; }
-.u-al-right { text-align: right; }
-.u-al-center { text-align: center; }
+.u-al-left    { text-align: left; }
+.u-al-right   { text-align: right; }
+.u-al-center  { text-align: center; }
 .u-al-justify { text-align: justify; }
-.u-al-none { text-align: none; }
+.u-al-none    { text-align: none; }
 
 @media (--sm) {
-  .u-al-left\@sm { text-align: left; }
-  .u-al-right\@sm { text-align: right; }
-  .u-al-center\@sm { text-align: center; }
+  .u-al-left\@sm    { text-align: left; }
+  .u-al-right\@sm   { text-align: right; }
+  .u-al-center\@sm  { text-align: center; }
   .u-al-justify\@sm { text-align: justify; }
-  .u-al-none\@sm { text-align: none; }
+  .u-al-none\@sm    { text-align: none; }
 }
 
 @media (--md) {
-  .u-al-left\@md { text-align: left; }
-  .u-al-right\@md { text-align: right; }
-  .u-al-center\@md { text-align: center; }
+  .u-al-left\@md    { text-align: left; }
+  .u-al-right\@md   { text-align: right; }
+  .u-al-center\@md  { text-align: center; }
   .u-al-justify\@md { text-align: justify; }
-  .u-al-none\@md { text-align: none; }
+  .u-al-none\@md    { text-align: none; }
 }
 
 @media (--lg) {
-  .u-al-left\@lg { text-align: left; }
-  .u-al-right\@lg { text-align: right; }
-  .u-al-center\@lg { text-align: center; }
+  .u-al-left\@lg    { text-align: left; }
+  .u-al-right\@lg   { text-align: right; }
+  .u-al-center\@lg  { text-align: center; }
   .u-al-justify\@lg { text-align: justify; }
-  .u-al-none\@lg { text-align: none; }
+  .u-al-none\@lg    { text-align: none; }
 }
