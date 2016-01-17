@@ -1,6 +1,4 @@
 module.exports = {
-  // CSS formatting rules applied to stylelint
-  // https://github.com/stylelint/stylelint/blob/master/docs/rules.md
   rules: {
     'block-closing-brace-newline-after': [2, 'always'],
     'block-closing-brace-newline-before': [2, 'always-multi-line'],
