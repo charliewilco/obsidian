@@ -8,12 +8,23 @@
   </head>
   <body class="u-clr-text u-bkg-offwhite">
     <header class="u-py6 u-al-center">
-      <h1 class="u-w-300 h2 u-lt-5 u-caps u-lh-1 u-my6">Obsidian.css</h1>
+      <img src="obsidian-logo2x.png" width="150px" alt="" />
+      <h1 class="u-w-300 h2 u-lt-5 u-caps u-lh-1 u-my4">Obsidian.css</h1>
+      <nav>
+        <ul class="list--reset">
+          <li class="u-d-inbl u-mx2 u-mb2"><a href="#settings">Settings</a></li>
+          <li class="u-d-inbl u-mx2 u-mb2"><a href="#elements">Elements</a></li>
+          <li class="u-d-inbl u-mx2 u-mb2"><a href="#objects">Objects</a></li>
+          <li class="u-d-inbl u-mx2 u-mb2"><a href="#components">Components</a></li>
+          <li class="u-d-inbl u-mx2 u-mb2"><a href="#utilities">Utilities</a></li>
+        </ul>
+      </nav>
     </header>
-    {{> example name="Flex" partialName="flex" moduleGroup="Object"}}
-    {{> example name="Headlines" partialName="headlines" moduleGroup="Element"}}
-    {{> example name="Forms" partialName="forms" moduleGroup="Object"}}
-
+    {{!-- {{> all-settings }} --}}
+    {{!-- {{> all-elements }} --}}
+    {{> all-objects }}
+    {{!-- {{> all-components }} --}}
+    {{!-- {{> all-utilities }} --}}
     <footer class="u-py6 u-al-center">
       <span>&copy; 2016 Charles Peters</span>
     </footer>
