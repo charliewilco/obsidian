@@ -1,5 +1,11 @@
 /*----------Float Utilities----------*/
 
+.u-cf:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
 .u-fl-left  { float: left; }
 .u-fl-right { float: right; }
 .u-fl-none  { float: none; }
