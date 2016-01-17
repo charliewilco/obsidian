@@ -39,7 +39,7 @@ gulp.task('styles', ()=> {
   return gulp.src('./*.css')
     .pipe(postcss(mainProcessors))
     .pipe(rename('bundle.css'))
-    .pipe(gulp.dest('./dest/'))
+    .pipe(gulp.dest('./build/'))
     .pipe(size({ gzip: true, pretty: true }))
     .pipe(bs.stream());
 });
@@ -52,7 +52,7 @@ gulp.task('lint', ()=> {
 gulp.task('connect', ()=> {
   bs.init({
     server: {
-      baseDir: './dest'
+      baseDir: './build'
     }
   });
 });
@@ -73,7 +73,7 @@ gulp.task('handlebars', ['logo'], ()=> {
   return gulp.src('./test/index.hbs')
     .pipe(handlebars(config, options))
     .pipe(rename('index.html'))
-    .pipe(gulp.dest('./dest/'))
+    .pipe(gulp.dest('./build/'))
     .pipe(bs.stream());
 });
 
