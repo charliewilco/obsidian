@@ -1,29 +1,5 @@
 /*----------Flex Object----------*/
-/*
- * TODO: BEM Lint
- * TODO: Consolidate Flex Container
-*/
 
-/* Flex Container */
-
-.o-flex { display: flex; }
-.o-flex__wrap { flex-wrap: wrap; }
-
-/* Directions for Flex Container */
-
-.o-flex__dir-row { flex-direction: row; }
-.o-flex__dir-col { flex-direction: column; }
-
-/* Centering Flex Objects */
-
-.o-flex__space        { justify-content: space-between; }
-.o-flex__center-sa    { justify-content: space-around; }
-.o-flex__center-items { justify-content: center; }
-.o-flex__center-h     { align-items: center; }
-
-
-.o-flex__center-v {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+@import '_obsidian.flex-container';
+@import '_obsidian.flex-modifiers';
+@import '_obsidian.flex-child';

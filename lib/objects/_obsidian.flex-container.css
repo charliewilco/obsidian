@@ -1,0 +1,8 @@
+/*----------Flex Object Container----------*/
+
+.o-flex { display: flex; }
+.o-flex--wrap { flex-wrap: wrap; }
+
+/* Direction */
+.o-flex--dirRow { flex-direction: row; }
+.o-flex--dirCol { flex-direction: column; }
