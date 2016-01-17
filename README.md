@@ -4,7 +4,7 @@
 
 Obsidian.css is a modular CSS library that focuses on code common to most projects.
 
-This project works under the belief that when abstracted most CSS is shockingly similar across projects.
+This project works under the belief that when abstracted most CSS is shockingly similar across projects. More than likely you'll need a type scale, a grid system, spacing utilities, media blocks, sensible default styling for elements (forms, tables, buttons). This project is a collection of the CSS patterns that have stuck with me over the last two years and grown with me.
 
 Styles are written in an adapted BEM naming convention and organized in an [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4)-like methodology. It uses [cssnext](https://github.com/MoOx/postcss-cssnext) to compile variables, custom selectors and custom media queries.
 
@@ -31,6 +31,7 @@ Recommended you use [PostCSS](https://github.com/postcss/postcss) and [postcss-i
 First off, you're awesome for wanting to contribute. Second, please take a second to go over a few things to make this process simpler for everyone. Third, you're awesome.
 
 ### Issues
+
 **Reduced test cases are required**. All bug reports and problem issues require a reduced test case. See [CSS Tricks - Reduced Test Cases](http://css-tricks.com/reduced-test-cases/) on why they _"are the absolute, ... number one way to troubleshoot bugs."_ Reduced test cases help you identify the issue at hand and understand your own code. On our side, they greatly reduce the amount of time spent resolving the issue.
 
 - A reduced test case is an isolated example that demonstrates the bug or issue.
@@ -39,11 +40,13 @@ First off, you're awesome for wanting to contribute. Second, please take a secon
 - A [JSBin](http://jsbin.com/) or [CodePen](http://codepen.io) is preferred so we can help you fix an error.
 
 ### Pull Requests
+
 - [Fork](https://github.com/charlespeters/obsidian#fork-destination-box) this repo.
 - Push to your fork and submit a pull request.
 - Please provide a short explanation of why you made the changes you made.
 
 ## License
+
 MIT
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
