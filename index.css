@@ -1,45 +1,45 @@
 /* Settings */
 
-@import 'lib/settings/_obsidian.colors';
-@import 'lib/settings/_obsidian.settings';
-@import 'lib/settings/_obsidian.mq';
+@import 'lib/settings/obsidian.colors';
+@import 'lib/settings/obsidian.settings';
+@import 'lib/settings/obsidian.mq';
 
 /* Generic */
 
-@import 'lib/generic/_obsidian.reset';
+@import 'lib/generic/obsidian.reset';
 
 /* Elements */
 
-@import 'lib/elements/_obsidian.headlines';
-@import 'lib/elements/_obsidian.tables';
-@import 'lib/elements/_obsidian.forms';
-@import 'lib/elements/_obsidian.lists';
-@import 'lib/elements/_obsidian.links';
-@import 'lib/elements/_obsidian.images';
+@import 'lib/elements/obsidian.headlines';
+@import 'lib/elements/obsidian.tables';
+@import 'lib/elements/obsidian.forms';
+@import 'lib/elements/obsidian.lists';
+@import 'lib/elements/obsidian.links';
+@import 'lib/elements/obsidian.images';
 
 /* Objects */
 
-@import 'lib/objects/_obsidian.icons';
-@import 'lib/objects/_obsidian.containers';
-@import 'lib/objects/_obsidian.grid';
-@import 'lib/objects/_obsidian.intrinsic';
-@import 'lib/objects/_obsidian.flex';
-@import 'lib/objects/_obsidian.btns';
-@import 'lib/objects/_obsidian.media';
-@import 'lib/objects/_obsidian.forms-ui';
+@import 'lib/objects/obsidian.icons';
+@import 'lib/objects/obsidian.containers';
+@import 'lib/objects/obsidian.grid';
+@import 'lib/objects/obsidian.intrinsic';
+@import 'lib/objects/obsidian.flex';
+@import 'lib/objects/obsidian.btns';
+@import 'lib/objects/obsidian.media';
+@import 'lib/objects/obsidian.forms-ui';
 
 /* Utilities */
 
-@import 'lib/utilities/_obsidian.corners';
-@import 'lib/utilities/_obsidian.color-values';
-@import 'lib/utilities/_obsidian.backgrounds';
-@import 'lib/utilities/_obsidian.object-fit';
-@import 'lib/utilities/_obsidian.align';
-@import 'lib/utilities/_obsidian.floats';
-@import 'lib/utilities/_obsidian.display';
-@import 'lib/utilities/_obsidian.position';
-@import 'lib/utilities/_obsidian.zindex';
-@import 'lib/utilities/_obsidian.overflow';
-@import 'lib/utilities/_obsidian.spacing';
-@import 'lib/utilities/_obsidian.text-columns';
-@import 'lib/utilities/_obsidian.typography';
+@import 'lib/utilities/obsidian.corners';
+@import 'lib/utilities/obsidian.color-values';
+@import 'lib/utilities/obsidian.backgrounds';
+@import 'lib/utilities/obsidian.object-fit';
+@import 'lib/utilities/obsidian.align';
+@import 'lib/utilities/obsidian.floats';
+@import 'lib/utilities/obsidian.display';
+@import 'lib/utilities/obsidian.position';
+@import 'lib/utilities/obsidian.zindex';
+@import 'lib/utilities/obsidian.overflow';
+@import 'lib/utilities/obsidian.spacing';
+@import 'lib/utilities/obsidian.text-columns';
+@import 'lib/utilities/obsidian.typography';
