@@ -25,3 +25,16 @@
   flex-direction: column;
   justify-content: center;
 }
+
+/* Flex Children */
+
+.o-flex__child--0\/1  { flex: 0 1 var(--base-flex); }
+.o-flex__child--0\/2  { flex: 0 2 var(--base-flex); }
+.o-flex__child--0\/3  { flex: 0 3 var(--base-flex); }
+.o-flex__child--0\/4  { flex: 0 4 var(--base-flex); }
+.o-flex__child--0\/5  { flex: 0 5 var(--base-flex); }
+.o-flex__child--0\/6  { flex: 0 6 var(--base-flex); }
+.o-flex__child--0\/7  { flex: 0 7 var(--base-flex); }
+.o-flex__child--0\/8  { flex: 0 8 var(--base-flex); }
+.o-flex__child--0\/9  { flex: 0 9 var(--base-flex); }
+.o-flex__child--0\/10 { flex: 0 10 var(--base-flex); }
