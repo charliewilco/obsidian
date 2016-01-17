@@ -31,9 +31,9 @@
     "postcss-import": "^7.1.3",
     "postcss-partial-import": "^1.3.0",
     "postcss-reporter": "^1.3.0",
-    "postcss-selector-not": "^1.2.1",
+    "postcss-selector-not": "^2.0.0",
     "postcss-strip-units": "^1.1.0",
-    "stylelint": "^2.3.7"
+    "stylelint": "^3.2.3"
   },
   "dependencies": {
     "obsidian.align": "0.0.1",
@@ -45,9 +45,9 @@
     "obsidian.position": "0.0.1",
     "obsidian.reset": "^0.1.1",
     "obsidian.settings": "0.0.4",
-    "obsidian.spacing": "0.0.1",
+    "obsidian.spacing": "0.0.2",
     "obsidian.tables": "^0.1.0",
-    "obsidian.text-columns": "0.0.1",
+    "obsidian.text-columns": "0.0.2",
     "obsidian.typography": "^0.1.0",
     "obsidian.zindex": "0.0.1"
   }
