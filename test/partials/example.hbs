@@ -1,0 +1,11 @@
+<div class="o-container--lg u-px2 u-mx-auto u-my6">
+  <div class="u-cf">
+    <div class="u-fl-left">
+      <h3 class="h5 u-mb5 u-w300">{{ name }} Example</h3>
+    </div>
+    <div class="u-fl-right">
+      <h4 class="u-mb5 u-w300 u-caps">{{ moduleGroup }}</h4>
+    </div>
+  </div>
+  {{> (lookup . 'partialName') }}
+</div>
