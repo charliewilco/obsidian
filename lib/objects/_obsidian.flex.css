@@ -1,8 +1,7 @@
 /*----------Flex Object----------*/
 /*
- * TODO: BEM Lint
  * TODO: Consolidate Flex Container
-*/
+ */
 
 /* Flex Container */
 
@@ -16,11 +15,10 @@
 
 /* Centering Flex Objects */
 
-.o-flex__space        { justify-content: space-between; }
+.o-flex--space        { justify-content: space-between; }
 .o-flex--centerSA    { justify-content: space-around; }
 .o-flex--centerItems { justify-content: center; }
 .o-flex--centerH     { align-items: center; }
-
 
 .o-flex--centerV {
   display: flex;
