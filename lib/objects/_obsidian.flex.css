@@ -7,22 +7,22 @@
 /* Flex Container */
 
 .o-flex { display: flex; }
-.o-flex__wrap { flex-wrap: wrap; }
+.o-flex--wrap { flex-wrap: wrap; }
 
 /* Directions for Flex Container */
 
-.o-flex__dir-row { flex-direction: row; }
-.o-flex__dir-col { flex-direction: column; }
+.o-flex--dirRow { flex-direction: row; }
+.o-flex--dirCol { flex-direction: column; }
 
 /* Centering Flex Objects */
 
 .o-flex__space        { justify-content: space-between; }
-.o-flex__center-sa    { justify-content: space-around; }
-.o-flex__center-items { justify-content: center; }
-.o-flex__center-h     { align-items: center; }
+.o-flex--centerSA    { justify-content: space-around; }
+.o-flex--centerItems { justify-content: center; }
+.o-flex--centerH     { align-items: center; }
 
 
-.o-flex__center-v {
+.o-flex--centerV {
   display: flex;
   flex-direction: column;
   justify-content: center;
