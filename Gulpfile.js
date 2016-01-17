@@ -57,7 +57,12 @@ gulp.task('connect', ()=> {
   });
 });
 
-gulp.task('handlebars', ()=> {
+gulp.task('logo', () => {
+  return gulp.src('test/images/*.png')
+    .pipe(gulp.dest('./dest/'));
+});
+
+gulp.task('handlebars', ['logo'], ()=> {
   const options = {
     ignorePartials: true,
     batch: ['./test/partials']
@@ -71,6 +76,8 @@ gulp.task('handlebars', ()=> {
     .pipe(gulp.dest('./dest/'))
     .pipe(bs.stream());
 });
+
+
 
 gulp.task('watch', ()=> {
   gulp.watch(['./*.css', './lib/**/*.css'], ['styles', 'lint']);
