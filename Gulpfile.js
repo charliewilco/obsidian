@@ -77,8 +77,6 @@ gulp.task('handlebars', ['logo'], ()=> {
     .pipe(bs.stream());
 });
 
-
-
 gulp.task('watch', ()=> {
   gulp.watch(['./*.css', './lib/**/*.css'], ['styles', 'lint']);
   gulp.watch(['./test/partials/*', './test/index.hbs'], ['handlebars']);
