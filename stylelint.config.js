@@ -1,5 +1,5 @@
 module.exports = {
-  rules: {
+  'rules': {
     'block-closing-brace-newline-after': [2, 'always'],
     'block-closing-brace-newline-before': [2, 'always-multi-line'],
     'block-closing-brace-space-before': [2, 'always-single-line'],
@@ -16,9 +16,9 @@ module.exports = {
     'declaration-colon-space-before': [2, 'never'],
     'function-calc-no-unspaced-operator': 2,
     'function-comma-space-before': [2, 'never'],
-    'function-space-after': [2, 'always'],
+    'function-comma-space-after': [2, 'always'],
     'function-url-quotes': [2, 'single'],
-    'indentation': [2, 2],
+    'indentation': 2,
     'media-feature-colon-space-after': [2, 'always'],
     'media-feature-colon-space-before': [2, 'never'],
     'no-missing-eof-newline': 2,
