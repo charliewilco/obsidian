@@ -1,0 +1,15 @@
+/*----------Obsidian Default Theme----------*/
+
+:root {
+  /* Colors */
+  --color1: var(--blue);
+  --color2: var(--red);
+  --color3: var(--yellow);
+  --color4: var(--bluegreen);
+  --color5: var(--litegray);
+
+  /* Font Choices */
+  --headlines: var(--ff-sans-serif);
+  --default: var(--ff-sans-serif);
+  --body-text: var(--ff-serif);
+}

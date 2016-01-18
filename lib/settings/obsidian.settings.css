@@ -13,7 +13,7 @@
   --spacing-4: calc(var(--base-spacing) * 2);
   --spacing-5: calc(var(--base-spacing) * 2.4);
   --spacing-6: calc(var(--base-spacing) * 4);
-  
+
   --base-flex: 18rem;
 
   /* Containers */
@@ -68,9 +68,5 @@
   --base-form-height: 45px; /* TODO: Compute this better */
 }
 
-/* Custom Selectors */
-
-@custom-selector :--headings h1, h2, h3, h4, h5, h6;
-@custom-selector :--headlingsClasses .h1, .h2, .h3, .h4, .h5, .h6;
-@custom-selector :--blocks article, aside, figcaption, figure, footer, header, hgroup, main, menu, nav, section;
-@custom-selector :--mediaObjects audio, canvas, progress, video;
+@import 'obsidian.theme';
+@import 'obsidian.custom-selectors';
