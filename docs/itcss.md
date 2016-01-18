@@ -4,18 +4,16 @@
 
 ## Differences in Obsidian
 
-Normally in ITCSS, you could have a tools
-- No real tools
-- Objects have minimal visual styling
+Normally in ITCSS, you could have a tools like Sass functions, most of the tools we'd need are coming in CSS and transpiled by cssnext.
+
+Objects have minimal visual styling in Obsidian. This is a set between the reset styling and the component level styling because it's beyond an element.
 
 ## Settings
 
 All global settings:
 
-- Colors
-- Theme
-- Spacing values
-- Font stacks
+- Default Variables
+- Colors, Theme, Media Queries, Spacing Values, Font Stacks, Custom Selectors
 
 ## Generic
 
