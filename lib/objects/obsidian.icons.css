@@ -1,7 +1,26 @@
 /*---------Icon Object----------*/
+/*
+ * Designed with justafewicons.co in mind
+ */
+:root {
+  --icon-w-sm: calc(var(--icon-w) * .625);
+  --icon-w-lg: calc(var(--icon-w) * 1.5);
+  --icon-h-sm: calc(var(--icon-h) * .625);
+  --icon-h-lg: calc(var(--icon-h) * 1.5);
+}
 
 .o-icon {
   width: var(--icon-w);
   height: var(--icon-h);
   fill: currentColor;
+}
+
+.o-icon--sm {
+  width: var(--icon-w-sm);
+  height: var(--icon-h-sm);
+}
+
+.o-icon--lg {
+  width: var(--icon-w-lg);
+  height: var(--icon-h-lg);
 }
