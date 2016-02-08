@@ -3,8 +3,8 @@
  * All default settings & computations
  */
 
- @import 'obsidian.theme';
- @import 'obsidian.custom-selectors';
+@import 'obsidian.theme';
+@import 'obsidian.custom-selectors';
 
 :root {
   /* Spacing */
