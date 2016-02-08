@@ -12,7 +12,7 @@ const nano         = require('cssnano');
 const bs           = require('browser-sync').create();
 const paths        = require('../paths');
 
-const mainProcessors = [
+const processors = [
   atImport,
   autoprefixer({ browsers: ['last 2 version'] }),
   not,
@@ -24,7 +24,7 @@ const mainProcessors = [
 
 module.exports = () => {
   return gulp.src(paths.cssSrc)
-    .pipe(postcss(mainProcessors))
+  .pipe(postcss(processors))
     .pipe(rename('bundle.css'))
     .pipe(gulp.dest(paths.build))
     .pipe(size({ gzip: true, pretty: true }))
