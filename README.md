@@ -26,6 +26,41 @@ npm install obsidian.module-name --save
 
 Recommended you use [PostCSS](https://github.com/postcss/postcss) and [postcss-import](https://github.com/postcss/postcss-import).
 
+Example using Gulp.js:
+
+```js
+const gulp = require('gulp');
+const postcss = require('gulp-postcss');
+const atImport = require('postcss-import');
+const cssnext  = require('postcss-cssnext');
+
+const processors = [
+  atImport,
+  cssnext
+];
+
+gulp.task('styles', ()=> {
+  return gulp.src('path/to/stylesheet')
+    .pipe(postcss(processors))
+    // Probably other tasks
+    .pipe(gulp.dest('path/to/destination'));
+})
+
+```
+then import into your CSS and modify some variables:
+
+```css
+
+@import 'obsidian';
+
+:root {
+  --headlines: 'Proxima Nova Condensed', Lucida Grande, sans-serif;
+  --body-text: 'Meta Serif Pro', Charter, serif;
+}
+```
+
+And things should compile the way you'd expect.
+
 ## Contributing
 
 First off, you're awesome for wanting to contribute. Second, please take a second to go over a few things to make this process simpler for everyone. Third, you're awesome.
