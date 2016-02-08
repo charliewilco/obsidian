@@ -24,7 +24,7 @@
     "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-compile-handlebars": "^0.6.1",
-    "gulp-postcss": "^6.0.1",
+    "gulp-postcss": "^6.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-size": "^2.0.0",
     "postcss-bem-linter": "^2.3.0",
