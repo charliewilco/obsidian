@@ -1,10 +1,11 @@
 const gulp = require('gulp');
-const del  = require('del');
+const del = require('del');
 const paths = require('./paths');
 
 gulp.task('clean', () => {
   return del(paths.build);
 });
+
 gulp.task('logo', () => {
   return gulp.src(paths.logo)
     .pipe(gulp.dest(paths.build));
