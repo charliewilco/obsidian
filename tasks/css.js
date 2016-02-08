@@ -24,7 +24,7 @@ const processors = [
 
 module.exports = () => {
   return gulp.src(paths.cssSrc)
-  .pipe(postcss(processors))
+    .pipe(postcss(processors))
     .pipe(rename('bundle.css'))
     .pipe(gulp.dest(paths.build))
     .pipe(size({ gzip: true, pretty: true }))
