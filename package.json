@@ -34,7 +34,7 @@
     "postcss-reporter": "^1.3.0",
     "postcss-selector-not": "^2.0.0",
     "postcss-strip-units": "^1.1.0",
-    "stylelint": "^4.0.0"
+    "stylelint": "^4.1.0"
   },
   "dependencies": {
     "obsidian.align": "0.0.1",
