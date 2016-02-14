@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/obsidiancss/obsidian#readme",
   "devDependencies": {
-    "autoprefixer": "^6.3.1",
+    "autoprefixer": "^6.3.3",
     "browser-sync": "^2.11.1",
     "cssnano": "^3.5.2",
     "del": "^2.2.0",
