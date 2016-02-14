@@ -22,7 +22,7 @@
     "browser-sync": "^2.11.1",
     "cssnano": "^3.5.2",
     "del": "^2.2.0",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-postcss": "^6.1.0",
     "gulp-rename": "^1.2.2",
