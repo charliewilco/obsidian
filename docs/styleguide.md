@@ -12,13 +12,26 @@ Styles should be open for extension, but closed for modification. Avoid styles t
 - Allow Inheritance
 - Aim to be Responsive by Default
 
-## Variables & Computation
+
+## Authorship
+### Variables & Computation
 
 Variables in CSS4 are the same in almost any other language, they store a value. They’re great for arranging the common font families, colors, spacing you’ll use and want to amend quickly across your project. All global variables should get defined and collected in their own partial. Computation via `calc()` should ideally be moved into a variable.
 
-## Important
+### Important
 
 Using the `!important` flag on a declaration isn't a great idea. It should always be accompanied by a comment explaining it's need. Utilities are the only reasonable home for an `!important` flag.
+
+
+### Declaration Order
+
+1. Positioning
+2. Box model
+3. Typographic
+4. Visual
+5. Misc
+
+References: [_Code Guide_](http://codeguide.co/#css-declaration-order) from Mark Otto & [Idiomatic.css](https://github.com/necolas/idiomatic-css#declaration-order) from Nicolas Gallagher
 
 ## Mortal Sins
 
@@ -32,7 +45,7 @@ Using the `!important` flag on a declaration isn't a great idea. It should alway
 
 ## Linting
 
-Obsidian is using `Stylelint` as it's linter. It lints for very specific formatting, a few highlights:
+Obsidian is using [Stylelint](http://stylelint.io/) as it's linter. It lints for very specific formatting, a few highlights:
 
 - Prefer Single Quotes
 - Space After Colon
