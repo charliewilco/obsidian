@@ -3,8 +3,8 @@
  * All default settings & computations
  */
 
- @import 'obsidian.theme';
- @import 'obsidian.custom-selectors';
+@import 'obsidian.theme';
+@import 'obsidian.custom-selectors';
 
 :root {
   /* Spacing */
@@ -60,12 +60,14 @@
 
   /* Form Defaults */
   --base-border: 2px;
-  --base-form-color: var(--color1);
-  --base-form-offsetColor: var(--color5);
   --base-form-radius: .25rem;
-  --base-form-innerSpacing: var(--spacing-2) var(--base-spacing);
-  --base-form-border: var(--base-border) solid var(--base-form-color);
   --base-form-width: 100%;
   --base-form-mxw: 25rem;
   --base-form-height: 45px; /* TODO: Compute this better */
+
+  /* Form UI Defaults */
+  --base-form-color: var(--color1);
+  --base-form-offsetColor: var(--color5);
+  --base-form-innerSpacing: calc(var(--base-spacing) / 2) var(--base-spacing);
+  --base-form-border: var(--base-border) solid var(--base-form-color);
 }

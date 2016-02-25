@@ -1,4 +1,4 @@
-module.exports = {
+const paths = {
   test: './test/',
   testSrc: './test/index.hbs',
   logo: 'test/images/*.png',
@@ -7,3 +7,5 @@ module.exports = {
   cssLib: './lib/**/*.css',
   cssSrc: 'index.css',
 };
+
+module.exports = paths;
