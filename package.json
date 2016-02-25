@@ -1,13 +1,13 @@
 {
-  "name": "@charlespeters/obsidian",
-  "version": "0.0.1",
+  "name": "obsidian.css",
+  "version": "0.0.9",
   "description": "Modular CSS",
   "main": "index.css",
   "scripts": {
     "start": "gulp",
     "bundle": "gulp styles"
   },
-  "author": "",
+  "author": "charles peters <charlespeters42@gmail.com>",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -35,21 +35,5 @@
     "postcss-selector-not": "^2.0.0",
     "postcss-strip-units": "^1.1.0",
     "stylelint": "^3.2.3"
-  },
-  "dependencies": {
-    "obsidian.align": "0.0.1",
-    "obsidian.colors": "0.0.2",
-    "obsidian.corners": "0.0.1",
-    "obsidian.display": "0.0.1",
-    "obsidian.mq": "0.0.1",
-    "obsidian.overflow": "0.0.1",
-    "obsidian.position": "0.0.1",
-    "obsidian.reset": "^0.1.1",
-    "obsidian.settings": "0.0.4",
-    "obsidian.spacing": "0.0.2",
-    "obsidian.tables": "^0.1.0",
-    "obsidian.text-columns": "0.0.2",
-    "obsidian.typography": "^0.1.0",
-    "obsidian.zindex": "0.0.1"
   }
 }
