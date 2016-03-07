@@ -1,4 +1,13 @@
 /*---------Spacing Utilities----------*/
 
-@import 'obsidian.spacing-margin';
-@import 'obsidian.spacing-padding';
+:root {
+  --spacing-1: calc(var(--base-spacing) / 4);
+  --spacing-2: calc(var(--base-spacing) / 2);
+  --spacing-3: calc(var(--base-spacing));
+  --spacing-4: calc(var(--base-spacing) * 2);
+  --spacing-5: calc(var(--base-spacing) * 2.4);
+  --spacing-6: calc(var(--base-spacing) * 4);
+}
+
+@import './obsidian.spacing-margin.css';
+@import './obsidian.spacing-padding.css';

@@ -1,5 +1,16 @@
 /*----------Form Reset & Form Default Elements----------*/
 
+@import 'obsidian.defaults';
+
+/* Form Defaults */
+:root {
+  --base-border: 2px;
+  --base-form-radius: .25rem;
+  --base-form-width: 100%;
+  --base-form-mxw: 25rem;
+  --base-form-height: 45px; /* TODO: Compute this better */
+}
+
 /* All Defaults */
 
 button,
@@ -59,7 +70,7 @@ input[type='submit'] {
 /* Other */
 
 fieldset {
-  border: 1px solid var(--base-form-offsetColor);
+  border: 1px solid;
   margin: 0;
   padding: var(--spacing-1);
 }

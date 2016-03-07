@@ -3,6 +3,12 @@
  * Needs `.u-mx-auto` to center container
  */
 
+:root {
+  --container-lg: calc(var(--base-container) * .75);
+  --container-md: calc(var(--base-container) * .625);
+  --container-sm: calc(var(--base-container) * .375);
+}
+
 [class*='container'] { width: 100%; }
 
 .o-container--full { max-width: var(--base-container); }

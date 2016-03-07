@@ -1,5 +1,14 @@
 /*----------Corner / Border Radius Utilities----------*/
 
+/* Border Radii */
+:root {
+  --radius-1: calc(var(--base-spacing) * .25);
+  --radius-2: calc(var(--base-spacing) * .5);
+  --radius-3: calc(var(--base-spacing) * 1);
+  --radius-4: calc(var(--base-spacing) * 1.5);
+  --radius-5: calc(var(--base-spacing) * 2);
+}
+
 .u-br-1 { border-radius: var(--radius-1); }
 .u-br-2 { border-radius: var(--radius-2); }
 .u-br-3 { border-radius: var(--radius-3); }
