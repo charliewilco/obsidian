@@ -43,11 +43,11 @@ gulp.task('styles', ()=> {
 then import into your CSS and modify some variables:
 
 ```css
-@import 'obsidian.css/settings';
-@import 'obsidian.css/generic';
-@import 'obsidian.css/elements';
+@import 'obsidian.css/lib/settings';
+@import 'obsidian.css/lib/generic';
+@import 'obsidian.css/lib/elements';
 
-@import 'obsidian.css/objects/obsidian.grid';
+@import 'obsidian.css/lib/objects/obsidian.grid';
 ```
 
 ```css
