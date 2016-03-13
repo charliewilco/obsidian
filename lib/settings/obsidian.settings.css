@@ -7,13 +7,14 @@
 @import 'obsidian.custom-selectors';
 
 :root {
-  /* Spacing */
+  /* Spacing & Container */
   --base-spacing: 1rem;
-
   --base-flex: 18rem;
-
-  /* Containers */
   --base-container: 75rem;
+
+  /* Duration */
+  --base-dur: 375ms;
+  --base-timing-function: linear;
 
   /* Typography */
   --ff-init-size: 100%;
@@ -22,11 +23,4 @@
   --ff-mono: 'Input Mono', 'Source Code Pro', 'Menlo', monospace;
   --ff-w: 300;
   --lh: 1.6;
-
-  /* Duration */
-  --base-dur: 375ms;
-  --base-timing-function: linear;
-
-  /* Color Defaults */
-  --link: var(--color1);
 }
