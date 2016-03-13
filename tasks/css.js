@@ -15,7 +15,11 @@ const processors = [
   atImport,
   autoprefixer({ browsers: ['last 2 version'] }),
   not,
-  cssnext,
+  cssnext({
+    features: {
+      'rem': false
+    }
+  }),
   partials
 ];
 
