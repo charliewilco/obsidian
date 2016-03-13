@@ -1,7 +1,5 @@
 /*----------Form Reset & Form Default Elements----------*/
 
-@import 'obsidian.defaults';
-
 /* Form Defaults */
 :root {
   --base-border: 2px;
@@ -24,7 +22,7 @@ textarea {
   line-height: inherit;
   font-family: inherit;
   width: var(--base-form-width);
-  font-size: var(--base-spacing);
+  font-size: 100%;
   margin: 0;
 }
 
@@ -54,7 +52,6 @@ textarea {
 select { appearance: menulist; }
 optgroup { font-weight: bold; }
 
-
 /* Buttons & Submissions */
 
 button { overflow: visible; }
@@ -72,7 +69,7 @@ input[type='submit'] {
 fieldset {
   border: 1px solid;
   margin: 0;
-  padding: var(--spacing-1);
+  padding: calc(var(--base-space) / 4);
 }
 
 legend {
