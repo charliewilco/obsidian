@@ -1,8 +1,8 @@
 {
   "name": "obsidian.css",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Modular CSS",
-  "main": "index.css",
+  "main": "lib/index.css",
   "scripts": {
     "start": "gulp",
     "bundle": "gulp styles"
@@ -20,7 +20,6 @@
   "devDependencies": {
     "autoprefixer": "^6.3.1",
     "browser-sync": "^2.11.1",
-    "cssnano": "^3.4.0",
     "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-compile-handlebars": "^0.6.1",
