@@ -5,7 +5,7 @@ const paths = {
   partials: './test/partials/',
   build: './build',
   cssLib: './lib/**/*.css',
-  cssSrc: 'index.css',
+  cssSrc: './lib/index.css',
 };
 
 module.exports = paths;

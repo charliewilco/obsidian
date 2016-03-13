@@ -2,8 +2,8 @@
 
 :root {
   /* Form UI Defaults */
-  --base-form-color: var(--color1);
-  --base-form-offsetColor: var(--color5);
+  --base-form-color: var(--color-1);
+  --base-form-offsetColor: var(--color-5);
   --base-form-innerSpacing: calc(var(--base-spacing) / 2) var(--base-spacing);
   --base-form-border: var(--base-border) solid var(--base-form-color);
 }
