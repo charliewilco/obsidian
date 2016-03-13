@@ -20,16 +20,13 @@ const processors = [
       'rem': false
     }
   }),
-  partials
 ];
 
 module.exports = () => {
   return gulp.src(paths.cssSrc)
     .pipe(postcss(processors))
     .pipe(rename('bundle.css'))
-    .pipe(nano({
-      mergeRules: false,
-    }))
+    .pipe(nano({ mergeRules: false }))
     .pipe(gulp.dest(paths.build))
     .pipe(size({ gzip: true, pretty: true }))
     .pipe(bs.stream());
