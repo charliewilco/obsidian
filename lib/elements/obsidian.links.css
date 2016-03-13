@@ -1,7 +1,7 @@
 /*---------Link Defaults / Anchor Element----------*/
 
 :root {
-  --link: var(--color1);
+  --link: var(--color-1);
 }
 
 a {

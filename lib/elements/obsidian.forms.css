@@ -69,7 +69,7 @@ input[type='submit'] {
 fieldset {
   border: 1px solid;
   margin: 0;
-  padding: calc(var(--base-space) / 4);
+  padding: calc(var(--base-spacing) / 4);
 }
 
 legend {
