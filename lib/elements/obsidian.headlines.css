@@ -14,6 +14,14 @@
 
 /* Sizes */
 :root {
+  /* Headline Sizes */
+  --headline-1: 3.125rem;
+  --headline-2: 2.5rem;
+  --headline-3: 2.125rem;
+  --headline-4: 1.75rem;
+  --headline-5: 1.5rem;
+  --headline-6: 1.25rem;
+
   --lh-1: 1.125;
   --lh-2: 1.25;
   --lh-3: 1.5;
@@ -56,7 +64,7 @@ h6, .h6 { font-size: var(--headline-6-sm); }
   line-height: var(--lh-3);
 }
 
-:--headlingsClasses {
+:--headingsClasses {
   margin: 0;
   line-height: var(--lh-3);
 }

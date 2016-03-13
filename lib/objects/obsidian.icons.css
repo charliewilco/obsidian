@@ -2,7 +2,10 @@
 /*
  * Designed with justafewicons.co in mind
  */
+ 
 :root {
+  --icon-w: 3rem;
+  --icon-h: 3rem;
   --icon-w-sm: calc(var(--icon-w) * .625);
   --icon-w-lg: calc(var(--icon-w) * 1.5);
   --icon-h-sm: calc(var(--icon-h) * .625);
