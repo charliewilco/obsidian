@@ -1,12 +1,17 @@
 /*---------Link Defaults / Anchor Element----------*/
 
+:root {
+  --link: var(--color1);
+}
+
 a {
   background-color: transparent;
   text-decoration: none;
-  color: var(--blue);
+  color: var(--link);
 }
 
 a:active,
 a:hover {
+  color: color(var(--link) lightness(+15%));
   outline: 0;
 }
