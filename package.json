@@ -1,14 +1,14 @@
 {
-  "name": "@charlespeters/obsidian",
-  "version": "0.0.1",
+  "name": "obsidian.css",
+  "version": "1.0.0",
   "description": "Modular CSS",
-  "main": "index.css",
+  "main": "lib/index.css",
   "scripts": {
     "start": "gulp",
     "bundle": "gulp styles"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "charles peters <charlespeters42@gmail.com>",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/obsidiancss/obsidian.git"
@@ -20,7 +20,6 @@
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "browser-sync": "^2.11.1",
-    "cssnano": "^3.5.2",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-compile-handlebars": "^0.6.1",
@@ -30,27 +29,9 @@
     "postcss-bem-linter": "^2.3.3",
     "postcss-cssnext": "^2.4.0",
     "postcss-import": "^8.0.2",
-    "postcss-partial-import": "^1.3.0",
-    "postcss-reporter": "^1.3.3",
+    "postcss-reporter": "^1.3.1",
     "postcss-selector-not": "^2.0.0",
-    "postcss-strip-units": "^1.1.0",
-    "stylelint": "^4.4.0",
+    "stylelint": "^4.1.0",
     "stylelint-selector-bem-pattern": "^0.2.0"
-  },
-  "dependencies": {
-    "obsidian.align": "0.0.1",
-    "obsidian.colors": "0.0.2",
-    "obsidian.corners": "0.0.1",
-    "obsidian.display": "0.0.1",
-    "obsidian.mq": "0.0.1",
-    "obsidian.overflow": "0.0.1",
-    "obsidian.position": "0.0.1",
-    "obsidian.reset": "^0.1.1",
-    "obsidian.settings": "0.0.4",
-    "obsidian.spacing": "0.0.2",
-    "obsidian.tables": "^0.1.0",
-    "obsidian.text-columns": "0.0.2",
-    "obsidian.typography": "^0.1.0",
-    "obsidian.zindex": "0.0.1"
   }
 }

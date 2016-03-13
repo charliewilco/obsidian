@@ -1,0 +1,11 @@
+/**
+  * SETTINGS -
+  *
+  * Colors.............All Colors and Color Deviations.
+  * Defaults..........Project Wide Variables, Theme & Custom Selectors.
+  * Media Queries......Custom Media Queries Declarations.
+  */
+
+@import './settings/obsidian.colors';
+@import './settings/obsidian.defaults';
+@import './settings/obsidian.mq';

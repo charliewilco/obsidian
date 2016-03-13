@@ -1,0 +1,26 @@
+/*----------Obsidian Default Settings----------*/
+/*
+ * All default settings & computations
+ */
+
+@import 'obsidian.theme';
+@import 'obsidian.custom-selectors';
+
+:root {
+  /* Spacing & Container */
+  --base-spacing: 1rem;
+  --base-flex: 18rem;
+  --base-container: 75rem;
+
+  /* Duration */
+  --base-dur: 375ms;
+  --base-timing-function: linear;
+
+  /* Typography */
+  --ff-init-size: 100%;
+  --ff-sans-serif: -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', 'SF UI Text', 'Segoe UI', 'Fira Sans','Roboto', 'Noto Sans', 'Droid Sans', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  --ff-serif: 'Athelas', 'Hoefler Text', 'Baskerville', 'Droid Serif', 'Georgia', 'Times', serif;
+  --ff-mono: 'Input Mono', 'Source Code Pro', 'Menlo', monospace;
+  --ff-w: 300;
+  --lh: 1.6;
+}

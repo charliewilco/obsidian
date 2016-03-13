@@ -10,17 +10,10 @@ Styles are written in an adapted BEM naming convention and organized in an [ITCS
 
 ## Installation
 
-For full library:
-
 ```
-npm install obsidian --save
+npm install obsidian.css --save
 ```
 
-For individual modules (ex. `obsidian.spacing`):
-
-```
-npm install obsidian.module-name --save
-```
 
 ### Using in Build
 
@@ -50,8 +43,15 @@ gulp.task('styles', ()=> {
 then import into your CSS and modify some variables:
 
 ```css
+@import 'obsidian.css/lib/settings';
+@import 'obsidian.css/lib/generic';
+@import 'obsidian.css/lib/elements';
 
-@import 'obsidian';
+@import 'obsidian.css/lib/objects/obsidian.grid';
+```
+
+```css
+@import 'obsidian.css';
 
 :root {
   --headlines: 'Proxima Nova Condensed', Lucida Grande, sans-serif;

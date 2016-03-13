@@ -27,7 +27,7 @@ td, th { padding: 0; }
 }
 
 .table__row:not(:last-of-type) {
-  border-bottom: 1px solid color(var(--blue) blackness(+20%));
+  border-bottom: 1px solid color(var(--color-1) blackness(+20%));
 }
 
 @media (--md) {
