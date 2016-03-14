@@ -62,11 +62,13 @@ h6, .h6 { font-size: var(--headline-6-sm); }
 :--headings {
   margin: 0;
   line-height: var(--lh-3);
+  font-family: var(--headlines);
 }
 
 :--headingsClasses {
   margin: 0;
   line-height: var(--lh-3);
+  font-family: var(--headlines);
 }
 
 @media (--md) {
