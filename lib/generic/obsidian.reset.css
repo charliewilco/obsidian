@@ -19,7 +19,7 @@
 html {
   box-sizing: border-box;
   text-size-adjust: 100%;
-  font: var(--ff-w) var(--ff-init-size) / var(--lh) var(--ff-sans-serif);
+  font: var(--ff-w) var(--ff-init-size) / var(--lh) var(--default);
   -webkit-tap-highlight-color: transparent;
   color: var(--text);
 }

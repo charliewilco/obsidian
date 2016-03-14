@@ -1,0 +1,5 @@
+/*----------Body Text Default Elements----------*/
+
+p {
+  font-family: var(--body-text);
+}
