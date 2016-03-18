@@ -15,17 +15,21 @@ const processors = [
   cssnext({
     browsers: ['last 2 version'],
     features: {
-      'rem': false
-    }
+      rem: false,
+    },
   }),
 ];
 
 module.exports = () => {
   return gulp.src(paths.cssSrc)
     .pipe(postcss(processors))
+    .pipe(rename('obsidian.css'))
+    .pipe(gulp.dest(paths.dist))
     .pipe(rename('bundle.css'))
     .pipe(nano({ mergeRules: false }))
     .pipe(gulp.dest(paths.build))
+    .pipe(rename('obsidian.min.css'))
+    .pipe(gulp.dest(paths.dist))
     .pipe(size({ gzip: true, pretty: true }))
     .pipe(bs.stream());
 };
