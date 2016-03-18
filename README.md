@@ -1,6 +1,4 @@
-![Obsidian.css](http://cl.ly/2T0B352h1d1n/obsidian-header.png)
-
-# Obsidian.css
+# ![Obsidian.css](http://cl.ly/2T0B352h1d1n/obsidian-header.png)
 
 Obsidian.css is a modular CSS library that focuses on code common to most projects.
 
