@@ -22,14 +22,27 @@ const processors = [
 
 module.exports = () => {
   return gulp.src(paths.cssSrc)
+    // Raw for CDN
+    .pipe(postcss([atImport]))
+    .pipe(rename('obsidian.raw.css'))
+    .pipe(gulp.dest(paths.dist))
+
     .pipe(postcss(processors))
+
+    // Unminified in the CDN
     .pipe(rename('obsidian.css'))
     .pipe(gulp.dest(paths.dist))
-    .pipe(rename('bundle.css'))
+
     .pipe(nano({ mergeRules: false }))
+
+    // Bundled for Testing
+    .pipe(rename('bundle.css'))
+    .pipe(size({ gzip: true, pretty: true }))
     .pipe(gulp.dest(paths.build))
+
+    // Minified in the CDN
     .pipe(rename('obsidian.min.css'))
     .pipe(gulp.dest(paths.dist))
-    .pipe(size({ gzip: true, pretty: true }))
+
     .pipe(bs.stream());
 };

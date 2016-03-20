@@ -1,6 +1,6 @@
 {
   "name": "obsidian.css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Modular CSS",
   "main": "lib/index.css",
   "scripts": {
