@@ -17,6 +17,7 @@
 .u-sans   { font-family: var(--ff-sans-serif); }
 .u-mono   { font-family: var(--ff-mono); }
 .u-system { font-family: var(--ff-default); }
+
 /* Font Features Settings */
 
 .u-ffs-lnnum { font-feature-settings: 'lnum'; }
