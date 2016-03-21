@@ -6,24 +6,24 @@
   display: table;
 }
 
-.u-fl-left  { float: left; }
-.u-fl-right { float: right; }
-.u-fl-none  { float: none; }
+.u-fl { float: left; }
+.u-fr { float: right; }
+.u-fn { float: none; }
 
 @media (--sm) {
-  .u-fl-left\@sm  { float: left; }
-  .u-fl-right\@sm { float: right; }
-  .u-fl-none\@sm  { float: none; }
+  .u-fl\@sm  { float: left; }
+  .u-fr\@sm { float: right; }
+  .u-fn\@sm  { float: none; }
 }
 
 @media (--md) {
-  .u-fl-left\@md  { float: left; }
-  .u-fl-right\@md { float: right; }
-  .u-fl-none\@md  { float: none; }
+  .u-f-l\@md  { float: left; }
+  .u-f-r\@md { float: right; }
+  .u-f-n\@md  { float: none; }
 }
 
 @media (--lg) {
-  .u-fl-left\@lg  { float: left; }
-  .u-fl-right\@lg { float: right; }
-  .u-fl-none\@lg  { float: none; }
+  .u-fl\@lg  { float: left; }
+  .u-fr\@lg { float: right; }
+  .u-fn\@lg  { float: none; }
 }

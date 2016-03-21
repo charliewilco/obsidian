@@ -1,41 +1,41 @@
 /*----------Display Utilities----------*/
 
-.u-d-inbl   { display: inline-block; }
-.u-d-in     { display: inline; }
-.u-d-bl     { display: block; }
-.u-d-none   { display: none; }
-.u-d-flex   { display: flex; }
-.u-d-inflex { display: inline-flex; }
-.u-d-tablec { display: table-cell; }
+.u-inbl   { display: inline-block; }
+.u-in     { display: inline; }
+.u-bl     { display: block; }
+.u-none   { display: none; }
+.u-flex   { display: flex; }
+.u-inflex { display: inline-flex; }
+.u-table  { display: table-cell; }
 
 @media (--sm) {
-  .u-d-inbl\@sm   { display: inline-block; }
-  .u-d-in\@sm     { display: inline; }
-  .u-d-bl\@sm     { display: block; }
-  .u-d-none\@sm   { display: none; }
-  .u-d-flex\@sm   { display: flex; }
-  .u-d-inflex\@sm { display: inline-flex; }
-  .u-d-tablec\@sm { display: table-cell; }
+  .u-inbl\@sm   { display: inline-block; }
+  .u-in\@sm     { display: inline; }
+  .u-bl\@sm     { display: block; }
+  .u-none\@sm   { display: none; }
+  .u-flex\@sm   { display: flex; }
+  .u-inflex\@sm { display: inline-flex; }
+  .u-table\@sm  { display: table-cell; }
 }
 
 @media (--md) {
-  .u-d-inbl\@md   { display: inline-block; }
-  .u-d-in\@md     { display: inline; }
-  .u-d-bl\@md     { display: block; }
-  .u-d-none\@md   { display: none; }
-  .u-d-flex\@md   { display: flex; }
-  .u-d-inflex\@md { display: inline-flex; }
-  .u-d-tablec\@md { display: table-cell; }
+  .u-inbl\@md   { display: inline-block; }
+  .u-in\@md     { display: inline; }
+  .u-bl\@md     { display: block; }
+  .u-none\@md   { display: none; }
+  .u-flex\@md   { display: flex; }
+  .u-inflex\@md { display: inline-flex; }
+  .u-table\@md  { display: table-cell; }
 }
 
 @media (--lg) {
-  .u-d-inbl\@lg   { display: inline-block; }
-  .u-d-in\@lg     { display: inline; }
-  .u-d-bl\@lg     { display: block; }
-  .u-d-none\@lg   { display: none; }
-  .u-d-flex\@lg   { display: flex; }
-  .u-d-inflex\@lg { display: inline-flex; }
-  .u-d-tablec\@lg { display: table-cell; }
+  .u-inbl\@lg   { display: inline-block; }
+  .u-in\@lg     { display: inline; }
+  .u-bl\@lg     { display: block; }
+  .u-none\@lg   { display: none; }
+  .u-flex\@lg   { display: flex; }
+  .u-inflex\@lg { display: inline-flex; }
+  .u-table\@lg  { display: table-cell; }
 }
 
 .u-va-top      { vertical-align: top; }
