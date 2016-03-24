@@ -10,7 +10,7 @@
   --container-xs: calc(var(--base-container) * .375);
 }
 
-[class*='container'] { width: 100%; }
+[class*='o-container'] { width: 100%; }
 
 .o-container--full { max-width: var(--base-container); }
 .o-container--lg   { max-width: var(--container-lg); }
