@@ -33,12 +33,12 @@ module.exports = () => {
     .pipe(rename('obsidian.css'))
     .pipe(gulp.dest(paths.dist))
 
-    .pipe(nano({ mergeRules: false }))
-
     // Bundled for Testing
     .pipe(rename('bundle.css'))
     .pipe(size({ gzip: true, pretty: true }))
     .pipe(gulp.dest(paths.build))
+
+    .pipe(nano({ mergeRules: false }))
 
     // Minified in the CDN
     .pipe(rename('obsidian.min.css'))
