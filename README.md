@@ -1,6 +1,6 @@
-![Obsidian.css](http://cl.ly/2T0B352h1d1n/obsidian-header.png)
+# ![Obsidian.css](http://cl.ly/2T0B352h1d1n/obsidian-header.png)
 
-# Obsidian.css
+[![npm version](https://badge.fury.io/js/obsidian.css.svg)](https://badge.fury.io/js/obsidian.css)
 
 Obsidian.css is a modular CSS library that focuses on code common to most projects.
 
@@ -14,6 +14,11 @@ Styles are written in an adapted BEM naming convention and organized in an [ITCS
 npm install obsidian.css --save
 ```
 
+or link to the CDN
+
+```markup
+<link rel="stylesheet" href="//npmcdn.com/obsidian.css/dist/obsidian.min.css" media="screen" title="Obsidian.css" charset="utf-8">
+```
 
 ### Using in Build
 

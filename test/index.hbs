@@ -7,25 +7,25 @@
     <link rel="stylesheet" href="bundle.css">
   </head>
   <body class="u-clr-text u-bkg-offwhite">
-    <header class="u-py6 u-al-center">
+    <header class="u-py6 u-center">
       <img src="obsidian-logo2x.png" width="150px" alt="" />
-      <h1 class="u-w-300 h2 u-lt-5 u-caps u-lh-1 u-my4">Obsidian.css</h1>
+      <h1 class="u-w300 h2 u-lt-5 u-caps u-lh-1 u-my4">Obsidian.css</h1>
       <nav>
         <ul class="list--reset">
-          <li class="u-d-inbl u-mx2 u-mb2"><a href="#settings">Settings</a></li>
-          <li class="u-d-inbl u-mx2 u-mb2"><a href="#elements">Elements</a></li>
-          <li class="u-d-inbl u-mx2 u-mb2"><a href="#objects">Objects</a></li>
-          <li class="u-d-inbl u-mx2 u-mb2"><a href="#components">Components</a></li>
-          <li class="u-d-inbl u-mx2 u-mb2"><a href="#utilities">Utilities</a></li>
+          <li class="u-inbl u-mx2 u-mb2"><a href="#settings">Settings</a></li>
+          <li class="u-inbl u-mx2 u-mb2"><a href="#elements">Elements</a></li>
+          <li class="u-inbl u-mx2 u-mb2"><a href="#objects">Objects</a></li>
+          <li class="u-inbl u-mx2 u-mb2"><a href="#components">Components</a></li>
+          <li class="u-inbl u-mx2 u-mb2"><a href="#utilities">Utilities</a></li>
         </ul>
       </nav>
     </header>
-    {{!-- {{> all-settings }} --}}
-    {{!-- {{> all-elements }} --}}
+    {{> all-settings }}
+    {{> all-elements }}
     {{> all-objects }}
-    {{!-- {{> all-components }} --}}
-    {{!-- {{> all-utilities }} --}}
-    <footer class="u-py6 u-al-center">
+    {{> all-components }}
+    {{> all-utilities }}
+    <footer class="u-py6 u-center">
       <span>&copy; 2016 Charles Peters</span>
     </footer>
   </body>

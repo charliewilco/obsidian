@@ -13,6 +13,7 @@ gulp.task('logo', () => {
 
 gulp.task('styles', require('./tasks/css'));
 gulp.task('lint', require('./tasks/lint'));
+gulp.task('data', require('./tasks/data'));
 gulp.task('connect', require('./tasks/connect'));
 gulp.task('handlebars', ['logo'], require('./tasks/handlebars'));
 

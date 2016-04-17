@@ -4,14 +4,14 @@
   --link: var(--color-1);
 }
 
-a {
+:--links {
   background-color: transparent;
   text-decoration: none;
   color: var(--link);
 }
 
-a:active,
-a:hover {
+:--links:active,
+:--links:hover {
   color: color(var(--link) lightness(+15%));
   outline: 0;
 }

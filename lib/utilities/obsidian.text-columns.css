@@ -13,7 +13,7 @@
 }
 
 .u-tclm-3 {
-  columns: 3 var(--column-size-3));
+  columns: 3 var(--column-size-3);
   column-gap: calc(var(--base-spacing) * 3);
 }
 

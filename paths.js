@@ -6,6 +6,7 @@ const paths = {
   build: './build',
   cssLib: './lib/**/*.css',
   cssSrc: './lib/index.css',
+  dist: './dist/',
 };
 
 module.exports = paths;
