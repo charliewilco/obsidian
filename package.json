@@ -36,5 +36,8 @@
     "postcss-selector-not": "^2.0.0",
     "stylelint": "^5.4.0",
     "stylelint-selector-bem-pattern": "^0.2.3"
+  },
+  "dependencies": {
+    "gulp-cssnano": "^2.1.2"
   }
 }
