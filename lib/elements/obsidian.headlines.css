@@ -88,3 +88,5 @@ h6, .h6 { font-size: var(--headline-6-sm); }
   h5, .h5 { font-size: var(--headline-5-lg); }
   h6, .h6 { font-size: var(--headline-6-lg); }
 }
+
+.small { font-size: 87.5%; }
