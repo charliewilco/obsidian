@@ -2,7 +2,6 @@ const gulp         = require('gulp');
 const rename       = require('gulp-rename');
 const nano         = require('gulp-cssnano');
 const postcss      = require('gulp-postcss');
-const size         = require('gulp-size');
 const cssnext      = require('postcss-cssnext');
 const atImport     = require('postcss-import');
 const not          = require('postcss-selector-not');
@@ -35,7 +34,6 @@ module.exports = () => {
 
     // Bundled for Testing
     .pipe(rename('bundle.css'))
-    .pipe(size({ gzip: true, pretty: true }))
     .pipe(gulp.dest(paths.build))
 
     .pipe(nano({ mergeRules: false }))
