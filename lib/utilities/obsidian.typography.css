@@ -40,13 +40,14 @@
 .u-w100 { font-weight: 100; }
 .u-w300 { font-weight: 300; }
 .u-w400 { font-weight: 400; }
+.u-w500 { font-weight: 500; }
 .u-w600 { font-weight: 600; }
 .u-w700 { font-weight: 700; }
 
 
 /* Tracking */
 
-.u-lt-1 { letter-spacing: 1px; }
+.u-lt-0 { letter-spacing: 1px; }
 .u-lt-2 { letter-spacing: 2px; }
 .u-lt-3 { letter-spacing: 3px; }
 .u-lt-4 { letter-spacing: 4px; }
