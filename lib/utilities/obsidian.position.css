@@ -3,7 +3,7 @@
 @import './obsidian.zindex';
 @import './obsidian.overflow';
 
-.u-pos-abs  { position: absolute; }
-.u-pos-fix  { position: fixed; }
-.u-pos-stat { position: static; }
-.u-pos-rel  { position: relative; }
+.u-absolute { position: absolute; }
+.u-fixed    { position: fixed; }
+.u-static   { position: static; }
+.u-relative { position: relative; }
