@@ -128,12 +128,15 @@
 
 /* Spacing Auto */
 
-.u-mx-auto {
+.u-mla { margin-left: auto; }
+.u-mra { margin-right: auto; }
+
+.u-mxa {
   margin-right: auto;
   margin-left: auto;
 }
 
-.u-my-auto {
+.u-mya {
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -269,12 +272,15 @@
 
   /* Spacing Auto */
 
-  .u-mx-auto\@sm {
+  .u-mla\@sm { margin-left: auto; }
+  .u-mra\@sm { margin-right: auto; }
+
+  .u-mxa\@sm {
     margin-right: auto;
     margin-left: auto;
   }
 
-  .u-my-auto\@sm {
+  .u-mya\@sm {
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -410,12 +416,15 @@
 
   /* Spacing Auto */
 
-  .u-mx-auto\@md {
+  .u-mla\@md { margin-left: auto; }
+  .u-mra\@md { margin-right: auto; }
+
+  .u-mxa\@md {
     margin-right: auto;
     margin-left: auto;
   }
 
-  .u-my-auto\@md {
+  .u-mya\@md {
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -551,12 +560,15 @@
 
   /* Spacing Auto */
 
-  .u-mx-auto\@lg {
+  .u-mla\@lg { margin-left: auto; }
+  .u-mra\@lg { margin-right: auto; }
+
+  .u-mxa\@lg {
     margin-right: auto;
     margin-left: auto;
   }
 
-  .u-my-auto\@lg {
+  .u-mya\@lg {
     margin-top: auto;
     margin-bottom: auto;
   }
