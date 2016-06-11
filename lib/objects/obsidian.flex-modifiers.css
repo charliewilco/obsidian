@@ -3,10 +3,11 @@
 
 /* Centering Flex Objects */
 
-.o-flex--space        { justify-content: space-between; }
+.o-flex--space       { justify-content: space-between; }
 .o-flex--centerSA    { justify-content: space-around; }
 .o-flex--centerItems { justify-content: center; }
-.o-flex--centerH     { align-items: center; }
+
+.o-flex--centerH { align-items: center; }
 
 .o-flex--centerV {
   display: flex;
@@ -18,4 +19,4 @@
 /* Ordering Flex Objects */
 
 .o-flex__order--first { order: 1; }
-.o-flex__order--last { order: unset; }
+.o-flex__order--last  { order: unset; }
