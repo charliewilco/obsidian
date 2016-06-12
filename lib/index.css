@@ -18,4 +18,9 @@
 @import './generic';
 @import './elements';
 @import './objects';
+
+@import './components/obsidian.radio-group';
+@import './components/obsidian.card-ui';
+@import './components/obsidian.pagination';
+
 @import './utilities';
