@@ -36,11 +36,14 @@
 /* Weights */
 
 .u-w100 { font-weight: 100; }
+.u-w200 { font-weight: 200; }
 .u-w300 { font-weight: 300; }
 .u-w400 { font-weight: 400; }
 .u-w500 { font-weight: 500; }
 .u-w600 { font-weight: 600; }
 .u-w700 { font-weight: 700; }
+.u-w800 { font-weight: 800; }
+.u-w900 { font-weight: 900; }
 
 
 /* Tracking */
