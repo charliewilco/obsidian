@@ -7,16 +7,19 @@
 .o-flex--centerSA    { justify-content: space-around; }
 .o-flex--centerItems { justify-content: center; }
 
-.o-flex--centerH { align-items: center; }
+.o-flex--center--h { align-items: center; }
 
-.o-flex--centerV {
+.o-flex--center--v {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.o-flex--justify--spaceb { justify-content: space-between; }
+.o-flex--justify--spacea { justify-content: space-around; }
+.o-flex--justify--center { justify-content: center; }
 
 /* Ordering Flex Objects */
 
-.o-flex__order--first { order: 1; }
-.o-flex__order--last  { order: unset; }
+.o-flex--order--first { order: 1; }
+.o-flex--order--last  { order: unset; }
