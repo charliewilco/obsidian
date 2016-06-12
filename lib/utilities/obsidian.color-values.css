@@ -1,35 +1,17 @@
 /*----------Color Value Utilities----------*/
 
-.u-c-offwhite  { color: var(--offwhite); }
-.u-c-black     { color: var(--black); }
-.u-c-red       { color: var(--red); }
-.u-c-blue      { color: var(--blue); }
-.u-c-bluegreen { color: var(--bluegreen); }
-.u-c-yellow    { color: var(--yellow); }
-.u-c-ygreen    { color: var(--ygreen); }
-.u-c-green     { color: var(--green); }
-.u-c-orange    { color: var(--orange); }
-.u-c-purple    { color: var(--purple); }
-.u-c-indigo    { color: var(--indigo); }
-.u-c-fuchsia   { color: var(--fuchsia); }
-.u-c-gray      { color: var(--gray); }
-.u-c-text      { color: var(--text); }
-.u-c-ltgray    { color: var(--litegray); }
-
-/* Hover States */
-
-.u-ch-offwhite:hover  { color: var(--offwhite); }
-.u-ch-black:hover     { color: var(--black); }
-.u-ch-red:hover       { color: var(--red); }
-.u-ch-blue:hover      { color: var(--blue); }
-.u-ch-bluegreen:hover { color: var(--bluegreen); }
-.u-ch-yellow:hover    { color: var(--yellow); }
-.u-ch-ygreen:hover    { color: var(--ygreen); }
-.u-ch-green:hover     { color: var(--green); }
-.u-ch-orange:hover    { color: var(--orange); }
-.u-ch-purple:hover    { color: var(--purple); }
-.u-ch-indigo:hover    { color: var(--indigo); }
-.u-ch-fuchsia:hover   { color: var(--fuchsia); }
-.u-ch-gray:hover      { color: var(--gray); }
-.u-ch-text:hover      { color: var(--text); }
-.u-ch-ltgray:hover    { color: var(--litegray); }
+.u-offwhite  { color: var(--offwhite); }
+.u-black     { color: var(--black); }
+.u-red       { color: var(--red); }
+.u-blue      { color: var(--blue); }
+.u-bluegreen { color: var(--bluegreen); }
+.u-yellow    { color: var(--yellow); }
+.u-ygreen    { color: var(--ygreen); }
+.u-green     { color: var(--green); }
+.u-orange    { color: var(--orange); }
+.u-purple    { color: var(--purple); }
+.u-indigo    { color: var(--indigo); }
+.u-fuchsia   { color: var(--fuchsia); }
+.u-gray      { color: var(--gray); }
+.u-text      { color: var(--text); }
+.u-ltgray    { color: var(--litegray); }
