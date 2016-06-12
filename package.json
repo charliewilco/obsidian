@@ -2,6 +2,11 @@
   "name": "obsidian.css",
   "version": "2.0.0",
   "description": "Modular CSS",
+  "keywords": [
+    "css",
+    "modular css",
+    "postcss"
+  ],
   "main": "lib/index.css",
   "scripts": {
     "start": "npm run styles",
@@ -19,7 +24,7 @@
     "info": "npm run browsers && npm run size && npm run stats",
     "clean": "del ./dist",
     "docs": "kss-node --config ./kss.json",
-    "serve": "browser-sync start --server --files 'src/*'"
+    "serve": "browser-sync start --server './build/' --files './*'"
   },
   "author": "charles peters <charlespeters42@gmail.com>",
   "license": "MIT",
@@ -43,6 +48,7 @@
     "postcss-apply": "^0.2.0",
     "postcss-cli": "^2.5.2",
     "postcss-cssnext": "^2.5.2",
+    "postcss-export-vars": "^0.2.0",
     "postcss-import": "^8.1.0",
     "pretty-bytes-cli": "^1.0.0",
     "stylelint": "^6.5.1",
