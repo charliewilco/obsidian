@@ -1,0 +1,34 @@
+/*--------Flag Object----------*/
+/*
+ * Flag Object - Solved by Flexbox by Philip Walton
+ * http://csswizardry.com/2013/05/the-flag-object/
+ *
+ */
+
+.o-flag {
+  display: table;
+  width: 100%;
+}
+
+.o-flag__image,
+.o-flag__body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.o-flag--top .o-flag__image,
+.o-flag--top .o-flag__body {
+  vertical-align: top;
+}
+
+.o-flag--bottom .o-flag__image,
+.o-flag--bottom .o-flag__body {
+  vertical-align: bottom;
+}
+
+.o-flag__body { width: 100%; }
+
+
+@supports (display: flex) {
+  /*-- Flex Object Flag --*/
+}
