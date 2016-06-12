@@ -1,11 +1,16 @@
 /*----------Flex Object Modifiers----------*/
 
 
-/* Centering Flex Objects */
+/*
+ * TODO: Deprecate these first 3 rules
+ */
 
 .o-flex--space       { justify-content: space-between; }
 .o-flex--centerSA    { justify-content: space-around; }
 .o-flex--centerItems { justify-content: center; }
+
+
+/* Centering */
 
 .o-flex--center--h { align-items: center; }
 
@@ -15,11 +20,14 @@
   justify-content: center;
 }
 
-.o-flex--justify--spaceb { justify-content: space-between; }
-.o-flex--justify--spacea { justify-content: space-around; }
-.o-flex--justify--center { justify-content: center; }
+
+/* Justified Content */
+
+.o-flex--j--sb { justify-content: space-between; }
+.o-flex--j--sa { justify-content: space-around; }
+.o-flex--j--c  { justify-content: center; }
 
 /* Ordering Flex Objects */
 
-.o-flex--order--first { order: 1; }
-.o-flex--order--last  { order: unset; }
+.o-flex--or--first { order: 1; }
+.o-flex--or--last  { order: unset; }
