@@ -5,7 +5,7 @@
   "main": "lib/index.css",
   "scripts": {
     "start": "npm run styles",
-    "styles": "postcss -c postcss.json",
+    "styles": "postcss -c postcss.json -w",
     "copy": "mkdir build && cat ./dist/obsidian.min.css > ./build/bundle.css",
     "poststyles": "npm run copy && npm run lint && npm run info",
     "lint": "stylelint './lib/**/*.css'",

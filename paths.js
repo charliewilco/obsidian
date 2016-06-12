@@ -1,12 +1,17 @@
 const paths = {
-  test: './test/',
-  testSrc: './test/index.hbs',
-  logo: 'test/images/*.png',
-  partials: './test/partials/',
   build: './build',
-  cssLib: './lib/**/*.css',
-  cssSrc: './lib/index.css',
   dist: './dist/',
+  css: {
+    all: './lib/**/*.css',
+    src: './lib/index.css',
+    dist: './dist/',
+  },
+  templates: {
+    logo: 'test/images/*.png',
+    partials: './test/partials/',
+    src: './test/index.hbs',
+    dir: './test/',
+  },
 };
 
-module.exports = paths;
+export default paths;
