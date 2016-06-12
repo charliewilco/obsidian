@@ -6,10 +6,14 @@
   "scripts": {
     "start": "npm run styles",
     "styles": "postcss -c postcss.json -w",
-    "copy": "mkdir build && cat ./dist/obsidian.min.css > ./build/bundle.css",
-    "poststyles": "npm run copy && npm run lint && npm run info",
+    "styles:unminified": "postcss -u postcss-import -u postcss-apply -u postcss-cssnext -o ./dist/obsidian.css ./lib/index.css",
+    "styles:raw": "postcss -u postcss-import -o ./dist/obsidian.raw.css ./lib/index.css",
+    "poststyles": "npm run lint && npm run info",
     "lint": "stylelint './lib/**/*.css'",
-    "info": "doiuse --browsers 'last 1 versions' ./dist/obsidian.min.css && parker ./dist/obsidian.min.css",
+    "size": "gzip-size ./dist/obsidian.min.css | pretty-bytes",
+    "stats": "parker ./dist/obsidian.min.css",
+    "browsers": "doiuse --browsers 'last 1 versions' ./dist/obsidian.min.css",
+    "info": "npm run browsers && npm run size && npm run stats",
     "clean": "del ./build",
     "docs": "kss-node --config ./kss.json",
     "serve": "browser-sync start --server --files 'src/*'"
@@ -29,12 +33,14 @@
     "cssnano": "^3.7.0",
     "del-cli": "^0.2.0",
     "doiuse": "^2.3.0",
+    "gzip-size-cli": "^1.0.0",
     "kss": "^3.0.0-beta.14",
     "parker": "0.0.10",
     "postcss-apply": "^0.2.0",
     "postcss-cli": "^2.5.2",
     "postcss-cssnext": "^2.5.2",
     "postcss-import": "^8.1.0",
+    "pretty-bytes-cli": "^1.0.0",
     "stylelint": "^6.5.1",
     "stylelint-selector-bem-pattern": "^1.0.0"
   }
