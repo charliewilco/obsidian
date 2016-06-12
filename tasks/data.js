@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const gulp       = require('gulp');
 const gutil      = require('gulp-util');
 const sizereport = require('gulp-sizereport');

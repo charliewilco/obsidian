@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const gulp         = require('gulp');
 const handlebars   = require('gulp-compile-handlebars');
 const rename       = require('gulp-rename');

@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const gulp         = require('gulp');
 const rename       = require('gulp-rename');
 const nano         = require('gulp-cssnano');

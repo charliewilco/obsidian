@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const bs    = require('browser-sync').create();
 const paths = require('../paths');
 

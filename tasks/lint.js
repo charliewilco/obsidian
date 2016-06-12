@@ -1,3 +1,7 @@
+/* eslint-disable */
+
+// TODO: Use stylelint's selector pattern and BEM linter
+
 const gulp       = require('gulp');
 const postcss    = require('gulp-postcss');
 const reporter   = require('postcss-reporter');
