@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const gulp = require('gulp');
 const del = require('del');
 const paths = require('./paths');
