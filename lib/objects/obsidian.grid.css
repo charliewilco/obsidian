@@ -22,60 +22,60 @@
 
 [class*='grid__col'] { max-width: 100%; }
 
-.o-grid__col--1\/12  { width: var(--col-1); }
-.o-grid__col--2\/12  { width: var(--col-2); }
-.o-grid__col--3\/12  { width: var(--col-3); }
-.o-grid__col--4\/12  { width: var(--col-4); }
-.o-grid__col--5\/12  { width: var(--col-5); }
-.o-grid__col--6\/12  { width: var(--col-6); }
-.o-grid__col--7\/12  { width: var(--col-7); }
-.o-grid__col--8\/12  { width: var(--col-8); }
-.o-grid__col--9\/12  { width: var(--col-9); }
-.o-grid__col--10\/12 { width: var(--col-10); }
-.o-grid__col--11\/12 { width: var(--col-11); }
-.o-grid__col--12\/12 { width: var(--col-12); }
+.o-col--1\/12  { width: var(--col-1); }
+.o-col--2\/12  { width: var(--col-2); }
+.o-col--3\/12  { width: var(--col-3); }
+.o-col--4\/12  { width: var(--col-4); }
+.o-col--5\/12  { width: var(--col-5); }
+.o-col--6\/12  { width: var(--col-6); }
+.o-col--7\/12  { width: var(--col-7); }
+.o-col--8\/12  { width: var(--col-8); }
+.o-col--9\/12  { width: var(--col-9); }
+.o-col--10\/12 { width: var(--col-10); }
+.o-col--11\/12 { width: var(--col-11); }
+.o-col--12\/12 { width: var(--col-12); }
 
 @media (--sm) {
-  .o-grid__col--1\/12\@sm  { width: var(--col-1); }
-  .o-grid__col--2\/12\@sm  { width: var(--col-2); }
-  .o-grid__col--3\/12\@sm  { width: var(--col-3); }
-  .o-grid__col--4\/12\@sm  { width: var(--col-4); }
-  .o-grid__col--5\/12\@sm  { width: var(--col-5); }
-  .o-grid__col--6\/12\@sm  { width: var(--col-6); }
-  .o-grid__col--7\/12\@sm  { width: var(--col-7); }
-  .o-grid__col--8\/12\@sm  { width: var(--col-8); }
-  .o-grid__col--9\/12\@sm  { width: var(--col-9); }
-  .o-grid__col--10\/12\@sm { width: var(--col-10); }
-  .o-grid__col--11\/12\@sm { width: var(--col-11); }
-  .o-grid__col--12\/12\@sm { width: var(--col-12); }
+  .o-col--1\/12\@sm  { width: var(--col-1); }
+  .o-col--2\/12\@sm  { width: var(--col-2); }
+  .o-col--3\/12\@sm  { width: var(--col-3); }
+  .o-col--4\/12\@sm  { width: var(--col-4); }
+  .o-col--5\/12\@sm  { width: var(--col-5); }
+  .o-col--6\/12\@sm  { width: var(--col-6); }
+  .o-col--7\/12\@sm  { width: var(--col-7); }
+  .o-col--8\/12\@sm  { width: var(--col-8); }
+  .o-col--9\/12\@sm  { width: var(--col-9); }
+  .o-col--10\/12\@sm { width: var(--col-10); }
+  .o-col--11\/12\@sm { width: var(--col-11); }
+  .o-col--12\/12\@sm { width: var(--col-12); }
 }
 
 @media (--md) {
-  .o-grid__col--1\/12\@md  { width: var(--col-1); }
-  .o-grid__col--2\/12\@md  { width: var(--col-2); }
-  .o-grid__col--3\/12\@md  { width: var(--col-3); }
-  .o-grid__col--4\/12\@md  { width: var(--col-4); }
-  .o-grid__col--5\/12\@md  { width: var(--col-5); }
-  .o-grid__col--6\/12\@md  { width: var(--col-6); }
-  .o-grid__col--7\/12\@md  { width: var(--col-7); }
-  .o-grid__col--8\/12\@md  { width: var(--col-8); }
-  .o-grid__col--9\/12\@md  { width: var(--col-9); }
-  .o-grid__col--10\/12\@md { width: var(--col-10); }
-  .o-grid__col--11\/12\@md { width: var(--col-11); }
-  .o-grid__col--12\/12\@md { width: var(--col-12); }
+  .o-col--1\/12\@md  { width: var(--col-1); }
+  .o-col--2\/12\@md  { width: var(--col-2); }
+  .o-col--3\/12\@md  { width: var(--col-3); }
+  .o-col--4\/12\@md  { width: var(--col-4); }
+  .o-col--5\/12\@md  { width: var(--col-5); }
+  .o-col--6\/12\@md  { width: var(--col-6); }
+  .o-col--7\/12\@md  { width: var(--col-7); }
+  .o-col--8\/12\@md  { width: var(--col-8); }
+  .o-col--9\/12\@md  { width: var(--col-9); }
+  .o-col--10\/12\@md { width: var(--col-10); }
+  .o-col--11\/12\@md { width: var(--col-11); }
+  .o-col--12\/12\@md { width: var(--col-12); }
 }
 
 @media (--lg) {
-  .o-grid__col--1\/12\@lg  { width: var(--col-1); }
-  .o-grid__col--2\/12\@lg  { width: var(--col-2); }
-  .o-grid__col--3\/12\@lg  { width: var(--col-3); }
-  .o-grid__col--4\/12\@lg  { width: var(--col-4); }
-  .o-grid__col--5\/12\@lg  { width: var(--col-5); }
-  .o-grid__col--6\/12\@lg  { width: var(--col-6); }
-  .o-grid__col--7\/12\@lg  { width: var(--col-7); }
-  .o-grid__col--8\/12\@lg  { width: var(--col-8); }
-  .o-grid__col--9\/12\@lg  { width: var(--col-9); }
-  .o-grid__col--10\/12\@lg { width: var(--col-10); }
-  .o-grid__col--11\/12\@lg { width: var(--col-11); }
-  .o-grid__col--12\/12\@lg { width: var(--col-12); }
+  .o-col--1\/12\@lg  { width: var(--col-1); }
+  .o-col--2\/12\@lg  { width: var(--col-2); }
+  .o-col--3\/12\@lg  { width: var(--col-3); }
+  .o-col--4\/12\@lg  { width: var(--col-4); }
+  .o-col--5\/12\@lg  { width: var(--col-5); }
+  .o-col--6\/12\@lg  { width: var(--col-6); }
+  .o-col--7\/12\@lg  { width: var(--col-7); }
+  .o-col--8\/12\@lg  { width: var(--col-8); }
+  .o-col--9\/12\@lg  { width: var(--col-9); }
+  .o-col--10\/12\@lg { width: var(--col-10); }
+  .o-col--11\/12\@lg { width: var(--col-11); }
+  .o-col--12\/12\@lg { width: var(--col-12); }
 }
