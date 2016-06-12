@@ -1,0 +1,20 @@
+{
+  "use": [
+    "postcss-import",
+    "postcss-cssnext",
+    "postcss-apply",
+    "cssnano"
+  ],
+  "input": "./lib/index.css",
+  "output": "./dist/obsidian.min.css",
+  "local-plugins": true,
+  "postcss-cssnext": {
+    "warnForDuplicates": false,
+    "features": {
+      "rem": false
+    }
+  },
+  "cssnano": {
+    "mergeRules": false
+  }
+}

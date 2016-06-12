@@ -5,6 +5,8 @@
 /*
   TODO: Formatting Comments
   TODO: Outline Components
+  TODO: Use stylelint's selector pattern and BEM linter
+  TODO: KSSify documentation
   TODO: Refine Btns and Form UI (Consider Moving to Components)
   TODO: Consolidate Utility References
         (Spacing, Typography, Positioning, Surfaces)
@@ -13,6 +15,8 @@
       - Positioning (Overflow, Position, Z-Index)
       - Surfaces (Colors, Background, Shadows)
 */
+
+/* doiuse-disable rem, multicolumn, border-radius, text-size-adjust */
 
 @import './settings';
 @import './generic';
