@@ -2,8 +2,12 @@
 /*
  * Media Object - Solved by Flexbox by Philip Walton
  * https://philipwalton.github.io/solved-by-flexbox/demos/media-object/
- * TODO: refine magic numbers
+ *
  */
+
+:root {
+  --media-figure: 6.25rem;
+}
 
 .o-media {
   display: flex;
@@ -11,8 +15,7 @@
 }
 
 .o-media__figure {
-  margin-right: 1em;
-  max-width: 5rem;
+  max-width: var(--media-figure);
 }
 
 .o-media__body { flex: 1; }
