@@ -24,7 +24,7 @@
     "info": "npm run browsers && npm run size && npm run stats",
     "clean": "del ./dist",
     "docs": "kss-node --config ./kss.json",
-    "serve": "browser-sync start --server './build/' --files './*'"
+    "serve": "browser-sync start --server --files 'src/*'"
   },
   "author": "charles peters <charlespeters42@gmail.com>",
   "license": "MIT",
