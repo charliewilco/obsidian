@@ -11,7 +11,8 @@
     "lint": "stylelint './lib/**/*.css'",
     "info": "doiuse --browsers 'last 1 versions' ./dist/obsidian.min.css && parker ./dist/obsidian.min.css",
     "clean": "del ./build",
-    "docs": "kss-node --config ./kss.json"
+    "docs": "kss-node --config ./kss.json",
+    "serve": "browser-sync start --server --files 'src/*'"
   },
   "author": "charles peters <charlespeters42@gmail.com>",
   "license": "MIT",
