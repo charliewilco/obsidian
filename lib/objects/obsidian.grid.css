@@ -20,7 +20,7 @@
 
 }
 
-[class*='grid__col'] { max-width: 100%; }
+[class*='o-col--'] { max-width: 100%; }
 
 .o-col--1\/12  { width: var(--col-1); }
 .o-col--2\/12  { width: var(--col-2); }
