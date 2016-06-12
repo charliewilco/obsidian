@@ -1,14 +1,5 @@
 /*----------Form Reset & Form Default Elements----------*/
 
-/* Form Defaults */
-:root {
-  --base-border: 2px;
-  --base-form-radius: .25rem;
-  --base-form-width: 100%;
-  --base-form-mxw: 25rem;
-  --base-form-height: 45px; /* TODO: Compute this better */
-}
-
 /* All Defaults */
 
 button,
@@ -21,7 +12,7 @@ textarea {
   box-sizing: inherit;
   line-height: inherit;
   font-family: inherit;
-  width: var(--base-form-width);
+  width: var(--base-form-width); /* TODO: Reconsider */
   font-size: 100%;
   margin: 0;
 }
