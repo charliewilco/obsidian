@@ -13,13 +13,13 @@
  * Typographic......Font Weights, Letter Spacing, Rendering, Columns, Text Transform.
  */
 
-@import './utilities/obsidian.corners';
-@import './utilities/obsidian.backgrounds';
-@import './utilities/obsidian.color-values';
-@import './utilities/obsidian.display';
-@import './utilities/obsidian.floats';
-@import './utilities/obsidian.object-fit';
-@import './utilities/obsidian.position';
-@import './utilities/obsidian.spacing';
-@import './utilities/obsidian.align';
-@import './utilities/obsidian.typography';
+@import './obsidian.corners';
+@import './obsidian.backgrounds';
+@import './obsidian.color-values';
+@import './obsidian.display';
+@import './obsidian.floats';
+@import './obsidian.object-fit';
+@import './obsidian.position';
+@import './obsidian.spacing';
+@import './obsidian.align';
+@import './obsidian.typography';

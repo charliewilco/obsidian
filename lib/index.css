@@ -1,12 +1,11 @@
 /*!----------------------------------------------------\
     Obsidian.css v1.1.1 MIT obsidiancss.github.io
 \----------------------------------------------------!*/
-
+/* doiuse-disable rem, multicolumn, border-radius, text-size-adjust */
 /*
   TODO: Formatting Comments
   TODO: Outline Components
   TODO: Use stylelint's selector pattern and BEM linter
-  TODO: KSSify documentation
   TODO: Refine Btns and Form UI (Consider Moving to Components)
   TODO: Consolidate Utility References
         (Spacing, Typography, Positioning, Surfaces)
@@ -16,15 +15,10 @@
       - Surfaces (Colors, Background, Shadows)
 */
 
-/* doiuse-disable rem, multicolumn, border-radius, text-size-adjust */
 
 @import './settings';
 @import './generic';
 @import './elements';
 @import './objects';
-
-@import './components/obsidian.radio-group';
-@import './components/obsidian.card-ui';
-@import './components/obsidian.pagination';
-
+@import './components';
 @import './utilities';

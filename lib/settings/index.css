@@ -6,6 +6,6 @@
   * Media Queries......Custom Media Queries Declarations.
   */
 
-@import './settings/obsidian.colors';
-@import './settings/obsidian.defaults';
-@import './settings/obsidian.mq';
+@import './obsidian.colors';
+@import './obsidian.defaults';
+@import './obsidian.mq';

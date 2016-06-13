@@ -11,13 +11,13 @@
  * Forms UI.......Basic Styling for Forms.
  */
 
-@import './objects/obsidian.icons';
-@import './objects/obsidian.flex';
-@import './objects/obsidian.containers';
-@import './objects/obsidian.grid';
-@import './objects/obsidian.intrinsic';
-@import './objects/obsidian.flag';
-@import './objects/obsidian.media';
+@import './obsidian.icons';
+@import './obsidian.flex';
+@import './obsidian.containers';
+@import './obsidian.grid';
+@import './obsidian.intrinsic';
+@import './obsidian.flag';
+@import './obsidian.media';
 
-@import './objects/obsidian.btns';
-@import './objects/obsidian.forms-ui';
+@import './obsidian.btns';
+@import './obsidian.forms-ui';
