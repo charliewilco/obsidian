@@ -14,7 +14,7 @@
 @import './obsidian.icons';
 @import './obsidian.flex';
 @import './obsidian.containers';
-@import './obsidian.grid';
+@import './obsidian.grid-columns';
 @import './obsidian.intrinsic';
 @import './obsidian.flag';
 @import './obsidian.media';
