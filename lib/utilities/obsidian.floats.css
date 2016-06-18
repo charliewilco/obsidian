@@ -17,9 +17,9 @@
 }
 
 @media (--md) {
-  .u-f-l\@md  { float: left; }
-  .u-f-r\@md { float: right; }
-  .u-f-n\@md  { float: none; }
+  .u-fl\@md  { float: left; }
+  .u-fr\@md { float: right; }
+  .u-fn\@md  { float: none; }
 }
 
 @media (--lg) {

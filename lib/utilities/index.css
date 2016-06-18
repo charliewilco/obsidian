@@ -1,23 +1,17 @@
 /**
  * UTILITIES - Helper Classes to Modify Components
  *
- * Corners..........Border Radius.
  * Surfaces.........Color, Hover, Focus, Background and Border Colors & Shadows.
- * Display..........Breakpoint Specific Display Properties.
- * Floats...........Clearfix, Breakpoint Floats.
  * Fit..............Object Fit Utilties.
  * Positioning......Overflow X Y All, Positions, z-index utils.
  * Spacing..........Responsive Spacing - Margin, Padding.
- * Align............Breakpoint Specific Text Align.
- * Typographic......Font Weights, Letter Spacing, Rendering, Columns, Text Transform.
+ * Typography.......Alignment, Font Weights, Letter Spacing, Rendering, Columns, Text Transform.
+ * TODO: BEM Modifier fixes
  */
 
-@import './obsidian.corners';
 @import './obsidian.surfaces';
-@import './obsidian.display';
-@import './obsidian.floats';
+@import './obsidian.layout';
 @import './obsidian.object-fit';
 @import './obsidian.positioning';
 @import './obsidian.spacing';
-@import './obsidian.align';
 @import './obsidian.typography';

@@ -1,5 +1,7 @@
 /*----------Corner / Border Radius Utilities----------*/
-
+/*
+  TODO: Refine Values
+*/
 /* Border Radii */
 :root {
   --radius-1: calc(var(--base-spacing) * .25);

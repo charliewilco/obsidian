@@ -1,9 +1,11 @@
+/*----------Box Shadow Utilities----------*/
+
 :root {
-  --shadow-sm: 0;
-  --shadow-md: 0;
-  --shadow-lg: 0;
+  --shadow-1: 0;
+  --shadow-2: 0;
+  --shadow-3: 0;
 }
 
-.u-sh--1 {
-  box-shadow: var(--shadow-sm);
-}
+.u-sh--1 { box-shadow: var(--shadow-1); }
+.u-sh--2 { box-shadow: var(--shadow-2); }
+.u-sh--3 { box-shadow: var(--shadow-3); }

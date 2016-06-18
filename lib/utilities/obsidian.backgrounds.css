@@ -1,6 +1,8 @@
 /*----------Background Value Utilities----------*/
 
 .u-bg-none      { background: none; }
+.u-bg-cover     { background-position: cover; }
+
 .u-bg-offwhite  { background-color: var(--offwhite); }
 .u-bg-black     { background-color: var(--black); }
 .u-bg-red       { background-color: var(--red); }

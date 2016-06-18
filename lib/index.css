@@ -3,16 +3,10 @@
 \----------------------------------------------------!*/
 /* doiuse-disable rem, multicolumn, border-radius, text-size-adjust */
 /*
+  TODO: Use stylelint's selector pattern and BEM linter
   TODO: Formatting Comments
   TODO: Outline Components
-  TODO: Use stylelint's selector pattern and BEM linter
   TODO: Refine Btns and Form UI (Consider Moving to Components)
-  TODO: Consolidate Utility References
-        (Spacing, Typography, Positioning, Surfaces)
-      - Typography (Align, Text Columns, Grab-bag)
-      - Spacing (Margin, Padding)
-      - Positioning (Overflow, Position, Z-Index)
-      - Surfaces (Colors, Background, Shadows)
 */
 
 

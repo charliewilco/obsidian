@@ -4,7 +4,6 @@
 */
 
 :root {
-
   --column-size-2: calc(var(--base-container) / 3 - ((var(--base-spacing) * 2) * 1));
   --column-size-3: calc(var(--base-container) / 3 - ((var(--base-spacing) * 3) * 2));
   --column-size-4: calc(var(--base-container) / 3 - ((var(--base-spacing) * 4) * 3));
