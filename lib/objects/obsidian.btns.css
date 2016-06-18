@@ -1,7 +1,5 @@
-/*----------Button UI Object----------*/
-/*
- * Default UI Pattern for Buttons
- */
+/*---------Buttons UI----------*/
+
 
 .o-btn {
   background: var(--base-form-color);

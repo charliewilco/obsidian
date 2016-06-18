@@ -1,7 +1,7 @@
 /*----------Grid (Flexbox) Object----------*/
 /*
- * WIP
- */
+  TODO: Calcutation needs to include percentage in calc() function
+*/
 
 :root {
   --col-mxw: 20rem;
@@ -17,10 +17,15 @@
   --col-10: calc((10/12) * 100)%;
   --col-11: calc((11/12) * 100)%;
   --col-12: calc((12/12) * 100)%;
-
 }
 
 [class*='o-col--'] { max-width: 100%; }
+
+.o-col {
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
 
 .o-col--1\/12  { width: var(--col-1); }
 .o-col--2\/12  { width: var(--col-2); }
@@ -36,6 +41,12 @@
 .o-col--12\/12 { width: var(--col-12); }
 
 @media (--sm) {
+  .o-col\@sm {
+    float: left;
+    position: relative;
+    min-height: 1px;
+  }
+
   .o-col--1\/12\@sm  { width: var(--col-1); }
   .o-col--2\/12\@sm  { width: var(--col-2); }
   .o-col--3\/12\@sm  { width: var(--col-3); }
@@ -51,6 +62,12 @@
 }
 
 @media (--md) {
+  .o-col\@md {
+    float: left;
+    position: relative;
+    min-height: 1px;
+  }
+
   .o-col--1\/12\@md  { width: var(--col-1); }
   .o-col--2\/12\@md  { width: var(--col-2); }
   .o-col--3\/12\@md  { width: var(--col-3); }
@@ -66,6 +83,12 @@
 }
 
 @media (--lg) {
+  .o-col\@lg {
+    float: left;
+    position: relative;
+    min-height: 1px;
+  }
+
   .o-col--1\/12\@lg  { width: var(--col-1); }
   .o-col--2\/12\@lg  { width: var(--col-2); }
   .o-col--3\/12\@lg  { width: var(--col-3); }

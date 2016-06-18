@@ -1,7 +1,4 @@
 /*----------Containers / Wrapper Object----------*/
-/*
- * Needs `.u-mx-a` to center container
- */
 
 :root {
   --container-lg: calc(var(--base-container) * .75);
@@ -10,10 +7,15 @@
   --container-xs: calc(var(--base-container) * .375);
 }
 
-[class*='o-container'] { width: 100%; }
-
+.o-container,
 .o-container--full { max-width: var(--base-container); }
 .o-container--lg   { max-width: var(--container-lg); }
 .o-container--md   { max-width: var(--container-md); }
 .o-container--sm   { max-width: var(--container-sm); }
 .o-container--xs   { max-width: var(--container-xs); }
+
+.o-container--wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
