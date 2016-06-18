@@ -10,10 +10,10 @@
   "main": "lib/index.css",
   "scripts": {
     "start": "npm run styles",
-    "styles": "postcss -c postcss.json -w",
+    "styles": "postcss -c .postcss.json -w",
     "build": "npm-run-all styles lint",
-    "postlint": "npm run lint && npm run info",
-    "styles:min": "postcss -c postcss.json",
+    "postlint": "npm run info",
+    "styles:min": "postcss -c .postcss.json",
     "styles:unminified": "postcss -u postcss-import -u postcss-apply -u postcss-cssnext -o ./dist/obsidian.css ./lib/index.css",
     "styles:raw": "postcss -u postcss-import -o ./dist/obsidian.raw.css ./lib/index.css",
     "prepublish": "npm-run-all styles:*",
@@ -23,7 +23,7 @@
     "browsers": "doiuse --browsers 'last 1 versions' ./dist/obsidian.min.css",
     "info": "npm run browsers && npm run size && npm run stats",
     "clean": "del ./dist",
-    "docs": "kss-node --config ./kss.json",
+    "docs": "kss --config ./kss.json",
     "serve": "browser-sync start --server --files 'src/*'"
   },
   "author": "charles peters <charlespeters42@gmail.com>",
