@@ -1,9 +1,8 @@
 /**
- * UTILITIES - Visually Composed Pieces of UI
+ * UTILITIES - Helper Classes to Modify Components
  *
  * Corners..........Border Radius.
- * Backgrounds......Background Colors.
- * Color Values.....Color, Hover, Focus, Border Color.
+ * Surfaces.........Color, Hover, Focus, Background and Border Colors & Shadows.
  * Display..........Breakpoint Specific Display Properties.
  * Floats...........Clearfix, Breakpoint Floats.
  * Fit..............Object Fit Utilties.
@@ -14,12 +13,11 @@
  */
 
 @import './obsidian.corners';
-@import './obsidian.backgrounds';
-@import './obsidian.color-values';
+@import './obsidian.surfaces';
 @import './obsidian.display';
 @import './obsidian.floats';
 @import './obsidian.object-fit';
-@import './obsidian.position';
+@import './obsidian.positioning';
 @import './obsidian.spacing';
 @import './obsidian.align';
 @import './obsidian.typography';

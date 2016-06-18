@@ -1,0 +1,9 @@
+:root {
+  --shadow-sm: 0;
+  --shadow-md: 0;
+  --shadow-lg: 0;
+}
+
+.u-sh--1 {
+  box-shadow: var(--shadow-sm);
+}

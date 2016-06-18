@@ -1,7 +1,3 @@
-/*----------Position Utilities----------*/
-
-@import './obsidian.zindex';
-@import './obsidian.overflow';
 
 .u-absolute { position: absolute; }
 .u-fixed    { position: fixed; }
