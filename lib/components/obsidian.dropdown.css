@@ -1,0 +1,7 @@
+:root {
+  --dropdown-background: white;
+}
+
+.c-dropdown {
+  background: var(--dropdown-background);
+}
