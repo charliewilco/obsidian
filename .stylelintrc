@@ -1,5 +1,5 @@
 {
-  plugins: [
+  'plugins': [
     'stylelint-selector-bem-pattern'
   ],
   'rules': {
@@ -11,12 +11,14 @@
     'custom-property-no-outside-root': true,
     'declaration-bang-space-after': 'never',
     'declaration-bang-space-before': 'always',
+    'declaration-block-no-duplicate-properties': true,
     'declaration-block-semicolon-newline-after': 'always-multi-line',
     'declaration-block-semicolon-newline-before': 'never-multi-line',
     'declaration-block-semicolon-space-after': 'always-single-line',
     'declaration-block-semicolon-space-before': 'never',
     'declaration-colon-space-after': 'always',
     'declaration-colon-space-before': 'never',
+    'declaration-block-trailing-semicolon': 'always',
     'function-calc-no-unspaced-operator': true,
     'function-comma-space-before': 'never',
     'function-comma-space-after': 'always',
@@ -26,12 +28,10 @@
     'media-feature-colon-space-before': 'never',
     'no-missing-eof-newline': true,
     'number-no-trailing-zeros': true,
-    'number-zero-length-no-unit': true,
-    'declaration-block-no-duplicate-properties': true,
+    'length-zero-no-unit': true,
     'rule-non-nested-empty-line-before': ['always-multi-line', {
       ignore: ['after-comment']
     }],
-    'declaration-block-trailing-semicolon': 'always',
     'selector-combinator-space-after': 'always',
     'selector-combinator-space-before': 'always',
     'selector-list-comma-newline-after': 'always-multi-line',
@@ -43,6 +43,14 @@
     'value-list-comma-newline-before': 'never-multi-line',
     'value-list-comma-space-after': 'always',
     'value-list-comma-space-before': 'never',
-    'unit-whitelist': ['rem', 'em', '%', 'ms', 'px']
+    'unit-whitelist': ['rem', 'em', '%', 'ms', 'px'],
+    'plugin/selector-bem-pattern': {
+      'preset': 'bem',
+      'componentName': '.c-[a-z]+',
+      'componentSelectors': {
+        'initial': '^\\.c-{componentName}(?:-[a-z]+)?$'
+      },
+      'utilitySelectors': '^\\.u-[a-z]+$'
+    },
   }
 }
