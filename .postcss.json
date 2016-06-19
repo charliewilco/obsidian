@@ -4,7 +4,8 @@
     "postcss-export-vars",
     "postcss-cssnext",
     "postcss-apply",
-    "cssnano"
+    "cssnano",
+    "postcss-reporter"
   ],
   "input": "./lib/index.css",
   "output": "./dist/obsidian.min.css",
@@ -22,5 +23,8 @@
   },
   "cssnano": {
     "mergeRules": false
+  },
+  "postcss-reporter": {
+    "clearMessages": true
   }
 }
