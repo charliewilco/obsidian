@@ -12,7 +12,6 @@ textarea {
   box-sizing: inherit;
   line-height: inherit;
   font-family: inherit;
-  width: var(--base-form-width); /* TODO: Reconsider */
   font-size: 100%;
   margin: 0;
 }

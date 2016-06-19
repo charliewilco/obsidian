@@ -1,0 +1,141 @@
+/*----------Forms UI----------*/
+
+/* TODO: Compute --base-form-height better */
+/* Form UI Defaults */
+
+:root {
+  --base-border: 1px;
+  --base-form-radius: .25rem;
+  --base-form-width: 100%;
+  --base-form-mxw: 100%;
+  --base-form-height: 45px;
+  --base-form-color: var(--color-1);
+  --base-form-offsetColor: var(--color-5);
+  --base-form-shadow: inset 0 1px 1px rgba(0, 0, 0, .125);
+  --base-form-inner-sp: calc(var(--base-spacing) / 2) var(--base-spacing);
+  --base-form-border: var(--base-border) solid;
+  --base-form-border-color: var(--base-form-offsetColor);
+
+  --arrow: url('data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyAgdmlld0JveD0nMCAwIDY0IDY0JyAgd2lkdGg9JzY0JyBoZWlnaHQ9JzY0JyAgZmlsbD0nY3VycmVudGNvbG9yJz4gIDxwYXRoIGQ9J00xMiAwIEw1MiAwIEwzMiAyMCBaJyAvPjwvc3ZnPg==');
+}
+
+/* Text Inputs Fields */
+
+.c-field {
+  padding: var(--base-form-inner-sp);
+  box-shadow: var(--base-form-shadow);
+  border: var(--base-form-border) var(--base-form-border-color);
+  max-width: var(--base-form-mxw);
+  width: var(--base-form-width);
+  height: var(--base-form-height);
+  border-radius: var(--base-form-radius);
+}
+
+.c-field[disabled],
+.c-field:disabled {
+  opacity: .5;
+  background: color(var(--base-form-color) a(10%));
+  border-color: color(var(--base-form-offsetColor) a(50%));
+}
+
+.c-field::placeholder {
+  font-style: italic;
+}
+
+.c-field::-webkit-calendar-picker-indicator {
+  opacity: 1 !important;
+}
+
+.c-field--text { resize: none; }
+
+.c-field:focus {
+  background: var(--offwhite);
+  color: var(--base-form-color);
+  outline: 5px auto var(--blue);
+}
+
+
+/* Range Input Element */
+
+.c-range {
+  max-width: var(--base-form-mxw);
+  width: var(--base-form-width);
+  height: var(--base-form-height);
+  appearance: none;
+}
+
+.c-range:focus { outline: none; }
+
+
+.c-range::-webkit-slider-runnable-track {
+  color: var(--base-form-color);
+  background: color(var(--base-form-color) a(75%));
+  height: calc(var(--base-form-height) / 4);
+  border-radius: 3px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.o-range:focus:focus::-webkit-slider-runnable-track {
+  background: var(--base-form-color);
+}
+
+.c-range::-webkit-slider-thumb {
+  border: 0;
+  height: calc(var(--base-form-height) / 2);
+  width: var(--base-form-height);
+  border-radius: 6px;
+  background: linear-gradient(color(var(--base-form-offsetColor) lightness(+12.5%)), var(--base-form-offsetColor));
+  appearance: none;
+  cursor: pointer;
+  margin-top: calc((var(--base-form-height) / 2) / -4);
+}
+
+.c-range::-webkit-slider-container,
+.c-range::-webkit-media-slider-container {
+  align-items: center;
+}
+
+/* Progress Element */
+
+.c-progress {
+  max-width: var(--base-form-mxw);
+  width: var(--base-form-width);
+  height: calc(var(--base-form-height) / 2);
+  appearance: none;
+  border-radius: var(--base-form-radius);
+}
+
+.c-progress::-webkit-progress-bar-value,
+.c-progress::-webkit-progress-value {
+  appearance: none;
+  background: var(--base-form-color);
+  border-radius: var(--base-form-radius) 0 0 var(--base-form-radius);
+}
+
+.c-progress::-webkit-progress-bar {
+  appearance: none;
+  border-radius: var(--base-form-radius);
+  background-color: color(var(--base-form-offsetColor) a(37.5%));
+}
+
+/* Label Element */
+
+.c-label { color: var(--base-form-offsetColor); }
+
+/* Select Element */
+
+.c-select {
+  padding: var(--base-form-inner-sp);
+  max-width: var(--base-form-mxw);
+  width: var(--base-form-width);
+  height: var(--base-form-height);
+  border: var(--base-form-border) var(--base-form-border-color);
+  border-radius: var(--base-form-radius);
+  appearance: none;
+
+  background-image: var(--arrow);
+  background-repeat: no-repeat;
+  background-size: calc(var(--base-form-height) / 2);
+  background-position: right calc(var(--base-form-height) / 4) top 18px;
+}

@@ -6,18 +6,14 @@
  * Grid...........Grid Parent and Responsive Columns.
  * Intrinsic......Intrinsic Object.
  * Flex...........Flex Container, Children & Modifies.
- * Buttons........Simple Buttons.
  * Media Object...WIP Media Object Pattern.
- * Forms UI.......Basic Styling for Forms.
+ * Flag Object....Flag Object
  */
 
 @import './obsidian.icons';
-@import './obsidian.flex';
 @import './obsidian.containers';
 @import './obsidian.grid-columns';
 @import './obsidian.intrinsic';
-@import './obsidian.flag';
+@import './obsidian.flex';
 @import './obsidian.media';
-
-@import './obsidian.btns';
-@import './obsidian.forms-ui';
+@import './obsidian.flag';
