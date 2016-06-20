@@ -1,0 +1,21 @@
+/* Select Element */
+
+:root {
+  --arrow: url('data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyAgdmlld0JveD0nMCAwIDY0IDY0JyAgd2lkdGg9JzY0JyBoZWlnaHQ9JzY0JyAgZmlsbD0nY3VycmVudGNvbG9yJz4gIDxwYXRoIGQ9J00xMiAwIEw1MiAwIEwzMiAyMCBaJyAvPjwvc3ZnPg==');
+}
+
+
+.c-select {
+  padding: var(--base-form-inner-sp);
+  max-width: var(--base-form-mxw);
+  width: var(--base-form-width);
+  height: var(--base-form-height);
+  border: var(--base-form-border) var(--base-form-border-color);
+  border-radius: var(--base-form-radius);
+  appearance: none;
+
+  background-image: var(--arrow);
+  background-repeat: no-repeat;
+  background-size: calc(var(--base-form-height) / 2);
+  background-position: right calc(var(--base-form-height) / 4) top 18px;
+}

@@ -1,0 +1,27 @@
+:root {
+  --progress-radius: .25rem;
+  --progress-color: var(--color-1);
+  --progress-height: 2rem;
+  --progress-background: color(var(--litegray) lightness(+5%));
+}
+
+/* Progress Element */
+
+.c-progress {
+  height: var(--progress-height);
+  appearance: none;
+  border-radius: var(--progress-radius);
+}
+
+.c-progress::-webkit-progress-bar-value,
+.c-progress::-webkit-progress-value {
+  appearance: none;
+  background: var(--progress-color);
+  border-radius: var(--progress-radius) 0 0 var(--progress-radius);
+}
+
+.c-progress::-webkit-progress-bar {
+  appearance: none;
+  border-radius: var(--progress-radius);
+  background-color: var(--progress-background);
+}
