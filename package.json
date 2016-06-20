@@ -21,6 +21,7 @@
     "info:browsers": "doiuse --browsers 'last 1 versions' ./dist/obsidian.min.css",
     "info:size": "gzip-size ./dist/obsidian.min.css | pretty-bytes",
     "info:stats": "parker ./dist/obsidian.min.css",
+    "info:mutations": "immutable-css ./dist/obsidian.min.css",
     "clean": "del ./dist && del ./test/bundle.css"
   },
   "author": "charles peters <charlespeters42@gmail.com>",
@@ -38,6 +39,7 @@
     "del-cli": "^0.2.0",
     "doiuse": "^2.3.0",
     "gzip-size-cli": "^1.0.0",
+    "immutable-css-cli": "^1.1.1",
     "npm-run-all": "^2.1.1",
     "parker": "0.0.10",
     "postcss-apply": "^0.2.0",
