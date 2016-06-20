@@ -7,7 +7,7 @@
   --base-form-radius: .25rem;
   --base-form-width: 100%;
   --base-form-mxw: 100%;
-  --base-form-height: 45px;
+  --base-form-height: 2.8125rem;
   --base-form-color: var(--color-1);
   --base-form-offsetColor: var(--color-5);
   --base-form-shadow: inset 0 1px 1px rgba(0, 0, 0, .125);
@@ -75,7 +75,7 @@
   appearance: none;
 }
 
-.o-range:focus:focus::-webkit-slider-runnable-track {
+.c-range:focus::-webkit-slider-runnable-track {
   background: var(--base-form-color);
 }
 
