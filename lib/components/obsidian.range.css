@@ -1,4 +1,7 @@
 /* Range Input Element */
+/*
+  TODO: Mozilla and MS Prefixes or equivalent for thumb and track pseudo selectors
+*/
 
 .c-range {
   max-width: var(--base-form-mxw);

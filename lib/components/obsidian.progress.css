@@ -1,11 +1,14 @@
+/* Progress Element */
+/*
+  TODO: Mozilla and MS Prefixes or equivalent for bar and value pseudo selectors
+*/
+
 :root {
   --progress-radius: .25rem;
   --progress-color: var(--color-1);
   --progress-height: 2rem;
   --progress-background: color(var(--litegray) lightness(+5%));
 }
-
-/* Progress Element */
 
 .c-progress {
   height: var(--progress-height);
