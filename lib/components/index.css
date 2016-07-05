@@ -1,12 +1,14 @@
 /**
  * COMPONENTS - Individual Pieces of UI or non-visual modules
  *
+ * WARNING THIS IS VERY WORK IN PROGRESS
  * Form UI.......Basic Styling for Forms.
  * Buttons........Simple Buttons.
  * Radio Group
  * Card UI
  * Pagination
  * Dropdown
+ * Tabs
 
  ## Coming Soon
  -- Input Group
@@ -16,7 +18,6 @@
  -- Search Embed
  -- Badges
  -- Accordion
- -- Tabs
  -- Stepper Input
  */
 
@@ -27,3 +28,4 @@
 @import './obsidian.card-ui';
 @import './obsidian.pagination';
 @import './obsidian.dropdown';
+@import './obsidian.tabs';

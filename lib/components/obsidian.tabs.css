@@ -1,0 +1,43 @@
+:root {
+  --tab-active-color: var(--color-2);
+}
+
+.c-tab {
+  z-index: 5;
+}
+
+.c-tab__marker {
+  border-bottom: none;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: transparent;
+  background: rgba(128, 128, 128, 0.375);
+}
+
+.c-tab__marker a {
+  text-align: center;
+  text-decoration: none;
+  color: rgba(128, 128, 128, 0.75);
+}
+
+.c-tab--link-active {
+  background: white !important;
+  border-left-color: #1d889d;
+}
+
+.c-tab--link-active a {
+  color: #1d889d !important;
+}
+
+.c-tab--content {
+  z-index: 4;
+  padding: 2rem;
+  font-size: 1.25rem;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+
+@media only screen and (max-width: 31.25rem) {
+  .c-tab__marker { width: 100%; }
+}
