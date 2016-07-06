@@ -1,8 +1,7 @@
 /*----------Corner / Border Radius Utilities----------*/
-/*
-  TODO: Refine Values
-*/
+
 /* Border Radii */
+
 :root {
   --radius-1: calc(var(--base-spacing) * .25);
   --radius-2: calc(var(--base-spacing) * .5);
@@ -20,6 +19,5 @@
 /* Named Percentage Sizes */
 
 .u-br-quarter { border-radius: 25%; }
-.u-br-third   { border-radius: 33.3333%; }
 .u-br-half    { border-radius: 50%; }
 .u-br-full    { border-radius: 100%; }
