@@ -15,7 +15,14 @@
 }
 
 .o-media__figure {
-  max-width: var(--media-figure);
+  max-width: calc(var(--media-figure) * .75);
 }
 
 .o-media__body { flex: 1; }
+
+
+@media (--md) {
+  .o-media__figure {
+    max-width: var(--media-figure);
+  }
+}
