@@ -54,7 +54,11 @@ p:not(:last-of-type) {
 /* Content */
 
 figure { margin: 0; }
-hr { height: var(--base-border); }
+
+hr {
+  border: 0;
+  height: var(--base-border);
+}
 
 /* Code Blocks */
 
