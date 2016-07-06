@@ -1,29 +1,21 @@
 /*---------Flag Object----------*/
 
 .o-flag {
-  display: table;
+  display: flex;
+  align-items: center;
   width: 100%;
 }
 
-.o-flag__image,
+.o-flag--top { align-items: flex-start; }
+.o-flag--bottom { align-items: flex-end; }
+.o-flag--reverse { flex-direction: row-reverse; }
+
+.o-flag__figure,
 .o-flag__body {
-  display: table-cell;
-  vertical-align: middle;
+  display: initial;
+  max-width: 100%;
+  min-width: 0;
 }
 
-.o-flag--top .o-flag__image,
-.o-flag--top .o-flag__body {
-  vertical-align: top;
-}
-
-.o-flag--bottom .o-flag__image,
-.o-flag--bottom .o-flag__body {
-  vertical-align: bottom;
-}
-
-.o-flag__body { width: 100%; }
-
-
-@supports (display: flex) {
-  /*-- Flex Object Flag --*/
-}
+.o-flag__figure { flex: 1 1 auto; }
+.o-flag__body { flex: 4 4 auto; }
