@@ -14,7 +14,7 @@
 .o-container--sm   { max-width: var(--container-sm); }
 .o-container--xs   { max-width: var(--container-xs); }
 
-.o-container--wrap {
+.o-container--center {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
