@@ -13,7 +13,7 @@
     "start": "npm run styles",
     "styles": "postcss -c .postcss.json -w",
     "build": "npm-run-all clean styles:* lint info:*",
-    "build:dev": "npm-run-all --parallel serve reload styles lint",
+    "build:dev": "npm-run-all --parallel styles lint info:*",
     "styles:min": "postcss -c .postcss.json",
     "styles:unminified": "postcss -u postcss-import -u postcss-apply -u postcss-cssnext -o ./dist/obsidian.css ./lib/index.css",
     "lint": "stylelint './lib/**/*.css'",
