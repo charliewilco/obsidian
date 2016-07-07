@@ -1,7 +1,0 @@
-{
-  "title": "Obsidian.css",
-  "source": "./lib",
-  "destination": "./build",
-  "homepage": "README.md",
-  "verbose": true
-}
