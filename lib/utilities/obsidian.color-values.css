@@ -15,3 +15,5 @@
 .u-gray      { color: var(--gray); }
 .u-text      { color: var(--text); }
 .u-ltgray    { color: var(--litegray); }
+
+.u-fcc { fill: currentColor; }
