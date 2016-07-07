@@ -32,6 +32,21 @@
 .o-flex--or--first { order: 1; }
 .o-flex--or--last  { order: unset; }
 
+
+
+/*
+  NOTE: The flex child element needs an explicit width & min-height
+  for bugs related to Safari 9 and Chrome 44
+*/
+
+.o-flex__child {
+  display: initial;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  width: auto;
+}
+
 /* TODO: Deprecate these first 3 rules */
 
 .o-flex--space       { justify-content: space-between; }
