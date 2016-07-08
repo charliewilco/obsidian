@@ -1,8 +1,9 @@
-/*----------Typographic Utilities----------*/
 /*
- * Text Columns.........Responsive Text Columns
- * Align................Breakpoint Specific Text Align.
- * Type Assorted........Font Weights, Letter Spacing, Rendering, Text Transform
+  Typographic Utilities
+
+  Text Columns.........Responsive Text Columns
+  Align................Breakpoint Specific Text Align.
+  Type Assorted........Font Weights, Letter Spacing, Rendering, Text Transform
 */
 
 @import './obsidian.align';

@@ -4,11 +4,6 @@
 
 /* doiuse-disable rem, multicolumn, border-radius, text-size-adjust */
 
-/*
-  TODO: Formatting Comments
-*/
-
-
 @import './settings';
 @import './generic';
 @import './elements';

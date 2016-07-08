@@ -1,4 +1,10 @@
-/*----------Position Utilities----------*/
+/*
+  Positioning Utilities
+
+  Z-Index..........Small collection of common z-index values
+  Overflow.........General, X and Y
+  Position.........Absolute, Static, Fixed, Relative
+*/
 
 @import './obsidian.zindex';
 @import './obsidian.overflow';

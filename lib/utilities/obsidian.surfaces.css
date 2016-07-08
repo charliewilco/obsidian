@@ -1,9 +1,10 @@
-/*----------Surfaces Utilities----------*/
 /*
- * Corners...........Border Radius Utils.
- * Colors............Color, Hover, Focus, Border Colors
- * Background........Background Values (Color, None)
- * Shadows...........Material Like Shadows.
+  Surfaces Utilities
+
+  Corners...........Border Radius Utils.
+  Background........Background Values (Color, None)
+  Colors............Color and Fill Values
+  Shadows...........Material Like Shadows.
 */
 
 @import './obsidian.backgrounds';

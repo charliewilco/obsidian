@@ -1,7 +1,4 @@
 /*----------Overflow Utilities----------*/
-/*
-  TODO: Refine Values
-*/
 
 .u-ov--none { overflow: none; }
 .u-ov--vis  { overflow: visible; }
