@@ -13,6 +13,7 @@
 .u-indigo    { color: var(--indigo); }
 .u-fuchsia   { color: var(--fuchsia); }
 .u-gray      { color: var(--gray); }
+.u-palegray  { color: var(--palegray); }
 .u-text      { color: var(--text); }
 .u-ltgray    { color: var(--litegray); }
 

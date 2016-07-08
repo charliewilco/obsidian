@@ -16,5 +16,6 @@
 .u-bg--indigo    { background-color: var(--indigo); }
 .u-bg--fuchsia   { background-color: var(--fuchsia); }
 .u-bg--gray      { background-color: var(--gray); }
+.u-bg--palegray  { background-color: var(--palegray); }
 .u-bg--text      { background-color: var(--text); }
 .u-bg--ltgray    { background-color: var(--litegray); }
