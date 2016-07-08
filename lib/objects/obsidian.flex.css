@@ -47,7 +47,9 @@
   width: auto;
 }
 
-/* TODO: Deprecate these first 3 rules */
+/*
+  TODO: Deprecate these first 3 rules
+*/
 
 .o-flex--space       { justify-content: space-between; }
 .o-flex--centerSA    { justify-content: space-around; }

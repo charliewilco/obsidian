@@ -1,15 +1,7 @@
 /*----------Headline Elements----------*/
 
-/* Originally based off the Golden Ratio and 1rem being modified at each break point
- *
- * For Reference:
-  .hl-jumbo { font-size: calc(var(--base-spacing) * 6.275); }
-  .hl-xl    { font-size: calc(var(--base-spacing) * 4.827); }
-  .hl-lg    { font-size: calc(var(--base-spacing) * 3.713); }
-  .hl-md    { font-size: calc(var(--base-spacing) * 2.856); }
-  .hl-b     { font-size: calc(var(--base-spacing) * 2.197); }
-  .hl-sm    { font-size: calc(var(--base-spacing) * 1.69); }
-  .hl-xs    { font-size: calc(var(--base-spacing) * 1);}
+/*
+  NOTE: Originally based off the Golden Ratio and 1rem being modified at each break point
 */
 
 /* Sizes */

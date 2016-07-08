@@ -1,25 +1,21 @@
-/**
- * COMPONENTS - Individual Pieces of UI or non-visual modules
- *
- * WARNING THIS IS VERY WORK IN PROGRESS
- * Form UI.......Basic Styling for Forms.
- * Buttons........Simple Buttons.
- * Radio Group
- * Card UI
- * Pagination
- * Dropdown
- * Tabs
+/*
+  COMPONENTS - Designed Modules, Collected Pieces of UI
 
- ## Coming Soon
- -- Input Group
- -- Navigation
- -- Banner
- -- Alerts
- -- Search Embed
- -- Badges
- -- Accordion
- -- Stepper Input
- */
+  WARNING: THIS IS VERY WORK IN PROGRESS
+
+  Form UI..........Basic Styling for Forms.
+  Buttons..........Simple and Outlined UI Buttons.
+  Progress.........Progress Bar
+  Radio Group......Visually Grouped/Contained Radio Inputs
+  Card UI..........Sampled Content in a Reflection of a Playing Card 
+  Pagination.......Results/Archive List Numbered Navigation
+  Dropdown.........Dropdown Pattern Unrelated to Select tag
+  Tabs.............Inlined Tabbed UI
+
+  COMING SOON
+
+  Input Group, Navigation, Banner, Alerts, Search Embed, Badges, Accordion, Stepper Input
+*/
 
 @import './obsidian.btns';
 @import './obsidian.form-ui';

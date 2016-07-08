@@ -1,11 +1,5 @@
 /*----------Float Utilities----------*/
 
-.u-cf:after {
-  content: '';
-  clear: both;
-  display: table;
-}
-
 .u-fl { float: left; }
 .u-fr { float: right; }
 .u-fn { float: none; }
@@ -26,4 +20,11 @@
   .u-fl\@lg  { float: left; }
   .u-fr\@lg { float: right; }
   .u-fn\@lg  { float: none; }
+}
+
+/* Clearfix */
+.u-cf:after {
+  content: '';
+  clear: both;
+  display: table;
 }

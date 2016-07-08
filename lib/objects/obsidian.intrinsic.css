@@ -1,9 +1,9 @@
 /*----------Intrinsic Ratio Container Object----------*/
-/*
- * Based off of 'Intrinsic Placeholders with the Picture Element'
- * http://daverupert.com/2015/12/intrinsic-placeholders-with-picture/
- */
 
+/*
+  NOTE: Based off of 'Intrinsic Placeholders with the Picture Element'
+  http://daverupert.com/2015/12/intrinsic-placeholders-with-picture/
+*/
 
 .o-intrinsic {
   display: block;
