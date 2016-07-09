@@ -49,7 +49,7 @@
     "postcss-import": "^8.1.2",
     "postcss-reporter": "^1.4.1",
     "pretty-bytes-cli": "^1.0.0",
-    "stylelint": "^6.8.0",
+    "stylelint": "^6.9.0",
     "stylelint-selector-bem-pattern": "^1.0.0"
   }
 }
