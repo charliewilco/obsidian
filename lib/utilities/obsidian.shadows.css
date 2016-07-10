@@ -1,8 +1,5 @@
 /*----------Box Shadow Utilities----------*/
 
-:root {
-}
-
 .u-sh--1 { box-shadow: var(--shadow-1); }
 .u-sh--2 { box-shadow: var(--shadow-2); }
 .u-sh--3 { box-shadow: var(--shadow-3); }
