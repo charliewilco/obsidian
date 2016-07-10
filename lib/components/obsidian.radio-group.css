@@ -1,3 +1,38 @@
-.c-radio-group {
-  
+/*----------Radio Group----------*/
+
+
+:root {
+  --rdg-corner: .425rem;
+  --rdg-color: var(--color-1);
+  --rdg-offset-color: var(--color-5);
+}
+
+.c-rdg {
+  max-width: 27.5rem;
+}
+
+.c-rdg__opt {
+  width: calc(100% / 3);
+  border: 1px solid var(--rdg-offset-color);
+  color: var(--rdg-offset-color);
+  flex: 1;
+  cursor: pointer;
+}
+
+.c-rdg__opt:not(:last-of-type) { border-right: 0; }
+
+.c-rdg__opt:first-of-type {
+  border-radius: var(--rdg-corner) 0 0 var(--rdg-corner);
+}
+
+.c-rdg__opt:last-of-type {
+  border-radius: 0 var(--rdg-corner) var(--rdg-corner) 0;
+}
+
+.c-rdg__elm { display: none; }
+
+.c-rdg__elm:checked + .c-rdg__opt,
+.c-rdg__opt.active {
+  background: var(--rdg-color);
+  color: white;
 }
