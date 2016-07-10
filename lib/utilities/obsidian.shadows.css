@@ -1,9 +1,6 @@
 /*----------Box Shadow Utilities----------*/
 
 :root {
-  --shadow-1: 0 0 4px rgba(0, 0, 0, .035), 0 4px 8px rgba(0, 0, 0, .07);
-  --shadow-2: 0 0 4px rgba(0, 0, 0, .07), 0 4px 8px rgba(0, 0, 0, .14);
-  --shadow-3: 0 0 8px rgba(0, 0, 0, .18), 0 8px 16px rgba(0, 0, 0, .36);
 }
 
 .u-sh--1 { box-shadow: var(--shadow-1); }
