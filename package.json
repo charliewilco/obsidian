@@ -11,7 +11,8 @@
   "scripts": {
     "prepublish": "npm-run-all styles:*",
     "start": "npm run styles",
-    "styles": "postcss -c .postcss.json -w",
+    "styles": "postcss -c .postcss.json",
+    "watch": "watch 'npm run styles' lib",
     "build": "npm-run-all clean styles:* lint info:*",
     "build:dev": "npm-run-all --parallel styles lint info:*",
     "styles:min": "postcss -c .postcss.json",
@@ -50,6 +51,7 @@
     "postcss-reporter": "^1.4.1",
     "pretty-bytes-cli": "^1.0.0",
     "stylelint": "^6.9.0",
-    "stylelint-selector-bem-pattern": "^1.0.0"
+    "stylelint-selector-bem-pattern": "^1.0.0",
+    "watch": "^0.19.1"
   }
 }
