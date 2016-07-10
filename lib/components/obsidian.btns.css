@@ -1,16 +1,38 @@
 /*---------Buttons UI----------*/
 
+:root {
+  --base-btn-radius: .25rem;
+  --base-btn-border: 2px solid;
+}
 
 .c-btn {
   background: var(--base-form-color);
   color: white;
-  border: var(--base-form-border) transparent;
+  border: var(--base-btn-border);
+  border-color: transparent;
   padding: var(--base-form-inner-sp);
   max-width: var(--base-form-mxw);
-  border-radius: var(--base-form-radius);
+  border-radius: var(--base-btn-radius);
   transition: color var(--base-dur) linear, background var(--base-dur) linear, border var(--base-dur) linear;
   cursor: pointer;
   display: inline-block;
+  font-weight: 500;
+}
+
+.c-btn--xs {
+  font-size: 87.5%;
+  padding: calc(var(--base-spacing) / 4) calc(var(--base-spacing) * .75);
+}
+
+.c-btn--md {
+  font-size: 112.5%;
+  padding: calc(var(--base-spacing) / 2) calc(var(--base-spacing) * 2);
+}
+
+
+.c-btn--lg {
+  font-size: 125%;
+  padding: calc(var(--base-spacing) * .75) calc(var(--base-spacing) * 2.5);
 }
 
 .c-btn:hover {
@@ -19,16 +41,35 @@
   background: none;
 }
 
-.c-btn--outline {
-  border: var(--base-border) solid;
+.c-btn--2 { background: var(--color-2); }
+.c-btn--2:hover { color: var(--color-2); }
+
+.c-btn--3 { background: var(--color-3); }
+.c-btn--3:hover { color: var(--color-3); }
+
+.c-btn--4 { background: var(--color-4); }
+.c-btn--4:hover { color: var(--color-4); }
+
+.c-btn--o {
   color: var(--base-form-color);
-  padding: var(--base-form-inner-sp);
-  max-width: var(--base-form-mxw);
-  border-radius: var(--base-form-radius);
+  border-color: currentColor;
   background: none;
   display: inline-block;
   cursor: pointer;
 }
 
+.c-btn--o:hover {
+  background: var(--base-form-color);
+  color: white;
+  border-color: transparent;
+}
 
-.c-btn--outline:hover {}
+
+.c-btn--o--2 { color: var(--color-2); }
+.c-btn--o--2:hover { background: var(--color-2); }
+
+.c-btn--o--3 { color: var(--color-3); }
+.c-btn--o--3:hover { background: var(--color-3); }
+
+.c-btn--o--4 { color: var(--color-4); }
+.c-btn--o--4:hover { background: var(--color-4); }
