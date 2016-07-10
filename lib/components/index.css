@@ -8,7 +8,6 @@
   Progress.........Progress Bar
   Radio Group......Visually Grouped/Contained Radio Inputs
   Card UI..........Sampled Content in a Reflection of a Playing Card 
-  Pagination.......Results/Archive List Numbered Navigation
   Dropdown.........Dropdown Pattern Unrelated to Select tag
   Tabs.............Inlined Tabbed UI
 
@@ -22,6 +21,5 @@
 @import './obsidian.radio-group';
 @import './obsidian.progress';
 @import './obsidian.card-ui';
-@import './obsidian.pagination';
 @import './obsidian.dropdown';
 @import './obsidian.tabs';
