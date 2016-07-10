@@ -22,7 +22,10 @@
     "matches": []
   },
   "cssnano": {
-    "mergeRules": false
+    "mergeRules": false,
+    "discardComments": {
+        "removeAllButFirst": true
+    }
   },
   "postcss-reporter": {
     "clearMessages": true
