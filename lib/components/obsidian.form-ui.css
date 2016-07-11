@@ -3,7 +3,5 @@
 @import './obsidian.form-ui-settings';
 @import './obsidian.field';
 @import './obsidian.label';
-@import './obsidian.range';
 @import './obsidian.select';
-
-
+@import './obsidian.range';
