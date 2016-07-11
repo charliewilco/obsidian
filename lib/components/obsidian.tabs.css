@@ -1,43 +1,75 @@
+/*---------Tabs Component----------*/
+
 :root {
-  --tab-active-color: var(--color-2);
+  --tabs-active-color: white;
+  --tabs-radii: .375rem;
+  --tabs-spacer: .5rem;
+  --tabs-border: 1px solid var(--color-5);
+  --tabs-background: var(--color-5);
+  --tabs-marker-color: var(--color-1);
+  --tabs-marker-inactive-color: var(--color-5);
 }
 
-.c-tab {
+.c-tabs {
   z-index: 5;
 }
 
-.c-tab__marker {
-  border-bottom: none;
-  border-left-width: 2px;
-  border-left-style: solid;
-  border-left-color: transparent;
-  background: rgba(128, 128, 128, 0.375);
+.c-tabs__nav {
+  margin-bottom: -1px;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
-.c-tab__marker a {
-  text-align: center;
-  text-decoration: none;
-  color: rgba(128, 128, 128, 0.75);
+.c-tabs__marker {
+  flex: 1 1 auto;
+  min-width: 6rem;
+  border-right: var(--tabs-border);
+  border-left: var(--tabs-border);
+  border-top: var(--tabs-border);
+  border-radius: var(--tabs-radii) var(--tabs-radii) 0 0;
+  background: color(var(--tabs-background) a(25%));
+  color: var(--tabs-marker-inactive-color);
 }
 
-.c-tab--link-active {
-  background: white !important;
-  border-left-color: #1d889d;
+.c-tabs__marker:hover {
+  color: color(var(--litegray) blackness(+15%));
+  background: color(var(--tabs-background) a(75%));
 }
 
-.c-tab--link-active a {
-  color: #1d889d !important;
+.c-tabs__marker.active {
+  background: var(--tabs-active-color);
+  color: var(--tabs-marker-color);
 }
 
-.c-tab--content {
+.c-tabs__content {
   z-index: 4;
-  padding: 2rem;
-  font-size: 1.25rem;
-  border: 1px solid #ccc;
-  background: white;
+  border: var(--tabs-border);
+  background: var(--tabs-active-color);
+}
+
+.c-tabs__pane {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.c-tabs__pane.active {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  height: auto;
+  position: static;
 }
 
 
-@media only screen and (max-width: 31.25rem) {
-  .c-tab__marker { width: 100%; }
+@media (--md) {
+  .c-tabs__marker:not(:last-of-type) {
+    margin-right: var(--tabs-spacer);
+  }
 }
