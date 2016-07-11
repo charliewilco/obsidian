@@ -1,6 +1,7 @@
-/* Progress Element */
+/*---------Progress Component----------*/
 /*
   TODO: Opera and MS Prefixes or equivalent for bar and value pseudo selectors
+  NOTE: Consider moving to Elements layer
 */
 
 :root {

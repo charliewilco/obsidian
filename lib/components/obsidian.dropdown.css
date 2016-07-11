@@ -1,7 +1,14 @@
+/*---------Dropdown Component----------*/
+
 :root {
   --dropdown-background: white;
 }
 
 .c-dropdown {
   background: var(--dropdown-background);
+}
+
+.c-dropdown.active {
+  visibility: visible;
+  opacity: 1;
 }
