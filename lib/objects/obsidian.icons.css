@@ -6,6 +6,7 @@
 
 :root {
   --icon-size: 3rem;
+  --icon-xs: calc(var(--icon-size) * .375);
   --icon-sm: calc(var(--icon-size) * .625);
   --icon-md: calc(var(--icon-size) * 1.125);
   --icon-lg: calc(var(--icon-size) * 1.5);
@@ -15,6 +16,11 @@
   width: var(--icon-size);
   height: var(--icon-size);
   fill: currentColor;
+}
+
+.o-icon--xs {
+  width: var(--icon-xs);
+  height: var(--icon-xs);
 }
 
 .o-icon--sm {
