@@ -1,0 +1,27 @@
+/*---------Card UI----------*/
+
+:root {
+  --card-max: 25rem;
+  --card-bg: white;
+}
+
+.c-card {
+  display: block;
+  max-width: var(--card-max);
+  background: var(--card-bg);
+  border-radius: .25rem;
+  box-shadow: var(--shadow-1);
+  transition: box-shadow 137.5ms ease-in-out;
+}
+
+.c-card:hover {
+  box-shadow: var(--shadow-3);
+}
+
+.c-card__figure {
+  width: 100%;
+}
+
+.c-card__content {
+  font-size: 87.5%;
+}

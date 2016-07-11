@@ -70,6 +70,13 @@ And things should compile the way you'd expect.
 
 First off, you're awesome for wanting to contribute. Second, please take a second to go over a few things to make this process simpler for everyone. Third, you're awesome.
 
+### Getting Started
+
+Clone the repository and run the following in the root of the project:
+```
+npm install && npm start
+```
+
 ### Issues
 
 **Reduced test cases are required**. All bug reports and problem issues require a reduced test case. See [CSS Tricks - Reduced Test Cases](http://css-tricks.com/reduced-test-cases/) on why they _"are the absolute, ... number one way to troubleshoot bugs."_ Reduced test cases help you identify the issue at hand and understand your own code. On our side, they greatly reduce the amount of time spent resolving the issue.
