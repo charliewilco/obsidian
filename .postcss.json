@@ -23,8 +23,10 @@
   },
   "cssnano": {
     "mergeRules": false,
+    "discardEmpty": true,
     "discardComments": {
-        "removeAllButFirst": true
+      "removeAll": true,
+      "removeAllButFirst": true
     }
   },
   "postcss-reporter": {
