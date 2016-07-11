@@ -1,29 +1,39 @@
 /*---------Icon Object----------*/
+
 /*
- * Designed with justafewicons.co in mind
- */
- 
+  NOTE: Designed with justafewicons.co in mind
+*/
+
 :root {
-  --icon-w: 3rem;
-  --icon-h: 3rem;
-  --icon-w-sm: calc(var(--icon-w) * .625);
-  --icon-w-lg: calc(var(--icon-w) * 1.5);
-  --icon-h-sm: calc(var(--icon-h) * .625);
-  --icon-h-lg: calc(var(--icon-h) * 1.5);
+  --icon-size: 3rem;
+  --icon-xs: calc(var(--icon-size) * .375);
+  --icon-sm: calc(var(--icon-size) * .625);
+  --icon-md: calc(var(--icon-size) * 1.125);
+  --icon-lg: calc(var(--icon-size) * 1.5);
 }
 
 .o-icon {
-  width: var(--icon-w);
-  height: var(--icon-h);
+  width: var(--icon-size);
+  height: var(--icon-size);
   fill: currentColor;
 }
 
+.o-icon--xs {
+  width: var(--icon-xs);
+  height: var(--icon-xs);
+}
+
 .o-icon--sm {
-  width: var(--icon-w-sm);
-  height: var(--icon-h-sm);
+  width: var(--icon-sm);
+  height: var(--icon-sm);
+}
+
+.o-icon--md {
+  width: var(--icon-md);
+  height: var(--icon-md);
 }
 
 .o-icon--lg {
-  width: var(--icon-w-lg);
-  height: var(--icon-h-lg);
+  width: var(--icon-lg);
+  height: var(--icon-lg);
 }

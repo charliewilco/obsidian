@@ -1,0 +1,34 @@
+/*---------Field Input Component----------*/
+
+.c-field {
+  padding: var(--base-form-inner-sp);
+  box-shadow: var(--base-form-shadow);
+  border: var(--base-form-border) var(--base-form-border-color);
+  max-width: var(--base-form-mxw);
+  width: var(--base-form-width);
+  height: var(--base-form-height);
+  border-radius: var(--base-form-radius);
+}
+
+.c-field[disabled],
+.c-field:disabled {
+  opacity: .5;
+  background: color(var(--base-form-color) a(10%));
+  border-color: color(var(--base-form-offsetColor) a(50%));
+}
+
+.c-field::placeholder {
+  font-style: italic;
+}
+
+.c-field::-webkit-calendar-picker-indicator {
+  opacity: 1 !important;
+}
+
+.c-field--text { resize: none; }
+
+.c-field:focus {
+  background: var(--offwhite);
+  color: var(--base-form-color);
+  outline: 5px auto var(--blue);
+}

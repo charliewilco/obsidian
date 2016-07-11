@@ -1,0 +1,12 @@
+.c-input-group {
+  position: relative;
+}
+
+.c-input-group--first {
+  border-radius: var(--input-radius) 0 0 var(--input-radius);
+  border-right: 0;
+}
+
+.c-input-group--last {
+  border-radius: 0 var(--input-radius) var(--input-radius) 0;
+}
