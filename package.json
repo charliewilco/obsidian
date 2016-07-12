@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/obsidiancss/obsidian#readme",
   "devDependencies": {
-    "cssnano": "^3.7.1",
+    "cssnano": "^3.7.2",
     "del-cli": "^0.2.0",
     "doiuse": "^2.4.1",
     "gzip-size-cli": "^1.0.0",
