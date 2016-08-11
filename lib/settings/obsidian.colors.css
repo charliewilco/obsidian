@@ -1,20 +1,20 @@
 /*----------Obsidian Default Colors----------*/
 
 :root {
-  --offwhite: #fdfdfd;
+  --offwhite: #FDFDFD;
   --black: #202020;
-  --red: #d04d36;
+  --red: #D04D36;
   --blue: #147AAB;
-  --bluegreen: #1d889d;
-  --yellow: #ffba00;
-  --ygreen: #cee89c;
-  --green: #6cc034;
-  --orange: #e36511;
-  --purple: #834f91;
+  --bluegreen: #1D889D;
+  --yellow: #FFBA00;
+  --ygreen: #CEE89C;
+  --green: #6CC034;
+  --orange: #E36511;
+  --purple: #834F91;
   --indigo: #675997;
   --fuchsia: #FA5E5B;
   --palegray: #F7F7F7;
-  --gray: #cccccc;
+  --gray: #CCCCCC;
   --text: #484848;
-  --litegray: #bcbcbc;
+  --litegray: #BCBCBC;
 }
