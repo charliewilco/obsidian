@@ -1,0 +1,35 @@
+{
+  "use": [
+    "postcss-import",
+    "postcss-export-vars",
+    "postcss-cssnext",
+    "postcss-apply",
+    "cssnano",
+    "postcss-reporter"
+  ],
+  "input": "./lib/index.css",
+  "output": "./dist/obsidian.min.css",
+  "local-plugins": true,
+  "postcss-cssnext": {
+    "warnForDuplicates": false,
+    "features": {
+      "rem": false
+    }
+  },
+  "postcss-export-vars": {
+    "file": "css",
+    "type": "json",
+    "matches": []
+  },
+  "cssnano": {
+    "mergeRules": false,
+    "discardEmpty": true,
+    "discardComments": {
+      "removeAll": true,
+      "removeAllButFirst": true
+    }
+  },
+  "postcss-reporter": {
+    "clearMessages": true
+  }
+}

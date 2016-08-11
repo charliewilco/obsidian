@@ -38,7 +38,7 @@
 
 /* Spacing Level 2 */
 
-.u-m2 { margin: var(--spacing-2); }
+.u-m2  { margin: var(--spacing-2); }
 .u-mt2 { margin-top: var(--spacing-2); }
 .u-mr2 { margin-right: var(--spacing-2); }
 .u-mb2 { margin-bottom: var(--spacing-2); }
@@ -56,7 +56,7 @@
 
 /* Spacing Level 3 */
 
-.u-m3 { margin: var(--spacing-3); }
+.u-m3  { margin: var(--spacing-3); }
 .u-mt3 { margin-top: var(--spacing-3); }
 .u-mr3 { margin-right: var(--spacing-3); }
 .u-mb3 { margin-bottom: var(--spacing-3); }
@@ -74,7 +74,7 @@
 
 /* Spacing Level 4 */
 
-.u-m4 { margin: var(--spacing-4); }
+.u-m4  { margin: var(--spacing-4); }
 .u-mt4 { margin-top: var(--spacing-4); }
 .u-mr4 { margin-right: var(--spacing-4); }
 .u-mb4 { margin-bottom: var(--spacing-4); }
@@ -92,7 +92,7 @@
 
 /* Spacing Level 5 */
 
-.u-m5 { margin: var(--spacing-5); }
+.u-m5  { margin: var(--spacing-5); }
 .u-mt5 { margin-top: var(--spacing-5); }
 .u-mr5 { margin-right: var(--spacing-5); }
 .u-mb5 { margin-bottom: var(--spacing-5); }
@@ -110,7 +110,7 @@
 
 /* Spacing Level 6 */
 
-.u-m6 { margin: var(--spacing-6); }
+.u-m6  { margin: var(--spacing-6); }
 .u-mt6 { margin-top: var(--spacing-6); }
 .u-mr6 { margin-right: var(--spacing-6); }
 .u-mb6 { margin-bottom: var(--spacing-6); }
@@ -128,12 +128,15 @@
 
 /* Spacing Auto */
 
-.u-mx-auto {
+.u-mla { margin-left: auto; }
+.u-mra { margin-right: auto; }
+
+.u-mxa {
   margin-right: auto;
   margin-left: auto;
 }
 
-.u-my-auto {
+.u-mya {
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -143,7 +146,7 @@
 
   /* Spacing Level 0 */
 
-  .u-m0\@sm { margin: 0; }
+  .u-m0\@sm  { margin: 0; }
   .u-mt0\@sm { margin-top: 0; }
   .u-mr0\@sm { margin-right: 0; }
   .u-mb0\@sm { margin-bottom: 0; }
@@ -161,7 +164,7 @@
 
   /* Spacing Level 1 */
 
-  .u-m1\@sm { margin: var(--spacing-1); }
+  .u-m1\@sm  { margin: var(--spacing-1); }
   .u-mt1\@sm { margin-top: var(--spacing-1); }
   .u-mr1\@sm { margin-right: var(--spacing-1); }
   .u-mb1\@sm { margin-bottom: var(--spacing-1); }
@@ -179,7 +182,7 @@
 
   /* Spacing Level 2 */
 
-  .u-m2\@sm { margin: var(--spacing-2); }
+  .u-m2\@sm  { margin: var(--spacing-2); }
   .u-mt2\@sm { margin-top: var(--spacing-2); }
   .u-mr2\@sm { margin-right: var(--spacing-2); }
   .u-mb2\@sm { margin-bottom: var(--spacing-2); }
@@ -197,7 +200,7 @@
 
   /* Spacing Level 3 */
 
-  .u-m3\@sm { margin: var(--spacing-3); }
+  .u-m3\@sm  { margin: var(--spacing-3); }
   .u-mt3\@sm { margin-top: var(--spacing-3); }
   .u-mr3\@sm { margin-right: var(--spacing-3); }
   .u-mb3\@sm { margin-bottom: var(--spacing-3); }
@@ -215,7 +218,7 @@
 
   /* Spacing Level 4 */
 
-  .u-m4\@sm { margin: var(--spacing-4); }
+  .u-m4\@sm  { margin: var(--spacing-4); }
   .u-mt4\@sm { margin-top: var(--spacing-4); }
   .u-mr4\@sm { margin-right: var(--spacing-4); }
   .u-mb4\@sm { margin-bottom: var(--spacing-4); }
@@ -233,7 +236,7 @@
 
   /* Spacing Level 4 */
 
-  .u-m5\@sm { margin: var(--spacing-5); }
+  .u-m5\@sm  { margin: var(--spacing-5); }
   .u-mt5\@sm { margin-top: var(--spacing-5); }
   .u-mr5\@sm { margin-right: var(--spacing-5); }
   .u-mb5\@sm { margin-bottom: var(--spacing-5); }
@@ -251,7 +254,7 @@
 
   /* Spacing Level 6 */
 
-  .u-m6\@sm { margin: var(--spacing-6); }
+  .u-m6\@sm  { margin: var(--spacing-6); }
   .u-mt6\@sm { margin-top: var(--spacing-6); }
   .u-mr6\@sm { margin-right: var(--spacing-6); }
   .u-mb6\@sm { margin-bottom: var(--spacing-6); }
@@ -269,12 +272,15 @@
 
   /* Spacing Auto */
 
-  .u-mx-auto\@sm {
+  .u-mla\@sm { margin-left: auto; }
+  .u-mra\@sm { margin-right: auto; }
+
+  .u-mxa\@sm {
     margin-right: auto;
     margin-left: auto;
   }
 
-  .u-my-auto\@sm {
+  .u-mya\@sm {
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -284,7 +290,7 @@
 
   /* Spacing Level 0 */
 
-  .u-m0\@md { margin: 0; }
+  .u-m0\@md  { margin: 0; }
   .u-mt0\@md { margin-top: 0; }
   .u-mr0\@md { margin-right: 0; }
   .u-mb0\@md { margin-bottom: 0; }
@@ -302,7 +308,7 @@
 
   /* Spacing Level 1 */
 
-  .u-m1\@md { margin: var(--spacing-1); }
+  .u-m1\@md  { margin: var(--spacing-1); }
   .u-mt1\@md { margin-top: var(--spacing-1); }
   .u-mr1\@md { margin-right: var(--spacing-1); }
   .u-mb1\@md { margin-bottom: var(--spacing-1); }
@@ -320,7 +326,7 @@
 
   /* Spacing Level 2 */
 
-  .u-m2\@md { margin: var(--spacing-2); }
+  .u-m2\@md  { margin: var(--spacing-2); }
   .u-mt2\@md { margin-top: var(--spacing-2); }
   .u-mr2\@md { margin-right: var(--spacing-2); }
   .u-mb2\@md { margin-bottom: var(--spacing-2); }
@@ -338,7 +344,7 @@
 
   /* Spacing Level 3 */
 
-  .u-m3\@md { margin: var(--spacing-3); }
+  .u-m3\@md  { margin: var(--spacing-3); }
   .u-mt3\@md { margin-top: var(--spacing-3); }
   .u-mr3\@md { margin-right: var(--spacing-3); }
   .u-mb3\@md { margin-bottom: var(--spacing-3); }
@@ -356,7 +362,7 @@
 
   /* Spacing Level 4 */
 
-  .u-m4\@md { margin: var(--spacing-4); }
+  .u-m4\@md  { margin: var(--spacing-4); }
   .u-mt4\@md { margin-top: var(--spacing-4); }
   .u-mr4\@md { margin-right: var(--spacing-4); }
   .u-mb4\@md { margin-bottom: var(--spacing-4); }
@@ -374,7 +380,7 @@
 
   /* Spacing Level 5 */
 
-  .u-m5\@md { margin: var(--spacing-5); }
+  .u-m5\@md  { margin: var(--spacing-5); }
   .u-mt5\@md { margin-top: var(--spacing-5); }
   .u-mr5\@md { margin-right: var(--spacing-5); }
   .u-mb5\@md { margin-bottom: var(--spacing-5); }
@@ -392,7 +398,7 @@
 
   /* Spacing Level 6 */
 
-  .u-m6\@md { margin: var(--spacing-6); }
+  .u-m6\@md  { margin: var(--spacing-6); }
   .u-mt6\@md { margin-top: var(--spacing-6); }
   .u-mr6\@md { margin-right: var(--spacing-6); }
   .u-mb6\@md { margin-bottom: var(--spacing-6); }
@@ -410,12 +416,15 @@
 
   /* Spacing Auto */
 
-  .u-mx-auto\@md {
+  .u-mla\@md { margin-left: auto; }
+  .u-mra\@md { margin-right: auto; }
+
+  .u-mxa\@md {
     margin-right: auto;
     margin-left: auto;
   }
 
-  .u-my-auto\@md {
+  .u-mya\@md {
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -425,7 +434,7 @@
 
   /* Spacing Level 0 */
 
-  .u-m0\@lg { margin: 0; }
+  .u-m0\@lg  { margin: 0; }
   .u-mt0\@lg { margin-top: 0; }
   .u-mr0\@lg { margin-right: 0; }
   .u-mb0\@lg { margin-bottom: 0; }
@@ -443,7 +452,7 @@
 
   /* Spacing Level 1 */
 
-  .u-m1\@lg { margin: var(--spacing-1); }
+  .u-m1\@lg  { margin: var(--spacing-1); }
   .u-mt1\@lg { margin-top: var(--spacing-1); }
   .u-mr1\@lg { margin-right: var(--spacing-1); }
   .u-mb1\@lg { margin-bottom: var(--spacing-1); }
@@ -461,7 +470,7 @@
 
   /* Spacing Level 2 */
 
-  .u-m2\@lg { margin: var(--spacing-2); }
+  .u-m2\@lg  { margin: var(--spacing-2); }
   .u-mt2\@lg { margin-top: var(--spacing-2); }
   .u-mr2\@lg { margin-right: var(--spacing-2); }
   .u-mb2\@lg { margin-bottom: var(--spacing-2); }
@@ -479,7 +488,7 @@
 
   /* Spacing Level 3 */
 
-  .u-m3\@lg { margin: var(--spacing-3); }
+  .u-m3\@lg  { margin: var(--spacing-3); }
   .u-mt3\@lg { margin-top: var(--spacing-3); }
   .u-mr3\@lg { margin-right: var(--spacing-3); }
   .u-mb3\@lg { margin-bottom: var(--spacing-3); }
@@ -497,7 +506,7 @@
 
   /* Spacing Level 4 */
 
-  .u-m4\@lg { margin: var(--spacing-4); }
+  .u-m4\@lg  { margin: var(--spacing-4); }
   .u-mt4\@lg { margin-top: var(--spacing-4); }
   .u-mr4\@lg { margin-right: var(--spacing-4); }
   .u-mb4\@lg { margin-bottom: var(--spacing-4); }
@@ -515,7 +524,7 @@
 
   /* Spacing Level 5 */
 
-  .u-m5\@lg { margin: var(--spacing-5); }
+  .u-m5\@lg  { margin: var(--spacing-5); }
   .u-mt5\@lg { margin-top: var(--spacing-5); }
   .u-mr5\@lg { margin-right: var(--spacing-5); }
   .u-mb5\@lg { margin-bottom: var(--spacing-5); }
@@ -533,7 +542,7 @@
 
   /* Spacing Level 6 */
 
-  .u-m6\@lg { margin: var(--spacing-6); }
+  .u-m6\@lg  { margin: var(--spacing-6); }
   .u-mt6\@lg { margin-top: var(--spacing-6); }
   .u-mr6\@lg { margin-right: var(--spacing-6); }
   .u-mb6\@lg { margin-bottom: var(--spacing-6); }
@@ -551,12 +560,15 @@
 
   /* Spacing Auto */
 
-  .u-mx-auto\@lg {
+  .u-mla\@lg { margin-left: auto; }
+  .u-mra\@lg { margin-right: auto; }
+
+  .u-mxa\@lg {
     margin-right: auto;
     margin-left: auto;
   }
 
-  .u-my-auto\@lg {
+  .u-mya\@lg {
     margin-top: auto;
     margin-bottom: auto;
   }
