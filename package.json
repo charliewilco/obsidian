@@ -36,9 +36,9 @@
   },
   "homepage": "https://github.com/obsidiancss/obsidian#readme",
   "devDependencies": {
-    "cssnano": "^3.7.1",
+    "cssnano": "^3.7.3",
     "del-cli": "^0.2.0",
-    "doiuse": "^2.3.0",
+    "doiuse": "^2.4.1",
     "gzip-size-cli": "^1.0.0",
     "immutable-css-cli": "^1.1.1",
     "npm-run-all": "^2.3.0",
@@ -50,7 +50,7 @@
     "postcss-import": "^8.1.2",
     "postcss-reporter": "^1.4.1",
     "pretty-bytes-cli": "^1.0.0",
-    "stylelint": "^6.9.0",
+    "stylelint": "^7.1.0",
     "stylelint-selector-bem-pattern": "^1.0.0",
     "watch": "^0.19.1"
   }
