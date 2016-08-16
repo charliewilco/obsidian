@@ -52,6 +52,6 @@
     "pretty-bytes-cli": "^1.0.0",
     "stylelint": "^7.1.0",
     "stylelint-selector-bem-pattern": "^1.0.0",
-    "watch": "^0.19.1"
+    "watch": "^0.19.2"
   }
 }
