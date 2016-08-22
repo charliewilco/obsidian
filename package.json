@@ -21,7 +21,7 @@
     "info": "npm-run-all lint info:*",
     "info:browsers": "doiuse --browsers 'last 1 versions' ./dist/obsidian.min.css",
     "info:size": "gzip-size ./dist/obsidian.min.css | pretty-bytes",
-    "info:stats": "parker ./dist/obsidian.min.css",
+    "info:stats": "parker ./dist/obsidian.min.css --format=json > parker.json",
     "info:mutations": "immutable-css ./dist/obsidian.min.css",
     "clean": "del ./dist && del ./test/bundle.css"
   },
@@ -43,7 +43,6 @@
     "immutable-css-cli": "^1.1.1",
     "npm-run-all": "^2.3.0",
     "parker": "0.0.10",
-    "postcss-apply": "^0.3.0",
     "postcss-cli": "^2.5.2",
     "postcss-cssnext": "^2.7.0",
     "postcss-export-vars": "^0.2.0",
