@@ -1,20 +1,24 @@
 /*---------Field Input Component----------*/
 
+:root {
+  --field-min: 5rem;
+}
+
 .c-field {
-  padding: var(--base-form-inner-sp);
-  box-shadow: var(--base-form-shadow);
-  border: var(--base-form-border) var(--base-form-border-color);
-  max-width: var(--base-form-mxw);
-  width: var(--base-form-width);
-  height: var(--base-form-height);
-  border-radius: var(--base-form-radius);
+  padding: var(--form-inner-sp);
+  box-shadow: var(--form-shadow);
+  border: var(--form-border) var(--form-border-color);
+  max-width: var(--form-mxw);
+  width: var(--form-width);
+  height: var(--form-height);
+  border-radius: var(--form-radius);
 }
 
 .c-field[disabled],
 .c-field:disabled {
   opacity: .5;
-  background: color(var(--base-form-color) a(10%));
-  border-color: color(var(--base-form-offsetColor) a(50%));
+  background: color(var(--form-color) a(10%));
+  border-color: color(var(--form-offsetColor) a(50%));
 }
 
 .c-field::placeholder {
@@ -25,10 +29,14 @@
   opacity: 1 !important;
 }
 
-.c-field--text { resize: none; }
+.c-field--text {
+  resize: none;
+  min-height: var(--field-min);
+}
 
 .c-field:focus {
   background: var(--offwhite);
-  color: var(--base-form-color);
-  outline: 5px auto var(--blue);
+  color: var(--form-color);
+  border-color: var(--form-color);
+  outline: 4px auto var(--form-color);
 }

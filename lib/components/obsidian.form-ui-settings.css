@@ -1,17 +1,17 @@
-/* Form UI Defaults */
+/*---------Form UI Defaults----------*/
 
 :root {
   --base-border: 1px;
-  --base-form-radius: .25rem;
-  --base-form-width: 100%;
-  --base-form-mxw: 100%;
-  --base-form-height: 2.8125rem;
-  --base-form-color: var(--color-1);
-  --base-form-offsetColor: var(--color-5);
-  --base-form-shadow: inset 0 1px 1px rgba(0, 0, 0, .125);
-  --base-form-inner-sp: calc(var(--base-spacing) / 2) var(--base-spacing);
-  --base-form-border: var(--base-border) solid;
-  --base-form-border-color: var(--base-form-offsetColor);
+  --form-radius: .25rem;
+  --form-width: 100%;
+  --form-mxw: 100%;
+  --form-height: 2.8125rem;
+  --form-color: var(--color-1);
+  --form-offsetColor: var(--color-5);
+  --form-shadow: inset 0 1px 1px rgba(0, 0, 0, .125);
+  --form-inner-sp: calc(var(--base-spacing) / 2) var(--base-spacing);
+  --form-border: var(--base-border) solid;
+  --form-border-color: var(--form-offsetColor);
 
   --base-outline: {
     outline: 4px auto color(var(--color-1) a(87.5%));

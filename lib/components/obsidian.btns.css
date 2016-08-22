@@ -1,18 +1,18 @@
 /*---------Buttons UI----------*/
 
 :root {
-  --base-btn-radius: .25rem;
-  --base-btn-border: 2px solid;
+  --btn-radius: .25rem;
+  --btn-border: 2px solid;
 }
 
 .c-btn {
-  background: var(--base-form-color);
+  background: var(--form-color);
   color: white;
-  border: var(--base-btn-border);
+  border: var(--btn-border);
   border-color: transparent;
-  padding: var(--base-form-inner-sp);
-  max-width: var(--base-form-mxw);
-  border-radius: var(--base-btn-radius);
+  padding: var(--form-inner-sp);
+  max-width: var(--form-mxw);
+  border-radius: var(--btn-radius);
   transition: color var(--base-dur) linear, background var(--base-dur) linear, border var(--base-dur) linear;
   cursor: pointer;
   display: inline-block;
@@ -37,7 +37,7 @@
 
 .c-btn:hover {
   border-color: currentColor;
-  color: var(--base-form-color);
+  color: var(--form-color);
   background: none;
 }
 
@@ -51,7 +51,7 @@
 .c-btn--4:hover { color: var(--color-4); }
 
 .c-btn--o {
-  color: var(--base-form-color);
+  color: var(--form-color);
   border-color: currentColor;
   background: none;
   display: inline-block;
@@ -59,7 +59,7 @@
 }
 
 .c-btn--o:hover {
-  background: var(--base-form-color);
+  background: var(--form-color);
   color: white;
   border-color: transparent;
 }

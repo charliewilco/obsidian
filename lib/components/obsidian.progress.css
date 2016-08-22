@@ -30,7 +30,7 @@
 
 .c-progress::-webkit-progress-bar {
   appearance: none;
-  border-radius: var(--base-form-radius);
+  border-radius: var(--progress-radius);
   background-color: var(--progress-background);
 }
 
