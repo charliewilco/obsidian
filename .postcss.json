@@ -22,10 +22,11 @@
     "matches": []
   },
   "cssnano": {
+    "filterPlugins": false,
+    "autoprefixer": false,
     "mergeRules": false,
     "discardEmpty": true,
     "discardComments": {
-      "removeAll": true,
       "removeAllButFirst": true
     }
   },
