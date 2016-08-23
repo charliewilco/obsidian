@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>ITCSS Methodology</title>
-  <meta name="description" content="ITCSS (Inverted Triangle CSS) from Harry Roberts, is way of structuring CSS it such a way that also the most general selectors to trickle down to the most sp...">
+  <meta name="description" content="ITCSS (Inverted Triangle CSS) from Harry Roberts, is a way of structuring CSS in such a way that the most general selectors to trickle down to the most speci...">
 
   <link rel="stylesheet" href="http://obsidian.charlespeters.net/assets/dist/bundle.css">
   <link rel="canonical" href="http://obsidian.charlespeters.nethttp://obsidian.charlespeters.net/itcss/">
@@ -91,6 +91,10 @@
   
   
     <li class="u-inbl u-bl@md u-pr2 u-py2">
+      <a href="http://obsidian.charlespeters.net/usage/">Usage</a>
+    </li>
+  
+    <li class="u-inbl u-bl@md u-pr2 u-py2">
       <a href="http://obsidian.charlespeters.net/styleguide/">Styleguide</a>
     </li>
   
@@ -114,13 +118,13 @@
     <h2 class="h3 u-w300 u-mb2">ITCSS Methodology</h2>
     <p class="h6"></p>
   </header>
-  <div class="c-post"><p><a href="https://www.youtube.com/watch?v=1OKZOV-iLj4">ITCSS</a> (Inverted Triangle CSS) from Harry Roberts, is way of structuring CSS it such a way that also the most general selectors to trickle down to the most specific selectors, as if they’re moving from the top of an bottom of a triangle to the pinnacle of it.</p>
+  <div class="c-post"><p><a href="https://www.youtube.com/watch?v=1OKZOV-iLj4">ITCSS</a> (Inverted Triangle CSS) from Harry Roberts, is a way of structuring CSS in such a way that the most general selectors to trickle down to the most specific selectors, as if they’re moving from the top of an bottom of a triangle to the pinnacle of it.</p>
 
-<p>In this implementation there are a few differences. Normally in ITCSS, you could have a tools like Sass functions, most of the tools we’d need are coming in CSS and transpiled by <a href="cssnext.io/features/">cssnext</a>.</p>
+<p>In this implementation there are a few differences. Normally in ITCSS, you could have a tools like Sass functions, but most of the tools we’d need are coming in CSS and transpiled by <a href="cssnext.io/features/">cssnext</a>.</p>
 
 <p>Objects have minimal visual styling in Obsidian. This is a set between the reset styling and the component level styling because it’s beyond an element.</p>
 
-<p>Settings contain base styles but often module variables are only contained in that module, there are a few exceptions (like shadow values).</p>
+<p>Settings contain base styles but often module variables are only contained in that module; there are a few exceptions (like shadow values).</p>
 
 <hr class="u-mt5 u-bg--ltgray" />
 
@@ -139,7 +143,7 @@
 </dd>
   
     <dt class="h6 u-w500">Objects</dt>
-    <dd class="u-mb4"><p>Objects define are common usable patterns. They are have more structure than skin, usually have no visual style (color, background, etc) applied; it’s the bare minimum UI. Things like grids for example.</p>
+    <dd class="u-mb4"><p>Objects define common reusable patterns. They are have more structure than skin, usually have no visual style (color, background, etc) applied; it’s the bare minimum UI. Objects are things like grids or the media object.</p>
 </dd>
   
     <dt class="h6 u-w500">Components</dt>
@@ -147,7 +151,7 @@
 </dd>
   
     <dt class="h6 u-w500">Utilities</dt>
-    <dd class="u-mb4"><p>Utilities are helper classes meant to override any default, extend specific styling. They are single use utilities, meant to only apply a single value.</p>
+    <dd class="u-mb4"><p>Utilities are helper classes meant to override any default or that extend specific styling. They are single use utilities, meant to only apply a single value.</p>
 </dd>
   
 </dl>

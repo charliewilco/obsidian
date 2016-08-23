@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Naming Classes</title>
-  <meta name="description" content="Classes in Obsidian are named with purpose.">
+  <title>Usage</title>
+  <meta name="description" content="Installation">
 
   <link rel="stylesheet" href="http://obsidian.charlespeters.net/assets/dist/bundle.css">
-  <link rel="canonical" href="http://obsidian.charlespeters.nethttp://obsidian.charlespeters.net/naming-classes/">
+  <link rel="canonical" href="http://obsidian.charlespeters.nethttp://obsidian.charlespeters.net/usage/">
   <link rel="alternate" type="application/rss+xml" title="Obsidian.css" href="http://obsidian.charlespeters.nethttp://obsidian.charlespeters.net/feed.xml">
 </head>
 
@@ -115,60 +115,65 @@
     <div class="c-pane o-col--12/12 o-container--lg u-p3">
       <section><article>
   <header class="post-header u-py3 o-container--md">
-    <h2 class="h3 u-w300 u-mb2">Naming Classes</h2>
+    <h2 class="h3 u-w300 u-mb2">Usage</h2>
     <p class="h6"></p>
   </header>
-  <div class="c-post"><p>Classes in Obsidian are named with purpose.</p>
+  <div class="c-post"><h3 id="installation">Installation</h3>
 
-<h3 id="prefixes">Prefixes</h3>
-
-<p>Objects, components, and utilities are all prefixed (<code class="highlighter-rouge">.o-</code>, <code class="highlighter-rouge">.c-</code>, <code class="highlighter-rouge">.u-</code>). This leads to clear class names, class names we can search for an <code class="highlighter-rouge">outline</code> for QA. It also puts a hard line between objects and components.</p>
-
-<h4 id="exceptions">Exceptions</h4>
-
-<p>Elements are not prefixed (ie. <code class="highlighter-rouge">.list</code>, <code class="highlighter-rouge">.table</code>) because they extend responsive ability or serve as a opt-in default for an element vs opinionated styling. Classes in <code class="highlighter-rouge">obsidian.forms-ui</code> add specific opinionated styling that’s common to projects.</p>
-
-<h3 id="suffixes">Suffixes</h3>
-
-<p>Obsidian uses responsive suffixes <code class="highlighter-rouge">@sm</code>. Responsive targeting shouldn’t be a modifier and falls in its own category. Obsidian defaults to a mobile first approach to CSS, meaning that classes without suffixes apply their styles to all screen sizes and ascend upward for styling per suffix.</p>
-
-<p><code class="highlighter-rouge">@sm</code>, <code class="highlighter-rouge">@md</code>, <code class="highlighter-rouge">@lg</code> are the given suffixes in Obsidian.</p>
-
-<h3 id="bem">BEM</h3>
-
-<p><a href="https://en.bem.info/">BEM</a> is a naming convention that gives class names informative and clear meaning.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.block__element--modifier {
-  /* Declarations */
-}
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>npm install obsidian.css --save
 </code></pre>
 </div>
 
-<h4 id="block-names">Block Names</h4>
+<p>or link to the CDN</p>
 
-<p>Blocks can be described as squares you can draw around a piece of UI or the root of a module (visual or conceptual). Most block names should be really simple, so avoid abbreviating or complicating. If two words are needed to describe a block separate them with a single hyphen <code class="highlighter-rouge">-</code>.</p>
+<pre><code class="language-markup">&lt;link rel="stylesheet" href="//npmcdn.com/obsidian.css/dist/obsidian.min.css" media="screen" title="Obsidian.css" charset="utf-8"&gt;
+</code></pre>
 
-<p>Blocks are the basis of a name. They can have both a modifier and a element attached (<code class="highlighter-rouge">.block__element--modifier</code>) or have just have one (either a modifier <code class="highlighter-rouge">.block--modifier</code> or an element <code class="highlighter-rouge">.block__element</code>.</p>
+<h4 id="using-in-build">Using in Build</h4>
 
-<p>Utilities in Obsidian get a specific block name that describes their function. For example <code class="highlighter-rouge">d</code> abbreviating <code class="highlighter-rouge">display</code> or <code class="highlighter-rouge">bkg</code> abbreviating <code class="highlighter-rouge">background</code>.</p>
+<p>Recommended you use <a href="https://github.com/postcss/postcss">PostCSS</a> and <a href="https://github.com/postcss/postcss-import">postcss-import</a>.</p>
 
-<h4 id="element-names">Element Names</h4>
+<p>Example using Gulp.js:</p>
 
-<p>Elements are pieces of a block separated from a block by a double underscore <code class="highlighter-rouge">__</code>. <code class="highlighter-rouge">.c-modal__close</code> would refer to a close link for a modal component, <code class="highlighter-rouge">.o-intrinsic__item</code> would refer to the item in the intrinsic container.</p>
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kr">const</span> <span class="nx">gulp</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">postcss</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp-postcss'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">atImport</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'postcss-import'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">cssnext</span>  <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'postcss-cssnext'</span><span class="p">);</span>
 
-<h4 id="modifier-names">Modifier Names</h4>
+<span class="kr">const</span> <span class="nx">processors</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="nx">atImport</span><span class="p">,</span>
+  <span class="nx">cssnext</span>
+<span class="p">];</span>
 
-<p>Modifiers add to the block or element in some way, hence modifying it. <code class="highlighter-rouge">.o-icon--sm</code> would refer to a small icon object and <code class="highlighter-rouge">.o-grid__col--3/12</code> would refer to a grid column that’s 3 parts of 12.</p>
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'styles'</span><span class="p">,</span> <span class="p">()</span><span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="s1">'path/to/stylesheet'</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">postcss</span><span class="p">(</span><span class="nx">processors</span><span class="p">))</span>
+    <span class="c1">// Probably other tasks</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s1">'path/to/destination'</span><span class="p">));</span>
+<span class="p">})</span>
+</code></pre>
+</div>
 
-<p>Utility modifiers get a single hyphen <code class="highlighter-rouge">-</code>.</p>
+<p>then import into your CSS and modify some variables:</p>
 
-<h3 id="sources">Sources</h3>
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="k">@import</span> <span class="s2">'obsidian.css/lib/settings'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">'obsidian.css/lib/generic'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">'obsidian.css/lib/elements'</span><span class="p">;</span>
 
-<ul>
-  <li><a href="http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/">BEMIT</a></li>
-  <li><a href="http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/">More Transparent UI Code with Namespaces</a></li>
-  <li><a href="https://github.com/dropbox/css-style-guide">Dropbox CSS Styleguide</a></li>
-</ul>
+<span class="k">@import</span> <span class="s2">'obsidian.css/lib/objects/obsidian.grid'</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="k">@import</span> <span class="s2">'obsidian.css'</span><span class="p">;</span>
+
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--headlines</span><span class="p">:</span> <span class="s2">'Proxima Nova Condensed'</span><span class="p">,</span> <span class="n">Lucida</span> <span class="n">Grande</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="py">--body-text</span><span class="p">:</span> <span class="s2">'Meta Serif Pro'</span><span class="p">,</span> <span class="n">Charter</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>And things should compile the way you’d expect.</p>
 </div>
 </article>
 </section>
