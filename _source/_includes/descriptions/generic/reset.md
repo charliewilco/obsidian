@@ -1,0 +1,1 @@
+This reset is meant to use [border-box](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) as the box-sizing property, define global typography settings, and clean up a few browser inconsistencies. It's adapted from [normalize.css](https://github.com/necolas/normalize.css/).

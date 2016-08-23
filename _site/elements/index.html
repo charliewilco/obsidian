@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html class="u-bg--palegray u-anti">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Elements</title>
+  <meta name="description" content="Obsidian.css is a modular CSS library that focuses on code common to most projects.
+">
+
+  <link rel="stylesheet" href="/assets/dist/bundle.css">
+  <link rel="canonical" href="http://obsidiancss.github.io/elements/">
+  <link rel="alternate" type="application/rss+xml" title="Obsidian.css" href="http://obsidiancss.github.io/feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="c-header  u-p2">
+  <div class="o-flex o-flex--wrap o-flex--center--h o-flex--j--sb">
+    <div class="">
+      <h1 class="h5 o-flex o-flex--center--h u-w400 u-lh-1">
+        <img src="/assets/dist/img/obsidian-logo@1x.png" alt="Obsidian.css Logo" class="c-header__logo u-bl u-mr3 u-py2@lg" />
+        <a href="/" class="c-header__title u-mr3">Obsidian.css</a>
+        <small class="c-header__version u-system">v2.1.3</small>
+      </h1>
+    </div>
+    <div class="u-right">
+      <a href="https://github.com/obsidiancss" class="u-bl">
+        <svg viewBox="0 0 16 16" class="o-icon o-icon--sm u-bl">
+  <path d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+</svg>
+
+      </a>
+    </div>
+  </div>
+</header>
+
+
+    <div class="o-flex o-flex--wrap o-flex--j--sa o-container u-mxa u-pt4@md u-mb4 u-px3@md">
+  <aside class="o-col--12/12 o-col--2/12@md">
+    <nav class="c-nav u-mb3">
+  
+  <ul class="list--reset u-w500">
+    
+      
+    
+      
+      <li class="c-nav__item  u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/settings/">Settings</a>
+      </li>
+      
+    
+      
+      <li class="c-nav__item  u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/generic/">Generic</a>
+      </li>
+      
+    
+      
+      <li class="c-nav__item active u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/elements/">Elements</a>
+      </li>
+      
+    
+      
+      <li class="c-nav__item  u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/objects/">Objects</a>
+      </li>
+      
+    
+      
+      <li class="c-nav__item  u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/components/">Components</a>
+      </li>
+      
+    
+      
+      <li class="c-nav__item  u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/utilites/">Utilities</a>
+      </li>
+      
+    
+  </ul>
+</nav>
+
+<nav class="u-mb3 u-none u-bl@md">
+  <h4 class="small u-caps u-lt-2 u-mb3">Further Reading</h4>
+  <ul class="list--reset small u-w500">
+  
+  
+    <li class="u-inbl u-bl@md u-pr2 u-py2">
+      <a href="/styleguide/">Styleguide</a>
+    </li>
+  
+    <li class="u-inbl u-bl@md u-pr2 u-py2">
+      <a href="/naming-classes/">Naming Classes</a>
+    </li>
+  
+    <li class="u-inbl u-bl@md u-pr2 u-py2">
+      <a href="/itcss/">ITCSS Methodology</a>
+    </li>
+  
+</ul>
+
+</nav>
+
+  </aside>
+  <main class="o-col--12/12 o-col--10/12@md u-px3 u-pl4@md u-pr0@md">
+    <div class="c-pane o-col--12/12 o-container--lg u-p3">
+      <section><article>
+  <header class="post-header u-py3 o-container--md">
+    <h2 class="h3 u-w300 u-mb2">Elements</h2>
+    <p class="h6">In this layer, elements refer to styles applied the specific type selectors. In this implementation there is a few helper classes to accompany these default styles.</p>
+  </header>
+  <div class=""><section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="tables-section" class="c-content__title h5 u-mb3 u-w500">Tables</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>This is a responsive table implementation.</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#tablesmarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#tablescss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#tablesexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="tablesmarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;div class=""&gt;
+  &lt;table class="table"&gt;
+    &lt;thead&gt;
+      &lt;th class="table__heading h6 u-left u-p2"&gt;Name&lt;/th&gt;
+      &lt;th class="table__heading h6 u-left u-p2"&gt;Type&lt;/th&gt;
+      &lt;th class="table__heading h6 u-left u-p2"&gt;Grade&lt;/th&gt;
+    &lt;/thead&gt;
+    &lt;tr class="table__row"&gt;
+      &lt;td class="table__content u-p2" data-heading="Name"&gt;Gizmo&lt;/td&gt;
+      &lt;td class="table__content u-p2" data-heading="Type"&gt;Robot&lt;/td&gt;
+      &lt;td class="table__content u-p2" data-heading="Grade"&gt;A+&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="table__row"&gt;
+      &lt;td class="table__content u-p2" data-heading="Name"&gt;Sherlock Holmes&lt;/td&gt;
+      &lt;td class="table__content u-p2" data-heading="Type"&gt;Human&lt;/td&gt;
+      &lt;td class="table__content u-p2" data-heading="Grade"&gt;B-&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="table__row"&gt;
+      &lt;td class="table__content u-p2" data-heading="Name"&gt;Merlin&lt;/td&gt;
+      &lt;td class="table__content u-p2" data-heading="Type"&gt;Wizard&lt;/td&gt;
+      &lt;td class="table__content u-p2" data-heading="Grade"&gt;C&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="table__row"&gt;
+      &lt;td class="table__content u-p2" data-heading="Name"&gt;Richard Nixon&lt;/td&gt;
+      &lt;td class="table__content u-p2" data-heading="Type"&gt;Cyborg&lt;/td&gt;
+      &lt;td class="table__content u-p2" data-heading="Grade"&gt;B-&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="tablescss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*----------Table Element----------*/</span>
+
+<span class="nt">table</span> <span class="p">{</span>
+  <span class="nl">border-collapse</span><span class="p">:</span> <span class="nb">collapse</span><span class="p">;</span>
+  <span class="nl">border-spacing</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">td</span><span class="o">,</span> <span class="nt">th</span> <span class="p">{</span> <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="c">/* Responsive Table Implementation */</span>
+
+<span class="nc">.table</span>  <span class="p">{</span> <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="nc">.table__heading</span> <span class="p">{</span> <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.table__content</span> <span class="p">{</span> <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="nc">.table__content</span><span class="nd">:before</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="n">attr</span><span class="p">(</span><span class="n">data-heading</span><span class="p">);</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">7rem</span><span class="p">;</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--litegray</span><span class="p">);</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">.625rem</span><span class="p">;</span>
+  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>
+  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">2px</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.table__row</span><span class="nd">:not</span><span class="o">(</span><span class="nd">:last-of-type</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="n">color</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--color-1</span><span class="p">)</span> <span class="n">blackness</span><span class="p">(</span><span class="err">+</span><span class="m">20%</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="p">(</span><span class="n">--md</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.table__content</span><span class="o">,</span> <span class="nc">.table__heading</span> <span class="p">{</span> <span class="nl">display</span><span class="p">:</span> <span class="nb">table-cell</span><span class="p">;</span> <span class="p">}</span>
+  <span class="nc">.table__content</span><span class="nd">:before</span> <span class="p">{</span> <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="tablesexample">
+      <div class="">
+  <table class="table">
+    <thead>
+      <th class="table__heading h6 u-left u-p2">Name</th>
+      <th class="table__heading h6 u-left u-p2">Type</th>
+      <th class="table__heading h6 u-left u-p2">Grade</th>
+    </thead>
+    <tr class="table__row">
+      <td class="table__content u-p2" data-heading="Name">Gizmo</td>
+      <td class="table__content u-p2" data-heading="Type">Robot</td>
+      <td class="table__content u-p2" data-heading="Grade">A+</td>
+    </tr>
+    <tr class="table__row">
+      <td class="table__content u-p2" data-heading="Name">Sherlock Holmes</td>
+      <td class="table__content u-p2" data-heading="Type">Human</td>
+      <td class="table__content u-p2" data-heading="Grade">B-</td>
+    </tr>
+    <tr class="table__row">
+      <td class="table__content u-p2" data-heading="Name">Merlin</td>
+      <td class="table__content u-p2" data-heading="Type">Wizard</td>
+      <td class="table__content u-p2" data-heading="Grade">C</td>
+    </tr>
+    <tr class="table__row">
+      <td class="table__content u-p2" data-heading="Name">Richard Nixon</td>
+      <td class="table__content u-p2" data-heading="Type">Cyborg</td>
+      <td class="table__content u-p2" data-heading="Grade">B-</td>
+    </tr>
+  </table>
+</div>
+
+    </div>
+  </div>
+
+</section>
+
+<section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="lists-section" class="c-content__title h5 u-mb3 u-w500">Lists</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>Element styling for ordered and unordered lists.</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#listsmarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#listscss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#listsexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="listsmarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;div class="o-flex o-flex--wrap"&gt;
+  &lt;div class="o-col--12/12 o-col--4/12@md u-p2"&gt;
+    &lt;h6 class="u-mb2"&gt;Unordered List&lt;/h6&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Listed Item #1&lt;/li&gt;
+      &lt;li&gt;Listed Item #2&lt;/li&gt;
+      &lt;li&gt;Listed Item #3&lt;/li&gt;
+      &lt;li&gt;Listed Item #4&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;div class="o-col--12/12 o-col--4/12@md u-p2"&gt;
+    &lt;h6 class="u-mb2"&gt;Ordered List&lt;/h6&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Numbered Item #1&lt;/li&gt;
+      &lt;li&gt;Numbered Item #2&lt;/li&gt;
+      &lt;li&gt;Numbered Item #3&lt;/li&gt;
+      &lt;li&gt;Numbered Item #4&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/div&gt;
+
+  &lt;div class="o-col--12/12 o-col--4/12@md u-p2"&gt;
+    &lt;h6 class="u-mb2"&gt;Reset&lt;/h6&gt;
+    &lt;ul class="list--reset"&gt;
+      &lt;li&gt;Listed Item #1&lt;/li&gt;
+      &lt;li&gt;Listed Item #2&lt;/li&gt;
+      &lt;li&gt;Listed Item #3&lt;/li&gt;
+      &lt;li&gt;Listed Item #4&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="listscss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*----------List &amp; List Item Elements---------*/</span>
+
+<span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span><span class="o">,</span>
+<span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ol</span> <span class="p">{</span> <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="nt">ul</span><span class="o">,</span> <span class="nt">ol</span> <span class="p">{</span> <span class="nl">list-style-position</span><span class="p">:</span> <span class="nb">inside</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="nc">.list--reset</span> <span class="p">{</span>  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">inside</span> <span class="nb">none</span><span class="p">;</span> <span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="listsexample">
+      <div class="o-flex o-flex--wrap">
+  <div class="o-col--12/12 o-col--4/12@md u-p2">
+    <h6 class="u-mb2">Unordered List</h6>
+    <ul>
+      <li>Listed Item #1</li>
+      <li>Listed Item #2</li>
+      <li>Listed Item #3</li>
+      <li>Listed Item #4</li>
+    </ul>
+  </div>
+
+  <div class="o-col--12/12 o-col--4/12@md u-p2">
+    <h6 class="u-mb2">Ordered List</h6>
+    <ol>
+      <li>Numbered Item #1</li>
+      <li>Numbered Item #2</li>
+      <li>Numbered Item #3</li>
+      <li>Numbered Item #4</li>
+    </ol>
+  </div>
+
+  <div class="o-col--12/12 o-col--4/12@md u-p2">
+    <h6 class="u-mb2">Reset</h6>
+    <ul class="list--reset">
+      <li>Listed Item #1</li>
+      <li>Listed Item #2</li>
+      <li>Listed Item #3</li>
+      <li>Listed Item #4</li>
+    </ul>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</section>
+
+<section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="headlines-section" class="c-content__title h5 u-mb3 u-w500">Headlines</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>Simple typescale</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#headlinesmarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#headlinescss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#headlinesexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="headlinesmarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;h1&gt;Headline Level 1&lt;/h1&gt;
+&lt;h2&gt;Headline Level 2&lt;/h2&gt;
+&lt;h3&gt;Headline Level 3&lt;/h3&gt;
+&lt;h4&gt;Headline Level 4&lt;/h4&gt;
+&lt;h5&gt;Headline Level 5&lt;/h5&gt;
+&lt;h6&gt;Headline Level 6&lt;/h6&gt;
+
+&lt;small&gt;Small&lt;/small&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="headlinescss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*----------Headline Elements----------*/</span>
+
+<span class="c">/*
+  NOTE: Originally based off the Golden Ratio and 1rem being modified at each break point
+*/</span>
+
+<span class="c">/* Sizes */</span>
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="c">/* Headline Sizes */</span>
+  <span class="py">--headline-1</span><span class="p">:</span> <span class="m">3.125rem</span><span class="p">;</span>
+  <span class="py">--headline-2</span><span class="p">:</span> <span class="m">2.5rem</span><span class="p">;</span>
+  <span class="py">--headline-3</span><span class="p">:</span> <span class="m">2.125rem</span><span class="p">;</span>
+  <span class="py">--headline-4</span><span class="p">:</span> <span class="m">1.75rem</span><span class="p">;</span>
+  <span class="py">--headline-5</span><span class="p">:</span> <span class="m">1.5rem</span><span class="p">;</span>
+  <span class="py">--headline-6</span><span class="p">:</span> <span class="m">1.25rem</span><span class="p">;</span>
+
+  <span class="py">--lh-1</span><span class="p">:</span> <span class="m">1.125</span><span class="p">;</span>
+  <span class="py">--lh-2</span><span class="p">:</span> <span class="m">1.25</span><span class="p">;</span>
+  <span class="py">--lh-3</span><span class="p">:</span> <span class="m">1.5</span><span class="p">;</span>
+
+  <span class="py">--sm-multiplier</span><span class="p">:</span> <span class="m">.875</span><span class="p">;</span>
+  <span class="py">--md-multiplier</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+  <span class="py">--lg-multiplier</span><span class="p">:</span> <span class="m">1.125</span><span class="p">;</span>
+
+  <span class="py">--headline-1-sm</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-1</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--sm-multiplier</span><span class="p">));</span>
+  <span class="py">--headline-2-sm</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-2</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--sm-multiplier</span><span class="p">));</span>
+  <span class="py">--headline-3-sm</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-3</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--sm-multiplier</span><span class="p">));</span>
+  <span class="py">--headline-4-sm</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-4</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--sm-multiplier</span><span class="p">));</span>
+  <span class="py">--headline-5-sm</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-5</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--sm-multiplier</span><span class="p">));</span>
+  <span class="py">--headline-6-sm</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-6</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--sm-multiplier</span><span class="p">));</span>
+
+  <span class="py">--headline-1-md</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-1</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--md-multiplier</span><span class="p">));</span>
+  <span class="py">--headline-2-md</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-2</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--md-multiplier</span><span class="p">));</span>
+  <span class="py">--headline-3-md</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-3</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--md-multiplier</span><span class="p">));</span>
+  <span class="py">--headline-4-md</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-4</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--md-multiplier</span><span class="p">));</span>
+  <span class="py">--headline-5-md</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-5</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--md-multiplier</span><span class="p">));</span>
+  <span class="py">--headline-6-md</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-6</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--md-multiplier</span><span class="p">));</span>
+
+  <span class="py">--headline-1-lg</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-1</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--lg-multiplier</span><span class="p">));</span>
+  <span class="py">--headline-2-lg</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-2</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--lg-multiplier</span><span class="p">));</span>
+  <span class="py">--headline-3-lg</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-3</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--lg-multiplier</span><span class="p">));</span>
+  <span class="py">--headline-4-lg</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-4</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--lg-multiplier</span><span class="p">));</span>
+  <span class="py">--headline-5-lg</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-5</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--lg-multiplier</span><span class="p">));</span>
+  <span class="py">--headline-6-lg</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--headline-6</span><span class="p">)</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--lg-multiplier</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="nt">h1</span><span class="o">,</span> <span class="nc">.h1</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-1-sm</span><span class="p">);</span> <span class="p">}</span>
+<span class="nt">h2</span><span class="o">,</span> <span class="nc">.h2</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-2-sm</span><span class="p">);</span> <span class="p">}</span>
+<span class="nt">h3</span><span class="o">,</span> <span class="nc">.h3</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-3-sm</span><span class="p">);</span> <span class="p">}</span>
+<span class="nt">h4</span><span class="o">,</span> <span class="nc">.h4</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-4-sm</span><span class="p">);</span> <span class="p">}</span>
+<span class="nt">h5</span><span class="o">,</span> <span class="nc">.h5</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-5-sm</span><span class="p">);</span> <span class="p">}</span>
+<span class="nt">h6</span><span class="o">,</span> <span class="nc">.h6</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-6-sm</span><span class="p">);</span> <span class="p">}</span>
+
+<span class="nd">:--headings</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--lh-3</span><span class="p">);</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headlines</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nd">:--headingsClasses</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--lh-3</span><span class="p">);</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headlines</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="p">(</span><span class="n">--md</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">h1</span><span class="o">,</span> <span class="nc">.h1</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-1-md</span><span class="p">);</span> <span class="p">}</span>
+  <span class="nt">h2</span><span class="o">,</span> <span class="nc">.h2</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-2-md</span><span class="p">);</span> <span class="p">}</span>
+  <span class="nt">h3</span><span class="o">,</span> <span class="nc">.h3</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-3-md</span><span class="p">);</span> <span class="p">}</span>
+  <span class="nt">h4</span><span class="o">,</span> <span class="nc">.h4</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-4-md</span><span class="p">);</span> <span class="p">}</span>
+  <span class="nt">h5</span><span class="o">,</span> <span class="nc">.h5</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-5-md</span><span class="p">);</span> <span class="p">}</span>
+  <span class="nt">h6</span><span class="o">,</span> <span class="nc">.h6</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-6-md</span><span class="p">);</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="p">(</span><span class="n">--lg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">h1</span><span class="o">,</span> <span class="nc">.h1</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-1-lg</span><span class="p">);</span> <span class="p">}</span>
+  <span class="nt">h2</span><span class="o">,</span> <span class="nc">.h2</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-2-lg</span><span class="p">);</span> <span class="p">}</span>
+  <span class="nt">h3</span><span class="o">,</span> <span class="nc">.h3</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-3-lg</span><span class="p">);</span> <span class="p">}</span>
+  <span class="nt">h4</span><span class="o">,</span> <span class="nc">.h4</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-4-lg</span><span class="p">);</span> <span class="p">}</span>
+  <span class="nt">h5</span><span class="o">,</span> <span class="nc">.h5</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-5-lg</span><span class="p">);</span> <span class="p">}</span>
+  <span class="nt">h6</span><span class="o">,</span> <span class="nc">.h6</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--headline-6-lg</span><span class="p">);</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nc">.small</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="m">87.5%</span><span class="p">;</span> <span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="headlinesexample">
+      <h1>Headline Level 1</h1>
+<h2>Headline Level 2</h2>
+<h3>Headline Level 3</h3>
+<h4>Headline Level 4</h4>
+<h5>Headline Level 5</h5>
+<h6>Headline Level 6</h6>
+
+<small>Small</small>
+
+    </div>
+  </div>
+
+</section>
+
+<section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="bodytext-section" class="c-content__title h5 u-mb3 u-w500">Body Text</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>Normal body text assuming a <code class="highlighter-rouge">font-size</code> of 100% and spacing for multiple paragraphs.</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#bodytextmarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#bodytextcss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#bodytextexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="bodytextmarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="bodytextcss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*----------Body Text Default Elements----------*/</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--body-text</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="nd">:not</span><span class="o">(</span><span class="nd">:last-of-type</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--base-spacing</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="bodytextexample">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    </div>
+  </div>
+
+</section>
+
+<section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="links-section" class="c-content__title h5 u-mb3 u-w500">Links</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>Simple styling for links and a class to apply to elements that need similar styling but aren’t an anchor tag.</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#linksmarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#linkscss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#linksexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="linksmarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;a href="#"&gt;Normal Anchor tag&lt;/a&gt;
+&lt;br /&gt;
+&lt;span class="link"&gt;Not an Anchor Tag&lt;/span&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="linkscss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*---------Link Defaults / Anchor Element----------*/</span>
+
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--link</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nd">:--links</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--link</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nd">:--links:active</span><span class="o">,</span>
+<span class="nd">:--links:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">color</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--link</span><span class="p">)</span> <span class="n">lightness</span><span class="p">(</span><span class="err">+</span><span class="m">15%</span><span class="p">));</span>
+  <span class="nl">outline</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="linksexample">
+      <a href="#">Normal Anchor tag</a>
+<br />
+<span class="link">Not an Anchor Tag</span>
+
+    </div>
+  </div>
+
+</section>
+
+<section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="forms-section" class="c-content__title h5 u-mb3 u-w500">Forms</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>Reset styling for form elements, mostly to inherit styles.</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#formsmarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#formscss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#formsexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="formsmarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;form class=""&gt;
+  &lt;div class="u-py2"&gt;
+    &lt;div class="u-inbl u-py1 u-mr3"&gt;
+      &lt;label for="label1"&gt;Text Input &lt;/label&gt;
+      &lt;input type="text" id="label1" name="name" placeholder="Text Input"&gt;
+    &lt;/div&gt;
+    &lt;div class="u-inbl u-py1"&gt;
+      &lt;label for="label2"&gt;Email Input&lt;/label&gt;
+      &lt;input type="email" id="label2" name="name" placeholder="Text Input"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="u-py2"&gt;
+    &lt;label for="label3"&gt;Select one&lt;/label&gt;
+    &lt;select name="select" id="label3"&gt;
+      &lt;option value="value1"&gt;Value 1&lt;/option&gt;
+      &lt;option value="value2" selected&gt;Value 2&lt;/option&gt;
+      &lt;option value="value3"&gt;Value 3&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class="u-py2"&gt;
+    &lt;label for="label4"&gt;Textarea&lt;/label&gt;
+    &lt;br /&gt;
+    &lt;textarea id="label4" name="name" rows="8" cols="40"&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+  &lt;div class="u-py2"&gt;
+    &lt;button type="button" name="button"&gt;Button&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="formscss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*----------Form Reset &amp; Form Default Elements----------*/</span>
+
+<span class="c">/* All Defaults */</span>
+
+<span class="nt">button</span><span class="o">,</span>
+<span class="nt">input</span><span class="o">,</span>
+<span class="nt">optgroup</span><span class="o">,</span>
+<span class="nt">select</span><span class="o">,</span>
+<span class="nt">textarea</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">button</span><span class="o">[</span><span class="nt">disabled</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">disabled</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">default</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Input Fields */</span>
+
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">'search'</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">'text'</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">'number'</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">'email'</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">'password'</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">appearance</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Textareas */</span>
+
+<span class="nt">textarea</span> <span class="p">{</span>
+  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Selects */</span>
+
+<span class="nt">select</span> <span class="p">{</span> <span class="nl">appearance</span><span class="p">:</span> <span class="n">menulist</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">optgroup</span> <span class="p">{</span> <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="c">/* Buttons &amp; Submissions */</span>
+
+<span class="nt">button</span> <span class="p">{</span> <span class="nl">overflow</span><span class="p">:</span> <span class="nb">visible</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="nt">button</span><span class="o">,</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">'button'</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">'reset'</span><span class="o">],</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">'submit'</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+  <span class="nl">appearance</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Other */</span>
+
+<span class="nt">fieldset</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--base-spacing</span><span class="p">)</span> <span class="p">/</span> <span class="m">4</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nt">legend</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="formsexample">
+      <form class="">
+  <div class="u-py2">
+    <div class="u-inbl u-py1 u-mr3">
+      <label for="label1">Text Input </label>
+      <input type="text" id="label1" name="name" placeholder="Text Input" />
+    </div>
+    <div class="u-inbl u-py1">
+      <label for="label2">Email Input</label>
+      <input type="email" id="label2" name="name" placeholder="Text Input" />
+    </div>
+  </div>
+  <div class="u-py2">
+    <label for="label3">Select one</label>
+    <select name="select" id="label3">
+      <option value="value1">Value 1</option>
+      <option value="value2" selected="">Value 2</option>
+      <option value="value3">Value 3</option>
+    </select>
+  </div>
+  <div class="u-py2">
+    <label for="label4">Textarea</label>
+    <br />
+    <textarea id="label4" name="name" rows="8" cols="40"></textarea>
+  </div>
+  <div class="u-py2">
+    <button type="button" name="button">Button</button>
+  </div>
+</form>
+
+    </div>
+  </div>
+
+</section>
+
+<section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="images-section" class="c-content__title h5 u-mb3 u-w500">Images</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>Sets <code class="highlighter-rouge">max-width: 100%</code> on images and sets the fill of <code class="highlighter-rouge">&lt;svg&gt;</code> elements to be the declared color.</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#imagesmarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#imagescss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#imagesexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="imagesmarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;img src="/assets/dist/img/filler-image.svg" alt="Placeholder Image" /&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="imagescss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*----------Image Element----------*/</span>
+
+<span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+  <span class="nl">vertical-align</span><span class="p">:</span> <span class="nb">middle</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">svg</span><span class="nd">:not</span><span class="o">(</span><span class="nd">:root</span><span class="o">)</span> <span class="p">{</span> <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="nt">svg</span> <span class="p">{</span>
+  <span class="py">fill</span><span class="p">:</span> <span class="n">currentColor</span><span class="p">;</span>
+  <span class="nl">pointer-events</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">max-height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="imagesexample">
+      <img src="/assets/dist/img/filler-image.svg" alt="Placeholder Image" />
+
+    </div>
+  </div>
+
+</section>
+
+</div>
+</article>
+</section>
+    </div>
+  </main>
+</div>
+
+
+    <footer class="small">
+  <div class="o-container u-mxa u-mb3 u-px3@md u-py5@md">
+    <div class="o-col--4/12@md">
+      <h4 class="h6">Obsidian.css</h4>
+      <p>Obsidian.css is a modular CSS library that focuses on code common to most projects.
+</p>
+      <ul class="list--reset u-w700 u-caps">
+        <li class="u-inbl u-py2 u-pr2">
+          <a href="https://github.com/obsidiancss">GitHub</a>
+        </li>
+        <li class="u-inbl u-py2 u-pr2">
+          <a href="https://twitter.com/obsidiancss">Twitter</a>
+        </li>
+        <li class="u-inbl u-py2 u-pr2">
+          <a href="https://www.npmjs.com/package/obsidian.css">npm</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-36412149-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+    <script src="/assets/dist/bundle.js"></script>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html class="u-bg--palegray u-anti">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Components</title>
+  <meta name="description" content="Obsidian.css is a modular CSS library that focuses on code common to most projects.
+">
+
+  <link rel="stylesheet" href="/assets/dist/bundle.css">
+  <link rel="canonical" href="http://obsidiancss.github.io/components/">
+  <link rel="alternate" type="application/rss+xml" title="Obsidian.css" href="http://obsidiancss.github.io/feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="c-header  u-p2">
+  <div class="o-flex o-flex--wrap o-flex--center--h o-flex--j--sb">
+    <div class="">
+      <h1 class="h5 o-flex o-flex--center--h u-w400 u-lh-1">
+        <img src="/assets/dist/img/obsidian-logo@1x.png" alt="Obsidian.css Logo" class="c-header__logo u-bl u-mr3 u-py2@lg" />
+        <a href="/" class="c-header__title u-mr3">Obsidian.css</a>
+        <small class="c-header__version u-system">v2.1.3</small>
+      </h1>
+    </div>
+    <div class="u-right">
+      <a href="https://github.com/obsidiancss" class="u-bl">
+        <svg viewBox="0 0 16 16" class="o-icon o-icon--sm u-bl">
+  <path d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+</svg>
+
+      </a>
+    </div>
+  </div>
+</header>
+
+
+    <div class="o-flex o-flex--wrap o-flex--j--sa o-container u-mxa u-pt4@md u-mb4 u-px3@md">
+  <aside class="o-col--12/12 o-col--2/12@md">
+    <nav class="c-nav u-mb3">
+  
+  <ul class="list--reset u-w500">
+    
+      
+    
+      
+      <li class="c-nav__item  u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/settings/">Settings</a>
+      </li>
+      
+    
+      
+      <li class="c-nav__item  u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/generic/">Generic</a>
+      </li>
+      
+    
+      
+      <li class="c-nav__item  u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/elements/">Elements</a>
+      </li>
+      
+    
+      
+      <li class="c-nav__item  u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/objects/">Objects</a>
+      </li>
+      
+    
+      
+      <li class="c-nav__item active u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/components/">Components</a>
+      </li>
+      
+    
+      
+      <li class="c-nav__item  u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/utilites/">Utilities</a>
+      </li>
+      
+    
+  </ul>
+</nav>
+
+<nav class="u-mb3 u-none u-bl@md">
+  <h4 class="small u-caps u-lt-2 u-mb3">Further Reading</h4>
+  <ul class="list--reset small u-w500">
+  
+  
+    <li class="u-inbl u-bl@md u-pr2 u-py2">
+      <a href="/styleguide/">Styleguide</a>
+    </li>
+  
+    <li class="u-inbl u-bl@md u-pr2 u-py2">
+      <a href="/naming-classes/">Naming Classes</a>
+    </li>
+  
+    <li class="u-inbl u-bl@md u-pr2 u-py2">
+      <a href="/itcss/">ITCSS Methodology</a>
+    </li>
+  
+</ul>
+
+</nav>
+
+  </aside>
+  <main class="o-col--12/12 o-col--10/12@md u-px3 u-pl4@md u-pr0@md">
+    <div class="c-pane o-col--12/12 o-container--lg u-p3">
+      <section><article>
+  <header class="post-header u-py3 o-container--md">
+    <h2 class="h3 u-w300 u-mb2">Components</h2>
+    <p class="h6">Components are modules with specific chunks of UI with more visual styling than any other layer. The components in Obsidian.css are highly experimental.</p>
+  </header>
+  <div class=""><section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="cards-section" class="c-content__title h5 u-mb3 u-w500">Card UI</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>Card displays content that carries a visual metaphor of a playing card. For information on this pattern, checkout <a href="https://uxplanet.org/using-card-based-design-to-enhance-ux-51f965ab70cb#.aqoz7dokz">Using Card-Based Design To Enhance UX</a> from Nick Babich.</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#cardsmarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#cardscss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#cardsexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="cardsmarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;article class="c-card u-ov--hid u-mxa"&gt;
+  &lt;figure class="c-card__figure o-intrinsic o-intrinsic--16x9"&gt;
+    &lt;img src="http://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201411/363561279.jpg" class="o-intrinsic__item u-fit--cover u-bl" alt="Adam West is back as Batman"&gt;
+  &lt;/figure&gt;
+  &lt;header class="u-pt3 u-px3 u-mb2 o-flex o-flex--center--h"&gt;
+    &lt;img class="o-icon o-icon--xs u-mr2" src="http://i.cdn.turner.com/cnn/.e1mo/img/4.0/logos/logo_cnn_badge_2up.png" alt="CSS-Tricks Logo"&gt;
+    &lt;h1 class="small u-system u-ltgray u-mb0"&gt;CNN&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;div class="c-card__content u-px3 u-pb3"&gt;
+    &lt;h2 class="h6"&gt;
+      &lt;a href="#"&gt;Adam West is back as Batman&lt;/a&gt;
+    &lt;/h2&gt;
+    &lt;small class="u-caps u-ltgray"&gt;Lisa Respers France — &lt;time&gt;August 18, 2016&lt;/time&gt;&lt;/small&gt;
+    &lt;p class="u-bl u-wd--100" style="white-space: normal"&gt;Here's a perfect one for a Throwback Thursday: Adam West, Burt Ward and Julie Newmar are reprising their famous "Batman" roles in the new animated film "Batman: Return of the Caped Crusaders.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="cardscss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*---------Card UI----------*/</span>
+
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--card-max</span><span class="p">:</span> <span class="m">25rem</span><span class="p">;</span>
+  <span class="py">--card-bg</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="py">--card-radius</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--radius-2</span><span class="p">);</span>
+  <span class="py">--card-shadow</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--shadow-2</span><span class="p">);</span>
+  <span class="py">--card-timing</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--base-dur</span><span class="p">)</span> <span class="p">/</span> <span class="m">2</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-card</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--card-max</span><span class="p">);</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--card-bg</span><span class="p">);</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--card-radius</span><span class="p">);</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--card-shadow</span><span class="p">);</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">);</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">transform</span> <span class="n">var</span><span class="p">(</span><span class="n">--card-timing</span><span class="p">)</span> <span class="n">ease-in-out</span><span class="p">;</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-card</span><span class="nd">::before</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s2">''</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="m">-1</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--card-radius</span><span class="p">);</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">opacity</span> <span class="n">var</span><span class="p">(</span><span class="n">--card-timing</span><span class="p">)</span> <span class="n">ease-in-out</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--card-shadow</span><span class="p">);</span>
+  <span class="nl">opacity</span><span class="p">:</span> <span class="m">.5</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-card</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">1.1</span><span class="p">,</span> <span class="m">1.1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-card</span><span class="nd">:hover::before</span> <span class="p">{</span>
+  <span class="nl">opacity</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-card__figure</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-card__content</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">87.5%</span><span class="p">;</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="cardsexample">
+      <article class="c-card u-ov--hid u-mxa">
+  <figure class="c-card__figure o-intrinsic o-intrinsic--16x9">
+    <img src="http://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201411/363561279.jpg" class="o-intrinsic__item u-fit--cover u-bl" alt="Adam West is back as Batman" />
+  </figure>
+  <header class="u-pt3 u-px3 u-mb2 o-flex o-flex--center--h">
+    <img class="o-icon o-icon--xs u-mr2" src="http://i.cdn.turner.com/cnn/.e1mo/img/4.0/logos/logo_cnn_badge_2up.png" alt="CSS-Tricks Logo" />
+    <h1 class="small u-system u-ltgray u-mb0">CNN</h1>
+  </header>
+  <div class="c-card__content u-px3 u-pb3">
+    <h2 class="h6">
+      <a href="#">Adam West is back as Batman</a>
+    </h2>
+    <small class="u-caps u-ltgray">Lisa Respers France — <time>August 18, 2016</time></small>
+    <p class="u-bl u-wd--100" style="white-space: normal">Here's a perfect one for a Throwback Thursday: Adam West, Burt Ward and Julie Newmar are reprising their famous "Batman" roles in the new animated film "Batman: Return of the Caped Crusaders.</p>
+  </div>
+</article>
+
+    </div>
+  </div>
+
+</section>
+
+<section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="field-section" class="c-content__title h5 u-mb3 u-w500">Fields</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>Visual skins for <code class="highlighter-rouge">&lt;input&gt;</code> and <code class="highlighter-rouge">&lt;textarea&gt;</code> elements.</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#fieldmarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#fieldcss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#fieldexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="fieldmarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;section class="o-flex o-flex--wrap"&gt;
+  &lt;div class="o-col--12/12 o-col--6/12@md u-p2"&gt;
+    &lt;label for="ti" class="u-gray u-mb1 u-bl"&gt;Text Field&lt;/label&gt;
+    &lt;input type="text" class="c-field" id="ti" name="ti" value="" placeholder="Text"&gt;
+  &lt;/div&gt;
+  &lt;div class="o-col--12/12 o-col--6/12@md u-p2"&gt;
+    &lt;label for="num" class="u-gray u-mb1 u-bl"&gt;Number Field&lt;/label&gt;
+    &lt;input type="number" class="c-field" id="num" name="num" value="" placeholder="0-9"&gt;
+  &lt;/div&gt;
+  &lt;div class="o-col--12/12 o-col--6/12@md u-p2"&gt;
+    &lt;label for="tid" class="u-gray u-mb1 u-bl"&gt;Disabled Field&lt;/label&gt;
+    &lt;input type="text" class="c-field" id="tid" name="tid" value="" disabled placeholder="Disabled"&gt;
+  &lt;/div&gt;
+  &lt;div class="o-col--12/12 u-p2"&gt;
+    &lt;label for="txt" class="u-gray u-mb1 u-bl"&gt;Textarea Field&lt;/label&gt;
+    &lt;textarea id="txt" name="txt" rows="8" cols="40" class="c-field c-field--text"&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="fieldcss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*---------Field Input Component----------*/</span>
+
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--field-min</span><span class="p">:</span> <span class="m">5rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-field</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-inner-sp</span><span class="p">);</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-shadow</span><span class="p">);</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-border</span><span class="p">)</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-border-color</span><span class="p">);</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-mxw</span><span class="p">);</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-width</span><span class="p">);</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-height</span><span class="p">);</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-radius</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-field</span><span class="o">[</span><span class="nt">disabled</span><span class="o">],</span>
+<span class="nc">.c-field</span><span class="nd">:disabled</span> <span class="p">{</span>
+  <span class="nl">opacity</span><span class="p">:</span> <span class="m">.5</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">color</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--form-color</span><span class="p">)</span> <span class="n">a</span><span class="p">(</span><span class="m">10%</span><span class="p">));</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="n">color</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--form-offsetColor</span><span class="p">)</span> <span class="n">a</span><span class="p">(</span><span class="m">50%</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="nc">.c-field</span><span class="nd">::placeholder</span> <span class="p">{</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-field</span><span class="nd">::-webkit-calendar-picker-indicator</span> <span class="p">{</span>
+  <span class="nl">opacity</span><span class="p">:</span> <span class="m">1</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-field--text</span> <span class="p">{</span>
+  <span class="nl">resize</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">min-height</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--field-min</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-field</span><span class="nd">:focus</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--offwhite</span><span class="p">);</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-color</span><span class="p">);</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-color</span><span class="p">);</span>
+  <span class="nl">outline</span><span class="p">:</span> <span class="m">4px</span> <span class="nb">auto</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-color</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="fieldexample">
+      <section class="o-flex o-flex--wrap">
+  <div class="o-col--12/12 o-col--6/12@md u-p2">
+    <label for="ti" class="u-gray u-mb1 u-bl">Text Field</label>
+    <input type="text" class="c-field" id="ti" name="ti" value="" placeholder="Text" />
+  </div>
+  <div class="o-col--12/12 o-col--6/12@md u-p2">
+    <label for="num" class="u-gray u-mb1 u-bl">Number Field</label>
+    <input type="number" class="c-field" id="num" name="num" value="" placeholder="0-9" />
+  </div>
+  <div class="o-col--12/12 o-col--6/12@md u-p2">
+    <label for="tid" class="u-gray u-mb1 u-bl">Disabled Field</label>
+    <input type="text" class="c-field" id="tid" name="tid" value="" disabled="" placeholder="Disabled" />
+  </div>
+  <div class="o-col--12/12 u-p2">
+    <label for="txt" class="u-gray u-mb1 u-bl">Textarea Field</label>
+    <textarea id="txt" name="txt" rows="8" cols="40" class="c-field c-field--text"></textarea>
+  </div>
+</section>
+
+    </div>
+  </div>
+
+</section>
+
+<section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="select-section" class="c-content__title h5 u-mb3 u-w500">Select</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>This is a pattern to change the skin of <code class="highlighter-rouge">&lt;select&gt;</code> element without losing it’s inherit accessibility.</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#selectmarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#selectcss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#selectexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="selectmarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;div class="o-col--12/12 o-col--6/12@md u-p2"&gt;
+  &lt;label for="slct" class="u-gray u-mb1 u-bl"&gt;Select&lt;/label&gt;
+  &lt;div class="c-select"&gt;
+    &lt;select class="c-select__elm" name="slct" id="slct"&gt;
+      &lt;option value="value1"&gt;Value 1&lt;/option&gt;
+      &lt;option value="value2"&gt;Value 2&lt;/option&gt;
+      &lt;option value="value3" selected=""&gt;Value 3&lt;/option&gt;
+      &lt;option value="value4"&gt;Value 4&lt;/option&gt;
+      &lt;option value="value5"&gt;Value 5&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="selectcss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*---------Select Component----------*/</span>
+
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--select-border</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-border</span><span class="p">)</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-border-color</span><span class="p">);</span>
+  <span class="py">--select-radius</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-radius</span><span class="p">);</span>
+  <span class="py">--select-w</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-width</span><span class="p">);</span>
+  <span class="py">--select-h</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-height</span><span class="p">);</span>
+  <span class="py">--select-arrow-color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-1</span><span class="p">);</span>
+  <span class="py">--select-focus</span><span class="p">:</span> <span class="m">4px</span> <span class="nb">auto</span> <span class="n">color</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--color-1</span><span class="p">)</span> <span class="n">a</span><span class="p">(</span><span class="m">87.5%</span><span class="p">));</span>
+  <span class="py">--select-arrow</span><span class="p">:</span> <span class="sx">url('data:image/svg+xml;charset=utf-8,%3Csvg width="20" height="8" viewBox="716 323 20 8" xmlns="http://www.w3.org/2000/svg" fill="%23147AAB"%3E%3Cpath d="M726 328.64l7.87-5.51a.717.717 0 0 1 1 .177.725.725 0 0 1-.177 1l-8.233 5.765a.717.717 0 0 1-.46.13.717.717 0 0 1-.46-.13l-8.233-5.765a.725.725 0 0 1-.177-1 .717.717 0 0 1 1-.176l7.87 5.51z"/%3E%3C/svg%3E')</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-select</span> <span class="p">{</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-mxw</span><span class="p">);</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--select-w</span><span class="p">);</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--select-h</span><span class="p">);</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--select-border</span><span class="p">);</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--select-radius</span><span class="p">);</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="m">2</span><span class="p">;</span>
+  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-select</span><span class="nd">::after</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s2">''</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="nl">background-repeat</span><span class="p">:</span> <span class="nb">no-repeat</span><span class="p">;</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--select-arrow</span><span class="p">);</span>
+  <span class="nl">background-position</span><span class="p">:</span> <span class="nb">center</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="m">35%</span><span class="p">;</span>
+  <span class="nl">border-left</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--select-border</span><span class="p">);</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+  <span class="nl">right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">18.75%</span><span class="p">;</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">3rem</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-select__elm</span> <span class="p">{</span>
+  <span class="nl">appearance</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-inner-sp</span><span class="p">);</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="m">3</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-select__elm</span><span class="nd">::-moz-focus-inner</span><span class="o">,</span>
+<span class="nc">.c-select__elm</span><span class="nd">:focus</span> <span class="p">{</span>
+  <span class="nl">outline</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--select-focus</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="selectexample">
+      <div class="o-col--12/12 o-col--6/12@md u-p2">
+  <label for="slct" class="u-gray u-mb1 u-bl">Select</label>
+  <div class="c-select">
+    <select class="c-select__elm" name="slct" id="slct">
+      <option value="value1">Value 1</option>
+      <option value="value2">Value 2</option>
+      <option value="value3" selected="">Value 3</option>
+      <option value="value4">Value 4</option>
+      <option value="value5">Value 5</option>
+    </select>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</section>
+
+<section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="range-section" class="c-content__title h5 u-mb3 u-w500">Range Input</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>This is a skin for the <code class="highlighter-rouge">&lt;input type='range'&gt;</code> element. You can modify the color of the range’s track by overriding <code class="highlighter-rouge">--range-color</code>. Currently styles don’t work in IE, Mozilla or Opera, but should fallback nicely.</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#rangemarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#rangecss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#rangeexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="rangemarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;div class="o-col--12/12 o-col--6/12@md u-p2"&gt;
+  &lt;label for="rng" class="u-gray u-mb1 u-bl"&gt;Range&lt;/label&gt;
+  &lt;input type="range" id="rng" name="rng" class="c-range" min="1" max="10"&gt;
+&lt;/div&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="rangecss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*---------Range Component----------*/</span>
+<span class="c">/*
+  TODO: Mozilla and MS Prefixes or equivalent for thumb and track pseudo selectors
+*/</span>
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--range-thumb-w</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--form-height</span><span class="p">)</span> <span class="p">/</span> <span class="m">2</span><span class="p">);</span>
+  <span class="py">--range-thumb-h</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--form-height</span><span class="p">)</span> <span class="p">/</span> <span class="m">2</span><span class="p">);</span>
+  <span class="py">--range-thumb-bg</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="n">color</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--form-offsetColor</span><span class="p">)</span> <span class="n">lightness</span><span class="p">(</span><span class="err">+</span><span class="m">12.5%</span><span class="p">)),</span> <span class="n">color</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--form-offsetColor</span><span class="p">)</span> <span class="n">lightness</span><span class="p">(</span><span class="err">+</span><span class="m">2.5</span><span class="p">)));</span>
+  <span class="py">--range-thumb-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+  <span class="py">--range-color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-1</span><span class="p">);</span>
+  <span class="py">--range-track-h</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--range-thumb-h</span><span class="p">)</span> <span class="p">/</span> <span class="m">3</span><span class="p">);</span>
+  <span class="py">--range-shadow</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--shadow-1</span><span class="p">);</span>
+  <span class="py">--range-timing</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--base-dur</span><span class="p">)</span> <span class="p">/</span> <span class="m">2</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-range</span> <span class="p">{</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-mxw</span><span class="p">);</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-width</span><span class="p">);</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-height</span><span class="p">);</span>
+  <span class="nl">appearance</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-range</span><span class="nd">:focus</span> <span class="p">{</span> <span class="nl">outline</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="p">}</span>
+
+
+<span class="nc">.c-range</span><span class="nd">::-webkit-slider-runnable-track</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--range-color</span><span class="p">);</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">color</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--range-color</span><span class="p">)</span> <span class="n">a</span><span class="p">(</span><span class="m">87.5%</span><span class="p">));</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--range-track-h</span><span class="p">);</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
+  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+  <span class="nl">appearance</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-range</span><span class="nd">:focus::-webkit-slider-runnable-track</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--range-color</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-range</span><span class="nd">::-webkit-slider-thumb</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--range-thumb-h</span><span class="p">);</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--range-thumb-w</span><span class="p">);</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--range-thumb-radius</span><span class="p">);</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--range-thumb-bg</span><span class="p">);</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--range-shadow</span><span class="p">);</span>
+  <span class="nl">appearance</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--range-thumb-h</span><span class="p">)</span> <span class="p">/</span> <span class="m">-3</span><span class="p">);</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">all</span> <span class="n">var</span><span class="p">(</span><span class="n">--range-timing</span><span class="p">)</span> <span class="n">linear</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-range</span><span class="nd">::-webkit-slider-container</span><span class="o">,</span>
+<span class="nc">.c-range</span><span class="nd">::-webkit-media-slider-container</span> <span class="p">{</span>
+  <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="rangeexample">
+      <div class="o-col--12/12 o-col--6/12@md u-p2">
+  <label for="rng" class="u-gray u-mb1 u-bl">Range</label>
+  <input type="range" id="rng" name="rng" class="c-range" min="1" max="10" />
+</div>
+
+    </div>
+  </div>
+
+</section>
+
+<section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="btn-section" class="c-content__title h5 u-mb3 u-w500">Buttons</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>Simple skin for buttons to be applied on <code class="highlighter-rouge">&lt;input type='button'&gt;</code>, <code class="highlighter-rouge">&lt;button&gt;</code>, and <code class="highlighter-rouge">&lt;a&gt;</code> elements.</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#btnmarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#btncss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#btnexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="btnmarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;div class="u-mb4"&gt;
+  &lt;h6 class="u-mb2 small u-caps"&gt;Xtra Small Buttons&lt;/h6&gt;
+  &lt;a href="" class="c-btn c-btn--xs u-m1"&gt;Button&lt;/a&gt;
+  &lt;a href="" class="c-btn c-btn--xs c-btn--2 u-m1"&gt;Button&lt;/a&gt;
+  &lt;a href="" class="c-btn c-btn--xs c-btn--3 u-m1"&gt;Button&lt;/a&gt;
+  &lt;a href="" class="c-btn c-btn--xs c-btn--4 u-m1"&gt;Button&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class="u-mb4"&gt;
+  &lt;h6 class="u-mb2 small u-caps"&gt;Buttons&lt;/h6&gt;
+  &lt;a href="" class="c-btn u-m1"&gt;Button&lt;/a&gt;
+  &lt;a href="" class="c-btn c-btn--2 u-m1"&gt;Button&lt;/a&gt;
+  &lt;a href="" class="c-btn c-btn--3 u-m1"&gt;Button&lt;/a&gt;
+  &lt;a href="" class="c-btn c-btn--4 u-m1"&gt;Button&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class="u-mb4"&gt;
+  &lt;h6 class="u-mb2 small u-caps"&gt;Medium Buttons&lt;/h6&gt;
+  &lt;a href="" class="c-btn c-btn--md u-m1"&gt;Button&lt;/a&gt;
+  &lt;a href="" class="c-btn c-btn--md c-btn--2 u-m1"&gt;Button&lt;/a&gt;
+  &lt;a href="" class="c-btn c-btn--md c-btn--3 u-m1"&gt;Button&lt;/a&gt;
+  &lt;a href="" class="c-btn c-btn--md c-btn--4 u-m1"&gt;Button&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class="u-mb4"&gt;
+  &lt;h6 class="u-mb2 small u-caps"&gt;Large Buttons&lt;/h6&gt;
+  &lt;a href="" class="c-btn c-btn--lg u-m1"&gt;Button&lt;/a&gt;
+  &lt;a href="" class="c-btn c-btn--lg c-btn--2 u-m1"&gt;Button&lt;/a&gt;
+  &lt;a href="" class="c-btn c-btn--lg c-btn--3 u-m1"&gt;Button&lt;/a&gt;
+  &lt;a href="" class="c-btn c-btn--lg c-btn--4 u-m1"&gt;Button&lt;/a&gt;
+&lt;/div&gt;
+
+
+&lt;div class="u-mb4"&gt;
+  &lt;h6 class="u-mb2 small u-caps"&gt;Outline Buttons&lt;/h6&gt;
+  &lt;a href="" class="c-btn c-btn--o"&gt;Button&lt;/a&gt;
+  &lt;a href="" class="c-btn c-btn--o c-btn--o--2"&gt;Button&lt;/a&gt;
+  &lt;a href="" class="c-btn c-btn--o c-btn--o--3"&gt;Button&lt;/a&gt;
+  &lt;a href="" class="c-btn c-btn--o c-btn--o--4"&gt;Button&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=""&gt;
+  &lt;h6 class="u-mb2 small u-caps"&gt;Applied to Input Nodes&lt;/h6&gt;
+  &lt;button class="c-btn c-btn--md c-btn--3"&gt;Button&lt;/button&gt;
+  &lt;input type="button" value="Button" class="c-btn c-btn--xs" /&gt;
+  &lt;input type="submit" value="Button" class="c-btn c-btn--o c-btn--o--2" /&gt;
+&lt;/div&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="btncss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*---------Buttons UI----------*/</span>
+
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--btn-radius</span><span class="p">:</span> <span class="m">.25rem</span><span class="p">;</span>
+  <span class="py">--btn-border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-btn</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-color</span><span class="p">);</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--btn-border</span><span class="p">);</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-inner-sp</span><span class="p">);</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-mxw</span><span class="p">);</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--btn-radius</span><span class="p">);</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">color</span> <span class="n">var</span><span class="p">(</span><span class="n">--base-dur</span><span class="p">)</span> <span class="n">linear</span><span class="p">,</span> <span class="n">background</span> <span class="n">var</span><span class="p">(</span><span class="n">--base-dur</span><span class="p">)</span> <span class="n">linear</span><span class="p">,</span> <span class="n">border</span> <span class="n">var</span><span class="p">(</span><span class="n">--base-dur</span><span class="p">)</span> <span class="n">linear</span><span class="p">;</span>
+  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">500</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-btn--xs</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">87.5%</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--base-spacing</span><span class="p">)</span> <span class="p">/</span> <span class="m">4</span><span class="p">)</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--base-spacing</span><span class="p">)</span> <span class="err">*</span> <span class="m">.75</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-btn--md</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">112.5%</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--base-spacing</span><span class="p">)</span> <span class="p">/</span> <span class="m">2</span><span class="p">)</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--base-spacing</span><span class="p">)</span> <span class="err">*</span> <span class="m">2</span><span class="p">);</span>
+<span class="p">}</span>
+
+
+<span class="nc">.c-btn--lg</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">125%</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--base-spacing</span><span class="p">)</span> <span class="err">*</span> <span class="m">.75</span><span class="p">)</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--base-spacing</span><span class="p">)</span> <span class="err">*</span> <span class="m">2.5</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-btn</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="n">currentColor</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-color</span><span class="p">);</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-btn--2</span> <span class="p">{</span> <span class="nl">background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-2</span><span class="p">);</span> <span class="p">}</span>
+<span class="nc">.c-btn--2</span><span class="nd">:hover</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-2</span><span class="p">);</span> <span class="p">}</span>
+
+<span class="nc">.c-btn--3</span> <span class="p">{</span> <span class="nl">background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-3</span><span class="p">);</span> <span class="p">}</span>
+<span class="nc">.c-btn--3</span><span class="nd">:hover</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-3</span><span class="p">);</span> <span class="p">}</span>
+
+<span class="nc">.c-btn--4</span> <span class="p">{</span> <span class="nl">background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-4</span><span class="p">);</span> <span class="p">}</span>
+<span class="nc">.c-btn--4</span><span class="nd">:hover</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-4</span><span class="p">);</span> <span class="p">}</span>
+
+<span class="nc">.c-btn--o</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-color</span><span class="p">);</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="n">currentColor</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-btn--o</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-color</span><span class="p">);</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="nc">.c-btn--o--2</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-2</span><span class="p">);</span> <span class="p">}</span>
+<span class="nc">.c-btn--o--2</span><span class="nd">:hover</span> <span class="p">{</span> <span class="nl">background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-2</span><span class="p">);</span> <span class="p">}</span>
+
+<span class="nc">.c-btn--o--3</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-3</span><span class="p">);</span> <span class="p">}</span>
+<span class="nc">.c-btn--o--3</span><span class="nd">:hover</span> <span class="p">{</span> <span class="nl">background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-3</span><span class="p">);</span> <span class="p">}</span>
+
+<span class="nc">.c-btn--o--4</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-4</span><span class="p">);</span> <span class="p">}</span>
+<span class="nc">.c-btn--o--4</span><span class="nd">:hover</span> <span class="p">{</span> <span class="nl">background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-4</span><span class="p">);</span> <span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="btnexample">
+      <div class="u-mb4">
+  <h6 class="u-mb2 small u-caps">Xtra Small Buttons</h6>
+  <a href="" class="c-btn c-btn--xs u-m1">Button</a>
+  <a href="" class="c-btn c-btn--xs c-btn--2 u-m1">Button</a>
+  <a href="" class="c-btn c-btn--xs c-btn--3 u-m1">Button</a>
+  <a href="" class="c-btn c-btn--xs c-btn--4 u-m1">Button</a>
+</div>
+
+<div class="u-mb4">
+  <h6 class="u-mb2 small u-caps">Buttons</h6>
+  <a href="" class="c-btn u-m1">Button</a>
+  <a href="" class="c-btn c-btn--2 u-m1">Button</a>
+  <a href="" class="c-btn c-btn--3 u-m1">Button</a>
+  <a href="" class="c-btn c-btn--4 u-m1">Button</a>
+</div>
+
+<div class="u-mb4">
+  <h6 class="u-mb2 small u-caps">Medium Buttons</h6>
+  <a href="" class="c-btn c-btn--md u-m1">Button</a>
+  <a href="" class="c-btn c-btn--md c-btn--2 u-m1">Button</a>
+  <a href="" class="c-btn c-btn--md c-btn--3 u-m1">Button</a>
+  <a href="" class="c-btn c-btn--md c-btn--4 u-m1">Button</a>
+</div>
+
+<div class="u-mb4">
+  <h6 class="u-mb2 small u-caps">Large Buttons</h6>
+  <a href="" class="c-btn c-btn--lg u-m1">Button</a>
+  <a href="" class="c-btn c-btn--lg c-btn--2 u-m1">Button</a>
+  <a href="" class="c-btn c-btn--lg c-btn--3 u-m1">Button</a>
+  <a href="" class="c-btn c-btn--lg c-btn--4 u-m1">Button</a>
+</div>
+
+
+<div class="u-mb4">
+  <h6 class="u-mb2 small u-caps">Outline Buttons</h6>
+  <a href="" class="c-btn c-btn--o">Button</a>
+  <a href="" class="c-btn c-btn--o c-btn--o--2">Button</a>
+  <a href="" class="c-btn c-btn--o c-btn--o--3">Button</a>
+  <a href="" class="c-btn c-btn--o c-btn--o--4">Button</a>
+</div>
+
+<div class="">
+  <h6 class="u-mb2 small u-caps">Applied to Input Nodes</h6>
+  <button class="c-btn c-btn--md c-btn--3">Button</button>
+  <input type="button" value="Button" class="c-btn c-btn--xs" />
+  <input type="submit" value="Button" class="c-btn c-btn--o c-btn--o--2" />
+</div>
+
+    </div>
+  </div>
+
+</section>
+
+<section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="inpg-section" class="c-content__title h5 u-mb3 u-w500">Input Group</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>This is a visual pattern for any time you want <code class="highlighter-rouge">&lt;input type="text"&gt;</code> inlined with a button. Admittedly this component is a little rough around the edges.</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#inpgmarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#inpgcss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#inpgexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="inpgmarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;div class="o-container--xs u-p3 u-sh--2 u-bg--offwhite u-mxa"&gt;
+  &lt;h6 class="small u-mb3"&gt;Sign Up for Our Newsletter&lt;/h6&gt;
+  &lt;div class="c-input-group o-flex"&gt;
+    &lt;input type="text" class="c-input-group--first c-field u-m0" placeholder="address@email.com"&gt;
+    &lt;button class="c-btn c-input-group--last"&gt;Submit&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="inpgcss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*---------Input Group----------*/</span>
+
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--input-radius</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--form-radius</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-input-group</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--input-radius</span><span class="p">);</span>
+  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-input-group--first</span> <span class="p">{</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">border-right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-input-group--last</span> <span class="p">{</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="inpgexample">
+      <div class="o-container--xs u-p3 u-sh--2 u-bg--offwhite u-mxa">
+  <h6 class="small u-mb3">Sign Up for Our Newsletter</h6>
+  <div class="c-input-group o-flex">
+    <input type="text" class="c-input-group--first c-field u-m0" placeholder="address@email.com" />
+    <button class="c-btn c-input-group--last">Submit</button>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</section>
+
+<section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="rdg-section" class="c-content__title h5 u-mb3 u-w500">Radio Group</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>Radio group pattern can be used as links or as <code class="highlighter-rouge">&lt;input type="radio"&gt;</code> elements. Check out the HTML markup to see it in action.</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#rdgmarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#rdgcss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#rdgexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="rdgmarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;h6 class="u-mb2 small u-caps"&gt;Radio Inputs&lt;/h6&gt;
+
+&lt;div class="c-radio-group small o-flex o-flex--j--sb u-w500 u-mxa u-py4 u-center"&gt;
+  &lt;input type="radio" name="r" id="ru" class="c-radio-group__elm"&gt;
+  &lt;label for="ru" class="c-radio-group__opt o-flex--center--v u-p2"&gt;
+    Recently Updated
+  &lt;/label&gt;
+  &lt;input type="radio" name="r" id="created" class="c-radio-group__elm" checked=""&gt;
+  &lt;label for="created" class="c-radio-group__opt o-flex--center--v u-p2"&gt;
+    Created On
+  &lt;/label&gt;
+  &lt;input type="radio" name="r" id="az" class="c-radio-group__elm"&gt;
+  &lt;label for="az" class="c-radio-group__opt o-flex--center--v u-p2"&gt;
+    A to Z
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;h6 class="u-mb2 small u-caps"&gt;Links&lt;/h6&gt;
+
+&lt;div class="c-radio-group small o-flex o-flex--space u-w500 u-mxa u-py4 u-center"&gt;
+  &lt;a href="#" class="c-radio-group__opt o-flex--center--v u-p2"&gt;Recently Updated&lt;/a&gt;
+  &lt;a href="#" class="c-radio-group__opt o-flex--center--v u-p2 active"&gt;Created On&lt;/a&gt;
+  &lt;a href="#" class="c-radio-group__opt o-flex--center--v u-p2"&gt;A to Z&lt;/a&gt;
+&lt;/div&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="rdgcss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*----------Radio Group----------*/</span>
+
+
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--rdg-corner</span><span class="p">:</span> <span class="m">.425rem</span><span class="p">;</span>
+  <span class="py">--rdg-width</span><span class="p">:</span> <span class="m">27.5rem</span><span class="p">;</span>
+  <span class="py">--rdg-color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-1</span><span class="p">);</span>
+  <span class="py">--rdg-offset-color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-5</span><span class="p">);</span>
+  <span class="py">--rdg-timing</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--base-dur</span><span class="p">)</span> <span class="p">/</span> <span class="m">2</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-radio-group</span> <span class="p">{</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--rdg-width</span><span class="p">);</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-radio-group__opt</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">100%</span> <span class="p">/</span> <span class="m">3</span><span class="p">);</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="n">var</span><span class="p">(</span><span class="n">--rdg-offset-color</span><span class="p">);</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--rdg-offset-color</span><span class="p">);</span>
+  <span class="nl">flex</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">background</span> <span class="n">var</span><span class="p">(</span><span class="n">--rdg-timing</span><span class="p">)</span> <span class="n">ease-in-out</span><span class="p">,</span> <span class="n">color</span> <span class="n">var</span><span class="p">(</span><span class="n">--rdg-timing</span><span class="p">)</span> <span class="n">ease-in-out</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-radio-group__opt</span><span class="nd">:not</span><span class="o">(</span><span class="nd">:last-of-type</span><span class="o">)</span> <span class="p">{</span> <span class="nl">border-right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="nc">.c-radio-group__opt</span><span class="nd">:first-of-type</span> <span class="p">{</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--rdg-corner</span><span class="p">)</span> <span class="m">0</span> <span class="m">0</span> <span class="n">var</span><span class="p">(</span><span class="n">--rdg-corner</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-radio-group__opt</span><span class="nd">:last-of-type</span> <span class="p">{</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0</span> <span class="n">var</span><span class="p">(</span><span class="n">--rdg-corner</span><span class="p">)</span> <span class="n">var</span><span class="p">(</span><span class="n">--rdg-corner</span><span class="p">)</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-radio-group__elm</span> <span class="p">{</span> <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="nc">.c-radio-group__elm</span><span class="nd">:checked</span> <span class="o">+</span> <span class="nc">.c-radio-group__opt</span><span class="o">,</span>
+<span class="nc">.c-radio-group__opt.active</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--rdg-color</span><span class="p">);</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="rdgexample">
+      <h6 class="u-mb2 small u-caps">Radio Inputs</h6>
+
+<div class="c-radio-group small o-flex o-flex--j--sb u-w500 u-mxa u-py4 u-center">
+  <input type="radio" name="r" id="ru" class="c-radio-group__elm" />
+  <label for="ru" class="c-radio-group__opt o-flex--center--v u-p2">
+    Recently Updated
+  </label>
+  <input type="radio" name="r" id="created" class="c-radio-group__elm" checked="" />
+  <label for="created" class="c-radio-group__opt o-flex--center--v u-p2">
+    Created On
+  </label>
+  <input type="radio" name="r" id="az" class="c-radio-group__elm" />
+  <label for="az" class="c-radio-group__opt o-flex--center--v u-p2">
+    A to Z
+  </label>
+</div>
+
+<h6 class="u-mb2 small u-caps">Links</h6>
+
+<div class="c-radio-group small o-flex o-flex--space u-w500 u-mxa u-py4 u-center">
+  <a href="#" class="c-radio-group__opt o-flex--center--v u-p2">Recently Updated</a>
+  <a href="#" class="c-radio-group__opt o-flex--center--v u-p2 active">Created On</a>
+  <a href="#" class="c-radio-group__opt o-flex--center--v u-p2">A to Z</a>
+</div>
+
+    </div>
+  </div>
+
+</section>
+
+<section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="progress-section" class="c-content__title h5 u-mb3 u-w500">Progress</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>This is a skin for the <code class="highlighter-rouge">&lt;progress&gt;</code> element. You can modify the color by overriding <code class="highlighter-rouge">--progress-color</code>.</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#progressmarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#progresscss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#progressexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="progressmarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;div class="u-pt5 u-py3"&gt;
+  &lt;progress max="100" value="80" class="c-progress"&gt;&lt;/progress&gt;
+&lt;/div&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="progresscss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*---------Progress Component----------*/</span>
+<span class="c">/*
+  TODO: Opera and MS Prefixes or equivalent for bar and value pseudo selectors
+  NOTE: Consider moving to Elements layer
+*/</span>
+
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--progress-radius</span><span class="p">:</span> <span class="m">.25rem</span><span class="p">;</span>
+  <span class="py">--progress-color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-1</span><span class="p">);</span>
+  <span class="py">--progress-height</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span>
+  <span class="py">--progress-background</span><span class="p">:</span> <span class="n">color</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--color-5</span><span class="p">)</span> <span class="n">lightness</span><span class="p">(</span><span class="err">+</span><span class="m">5%</span><span class="p">));</span>
+  <span class="py">--progress-height</span><span class="p">:</span> <span class="m">1.5rem</span><span class="p">;</span>
+  <span class="py">--progress-value</span><span class="p">:</span> <span class="err">{</span>
+    <span class="n">background-color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--progress-color</span><span class="p">);</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--progress-radius</span><span class="p">)</span> <span class="m">0</span> <span class="m">0</span> <span class="n">var</span><span class="p">(</span><span class="n">--progress-radius</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="err">}</span>
+
+<span class="c">/* Progress Element */</span>
+
+<span class="nc">.c-progress</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--progress-height</span><span class="p">);</span>
+  <span class="nl">appearance</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--progress-radius</span><span class="p">);</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--progress-background</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-progress</span><span class="nd">::-webkit-progress-bar</span> <span class="p">{</span>
+  <span class="nl">appearance</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--progress-radius</span><span class="p">);</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--progress-background</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c">/* Progress Value */</span>
+<span class="nc">.c-progress</span><span class="nd">::-webkit-progress-value</span> <span class="p">{</span>
+  <span class="err">@apply</span> <span class="err">--progress-value;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-progress</span><span class="nd">::-moz-progress-bar</span> <span class="p">{</span>
+  <span class="err">@apply</span> <span class="err">--progress-value;</span>
+<span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="progressexample">
+      <div class="u-pt5 u-py3">
+  <progress max="100" value="80" class="c-progress"></progress>
+</div>
+
+    </div>
+  </div>
+
+</section>
+
+<section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="tabs-section" class="c-content__title h5 u-mb3 u-w500">Tabs</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>This tabbed UI is powered by <a href="https://github.com/cferdinandi/tabby">Tabby</a> to move the <code class="highlighter-rouge">.active</code> class around on them.</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#tabsmarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#tabscss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#tabsexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="tabsmarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;section class="c-tabs"&gt;
+  &lt;nav class="c-tabs__nav o-flex u-w700" data-tabs&gt;
+    &lt;a href="#tabA" data-tab class="c-tabs__marker u-py2 u-px3 active"&gt;Buffalo Springfield&lt;/a&gt;
+    &lt;a href="#tabB" data-tab class="c-tabs__marker u-py2 u-px3"&gt;Early Solo Work&lt;/a&gt;
+    &lt;a href="#tabC" data-tab class="c-tabs__marker u-py2 u-px3"&gt;CSNY&lt;/a&gt;
+  &lt;/nav&gt;
+  &lt;div class="c-tabs__content u-p4" data-tabs-content&gt;
+    &lt;div data-tabs-pane class="c-tabs__pane active" id="tabA" data-tab-id="tabA"&gt;
+      &lt;h6&gt;Buffalo Springfield&lt;/h6&gt;
+      &lt;p&gt;Once they reached Los Angeles, Young and Palmer met up with Stephen Stills, Richie Furay, and Dewey Martin to form Buffalo Springfield. A mixture of folk, country, psychedelia, and rock, lent a hard edge by the twin lead guitars of Stills and Young, made Buffalo Springfield a critical success, and their first record Buffalo Springfield (1966) sold well after Stills' topical song "For What It's Worth" became a hit, aided by Young's melodic harmonics played on electric guitar. According to Rolling Stone, the Rock and Roll Hall of Fame and other sources, Buffalo Springfield helped create the genres of folk rock and country rock.&lt;/p&gt;
+      &lt;p&gt;Distrust of their management, as well as the arrest and deportation of Palmer, exacerbated the already strained relations among the group members and led to Buffalo Springfield's demise. A second album, Buffalo Springfield Again, was released in late 1967, but two of Young's three contributions were solo tracks recorded apart from the rest of the group.&lt;/p&gt;
+      &lt;p&gt;In many ways, these three songs on Buffalo Springfield Again, "Mr. Soul", "Expecting to Fly", and "Broken Arrow", are harbingers of much of Young's later work in that, although they all share deeply personal, almost idiosyncratic lyrics, they also present three very different musical approaches to the arrangement of what is essentially an original folk song. "Mr. Soul" is the only Young song of the three that all five members of the group performed together. In contrast, "Broken Arrow" was confessional folk-rock of a kind that would characterize much of the music that emerged from the singer-songwriter movement. Young's experimental production intersperses each verse with snippets of sound from other sources, including opening the song with a soundbite of Dewey Martin singing "Mr. Soul" and closing it with the thumping of a heartbeat. "Expecting to Fly" was a lushly produced ballad similar to the baroque pop of the mid-1960s, featuring a string arrangement that Young's co-producer for the track, Jack Nitzsche, would dub "symphonic pop".&lt;/p&gt;
+      &lt;p&gt;In May 1968, the band split up for good, but to fulfill a contractual obligation, a final album, Last Time Around, was released, primarily from recordings made earlier that year. Young contributed the songs "On the Way Home" and "I Am a Child", singing lead on the latter. In 1997, the band was inducted into the Rock &amp; Roll Hall of Fame; Young did not appear at the ceremony. The three surviving members, Furay, Stills and Young, appeared together as Buffalo Springfield at Young's annual Bridge School Benefit on October 23–24, 2010, and at Bonnaroo in the summer of 2011.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div data-tabs-pane class="c-tabs__pane" id="tabB" data-tab-id="tabB"&gt;
+      &lt;h6&gt;Going solo, Crazy Horse&lt;/h6&gt;
+      &lt;p&gt;After the break-up of Buffalo Springfield, Young signed a solo deal with Reprise Records, home of his colleague and friend Joni Mitchell, with whom he shared a manager, Elliot Roberts, who manages Young to this day. Young and Roberts immediately began work on Young's first solo record, Neil Young (January 22, 1969), which received mixed reviews. In a 1970 interview, Young deprecated the album as being "overdubbed rather than played", and the quest for music that expresses the spontaneity of the moment has long been a feature of his career. Nevertheless, the album contains some songs that remain a staple of his live shows, most notably "The Loner".&lt;/p&gt;
+      &lt;p&gt;For his next album, Young recruited three musicians from a band called The Rockets: Danny Whitten on guitar, Billy Talbot on bass guitar, and Ralph Molina on drums. These three took the name Crazy Horse (after the historical figure of the same name), and Everybody Knows This Is Nowhere (May 1969), is credited to "Neil Young with Crazy Horse". Recorded in just two weeks, the album opens with one of Young's most familiar songs, "Cinnamon Girl", and is dominated by two more, "Cowgirl in the Sand" and "Down by the River", that feature improvisations with Young's distinctive electric guitar solos billowing out over the hypnotic Crazy Horse backing. Young reportedly wrote all three songs on the same day, while nursing a high fever of 103 °F (39 °C) in bed.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div data-tabs-pane class="c-tabs__pane" id="tabC" data-tab-id="tabC"&gt;
+      &lt;h6&gt;Crosby, Stills, Nash, and Young&lt;/h6&gt;
+      &lt;p&gt;Shortly after the release of Everybody Knows This Is Nowhere, Young reunited with Stephen Stills by joining Crosby, Stills &amp; Nash, who had already released one album Crosby, Stills &amp; Nash as a trio in May 1969. Young was originally offered a position as a sideman, but agreed to join only if he received full membership, and the group – winners of the 1969 "Best New Artist" Grammy Award – was renamed Crosby, Stills, Nash &amp; Young. The quartet debuted in Chicago on August 16, 1969, and later performed at the famous Woodstock Festival, during which Young skipped the majority of the acoustic set and refused to be filmed during the electric set, even telling the cameramen: "One of you fuckin' guys comes near me and I'm gonna fuckin' hit you with my guitar". During the making of their first album, Déjà Vu (March 11, 1970), the musicians frequently argued, particularly Young and Stills, who both fought for control. Stills continued throughout their lifelong relationship to criticize Young, saying that he "wanted to play folk music in a rock band." Despite the tension, Young's tenure with CSN&amp;Y coincided with the band's most creative and successful period, and greatly contributed to his subsequent success as a solo artist.&lt;/p&gt;
+      &lt;p&gt;Young wrote "Ohio" following the Kent State massacre on May 4, 1970. The song was quickly recorded by CSN&amp;Y and immediately released as a single, even though CSN&amp;Y's "Teach Your Children" was still climbing the singles charts.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="tabscss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*---------Tabs Component----------*/</span>
+
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--tabs-active-color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="py">--tabs-radii</span><span class="p">:</span> <span class="m">.375rem</span><span class="p">;</span>
+  <span class="py">--tabs-spacer</span><span class="p">:</span> <span class="m">.5rem</span><span class="p">;</span>
+  <span class="py">--tabs-border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-5</span><span class="p">);</span>
+  <span class="py">--tabs-background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-5</span><span class="p">);</span>
+  <span class="py">--tabs-marker-color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-1</span><span class="p">);</span>
+  <span class="py">--tabs-marker-inactive-color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--color-5</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-tabs</span> <span class="p">{</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="m">5</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-tabs__nav</span> <span class="p">{</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">-1px</span><span class="p">;</span>
+  <span class="nl">white-space</span><span class="p">:</span> <span class="nb">nowrap</span><span class="p">;</span>
+  <span class="nl">overflow-x</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">-webkit-overflow-scrolling</span><span class="p">:</span> <span class="n">touch</span><span class="p">;</span>
+  <span class="nl">-ms-overflow-style</span><span class="p">:</span> <span class="n">-ms-autohiding-scrollbar</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-tabs__marker</span> <span class="p">{</span>
+  <span class="nl">flex</span><span class="p">:</span> <span class="m">1</span> <span class="m">1</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">min-width</span><span class="p">:</span> <span class="m">6rem</span><span class="p">;</span>
+  <span class="nl">border-right</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--tabs-border</span><span class="p">);</span>
+  <span class="nl">border-left</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--tabs-border</span><span class="p">);</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--tabs-border</span><span class="p">);</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--tabs-radii</span><span class="p">)</span> <span class="n">var</span><span class="p">(</span><span class="n">--tabs-radii</span><span class="p">)</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">color</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--tabs-background</span><span class="p">)</span> <span class="n">a</span><span class="p">(</span><span class="m">25%</span><span class="p">));</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--tabs-marker-inactive-color</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-tabs__marker</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">color</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--litegray</span><span class="p">)</span> <span class="n">blackness</span><span class="p">(</span><span class="err">+</span><span class="m">15%</span><span class="p">));</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">color</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--tabs-background</span><span class="p">)</span> <span class="n">a</span><span class="p">(</span><span class="m">75%</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="nc">.c-tabs__marker.active</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--tabs-active-color</span><span class="p">);</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--tabs-marker-color</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-tabs__content</span> <span class="p">{</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="m">4</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--tabs-border</span><span class="p">);</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--tabs-active-color</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-tabs__pane</span> <span class="p">{</span>
+  <span class="nl">opacity</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">visibility</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-tabs__pane.active</span> <span class="p">{</span>
+  <span class="nl">opacity</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+  <span class="nl">visibility</span><span class="p">:</span> <span class="nb">visible</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">static</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="k">@media</span> <span class="p">(</span><span class="n">--md</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.c-tabs__marker</span><span class="nd">:not</span><span class="o">(</span><span class="nd">:last-of-type</span><span class="o">)</span> <span class="p">{</span>
+    <span class="nl">margin-right</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--tabs-spacer</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="tabsexample">
+      <section class="c-tabs">
+  <nav class="c-tabs__nav o-flex u-w700" data-tabs="">
+    <a href="#tabA" data-tab="" class="c-tabs__marker u-py2 u-px3 active">Buffalo Springfield</a>
+    <a href="#tabB" data-tab="" class="c-tabs__marker u-py2 u-px3">Early Solo Work</a>
+    <a href="#tabC" data-tab="" class="c-tabs__marker u-py2 u-px3">CSNY</a>
+  </nav>
+  <div class="c-tabs__content u-p4" data-tabs-content="">
+    <div data-tabs-pane="" class="c-tabs__pane active" id="tabA" data-tab-id="tabA">
+      <h6>Buffalo Springfield</h6>
+      <p>Once they reached Los Angeles, Young and Palmer met up with Stephen Stills, Richie Furay, and Dewey Martin to form Buffalo Springfield. A mixture of folk, country, psychedelia, and rock, lent a hard edge by the twin lead guitars of Stills and Young, made Buffalo Springfield a critical success, and their first record Buffalo Springfield (1966) sold well after Stills' topical song "For What It's Worth" became a hit, aided by Young's melodic harmonics played on electric guitar. According to Rolling Stone, the Rock and Roll Hall of Fame and other sources, Buffalo Springfield helped create the genres of folk rock and country rock.</p>
+      <p>Distrust of their management, as well as the arrest and deportation of Palmer, exacerbated the already strained relations among the group members and led to Buffalo Springfield's demise. A second album, Buffalo Springfield Again, was released in late 1967, but two of Young's three contributions were solo tracks recorded apart from the rest of the group.</p>
+      <p>In many ways, these three songs on Buffalo Springfield Again, "Mr. Soul", "Expecting to Fly", and "Broken Arrow", are harbingers of much of Young's later work in that, although they all share deeply personal, almost idiosyncratic lyrics, they also present three very different musical approaches to the arrangement of what is essentially an original folk song. "Mr. Soul" is the only Young song of the three that all five members of the group performed together. In contrast, "Broken Arrow" was confessional folk-rock of a kind that would characterize much of the music that emerged from the singer-songwriter movement. Young's experimental production intersperses each verse with snippets of sound from other sources, including opening the song with a soundbite of Dewey Martin singing "Mr. Soul" and closing it with the thumping of a heartbeat. "Expecting to Fly" was a lushly produced ballad similar to the baroque pop of the mid-1960s, featuring a string arrangement that Young's co-producer for the track, Jack Nitzsche, would dub "symphonic pop".</p>
+      <p>In May 1968, the band split up for good, but to fulfill a contractual obligation, a final album, Last Time Around, was released, primarily from recordings made earlier that year. Young contributed the songs "On the Way Home" and "I Am a Child", singing lead on the latter. In 1997, the band was inducted into the Rock &amp; Roll Hall of Fame; Young did not appear at the ceremony. The three surviving members, Furay, Stills and Young, appeared together as Buffalo Springfield at Young's annual Bridge School Benefit on October 23–24, 2010, and at Bonnaroo in the summer of 2011.</p>
+    </div>
+    <div data-tabs-pane="" class="c-tabs__pane" id="tabB" data-tab-id="tabB">
+      <h6>Going solo, Crazy Horse</h6>
+      <p>After the break-up of Buffalo Springfield, Young signed a solo deal with Reprise Records, home of his colleague and friend Joni Mitchell, with whom he shared a manager, Elliot Roberts, who manages Young to this day. Young and Roberts immediately began work on Young's first solo record, Neil Young (January 22, 1969), which received mixed reviews. In a 1970 interview, Young deprecated the album as being "overdubbed rather than played", and the quest for music that expresses the spontaneity of the moment has long been a feature of his career. Nevertheless, the album contains some songs that remain a staple of his live shows, most notably "The Loner".</p>
+      <p>For his next album, Young recruited three musicians from a band called The Rockets: Danny Whitten on guitar, Billy Talbot on bass guitar, and Ralph Molina on drums. These three took the name Crazy Horse (after the historical figure of the same name), and Everybody Knows This Is Nowhere (May 1969), is credited to "Neil Young with Crazy Horse". Recorded in just two weeks, the album opens with one of Young's most familiar songs, "Cinnamon Girl", and is dominated by two more, "Cowgirl in the Sand" and "Down by the River", that feature improvisations with Young's distinctive electric guitar solos billowing out over the hypnotic Crazy Horse backing. Young reportedly wrote all three songs on the same day, while nursing a high fever of 103 °F (39 °C) in bed.</p>
+    </div>
+    <div data-tabs-pane="" class="c-tabs__pane" id="tabC" data-tab-id="tabC">
+      <h6>Crosby, Stills, Nash, and Young</h6>
+      <p>Shortly after the release of Everybody Knows This Is Nowhere, Young reunited with Stephen Stills by joining Crosby, Stills &amp; Nash, who had already released one album Crosby, Stills &amp; Nash as a trio in May 1969. Young was originally offered a position as a sideman, but agreed to join only if he received full membership, and the group – winners of the 1969 "Best New Artist" Grammy Award – was renamed Crosby, Stills, Nash &amp; Young. The quartet debuted in Chicago on August 16, 1969, and later performed at the famous Woodstock Festival, during which Young skipped the majority of the acoustic set and refused to be filmed during the electric set, even telling the cameramen: "One of you fuckin' guys comes near me and I'm gonna fuckin' hit you with my guitar". During the making of their first album, Déjà Vu (March 11, 1970), the musicians frequently argued, particularly Young and Stills, who both fought for control. Stills continued throughout their lifelong relationship to criticize Young, saying that he "wanted to play folk music in a rock band." Despite the tension, Young's tenure with CSN&amp;Y coincided with the band's most creative and successful period, and greatly contributed to his subsequent success as a solo artist.</p>
+      <p>Young wrote "Ohio" following the Kent State massacre on May 4, 1970. The song was quickly recorded by CSN&amp;Y and immediately released as a single, even though CSN&amp;Y's "Teach Your Children" was still climbing the singles charts.</p>
+    </div>
+  </div>
+</section>
+
+    </div>
+  </div>
+
+</section>
+
+<section data-tabs="" class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="dropdown-section" class="c-content__title h5 u-mb3 u-w500">Dropdown</h3>
+    
+      <div class="o-container--sm c-description">
+        
+        <p>This is a simple dropdown, meant to be trading by an <code class="highlighter-rouge">.active</code> for a <code class="highlighter-rouge">.hidden</code> class on the component. Position is yours to manage. Modifier <code class="highlighter-rouge">--l</code> moves the arrow to the left, <code class="highlighter-rouge">--r</code> to the right and <code class="highlighter-rouge">--c</code> centers the arrow.</p>
+
+      </div>
+    
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#dropdownmarkup" data-tab="" class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#dropdowncss" data-tab="" class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#dropdownexample" data-tab="" class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content="">
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="dropdownmarkup">
+      
+<figure class="highlight"><pre><code class="language-markup" data-lang="markup">&lt;a href="#" class="c-btn c-btn--3"&gt;Button&lt;/a&gt;
+&lt;div class="c-dropdown__container u-relative u-py6 u-mb6"&gt;
+  &lt;div class="u-absolute" style="left: 0; top: 0;"&gt;
+    &lt;div class="c-dropdown c-dropdown--l u-mxw--fit active" style="width: 18rem;"&gt;
+      &lt;h3 class="h6 u-p2"&gt;
+        &lt;a href="/profile/"&gt;Heading&lt;/a&gt;
+      &lt;/h3&gt;
+      &lt;hr class="u-bg--ltgray" /&gt;
+      &lt;nav class="c-nav small"&gt;
+        &lt;ul class="list--reset"&gt;
+          &lt;li class="u-p2"&gt;
+            &lt;a href="/preferences/" class="u-gray200"&gt;Preferences&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="u-p2"&gt;
+            &lt;a href="#" class="u-gray200"&gt;Help&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="u-p2"&gt;
+            &lt;a href="#" class="u-gray200"&gt;Sign Out&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane="" id="dropdowncss">
+      
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*---------Dropdown Component----------*/</span>
+
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--curve</span><span class="p">:</span> <span class="n">cubic-bezier</span><span class="p">(</span><span class="m">.16</span><span class="p">,</span> <span class="m">.58</span><span class="p">,</span> <span class="m">.8</span><span class="p">,</span> <span class="m">.43</span><span class="p">);</span>
+  <span class="py">--dropdown-header</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="py">--dropdown-background</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="py">--dropdown-arrow-size</span><span class="p">:</span> <span class="m">.625rem</span><span class="p">;</span>
+  <span class="py">--dropdown-width</span><span class="p">:</span> <span class="m">25rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-dropdown</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--dropdown-background</span><span class="p">);</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--shadow-1</span><span class="p">);</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="n">var</span><span class="p">(</span><span class="n">--dropdown-header</span><span class="p">);</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+  <span class="nl">opacity</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+  <span class="nl">visibility</span><span class="p">:</span> <span class="nb">visible</span><span class="p">;</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">opacity</span> <span class="m">250ms</span> <span class="n">var</span><span class="p">(</span><span class="n">--curve</span><span class="p">),</span> <span class="n">visibility</span> <span class="m">250ms</span> <span class="n">var</span><span class="p">(</span><span class="n">--curve</span><span class="p">);</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="m">999</span><span class="p">;</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--dropdown-width</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-dropdown</span><span class="nd">::before</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s2">''</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--dropdown-arrow-size</span><span class="p">)</span> <span class="err">*</span> <span class="m">-1</span><span class="p">);</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">border-left</span><span class="p">:</span> <span class="m">.75rem</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">border-right</span><span class="p">:</span> <span class="m">.75rem</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--dropdown-arrow-size</span><span class="p">)</span> <span class="nb">solid</span> <span class="n">var</span><span class="p">(</span><span class="n">--dropdown-header</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-dropdown--l</span><span class="nd">::before</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s2">''</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--dropdown-arrow-size</span><span class="p">)</span> <span class="p">/</span> <span class="m">2</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-dropdown--r</span><span class="nd">::before</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s2">''</span><span class="p">;</span>
+  <span class="nl">right</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--dropdown-arrow-size</span><span class="p">)</span> <span class="p">/</span> <span class="m">2</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.c-dropdown--c</span><span class="nd">::before</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s2">''</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-dropdown.hidden</span> <span class="p">{</span>
+  <span class="nl">opacity</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">visibility</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+  <span class="nl">pointer-events</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.c-dropdown.active</span> <span class="p">{</span>
+  <span class="nl">visibility</span><span class="p">:</span> <span class="nb">visible</span><span class="p">;</span>
+  <span class="nl">opacity</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane="" id="dropdownexample">
+      <a href="#" class="c-btn c-btn--3">Button</a>
+<div class="c-dropdown__container u-relative u-py6 u-mb6">
+  <div class="u-absolute" style="left: 0; top: 0;">
+    <div class="c-dropdown c-dropdown--l u-mxw--fit active" style="width: 18rem;">
+      <h3 class="h6 u-p2">
+        <a href="/profile/">Heading</a>
+      </h3>
+      <hr class="u-bg--ltgray" />
+      <nav class="c-nav small">
+        <ul class="list--reset">
+          <li class="u-p2">
+            <a href="/preferences/" class="u-gray200">Preferences</a>
+          </li>
+          <li class="u-p2">
+            <a href="#" class="u-gray200">Help</a>
+          </li>
+          <li class="u-p2">
+            <a href="#" class="u-gray200">Sign Out</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</section>
+
+</div>
+</article>
+</section>
+    </div>
+  </main>
+</div>
+
+
+    <footer class="small">
+  <div class="o-container u-mxa u-mb3 u-px3@md u-py5@md">
+    <div class="o-col--4/12@md">
+      <h4 class="h6">Obsidian.css</h4>
+      <p>Obsidian.css is a modular CSS library that focuses on code common to most projects.
+</p>
+      <ul class="list--reset u-w700 u-caps">
+        <li class="u-inbl u-py2 u-pr2">
+          <a href="https://github.com/obsidiancss">GitHub</a>
+        </li>
+        <li class="u-inbl u-py2 u-pr2">
+          <a href="https://twitter.com/obsidiancss">Twitter</a>
+        </li>
+        <li class="u-inbl u-py2 u-pr2">
+          <a href="https://www.npmjs.com/package/obsidian.css">npm</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-36412149-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+    <script src="/assets/dist/bundle.js"></script>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,1 @@
+This is a skin for the `<input type='range'>` element. You can modify the color of the range's track by overriding `--range-color`. Currently styles don't work in IE, Mozilla or Opera, but should fallback nicely.

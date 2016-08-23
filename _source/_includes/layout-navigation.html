@@ -1,0 +1,17 @@
+<nav class="c-nav u-mb3">
+  {% assign pages = site.pages | sort: "order" %}
+  <ul class="list--reset u-w500">
+    {% for p in pages %}
+      {% if p.title %}
+      <li class="c-nav__item {% if p.url == page.url %}active{% endif %} u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
+
+<nav class="u-mb3 u-none u-bl@md">
+  <h4 class="small u-caps u-lt-2 u-mb3">Further Reading</h4>
+  {% include block-docs.html %}
+</nav>

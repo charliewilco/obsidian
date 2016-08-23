@@ -1,0 +1,33 @@
+<section data-tabs class="c-ex u-py5 u-cf u-relative">
+
+  <header class="c-content u-mb3">
+    <h3 id="{{ include.prefix }}-section" class="c-content__title h5 u-mb3 u-w500">{{ include.sect-title }}</h3>
+    {% if include.description %}
+      <div class="o-container--sm c-description">
+        {% capture desc %}{% include {{ include.description }} %}{% endcapture %}
+        {{ desc | markdownify }}
+      </div>
+    {% endif %}
+  </header>
+
+  <nav class="o-flex o-flex--center--h o-flex--j--sb u-w500 u-mb2">
+    <div class="">
+      <a href="#{{ include.prefix }}markup" data-tab class="c-ex__trigger u-py2 u-mr3">HTML</a>
+      <a href="#{{ include.prefix }}css" data-tab class="c-ex__trigger u-py2">CSS</a>
+    </div>
+    <a href="#{{ include.prefix }}example" data-tab class="c-ex__trigger active u-py2">Example</a>
+  </nav>
+
+  <div class="c-ex__container u-relative u-mb2" data-tabs-content>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane id="{{include.prefix}}markup">
+      {% highlight markup %}{% include {{ include.snippet }} %}{% endhighlight %}
+    </div>
+    <div class="c-ex__content u-mono tabs-pane" data-tabs-pane id="{{include.prefix}}css">
+      {% highlight css %}{% include_relative {{ include.css }} %}{% endhighlight %}
+    </div>
+    <div class="c-ex__content tabs-pane active" data-tabs-pane id="{{include.prefix}}example">
+      {% include {{ include.snippet }} %}
+    </div>
+  </div>
+
+</section>

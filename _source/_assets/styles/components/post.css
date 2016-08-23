@@ -1,0 +1,60 @@
+.c-home { font-size: 1rem; }
+
+.c-home p {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.c-home hr {
+  background: color(var(--gray) a(50%));
+  margin: 2rem 0;
+}
+
+.c-home h3 {
+  font-size: var(--headline-4-sm);
+  margin-bottom: 1.625rem;
+}
+
+.c-description table {
+  border: 1px solid color(var(--gray) a(50%));
+  width: 100%;
+  margin: var(--spacing-3) 0;
+}
+
+.c-description thead {
+  background: color(var(--gray) a(50%));
+  text-align: left;
+}
+
+.c-description th,
+.c-description td {
+  padding: var(--spacing-2);
+}
+
+.c-description td:not(:last-of-type) {
+  border-right: 1px solid color(var(--gray) a(50%));
+}
+
+.c-description tr:not(:last-of-type) {
+  border-bottom: 1px solid color(var(--gray) a(50%));
+}
+
+@media (--md) {
+  .c-home { font-size: 1.125rem; }
+}
+
+.c-post h3 {
+  font-size: var(--headline-5);
+  margin-bottom: 1rem;
+}
+
+.c-post h4 {
+  font-size: var(--headline-6);
+  margin-bottom: 1rem;
+}
+
+.c-post pre,
+.c-post ul,
+.c-post ol {
+  margin-bottom: 1.5rem;
+}

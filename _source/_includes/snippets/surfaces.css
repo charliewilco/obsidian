@@ -1,0 +1,60 @@
+/*
+  Surfaces Utilities
+
+  Corners...........Border Radius Utils.
+  Background........Background Values (Color, None)
+  Colors............Color and Fill Values
+  Shadows...........Material Like Shadows.
+*/
+/*----------Background Value Utilities----------*/
+.u-bg--none { background: none; }
+.u-bg--cover { background-position: cover; }
+.u-bg--offwhite { background-color: var( --offwhite ); }
+.u-bg--black { background-color: var( --black ); }
+.u-bg--red { background-color: var( --red ); }
+.u-bg--blue { background-color: var( --blue ); }
+.u-bg--bluegreen { background-color: var( --bluegreen ); }
+.u-bg--yellow { background-color: var( --yellow ); }
+.u-bg--ygreen { background-color: var( --ygreen ); }
+.u-bg--green { background-color: var( --green ); }
+.u-bg--orange { background-color: var( --orange ); }
+.u-bg--purple { background-color: var( --purple ); }
+.u-bg--indigo { background-color: var( --indigo ); }
+.u-bg--fuchsia { background-color: var( --fuchsia ); }
+.u-bg--gray { background-color: var( --gray ); }
+.u-bg--palegray { background-color: var( --palegray ); }
+.u-bg--text { background-color: var( --text ); }
+.u-bg--ltgray { background-color: var( --litegray ); }
+/*----------Color Value Utilities----------*/
+.u-offwhite { color: var( --offwhite ); }
+.u-black { color: var( --black ); }
+.u-red { color: var( --red ); }
+.u-blue { color: var( --blue ); }
+.u-bluegreen { color: var( --bluegreen ); }
+.u-yellow { color: var( --yellow ); }
+.u-ygreen { color: var( --ygreen ); }
+.u-green { color: var( --green ); }
+.u-orange { color: var( --orange ); }
+.u-purple { color: var( --purple ); }
+.u-indigo { color: var( --indigo ); }
+.u-fuchsia { color: var( --fuchsia ); }
+.u-gray { color: var( --gray ); }
+.u-palegray { color: var( --palegray ); }
+.u-text { color: var( --text ); }
+.u-ltgray { color: var( --litegray ); }
+.u-fcc { fill: currentColor; }
+/*----------Corner / Border Radius Utilities----------*/
+:root { --radius-1: calc( var( --base-spacing ) * .25 ); --radius-2: calc( var( --base-spacing ) * .5 ); --radius-3: calc( var( --base-spacing ) * 1 ); --radius-4: calc( var( --base-spacing ) * 1.5 ); --radius-5: calc( var( --base-spacing ) * 2 ); }
+.u-br1 { border-radius: var( --radius-1 ); }
+.u-br2 { border-radius: var( --radius-2 ); }
+.u-br3 { border-radius: var( --radius-3 ); }
+.u-br4 { border-radius: var( --radius-4 ); }
+.u-br5 { border-radius: var( --radius-5 ); }
+/* Named Percentage Sizes */
+.u-br--quarter { border-radius: 25%; }
+.u-br--half { border-radius: 50%; }
+.u-br--full { border-radius: 100%; }
+/*----------Box Shadow Utilities----------*/
+.u-sh--1 { box-shadow: var( --shadow-1 ); }
+.u-sh--2 { box-shadow: var( --shadow-2 ); }
+.u-sh--3 { box-shadow: var( --shadow-3 ); }

@@ -1,0 +1,26 @@
+.c-header {
+  background: white;
+  border-bottom: 1px solid color(var(--litegray) a(25%));
+}
+
+.c-header__logo {
+  width: 4rem;
+}
+
+.c-header__logo--lg {
+  max-width: 7rem;
+}
+
+
+.c-header__version {
+  font-size: 62.5%;
+  color: color(var(--litegray) a(75%));
+}
+
+
+.c-header__title {
+  color: #D04D36;
+  background-image: linear-gradient(#EA8466 0%, #D04D36 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

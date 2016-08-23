@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="u-bg--palegray u-anti">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ITCSS Methodology</title>
+  <meta name="description" content="ITCSS (Inverted Triangle CSS) from Harry Roberts, is way of structuring CSS it such a way that also the most general selectors to trickle down to the most sp...">
+
+  <link rel="stylesheet" href="/assets/dist/bundle.css">
+  <link rel="canonical" href="http://obsidiancss.github.io/itcss/">
+  <link rel="alternate" type="application/rss+xml" title="Obsidian.css" href="http://obsidiancss.github.io/feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="c-header  u-p2">
+  <div class="o-flex o-flex--wrap o-flex--center--h o-flex--j--sb">
+    <div class="">
+      <h1 class="h5 o-flex o-flex--center--h u-w400 u-lh-1">
+        <img src="/assets/dist/img/obsidian-logo@1x.png" alt="Obsidian.css Logo" class="c-header__logo u-bl u-mr3 u-py2@lg" />
+        <a href="/" class="c-header__title u-mr3">Obsidian.css</a>
+        <small class="c-header__version u-system">v2.1.3</small>
+      </h1>
+    </div>
+    <div class="u-right">
+      <a href="https://github.com/obsidiancss" class="u-bl">
+        <svg viewBox="0 0 16 16" class="o-icon o-icon--sm u-bl">
+  <path d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+</svg>
+
+      </a>
+    </div>
+  </div>
+</header>
+
+
+    <div class="o-flex o-flex--wrap o-flex--j--sa o-container u-mxa u-pt4@md u-mb4 u-px3@md">
+  <aside class="o-col--12/12 o-col--2/12@md">
+    <nav class="c-nav u-mb3">
+  
+  <ul class="list--reset u-w500">
+    
+      
+    
+      
+      <li class="c-nav__item  u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/settings/">Settings</a>
+      </li>
+      
+    
+      
+      <li class="c-nav__item  u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/generic/">Generic</a>
+      </li>
+      
+    
+      
+      <li class="c-nav__item  u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/elements/">Elements</a>
+      </li>
+      
+    
+      
+      <li class="c-nav__item  u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/objects/">Objects</a>
+      </li>
+      
+    
+      
+      <li class="c-nav__item  u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/components/">Components</a>
+      </li>
+      
+    
+      
+      <li class="c-nav__item  u-inbl u-bl@md u-px3 u-py3 u-py2@md">
+        <a class="page-link" href="/utilites/">Utilities</a>
+      </li>
+      
+    
+  </ul>
+</nav>
+
+<nav class="u-mb3 u-none u-bl@md">
+  <h4 class="small u-caps u-lt-2 u-mb3">Further Reading</h4>
+  <ul class="list--reset small u-w500">
+  
+  
+    <li class="u-inbl u-bl@md u-pr2 u-py2">
+      <a href="/styleguide/">Styleguide</a>
+    </li>
+  
+    <li class="u-inbl u-bl@md u-pr2 u-py2">
+      <a href="/naming-classes/">Naming Classes</a>
+    </li>
+  
+    <li class="u-inbl u-bl@md u-pr2 u-py2">
+      <a href="/itcss/">ITCSS Methodology</a>
+    </li>
+  
+</ul>
+
+</nav>
+
+  </aside>
+  <main class="o-col--12/12 o-col--10/12@md u-px3 u-pl4@md u-pr0@md">
+    <div class="c-pane o-col--12/12 o-container--lg u-p3">
+      <section><article>
+  <header class="post-header u-py3 o-container--md">
+    <h2 class="h3 u-w300 u-mb2">ITCSS Methodology</h2>
+    <p class="h6"></p>
+  </header>
+  <div class="c-post"><p><a href="https://www.youtube.com/watch?v=1OKZOV-iLj4">ITCSS</a> (Inverted Triangle CSS) from Harry Roberts, is way of structuring CSS it such a way that also the most general selectors to trickle down to the most specific selectors, as if they’re moving from the top of an bottom of a triangle to the pinnacle of it.</p>
+
+<p>In this implementation there are a few differences. Normally in ITCSS, you could have a tools like Sass functions, most of the tools we’d need are coming in CSS and transpiled by <a href="cssnext.io/features/">cssnext</a>.</p>
+
+<p>Objects have minimal visual styling in Obsidian. This is a set between the reset styling and the component level styling because it’s beyond an element.</p>
+
+<p>Settings contain base styles but often module variables are only contained in that module, there are a few exceptions (like shadow values).</p>
+
+<hr class="u-mt5 u-bg--ltgray" />
+
+<dl class="u-pt4 u-pb2">
+  
+    <dt class="h6 u-w500">Settings</dt>
+    <dd class="u-mb4"><p>Settings should contain global and base settings, project media queries, mixins, custom selectors.</p>
+</dd>
+  
+    <dt class="h6 u-w500">Generic</dt>
+    <dd class="u-mb4"><p>The generic layer is for reset styles, document wide selectors.</p>
+</dd>
+  
+    <dt class="h6 u-w500">Elements</dt>
+    <dd class="u-mb4"><p>Elements are for styling specific HTML elements and extending responsive styling for elements (for instance <a href="/elements#tables-section">tables</a>). They’re a base style for elements meant to be extended by other styles down the triangle.</p>
+</dd>
+  
+    <dt class="h6 u-w500">Objects</dt>
+    <dd class="u-mb4"><p>Objects define are common usable patterns. They are have more structure than skin, usually have no visual style (color, background, etc) applied; it’s the bare minimum UI. Things like grids for example.</p>
+</dd>
+  
+    <dt class="h6 u-w500">Components</dt>
+    <dd class="u-mb4"><p>Components are visual pieces of UI. They’re more complex than objects, often containing many elements.</p>
+</dd>
+  
+    <dt class="h6 u-w500">Utilities</dt>
+    <dd class="u-mb4"><p>Utilities are helper classes meant to override any default, extend specific styling. They are single use utilities, meant to only apply a single value.</p>
+</dd>
+  
+</dl>
+
+</div>
+</article>
+</section>
+    </div>
+  </main>
+</div>
+
+
+    <footer class="small">
+  <div class="o-container u-mxa u-mb3 u-px3@md u-py5@md">
+    <div class="o-col--4/12@md">
+      <h4 class="h6">Obsidian.css</h4>
+      <p>Obsidian.css is a modular CSS library that focuses on code common to most projects.
+</p>
+      <ul class="list--reset u-w700 u-caps">
+        <li class="u-inbl u-py2 u-pr2">
+          <a href="https://github.com/obsidiancss">GitHub</a>
+        </li>
+        <li class="u-inbl u-py2 u-pr2">
+          <a href="https://twitter.com/obsidiancss">Twitter</a>
+        </li>
+        <li class="u-inbl u-py2 u-pr2">
+          <a href="https://www.npmjs.com/package/obsidian.css">npm</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-36412149-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+    <script src="/assets/dist/bundle.js"></script>
+
+
+  </body>
+
+</html>

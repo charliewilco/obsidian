@@ -1,0 +1,42 @@
+:root {
+  /* hex value is --nav-color without an alpha */
+  --nav-color: color(var(--color-1) a(37.5%));
+  --nav-color-hex: #A3C9DB;
+}
+
+.c-nav {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  border-bottom: 1px solid color(var(--litegray) a(50%));
+  background: white;
+}
+
+@media (--md) {
+  .c-nav {
+    border-bottom: 0;
+    background: none;
+  }
+
+  .c-nav__item {
+    position: relative;
+  }
+
+  .c-nav__item:not(:last-of-type) {
+    border-bottom: 1px solid var(--nav-color-hex);
+  }
+
+  .c-nav__item.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 5px;
+    height: 100%;
+    display: block;
+    background: var(--nav-color-hex);
+  }
+}

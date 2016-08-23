@@ -1,0 +1,17 @@
+- title: Settings
+  description: Settings should contain global and base settings, project media queries, mixins, custom selectors.
+
+- title: Generic
+  description: The generic layer is for reset styles, document wide selectors.
+
+- title: Elements
+  description: Elements are for styling specific HTML elements and extending responsive styling for elements (for instance [tables](/elements#tables-section)). They're a base style for elements meant to be extended by other styles down the triangle.
+
+- title: Objects
+  description: Objects define are common usable patterns. They are have more structure than skin, usually have no visual style (color, background, etc) applied; it's the bare minimum UI. Things like grids for example.
+
+- title: Components
+  description: Components are visual pieces of UI. They're more complex than objects, often containing many elements.
+
+- title: Utilities
+  description: Utilities are helper classes meant to override any default, extend specific styling. They are single use utilities, meant to only apply a single value.

@@ -1,0 +1,8 @@
+<ul class="list--reset small u-w500">
+  {% assign sorted = (site.docs | sort: 'date') | reverse %}
+  {% for d in sorted %}
+    <li class="u-inbl u-bl@md u-pr2 u-py2">
+      <a href="{{ d.url | prepend: site.baseurl }}">{{ d.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

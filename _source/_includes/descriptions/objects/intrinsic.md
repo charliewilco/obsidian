@@ -1,0 +1,1 @@
+The purpose of the intrinsic object is that inner media maintains it's proportions when resized. Based off of ['Intrinsic Placeholders with the Picture Element'](http://daverupert.com/2015/12/intrinsic-placeholders-with-picture/) from Dave Rupert.

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>filler-image</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1" transform="translate(-150.000000, -150.000000)">
+            <g id="filler-image" transform="translate(150.000000, 150.000000)">
+                <rect id="Rectangle-1" fill="#BFE3F4" x="0" y="0" width="200" height="200"></rect>
+                <polygon id="Shape" fill="#8AC5E1" points="163.003509 139.194459 110.024561 43.4212987 90.154386 43.4212987 133.873684 122.449524 85.3894737 122.449524 76.2280702 139.145281"></polygon>
+                <polygon id="Shape" fill="#298DBD" points="76.2280702 139.145281 100.224561 94.9593074 90.5473684 77.5750649 47.3929825 156.578701 66.6736842 156.578701 153.719298 156.578701 163.003509 139.145281"></polygon>
+                <polygon id="Shape" fill="#147AAB" points="90.154386 43.4212987 37.3964912 139.194459 47.3929825 156.578701 90.5473684 77.5750649 115.526316 122.449524 133.873684 122.449524"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

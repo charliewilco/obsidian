@@ -1,0 +1,1 @@
+This is a simple dropdown, meant to be trading by an `.active` for a `.hidden` class on the component. Position is yours to manage. Modifier `--l` moves the arrow to the left, `--r` to the right and `--c` centers the arrow.

@@ -1,0 +1,5 @@
+@import 'obsidian.css';
+
+:root {
+  --ff-sans-serif: 'Proxima Nova', 'Avenir Next', 'Helvetica Neue', sans-serif;
+}

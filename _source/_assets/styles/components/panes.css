@@ -1,0 +1,9 @@
+.c-pane {
+  background: white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .0175), 0 4px 8px rgba(0, 0, 0, .035);
+}
+
+.c-pane--flat {
+  background: white;
+  box-shadow: 0, 0;
+}
