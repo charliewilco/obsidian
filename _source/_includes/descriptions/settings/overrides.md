@@ -1,1 +1,0 @@
-To override a default value in Obsidian.css specify in a `:root` declaration after the `@import` statements. For more information about CSS variables checkout [Using CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) from MDN and the [cssnext playground](http://cssnext.io/playground/).

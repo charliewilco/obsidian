@@ -1,1 +1,0 @@
-This is a standard page wrapper object. It providers a `max-width` to wrap content in with the option of centering it within the parent container. This object is based on this [classic pattern](https://css-tricks.com/snippets/css/centering-a-website/).

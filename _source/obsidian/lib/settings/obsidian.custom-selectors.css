@@ -1,7 +1,0 @@
-/*----------Obsidian Custom Selectors----------*/
-
-@custom-selector :--headings h1, h2, h3, h4, h5, h6;
-@custom-selector :--headingsClasses .h1, .h2, .h3, .h4, .h5, .h6;
-@custom-selector :--blocks article, aside, figcaption, figure, footer, header, hgroup, main, menu, nav, section;
-@custom-selector :--mediaObjects audio, canvas, progress, video;
-@custom-selector :--links a, .link;

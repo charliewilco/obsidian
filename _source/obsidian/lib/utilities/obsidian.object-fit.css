@@ -1,9 +1,0 @@
-/*----------Object Fit Utilities----------*/
-
-.u-fit--fill    { object-fit: fill; }
-.u-fit--contain { object-fit: contain; }
-.u-fit--cover   { object-fit: cover; }
-
-.u-fit--ct { object-position: center top; }
-.u-fit--cc { object-position: center center; }
-.u-fit--cb { object-position: center bottom; }
