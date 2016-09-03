@@ -17,7 +17,7 @@ npm install obsidian.css --save
 or link to the CDN
 
 ```markup
-<link rel="stylesheet" href="//npmcdn.com/obsidian.css/dist/obsidian.min.css" media="screen" title="Obsidian.css" charset="utf-8">
+<link rel="stylesheet" href="//unpkg.com/obsidian.css/dist/obsidian.min.css" media="screen" title="Obsidian.css" charset="utf-8">
 ```
 
 ### Using in Build
