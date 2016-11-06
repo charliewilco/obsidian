@@ -12,28 +12,28 @@
   --icon-lg: calc(var(--icon-size) * 1.5);
 }
 
-.o-icon {
+.o-Icon {
   width: var(--icon-size);
   height: var(--icon-size);
   fill: currentColor;
 }
 
-.o-icon--xs {
+.o-Icon--xs {
   width: var(--icon-xs);
   height: var(--icon-xs);
 }
 
-.o-icon--sm {
+.o-Icon--sm {
   width: var(--icon-sm);
   height: var(--icon-sm);
 }
 
-.o-icon--md {
+.o-Icon--md {
   width: var(--icon-md);
   height: var(--icon-md);
 }
 
-.o-icon--lg {
+.o-Icon--lg {
   width: var(--icon-lg);
   height: var(--icon-lg);
 }

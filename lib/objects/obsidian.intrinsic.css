@@ -5,7 +5,7 @@
   http://daverupert.com/2015/12/intrinsic-placeholders-with-picture/
 */
 
-.o-intrinsic {
+.o-Intrinsic {
   display: block;
   position: relative;
   height: 0;
@@ -13,7 +13,7 @@
   padding-top: 100%;
 }
 
-.o-intrinsic__item {
+.o-Intrinsic__item {
   position: absolute;
   top: 0;
   left: 0;
@@ -24,7 +24,7 @@
 
 /* Intrinsic Sizes */
 
-.o-intrinsic--square { padding-top: 100%; }
-.o-intrinsic--4x3    { padding-top: 75%; }
-.o-intrinsic--16x9   { padding-top: 56.25%; }
-.o-intrinsic--3x1    { padding-top: 33.33333333%; }
+.o-Intrinsic--square { padding-top: 100%; }
+.o-Intrinsic--4x3    { padding-top: 75%; }
+.o-Intrinsic--16x9   { padding-top: 56.25%; }
+.o-Intrinsic--3x1    { padding-top: 33.33333333%; }

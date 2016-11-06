@@ -5,22 +5,22 @@
   http://csswizardry.com/2013/05/the-flag-object/
 */
 
-.o-flag {
+.o-Flag {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-.o-flag--top { align-items: flex-start; }
-.o-flag--bottom { align-items: flex-end; }
-.o-flag--reverse { flex-direction: row-reverse; }
+.o-Flag--top { align-items: flex-start; }
+.o-Flag--bottom { align-items: flex-end; }
+.o-Flag--reverse { flex-direction: row-reverse; }
 
-.o-flag__figure,
-.o-flag__body {
+.o-Flag__figure,
+.o-Flag__body {
   display: initial;
   max-width: 100%;
   min-width: 0;
 }
 
-.o-flag__figure { flex: 1 1 auto; }
-.o-flag__body { flex: 4 4 auto; }
+.o-Flag__figure { flex: 1 1 auto; }
+.o-Flag__body { flex: 4 4 auto; }

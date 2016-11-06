@@ -11,20 +11,20 @@
   --media-figure-sm: calc(var(--media-figure) * .75);
 }
 
-.o-media {
+.o-Media {
   display: flex;
   align-items: flex-start;
 }
 
-.o-media__figure {
+.o-Media__figure {
   max-width: var(--media-figure-sm);
 }
 
-.o-media__body { flex: 1; }
+.o-Media__body { flex: 1; }
 
 
 @media (--md) {
-  .o-media__figure {
+  .o-Media__figure {
     max-width: var(--media-figure);
   }
 }
