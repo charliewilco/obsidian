@@ -24,7 +24,19 @@ html {
   color: var(--text);
 }
 
-:--blocks { display: block; }
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
 
 [hidden],
 template {
@@ -33,7 +45,10 @@ template {
 
 /* Media */
 
-:--mediaObjects {
+audio,
+canvas,
+progress,
+video {
   display: inline-block;
   vertical-align: baseline;
 }

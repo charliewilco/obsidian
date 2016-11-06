@@ -1,5 +1,0 @@
-/*----------Obsidian Custom Selectors----------*/
-
-
-@custom-selector :--blocks article, aside, figcaption, figure, footer, header, hgroup, main, menu, nav, section;
-@custom-selector :--mediaObjects audio, canvas, progress, video;
