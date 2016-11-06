@@ -10,7 +10,7 @@
   --select-arrow: url('data:image/svg+xml;charset=utf-8,%3Csvg width="20" height="8" viewBox="716 323 20 8" xmlns="http://www.w3.org/2000/svg" fill="%23147AAB"%3E%3Cpath d="M726 328.64l7.87-5.51a.717.717 0 0 1 1 .177.725.725 0 0 1-.177 1l-8.233 5.765a.717.717 0 0 1-.46.13.717.717 0 0 1-.46-.13l-8.233-5.765a.725.725 0 0 1-.177-1 .717.717 0 0 1 1-.176l7.87 5.51z"/%3E%3C/svg%3E');
 }
 
-.c-select {
+.c-Select {
   max-width: var(--form-mxw);
   width: var(--select-w);
   height: var(--select-h);
@@ -21,7 +21,7 @@
   overflow: hidden;
 }
 
-.c-select::after {
+.c-Select::after {
   content: '';
   display: block;
   background-repeat: no-repeat;
@@ -38,7 +38,7 @@
   height: 100%;
 }
 
-.c-select__elm {
+.c-Select__elm {
   appearance: none;
   display: block;
   width: 100%;
@@ -55,7 +55,7 @@
   z-index: 3;
 }
 
-.c-select__elm::-moz-focus-inner,
-.c-select__elm:focus {
+.c-Select__elm::-moz-focus-inner,
+.c-Select__elm:focus {
   outline: var(--select-focus);
 }

@@ -4,7 +4,7 @@
   --field-min: 5rem;
 }
 
-.c-field {
+.c-Field {
   padding: var(--form-inner-sp);
   box-shadow: var(--form-shadow);
   border: var(--form-border) var(--form-border-color);
@@ -14,27 +14,27 @@
   border-radius: var(--form-radius);
 }
 
-.c-field[disabled],
-.c-field:disabled {
+.c-Field[disabled],
+.c-Field:disabled {
   opacity: .5;
   background: color(var(--form-color) a(10%));
   border-color: color(var(--form-offsetColor) a(50%));
 }
 
-.c-field::placeholder {
+.c-Field::placeholder {
   font-style: italic;
 }
 
-.c-field::-webkit-calendar-picker-indicator {
+.c-Field::-webkit-calendar-picker-indicator {
   opacity: 1 !important;
 }
 
-.c-field--text {
+.c-Field--text {
   resize: none;
   min-height: var(--field-min);
 }
 
-.c-field:focus {
+.c-Field:focus {
   background: var(--offwhite);
   color: var(--form-color);
   border-color: var(--form-color);

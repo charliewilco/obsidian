@@ -10,11 +10,11 @@
   --tabs-marker-inactive-color: var(--color-5);
 }
 
-.c-tabs {
+.c-Tabs {
   z-index: 5;
 }
 
-.c-tabs__nav {
+.c-Tabs__nav {
   margin-bottom: -1px;
   white-space: nowrap;
   overflow-x: auto;
@@ -22,7 +22,7 @@
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
-.c-tabs__marker {
+.c-Tabs__marker {
   flex: 1 1 auto;
   min-width: 6rem;
   border-right: var(--tabs-border);
@@ -33,23 +33,23 @@
   color: var(--tabs-marker-inactive-color);
 }
 
-.c-tabs__marker:hover {
+.c-Tabs__marker:hover {
   color: color(var(--litegray) blackness(+15%));
   background: color(var(--tabs-background) a(75%));
 }
 
-.c-tabs__marker.active {
+.c-Tabs__marker.active {
   background: var(--tabs-active-color);
   color: var(--tabs-marker-color);
 }
 
-.c-tabs__content {
+.c-Tabs__content {
   z-index: 4;
   border: var(--tabs-border);
   background: var(--tabs-active-color);
 }
 
-.c-tabs__pane {
+.c-Tabs__pane {
   opacity: 0;
   visibility: hidden;
   height: 0;
@@ -59,7 +59,7 @@
   left: 0;
 }
 
-.c-tabs__pane.active {
+.c-Tabs__pane.active {
   opacity: 1;
   visibility: visible;
   width: 100%;
@@ -69,7 +69,7 @@
 
 
 @media (--md) {
-  .c-tabs__marker:not(:last-of-type) {
+  .c-Tabs__marker:not(:last-of-type) {
     margin-right: var(--tabs-spacer);
   }
 }
