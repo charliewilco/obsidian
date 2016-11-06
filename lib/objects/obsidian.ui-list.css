@@ -1,0 +1,18 @@
+:root {
+  --UIList-border: #CCCCCC;
+  --UIList-space: .5rem;
+}
+
+.o-UIList {
+  list-style: inside none;
+  margin: 0;
+  padding: 0;
+}
+
+.o-UIList--dividers > .o-UIList__item:not(:last-of-type) {
+  border-bottom: 1px solid var(--UIList-border);
+}
+
+.o-UIList--inline > .o-UIList__item { display: inline-block; }
+
+.o-UIList__item { padding: var(--UIList-space) 0; }
