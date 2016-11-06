@@ -9,10 +9,11 @@
 
 :root {
   /* Spacing & Container */
- 
+
   --base-spacing: 1rem;
   --base-flex: 18rem;
   --base-container: 75rem;
+  --base-border: 1px;
 
   /* Duration */
 
