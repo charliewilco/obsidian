@@ -1,5 +1,4 @@
 /*----------Headline Elements----------*/
-
 /*
   NOTE: Originally based off the Golden Ratio and 1rem being modified at each break point
 */
@@ -51,13 +50,19 @@ h4, .h4 { font-size: var(--headline-4-sm); }
 h5, .h5 { font-size: var(--headline-5-sm); }
 h6, .h6 { font-size: var(--headline-6-sm); }
 
-:--headings {
-  margin: 0;
-  line-height: var(--lh-3);
-  font-family: var(--headlines);
-}
-
-:--headingsClasses {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6
+{
   margin: 0;
   line-height: var(--lh-3);
   font-family: var(--headlines);
