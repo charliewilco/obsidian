@@ -13,7 +13,13 @@
   "postcss-cssnext": {
     "warnForDuplicates": false,
     "features": {
-      "rem": false
+      "rem": false,
+      "customProperties": {
+        "preserve": true,
+        "appendVarliables": true
+      },
+      "colorFunction": false,
+      "customSelectors": false
     }
   },
   "postcss-export-vars": {
