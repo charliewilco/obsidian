@@ -37,11 +37,11 @@
   width: 100%;
 }
 
-.c-Card:hover {
+.c-Card--hover:hover {
   transform: scale(1.1, 1.1);
 }
 
-.c-Card:hover::before {
+.c-Card--hover:hover::before {
   opacity: 1;
 }
 
