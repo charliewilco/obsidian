@@ -17,7 +17,7 @@
     "build:dev": "npm-run-all --parallel styles lint info:*",
     "styles:min": "postcss -c .postcss.json",
     "styles:unminified": "postcss -u postcss-import -u postcss-apply -u postcss-cssnext -o ./dist/obsidian.css ./lib/index.css",
-    "lint": "stylelint './lib/**/*.css'",
+    "lint": "wilco './lib/**/*.css'",
     "info": "npm-run-all lint info:*",
     "info:browsers": "doiuse --browsers 'last 1 versions' ./dist/obsidian.min.css",
     "info:size": "gzip-size ./dist/obsidian.min.css | pretty-bytes",
@@ -49,8 +49,7 @@
     "postcss-import": "^8.1.2",
     "postcss-reporter": "^1.4.1",
     "pretty-bytes-cli": "^1.0.0",
-    "stylelint": "^7.1.0",
-    "stylelint-selector-bem-pattern": "^1.0.0",
-    "watch": "^0.19.1"
+    "watch": "^0.19.1",
+    "wilco": "^0.1.1"
   }
 }
