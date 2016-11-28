@@ -1,5 +1,5 @@
 :root {
-  --Table-border: 1px solid #145878;
+  --Table-border: 1px solid color(var(--color-1) blackness(+20%));
   --Table-label-color: var(--litegray);
   --Table-label-size: .625rem;
   --Table-label-width: 7rem;
