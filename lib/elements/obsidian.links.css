@@ -2,6 +2,7 @@
 
 :root {
   --link: var(--color-1);
+  --link-hover: #24A8E6;
 }
 
 a {
@@ -12,6 +13,6 @@ a {
 
 a:active,
 a:hover {
-  color: color(var(--link) lightness(+15%));
+  color: var(--link-hover);
   outline: 0;
 }
