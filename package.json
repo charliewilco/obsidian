@@ -51,5 +51,8 @@
     "pretty-bytes-cli": "^1.0.0",
     "watch": "^0.19.1",
     "wilco": "^0.1.1"
+  },
+  "dependencies": {
+    "kndlng": "0.0.1"
   }
 }
