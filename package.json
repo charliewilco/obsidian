@@ -1,7 +1,7 @@
 {
   "name": "obsidian.css",
   "version": "3.0.0-0",
-  "description": "Modular CSS",
+  "description": "A Modular CSS Library",
   "keywords": [
     "css",
     "modular css",
@@ -9,50 +9,52 @@
   ],
   "main": "lib/index.css",
   "scripts": {
-    "prepublish": "npm-run-all styles:*",
-    "start": "npm run styles",
-    "styles": "postcss -c .postcss.json",
-    "watch": "watch 'npm run styles' lib",
-    "build": "npm-run-all clean styles:* lint info:*",
-    "build:dev": "npm-run-all --parallel styles lint info:*",
-    "styles:min": "postcss -c .postcss.json",
-    "styles:unminified": "postcss -u postcss-import -u postcss-apply -u postcss-cssnext -o ./dist/obsidian.css ./lib/index.css",
+    "start": "npm run build:dev",
+    "styles:prod": "postcss -c .postcss.prod.json",
+    "styles:dev": "postcss -c .postcss.dev.json",
+    "poststyles:dev": "npm run lint",
+    "build:prod": "npm-run-all clean styles lint info:*",
+    "build:dev": "npm-run-all --parallel serve watch",
+    "watch": "watch 'npm run styles:dev' lib",
     "lint": "wilco './lib/**/*.css'",
     "info": "npm-run-all lint info:*",
-    "info:browsers": "doiuse --browsers 'last 1 versions' ./dist/obsidian.min.css",
     "info:size": "gzip-size ./dist/obsidian.min.css | pretty-bytes",
-    "info:stats": "parker ./dist/obsidian.min.css --format=json > parker.json",
-    "info:mutations": "immutable-css ./dist/obsidian.min.css",
-    "clean": "del ./dist && del ./test/bundle.css"
+    "clean": "del ./dist && del ./test/*.css",
+    "serve": "live-server ./test --watch"
   },
   "author": "charles peters <charlespeters42@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/obsidiancss/obsidian.git"
+    "url": "git+https://github.com/charlespeters/obsidian.git"
   },
   "bugs": {
-    "url": "https://github.com/obsidiancss/obsidian/issues"
+    "url": "https://github.com/charlespeters/obsidian/issues"
   },
-  "homepage": "https://github.com/obsidiancss/obsidian#readme",
+  "homepage": "https://github.com/charlespeters/obsidian#readme",
   "devDependencies": {
+    "autoprefixer": "^6.5.3",
     "cssnano": "^3.7.4",
     "del-cli": "^0.2.0",
-    "doiuse": "^2.4.1",
+    "doiuse": "^2.5.0",
     "gzip-size-cli": "^1.0.0",
-    "immutable-css-cli": "^1.1.1",
+    "immutable-css": "^1.1.2",
+    "live-server": "^1.1.0",
     "npm-run-all": "^3.0.0",
     "parker": "0.0.10",
+    "postcss-apply": "^0.4.0",
     "postcss-cli": "^2.5.2",
-    "postcss-cssnext": "^2.7.0",
+    "postcss-cssstats": "^1.0.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.1",
     "postcss-export-vars": "^0.2.0",
-    "postcss-import": "^8.1.2",
-    "postcss-reporter": "^1.4.1",
+    "postcss-import": "9.0.0",
+    "postcss-reporter": "2.0.0",
     "pretty-bytes-cli": "^1.0.0",
-    "watch": "^0.19.1",
-    "wilco": "^0.1.1"
+    "watch": "1.0.1",
+    "wilco": "^0.2.0"
   },
-  "dependencies": {
-    "kndlng": "0.0.1"
+  "stylelint": {
+    "extends": "stylelint-config-wilco"
   }
 }

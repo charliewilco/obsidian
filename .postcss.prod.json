@@ -1,0 +1,44 @@
+{
+  "use": [
+    "postcss-import",
+    "postcss-export-vars",
+    "autoprefixer",
+    "postcss-custom-media",
+    "postcss-custom-properties",
+    "postcss-apply",
+    "cssnano",
+    "doiuse",
+    "immutable-css",
+    "postcss-reporter"
+  ],
+  "input": "./lib/index.css",
+  "output": "./dist/obsidian.min.css",
+  "local-plugins": true,
+  "autoprefixer": {
+    "browsers": "last 1 versions"
+  },
+  "postcss-custom-properties": {
+    "preserve": true,
+    "appendVarliables": true
+  },
+  "postcss-export-vars": {
+    "file": "css",
+    "type": "json",
+    "matches": []
+  },
+  "cssnano": {
+    "filterPlugins": false,
+    "autoprefixer": false,
+    "mergeRules": false,
+    "discardEmpty": true,
+    "discardComments": {
+      "removeAllButFirst": true
+    }
+  },
+  "doiuse": {
+    "browsers": "last 1 versions"
+  },
+  "postcss-reporter": {
+    "clearMessages": true
+  }
+}
