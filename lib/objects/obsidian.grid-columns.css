@@ -23,15 +23,15 @@
   min-height: 1px;
 }
 
-.o-Column--1\/12  { width: var(--col-1); }
-.o-Column--2\/12  { width: var(--col-2); }
-.o-Column--3\/12  { width: var(--col-3); }
-.o-Column--4\/12  { width: var(--col-4); }
-.o-Column--5\/12  { width: var(--col-5); }
-.o-Column--6\/12  { width: var(--col-6); }
-.o-Column--7\/12  { width: var(--col-7); }
-.o-Column--8\/12  { width: var(--col-8); }
-.o-Column--9\/12  { width: var(--col-9); }
+.o-Column--1\/12 { width: var(--col-1); }
+.o-Column--2\/12 { width: var(--col-2); }
+.o-Column--3\/12 { width: var(--col-3); }
+.o-Column--4\/12 { width: var(--col-4); }
+.o-Column--5\/12 { width: var(--col-5); }
+.o-Column--6\/12 { width: var(--col-6); }
+.o-Column--7\/12 { width: var(--col-7); }
+.o-Column--8\/12 { width: var(--col-8); }
+.o-Column--9\/12 { width: var(--col-9); }
 .o-Column--10\/12 { width: var(--col-10); }
 .o-Column--11\/12 { width: var(--col-11); }
 .o-Column--12\/12 { width: var(--col-12); }
@@ -43,15 +43,15 @@
     min-height: 1px;
   }
 
-  .o-Column--1\/12\@sm  { width: var(--col-1); }
-  .o-Column--2\/12\@sm  { width: var(--col-2); }
-  .o-Column--3\/12\@sm  { width: var(--col-3); }
-  .o-Column--4\/12\@sm  { width: var(--col-4); }
-  .o-Column--5\/12\@sm  { width: var(--col-5); }
-  .o-Column--6\/12\@sm  { width: var(--col-6); }
-  .o-Column--7\/12\@sm  { width: var(--col-7); }
-  .o-Column--8\/12\@sm  { width: var(--col-8); }
-  .o-Column--9\/12\@sm  { width: var(--col-9); }
+  .o-Column--1\/12\@sm { width: var(--col-1); }
+  .o-Column--2\/12\@sm { width: var(--col-2); }
+  .o-Column--3\/12\@sm { width: var(--col-3); }
+  .o-Column--4\/12\@sm { width: var(--col-4); }
+  .o-Column--5\/12\@sm { width: var(--col-5); }
+  .o-Column--6\/12\@sm { width: var(--col-6); }
+  .o-Column--7\/12\@sm { width: var(--col-7); }
+  .o-Column--8\/12\@sm { width: var(--col-8); }
+  .o-Column--9\/12\@sm { width: var(--col-9); }
   .o-Column--10\/12\@sm { width: var(--col-10); }
   .o-Column--11\/12\@sm { width: var(--col-11); }
   .o-Column--12\/12\@sm { width: var(--col-12); }
@@ -64,15 +64,15 @@
     min-height: 1px;
   }
 
-  .o-Column--1\/12\@md  { width: var(--col-1); }
-  .o-Column--2\/12\@md  { width: var(--col-2); }
-  .o-Column--3\/12\@md  { width: var(--col-3); }
-  .o-Column--4\/12\@md  { width: var(--col-4); }
-  .o-Column--5\/12\@md  { width: var(--col-5); }
-  .o-Column--6\/12\@md  { width: var(--col-6); }
-  .o-Column--7\/12\@md  { width: var(--col-7); }
-  .o-Column--8\/12\@md  { width: var(--col-8); }
-  .o-Column--9\/12\@md  { width: var(--col-9); }
+  .o-Column--1\/12\@md { width: var(--col-1); }
+  .o-Column--2\/12\@md { width: var(--col-2); }
+  .o-Column--3\/12\@md { width: var(--col-3); }
+  .o-Column--4\/12\@md { width: var(--col-4); }
+  .o-Column--5\/12\@md { width: var(--col-5); }
+  .o-Column--6\/12\@md { width: var(--col-6); }
+  .o-Column--7\/12\@md { width: var(--col-7); }
+  .o-Column--8\/12\@md { width: var(--col-8); }
+  .o-Column--9\/12\@md { width: var(--col-9); }
   .o-Column--10\/12\@md { width: var(--col-10); }
   .o-Column--11\/12\@md { width: var(--col-11); }
   .o-Column--12\/12\@md { width: var(--col-12); }
@@ -85,15 +85,15 @@
     min-height: 1px;
   }
 
-  .o-Column--1\/12\@lg  { width: var(--col-1); }
-  .o-Column--2\/12\@lg  { width: var(--col-2); }
-  .o-Column--3\/12\@lg  { width: var(--col-3); }
-  .o-Column--4\/12\@lg  { width: var(--col-4); }
-  .o-Column--5\/12\@lg  { width: var(--col-5); }
-  .o-Column--6\/12\@lg  { width: var(--col-6); }
-  .o-Column--7\/12\@lg  { width: var(--col-7); }
-  .o-Column--8\/12\@lg  { width: var(--col-8); }
-  .o-Column--9\/12\@lg  { width: var(--col-9); }
+  .o-Column--1\/12\@lg { width: var(--col-1); }
+  .o-Column--2\/12\@lg { width: var(--col-2); }
+  .o-Column--3\/12\@lg { width: var(--col-3); }
+  .o-Column--4\/12\@lg { width: var(--col-4); }
+  .o-Column--5\/12\@lg { width: var(--col-5); }
+  .o-Column--6\/12\@lg { width: var(--col-6); }
+  .o-Column--7\/12\@lg { width: var(--col-7); }
+  .o-Column--8\/12\@lg { width: var(--col-8); }
+  .o-Column--9\/12\@lg { width: var(--col-9); }
   .o-Column--10\/12\@lg { width: var(--col-10); }
   .o-Column--11\/12\@lg { width: var(--col-11); }
   .o-Column--12\/12\@lg { width: var(--col-12); }

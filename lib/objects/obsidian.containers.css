@@ -9,10 +9,10 @@
 
 .o-Container,
 .o-Container--full { max-width: var(--base-container); }
-.o-Container--lg   { max-width: var(--container-lg); }
-.o-Container--md   { max-width: var(--container-md); }
-.o-Container--sm   { max-width: var(--container-sm); }
-.o-Container--xs   { max-width: var(--container-xs); }
+.o-Container--lg { max-width: var(--container-lg); }
+.o-Container--md { max-width: var(--container-md); }
+.o-Container--sm { max-width: var(--container-sm); }
+.o-Container--xs { max-width: var(--container-xs); }
 
 .o-Container--center {
   margin-left: auto;

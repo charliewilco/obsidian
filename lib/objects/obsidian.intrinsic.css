@@ -25,6 +25,6 @@
 /* Intrinsic Sizes */
 
 .o-Intrinsic--square { padding-top: 100%; }
-.o-Intrinsic--4x3    { padding-top: 75%; }
-.o-Intrinsic--16x9   { padding-top: 56.25%; }
-.o-Intrinsic--3x1    { padding-top: 33.33333333%; }
+.o-Intrinsic--4x3 { padding-top: 75%; }
+.o-Intrinsic--16x9 { padding-top: 56.25%; }
+.o-Intrinsic--3x1 { padding-top: 33.33333333%; }

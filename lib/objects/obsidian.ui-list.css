@@ -1,5 +1,7 @@
+/*--------UI List Object----------*/
+
 :root {
-  --UIList-border: #CCCCCC;
+  --UIList-border: #CCC;
   --UIList-space: .5rem;
 }
 
