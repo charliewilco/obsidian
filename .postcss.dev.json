@@ -6,7 +6,6 @@
     "postcss-custom-media",
     "postcss-custom-properties",
     "postcss-apply",
-    "cssnano",
     "doiuse",
     "immutable-css",
     "postcss-reporter"
@@ -25,15 +24,6 @@
     "file": "css",
     "type": "json",
     "matches": []
-  },
-  "cssnano": {
-    "filterPlugins": false,
-    "autoprefixer": false,
-    "mergeRules": false,
-    "discardEmpty": true,
-    "discardComments": {
-      "removeAllButFirst": true
-    }
   },
   "doiuse": {
     "browsers": "last 1 versions"
