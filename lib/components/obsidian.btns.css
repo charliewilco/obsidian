@@ -2,11 +2,13 @@
 
 :root {
   --btn-radius: .25rem;
+  --btn-color: var(--blue);
+  --btn-color-hover: var(--blue-dark);
   --btn-border: 2px solid;
 }
 
 .c-Btn {
-  background: var(--form-color);
+  background: var(--btn-color);
   color: white;
   border: var(--btn-border);
   border-color: transparent;
@@ -36,40 +38,6 @@
 }
 
 .c-Btn:hover {
-  border-color: currentColor;
-  color: var(--form-color);
-  background: none;
-}
-
-.c-Btn--2 { background: var(--color-2); }
-.c-Btn--2:hover { color: var(--color-2); }
-
-.c-Btn--3 { background: var(--color-3); }
-.c-Btn--3:hover { color: var(--color-3); }
-
-.c-Btn--4 { background: var(--color-4); }
-.c-Btn--4:hover { color: var(--color-4); }
-
-.c-Btn--o {
-  color: var(--form-color);
-  border-color: currentColor;
-  background: none;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.c-Btn--o:hover {
-  background: var(--form-color);
+  background-color: var(--btn-color-hover);
   color: white;
-  border-color: transparent;
 }
-
-
-.c-Btn--o--2 { color: var(--color-2); }
-.c-Btn--o--2:hover { background: var(--color-2); }
-
-.c-Btn--o--3 { color: var(--color-3); }
-.c-Btn--o--3:hover { background: var(--color-3); }
-
-.c-Btn--o--4 { color: var(--color-4); }
-.c-Btn--o--4:hover { background: var(--color-4); }

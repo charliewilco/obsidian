@@ -2,7 +2,7 @@
 
 :root {
   --link: var(--color-1);
-  --link-hover: #24A8E6;
+  --link-hover: var(--blue-light);
 }
 
 a {
