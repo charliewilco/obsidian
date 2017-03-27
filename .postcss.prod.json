@@ -4,6 +4,7 @@
     "postcss-export-vars",
     "autoprefixer",
     "postcss-custom-media",
+    "postcss-media-minmax",
     "postcss-custom-properties",
     "postcss-apply",
     "cssnano",

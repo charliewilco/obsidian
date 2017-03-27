@@ -4,6 +4,7 @@
     "postcss-export-vars",
     "autoprefixer",
     "postcss-custom-media",
+    "postcss-media-minmax",
     "postcss-custom-properties",
     "postcss-apply",
     "doiuse",
@@ -11,7 +12,7 @@
     "postcss-reporter"
   ],
   "input": "./lib/index.css",
-  "output": "./test/obsidian.min.css",
+  "output": "./test/bundle.css",
   "local-plugins": true,
   "autoprefixer": {
     "browsers": "last 1 versions"
