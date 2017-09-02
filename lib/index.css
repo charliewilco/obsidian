@@ -2,8 +2,6 @@
       Obsidian.css v2 MIT obsidian.charlespeters.net
 \----------------------------------------------------!*/
 
-/* doiuse-disable rem, multicolumn, border-radius, text-size-adjust */
-
 @import './settings';
 @import './generic';
 @import './elements';

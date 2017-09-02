@@ -1,4 +1,17 @@
 /*---------Progress Component----------*/
+
+/*
+@styleguide
+@chapter Components
+@title Progress
+
+This is a skin for the `<progress>` element. You can modify the color by overriding `--progress-color`.
+
+<div class="o-Column o-Column--12/12">
+  <progress max="100" value="80" class="c-Progress"></progress>
+</div>
+*/
+
 /*
   TODO: Opera and MS Prefixes or equivalent for bar and value pseudo selectors
   NOTE: Consider moving to Elements layer

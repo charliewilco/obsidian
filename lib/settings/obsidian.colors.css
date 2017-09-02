@@ -1,5 +1,5 @@
 /*----------Obsidian Default Colors----------*/
-
+/* @start color */
 :root {
   /* Red */
   --red: #D04D36;
@@ -69,3 +69,4 @@
   --text: #484848;
   --litegray: #BCBCBC;
 }
+/* @end color */

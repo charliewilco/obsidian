@@ -15,6 +15,10 @@
   border-bottom: 1px solid var(--UIList-border);
 }
 
-.o-UIList--inline > .o-UIList__item { display: inline-block; }
+.o-UIList--inline > .o-UIList__item {
+  display: inline-block;
+}
 
-.o-UIList__item { padding: var(--UIList-space) 0; }
+.o-UIList__item {
+  padding: var(--UIList-space) 0;
+}

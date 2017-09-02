@@ -1,7 +1,21 @@
 /*---------Range Component----------*/
 /*
+@styleguide
+@chapter Components
+@title Range Input
+
+This is a skin for the `<input type='range'>` element. You can modify the color of the range’s track by overriding --range-color. Currently, styles don’t work in IE, Mozilla or Opera, but should fallback nicely.
+
+<div class="u-p2">
+  <label for="rng" class="u-gray u-mb1 u-bl">Range</label>
+  <input type="range" id="rng" name="rng" class="c-Range" min="1" max="10" />
+</div>
+*/
+
+/*
   TODO: Mozilla and MS Prefixes or equivalent for thumb and track pseudo selectors
 */
+
 :root {
   --range-thumb-w: calc(var(--form-height) / 2);
   --range-thumb-h: calc(var(--form-height) / 2);

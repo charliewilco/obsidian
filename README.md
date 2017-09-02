@@ -37,7 +37,7 @@ const processors = [
   cssnext
 ];
 
-gulp.task('styles', ()=> {
+gulp.task('styles', () => {
   return gulp.src('path/to/stylesheet')
     .pipe(postcss(processors))
     // Probably other tasks
