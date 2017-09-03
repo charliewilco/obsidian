@@ -15,7 +15,7 @@
     "prepublish": "npm run clean",
     "style:dev": "npm run style -- -o dist/obsidian.css",
     "style:prod": "NODE_ENV='production' npm run style -- -o dist/obsidian.min.css",
-    "lint": "wilco './lib/**/*.css'",
+    "lint": "stylelint './lib/**/*.css'",
     "clean": "del ./dist; del docs/index.html",
     "dev": "onchange 'lib/**/*.css' 'docs/*.ejs' -- npm run style",
     "style": "postcss lib/index.css"
@@ -45,14 +45,17 @@
     "postcss-gzip": "^1.0.0",
     "postcss-import": "^10.0.0",
     "postcss-mdgx": "^0.14.0",
-    "postcss-media-minmax": "^3.0.0",
     "postcss-reporter": "^5.0.0",
+    "stylelint": "^8.0.0",
     "stylelint-config-wilco": "^1.0.2",
     "wilco": "^0.2.0"
   },
   "browserslist": [
     "last 1 versions"
   ],
+  "stylelint": {
+    "extends": "stylelint-config-wilco"
+  },
   "dependencies": {
     "chalk": "^2.1.0"
   }

@@ -8,7 +8,6 @@ module.exports = (ctx) => ({
       remove: true
     },
     'postcss-custom-media': {},
-    'postcss-media-minmax': {},
     'postcss-custom-properties': {
       preserve: true,
       appendVariables: true
@@ -32,6 +31,9 @@ module.exports = (ctx) => ({
       'dest': 'docs/index.html',
       'themePath': 'docs'
     },
+
+    // 'stylelint': {},
+
     'postcss-gzip': {},
     'immutable-css': ctx.env !== 'production' ? {} : false,
 
