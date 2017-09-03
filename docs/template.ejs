@@ -34,17 +34,17 @@
               <% } %>
             <% }) %>
           </ul>
-
         </nav>
       </header>
 
 
         <main id="" class="ExMain u-px2">
 
-          <div class="psg-container">
+          <div class="o-Container o-Container--center">
             <% if (Array.isArray(colorPalette) && colorPalette.length !== 0) { %>
-              <section class="ExComponent u-mb5">
-                  <h3 id="color-palette" class="ExComponent__title h6">Color Palette</h3>
+              <section class="ExComponent u-bg--offwhite u-p2 u-mb5">
+                <span class='u-caps u-lt-3 small'>Settings</span>
+                  <h3 id="color-palette" class="ExComponent__title h6 u-w400">Color Palette</h3>
                   <div class="ExComponent__contents">
                     <dl class="psg-colorPalette">
                       <% colorPalette.forEach(function (palette) { %>
@@ -62,9 +62,9 @@
               </section>
             <% } %>
             <% maps.forEach(function (map) { %>
-                <section class="ExComponent u-mb5">
-                  <span><%= map.link.chapter %></span>
-                  <h3 id="<%= map.link.id %>" class="ExComponent__title h6"><%= map.link.title %></h3>
+                <section class="ExComponent u-bg--offwhite u-p2 u-mb5">
+                  <span class='u-caps u-lt-3 small'><%= map.link.chapter %></span>
+                  <h3 id="<%= map.link.id %>" class="ExComponent__title h6 u-w400"><%= map.link.title %></h3>
                   <div class="ExComponent__contents">
                     <%- map.html %>
                   </div>

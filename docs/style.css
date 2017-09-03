@@ -7,12 +7,16 @@ code {
   font-family: Operator Mono, monospace;
 }
 
+p {
+  font-family: Charter;
+}
+
 html {
   background: #F7F7F7;
-  font-family: Avenir;
 }
 
 h1,
+.h1,
 h2,
 .h2,
 h3,
@@ -23,12 +27,17 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: Avenir;
+  font-family: Charter;
 }
 
 /*
  * All selectors are named with `psg-` prefix to avoid name confliction.
  */
+
+
+.Ex {
+  background: #ffba00;
+}
 
 .ExHeader {
   background: white;
