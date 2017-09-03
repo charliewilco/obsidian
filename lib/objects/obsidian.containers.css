@@ -1,5 +1,14 @@
 /*----------Containers / Wrapper Object----------*/
 
+/*
+@styleguide
+
+@chapter Objects
+@title Containers
+
+This is a standard page wrapper object. It providers a max-width to wrap content in with the option of centering it within the parent container. This object is based on this classic pattern.
+*/
+
 :root {
   --container-lg: calc(var(--base-container) * .75);
   --container-md: calc(var(--base-container) * .625);

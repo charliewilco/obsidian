@@ -41,7 +41,7 @@ h6,
 
 .ExHeader {
   background: white;
-  width: 12rem;
+  width: 15rem;
 }
 
 .ExLogo {
@@ -87,7 +87,7 @@ h6,
 
 .ExMain {
   flex: 5;
-  width: calc(100% - 12rem);
+  width: calc(100% - 15rem);
 }
 
 

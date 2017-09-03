@@ -9,9 +9,9 @@ This is a visual pattern for any time you want `<input type="text">` inlined wit
 
 <div class="o-container--xs u-p3 u-sh--2 u-bg--offwhite u-mxa">
   <h6 class="small u-mb3">Sign Up for Our Newsletter</h6>
-  <div class="c-InputGroup o-flex">
-    <input type="text" class="c-InputGroup--first c-field u-m0" placeholder="address@email.com">
-    <button class="c-btn c-InputGroup--last">Submit</button>
+  <div class="c-InputGroup o-Flex">
+    <input type="text" class="c-InputGroup--first c-Field u-m0" placeholder="address@email.com">
+    <button class="c-Btn c-InputGroup--last">Submit</button>
   </div>
 </div>
 

@@ -6,16 +6,16 @@
 
   This is a simple dropdown, meant to be trading by an .active for a .hidden class on the component. Position is yours to manage. Modifier --l moves the arrow to the left, --r to the right and --c centers the arrow.
 
-  <a href="#" class="c-btn c-btn--3">Button</a>
-  <div class="c-dropdown__container u-relative u-py6 u-mb6">
+  <button href="#" class="c-Btn c-Btn--3">Button</button>
+  <div class="c-Dropdown__container u-relative u-py6 u-mb6">
     <div class="u-absolute" style="left: 0; top: 0;">
-      <div class="c-dropdown c-dropdown--l u-mxw--fit active" style="width: 18rem;">
+      <div class="c-Dropdown c-Dropdown--l u-mxw--fit active" style="width: 18rem;">
         <h3 class="h6 u-p2">
           <a href="/profile/">Heading</a>
         </h3>
         <hr class="u-bg--ltgray" />
         <nav class="c-nav small">
-          <ul class="list--reset">
+          <ul class="o-UIList">
             <li class="u-p2">
               <a href="/preferences/" class="u-gray200">Preferences</a>
             </li>
@@ -31,10 +31,11 @@
     </div>
   </div>
 */
+
 :root {
   --curve: cubic-bezier(.16, .58, .8, .43);
-  --dropdown-header: white;
-  --dropdown-background: white;
+  --dropdown-header: var(--offwhite);
+  --dropdown-background: var(--offwhite);
   --dropdown-arrow-size: .625rem;
   --dropdown-width: 25rem;
 }
