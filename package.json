@@ -8,17 +8,17 @@
     "postcss"
   ],
   "main": "lib/index.css",
+  "browser": "dist/obsidian.min.css",
   "scripts": {
-    "start": "npm run build:dev",
-    "styles:prod": "postcss -c .postcss.prod.json",
-    "build:prod": "npm-run-all clean styles lint info:*",
-    "build:dev": "npm-run-all --parallel serve watch",
-    "watch": "watch 'npm run styles:dev' lib",
+    "start": "npm run dev",
+    "prestart": "npm run clean",
+    "prepublish": "npm run clean",
+    "style:dev": "npm run style -- -o dist/obsidian.css",
+    "style:prod": "NODE_ENV='production' npm run style -- -o dist/obsidian.min.css",
     "lint": "wilco './lib/**/*.css'",
-    "info": "npm-run-all lint info:*",
-    "info:size": "gzip-size ./dist/obsidian.min.css | pretty-bytes",
-    "clean": "del ./dist && del docs/index.html",
-    "styles": "postcss lib/index.css -o dist/obsidian.dev.css"
+    "clean": "del ./dist; del docs/index.html",
+    "dev": "onchange 'lib/**/*.css' 'docs/*.ejs' -- npm run style",
+    "style": "postcss lib/index.css"
   },
   "author": "charles peters <charlespeters42@gmail.com>",
   "license": "MIT",
@@ -31,62 +31,29 @@
   },
   "homepage": "https://github.com/charlespeters/obsidian#readme",
   "devDependencies": {
-    "autoprefixer": "^6.5.3",
+    "autoprefixer": "^7.1.3",
+    "css-mqpacker": "^6.0.1",
     "cssnano": "^3.7.4",
-    "del-cli": "^0.2.0",
-    "gzip-size-cli": "^1.0.0",
+    "del-cli": "^0.2.1",
     "immutable-css": "^1.1.2",
-    "npm-run-all": "^3.0.0",
-    "postcss-apply": "^0.8.0",
+    "onchange": "^3.2.1",
     "postcss-cli": "^4.1.0",
-    "postcss-cssstats": "^1.0.0",
+    "postcss-color-function": "^4.0.0",
     "postcss-custom-media": "^6.0.0",
     "postcss-custom-properties": "^6.1.0",
     "postcss-export-vars": "^0.2.0",
+    "postcss-gzip": "^1.0.0",
     "postcss-import": "^10.0.0",
-    "postcss-media-minmax": "^2.1.2",
-    "postcss-reporter": "2.0.0",
-    "postcss-style-guide": "^0.14.0",
-    "pretty-bytes-cli": "^1.0.0",
-    "watch": "1.0.1",
+    "postcss-mdgx": "^0.14.0",
+    "postcss-media-minmax": "^3.0.0",
+    "postcss-reporter": "^5.0.0",
+    "stylelint-config-wilco": "^1.0.2",
     "wilco": "^0.2.0"
   },
-  "postcss": {
-    "map": false,
-    "plugins": {
-      "postcss-import": {
-        "skipDuplicates": true
-      },
-      "postcss-export-vars": {
-        "file": "css",
-        "type": "json",
-        "matches": []
-      },
-      "autoprefixer": {
-        "remove": true
-      },
-      "postcss-custom-media": {},
-      "postcss-media-minmax": {},
-      "postcss-custom-properties": {
-        "preserve": true,
-        "appendVariables": true
-      },
-      "postcss-apply": {},
-      "postcss-reporter": {
-        "clearMessages": true
-      },
-      "@charlespeters/postcss-style-guide": {
-        "project": "Obsidian.css",
-        "showCode": true,
-        "src": "lib/index.css",
-        "dest": "docs/index.html",
-        "themePath": "docs",
-        "outputCSS": "dist/obsidian.dev.css"
-      }
-    }
-  },
-  "stylelint": {
-    "extends": "stylelint-config-wilco"
-  },
-  "browserslist": ["last 1 versions"]
+  "browserslist": [
+    "last 1 versions"
+  ],
+  "dependencies": {
+    "chalk": "^2.1.0"
+  }
 }
