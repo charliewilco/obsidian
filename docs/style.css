@@ -8,7 +8,7 @@ code {
 }
 
 p {
-  font-family: Charter;
+  font-family: var(--ff-default);
 }
 
 html {
@@ -26,18 +26,14 @@ h4,
 h5,
 .h5,
 h6,
-.h6 {
-  font-family: Charter;
-}
+.h6 {}
 
 /*
  * All selectors are named with `psg-` prefix to avoid name confliction.
  */
 
 
-.Ex {
-  background: #ffba00;
-}
+.Ex {}
 
 .ExHeader {
   background: white;

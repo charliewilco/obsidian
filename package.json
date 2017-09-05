@@ -11,14 +11,19 @@
   "browser": "dist/obsidian.min.css",
   "scripts": {
     "start": "npm run dev",
+    "now-start": "serve -s docs",
+    "now-build": "npm run clean; NODE_ENV='production' npm run style -- -o dist/obsidian.min.css",
     "prestart": "npm run clean",
     "prepublish": "npm run clean",
+    "style": "postcss lib/index.css",
     "style:dev": "npm run style -- -o dist/obsidian.css",
     "style:prod": "NODE_ENV='production' npm run style -- -o dist/obsidian.min.css",
     "lint": "stylelint './lib/**/*.css'",
+    "docs": "now && now alias",
     "clean": "del ./dist; del docs/index.html",
-    "dev": "onchange 'lib/**/*.css' 'docs/*.ejs' -- npm run style",
-    "style": "postcss lib/index.css"
+    "dev": "concurrently --names 'Watch,Serve' -c 'bgBlue.bold,bgYellow.bold' 'npm run dev:watch' 'npm run dev:server'",
+    "dev:watch": "onchange 'lib/**/*.css' 'docs/*.ejs' -- npm run style:dev",
+    "dev:server": "live-server docs --host=localhost --watch"
   },
   "author": "charles peters <charlespeters42@gmail.com>",
   "license": "MIT",
@@ -32,10 +37,12 @@
   "homepage": "https://github.com/charlespeters/obsidian#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.3",
+    "concurrently": "^3.5.0",
     "css-mqpacker": "^6.0.1",
     "cssnano": "^3.7.4",
     "del-cli": "^0.2.1",
     "immutable-css": "^1.1.2",
+    "live-server": "^1.2.0",
     "onchange": "^3.2.1",
     "postcss-cli": "^4.1.0",
     "postcss-color-function": "^4.0.0",
@@ -56,7 +63,10 @@
   "stylelint": {
     "extends": "stylelint-config-wilco"
   },
+  "now": {
+    "alias": "obsidian.charlespeters.net"
+  },
   "dependencies": {
-    "chalk": "^2.1.0"
+    "serve": "^6.0.6"
   }
 }

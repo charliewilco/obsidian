@@ -14,9 +14,6 @@ module.exports = (ctx) => ({
     },
     'postcss-color-function': {},
 
-    // Minifier
-    'css-mqpacker': {},
-    'cssnano': ctx.env === 'production' ? {} : false,
 
     // Analysis + Code Style
     'postcss-export-vars': {
@@ -32,10 +29,12 @@ module.exports = (ctx) => ({
       'themePath': 'docs'
     },
 
-    // 'stylelint': {},
-
     'postcss-gzip': {},
     'immutable-css': ctx.env !== 'production' ? {} : false,
+
+    // Minifier
+    'css-mqpacker': {},
+    'cssnano': ctx.env === 'production' ? {} : false,
 
     'postcss-reporter': {
       plugins: ['postcss-gzip', 'immutable-css', 'postcss-mdgx'],

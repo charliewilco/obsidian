@@ -11,26 +11,26 @@
 
 /* Family */
 
-.u-serif  { font-family: var(--ff-serif); }
-.u-sans   { font-family: var(--ff-sans-serif); }
-.u-mono   { font-family: var(--ff-mono); }
+.u-serif { font-family: var(--ff-serif); }
+.u-sans { font-family: var(--ff-sans-serif); }
+.u-mono { font-family: var(--ff-mono); }
 .u-system { font-family: var(--ff-default); }
 
 /* Font Features Settings */
 
-.u-ffs-lnnum { font-feature-settings: 'lnum'; }
-.u-ffs-smcp  { font-feature-settings: 'smcp'; }
-.u-ffs-frac  { font-feature-settings: 'frac'; }
-.u-ffs-swsh  { font-feature-settings: 'swsh' 2; }
+.u-ffs-lnum { font-feature-settings: 'lnum'; }
+.u-ffs-smcp { font-feature-settings: 'smcp'; }
+.u-ffs-frac { font-feature-settings: 'frac'; }
+.u-ffs-swsh { font-feature-settings: 'swsh' 2; }
 
 /* Line Height */
 
-.u-lh-1    { line-height: 1; }
+.u-lh-1 { line-height: 1; }
 .u-lh-auto { line-height: auto; }
 
 /* Case */
 
-.u-caps  { text-transform: uppercase; }
+.u-caps { text-transform: uppercase; }
 .u-lower { text-transform: lowercase; }
 
 /* Weights */

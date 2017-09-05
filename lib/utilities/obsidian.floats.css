@@ -5,25 +5,26 @@
 .u-fn { float: none; }
 
 @media (--sm) {
-  .u-fl\@sm  { float: left; }
+  .u-fl\@sm { float: left; }
   .u-fr\@sm { float: right; }
-  .u-fn\@sm  { float: none; }
+  .u-fn\@sm { float: none; }
 }
 
 @media (--md) {
-  .u-fl\@md  { float: left; }
+  .u-fl\@md { float: left; }
   .u-fr\@md { float: right; }
-  .u-fn\@md  { float: none; }
+  .u-fn\@md { float: none; }
 }
 
 @media (--lg) {
-  .u-fl\@lg  { float: left; }
+  .u-fl\@lg { float: left; }
   .u-fr\@lg { float: right; }
-  .u-fn\@lg  { float: none; }
+  .u-fn\@lg { float: none; }
 }
 
 /* Clearfix */
-.u-cf:after {
+
+.u-cf::after {
   content: '';
   clear: both;
   display: table;

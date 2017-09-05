@@ -7,8 +7,8 @@
 
 This is a skin for the `<progress>` element. You can modify the color by overriding `--progress-color`.
 
-<div class="Ex o-Column o-Column--12/12 u-px3 u-pb4">
-  <progress max="100" value="80" class="c-Progress u-mb6"></progress>
+<div class="Ex u-px3">
+  <progress max="100" value="80" class="c-Progress"></progress>
 </div>
 */
 
@@ -44,12 +44,13 @@ This is a skin for the `<progress>` element. You can modify the color by overrid
 }
 
 /* Progress Value */
-.c-Progress::-webkit-progress-value  {
+
+.c-Progress::-webkit-progress-value {
   background-color: var(--progress-color);
   border-radius: var(--progress-radius) 0 0 var(--progress-radius);
 }
 
-.c-Progress::-moz-progress-bar  {
+.c-Progress::-moz-progress-bar {
   background-color: var(--progress-color);
   border-radius: var(--progress-radius) 0 0 var(--progress-radius);
 }

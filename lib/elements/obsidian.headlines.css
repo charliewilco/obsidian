@@ -4,6 +4,7 @@
 */
 
 /* Sizes */
+
 :root {
   /* Line Heights */
   --lh-1: 1.125;
@@ -106,6 +107,7 @@ h6,
 
 
 @media (--lg) {
+
   h1,
   .h1 { font-size: var(--headline-1-lg); }
 
