@@ -22,7 +22,6 @@ module.exports = ctx => ({
     },
 
     "postcss-gzip": {},
-    "immutable-css": ctx.env !== "production" ? {} : false,
 
     // Minifier
     "css-mqpacker": {},
