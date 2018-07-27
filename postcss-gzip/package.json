@@ -1,0 +1,22 @@
+{
+  "name": "postcss-gzip",
+  "description": "PostCSS plugin to report gzip size of processed CSS",
+  "version": "1.0.1",
+  "main": "index.js",
+  "dependencies": {
+    "gzip-size": "^5.0.0",
+    "postcss": "^7.0.1",
+    "pretty-bytes": "^5.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "charles peters <charlespeters42@gmail.com> (https://charlespeters.net)",
+  "license": "MIT",
+  "repository": "charlespeters/postcss-gzip",
+  "bugs": {
+    "url": "https://github.com/charlespeters/postcss-gzip/issues"
+  },
+  "homepage": "https://github.com/charlespeters/postcss-gzip#readme"
+}

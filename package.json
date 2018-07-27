@@ -2,6 +2,7 @@
   "private": true,
   "workspaces": [
     "documentation",
-    "obsidian.css"
+    "obsidian.css",
+    "postcss-gzip"
   ]
 }
