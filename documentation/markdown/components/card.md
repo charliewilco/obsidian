@@ -1,0 +1,1 @@
+Card displays content that carries a visual metaphor of a playing card. For information on this pattern, checkout [Using Card-Based Design To Enhance UX](https://uxplanet.org/using-card-based-design-to-enhance-ux-51f965ab70cb#.aqoz7dokz) from Nick Babich.

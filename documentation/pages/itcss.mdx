@@ -1,0 +1,27 @@
+
+[ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) (Inverted Triangle CSS) from Harry Roberts, is a way of structuring CSS in such a way that the most general selectors to trickle down to the most specific selectors, as if they're moving from the top of an bottom of a triangle to the pinnacle of it.
+
+
+In this implementation there are a few differences. Normally in ITCSS, you could have a tools like Sass functions, but most of the tools we'd need are coming in CSS and transpiled by [cssnext](cssnext.io/features/).
+
+Objects have minimal visual styling in Obsidian. This is a set between the reset styling and the component level styling because it's beyond an element.
+
+Settings contain base styles but often module variables are only contained in that module; there are a few exceptions (like shadow values).
+
+- title: Settings
+  description: Settings should contain global and base settings, project media queries, mixins, custom selectors.
+
+- title: Generic
+  description: The generic layer is for reset styles, document wide selectors.
+
+- title: Elements
+  description: Elements are for styling specific HTML elements and extending responsive styling for elements (for instance [tables](/elements#tables-section)). They're a base style for elements meant to be extended by other styles down the triangle.
+
+- title: Objects
+  description: Objects define common reusable patterns. They are have more structure than skin, usually have no visual style (color, background, etc) applied; it's the bare minimum UI. Objects are things like grids or the media object.
+
+- title: Components
+  description: Components are visual pieces of UI. They're more complex than objects, often containing many elements.
+
+- title: Utilities
+  description: Utilities are helper classes meant to override any default or that extend specific styling. They are single use utilities, meant to only apply a single value.

@@ -1,0 +1,57 @@
+### Installation
+
+```sh
+npm install obsidian.css --save
+```
+
+or link to the CDN
+
+```markup
+<link rel="stylesheet" href="//npmcdn.com/obsidian.css/dist/obsidian.min.css" media="screen" title="Obsidian.css" charset="utf-8">
+```
+
+#### Using in Build
+
+Recommended you use [PostCSS](https://github.com/postcss/postcss) and [postcss-import](https://github.com/postcss/postcss-import).
+
+Example using Gulp.js:
+
+```js
+const gulp = require('gulp');
+const postcss = require('gulp-postcss');
+const atImport = require('postcss-import');
+const cssnext  = require('postcss-cssnext');
+
+const processors = [
+  atImport,
+  cssnext
+];
+
+gulp.task('styles', ()=> {
+  return gulp.src('path/to/stylesheet')
+    .pipe(postcss(processors))
+    // Probably other tasks
+    .pipe(gulp.dest('path/to/destination'));
+})
+```
+
+then import into your CSS and modify some variables:
+
+```css
+@import 'obsidian.css/lib/settings';
+@import 'obsidian.css/lib/generic';
+@import 'obsidian.css/lib/elements';
+
+@import 'obsidian.css/lib/objects/obsidian.grid';
+```
+
+```css
+@import 'obsidian.css';
+
+:root {
+  --headlines: 'Proxima Nova Condensed', Lucida Grande, sans-serif;
+  --body-text: 'Meta Serif Pro', Charter, serif;
+}
+```
+
+And things should compile the way you'd expect.
