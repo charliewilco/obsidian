@@ -10,13 +10,12 @@
   "main": "lib/index.css",
   "browser": "dist/obsidian.min.css",
   "scripts": {
-    "style": "postcss src/index.css -o dist/obsidian.css",
-    "prepublish": "yarn clean",
+    "prepublish": "yarn clean && yarn build",
     "lint": "stylelint './src/**/*.css'",
     "clean": "del ./dist",
-    "dev": "yarn style -w",
-    "prebuild": "yarn clean && yarn style",
-    "build": "postcss dist/obsidian.css -u cssnano > dist/obsidian.min.css"
+    "dev": "postcss src/index.css -o dist/obsidian.css -w",
+    "prebuild": "yarn clean && postcss src/index.css -o dist/obsidian.css",
+    "build": "postcss dist/obsidian.css -u cssnano -u postcss-gzip -o dist/obsidian.min.css --no-map"
   },
   "author": "charles peters <charlespeters42@gmail.com>",
   "license": "MIT",
@@ -31,6 +30,7 @@
     "del-cli": "^1.1.0",
     "postcss-cli": "^6.0.0",
     "postcss-color-function": "^4.0.0",
+    "postcss-gzip": "^1.0.1",
     "postcss-import": "^11.1.0",
     "postcss-preset-env": "^5.3.0",
     "postcss-reporter": "^5.0.0",

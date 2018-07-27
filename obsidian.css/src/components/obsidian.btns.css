@@ -1,19 +1,4 @@
 /*---------Buttons UI----------*/
-/*
-@styleguide
-@chapter Components
-@title Buttons UI
-
-Simple skin for buttons to be applied on `<input type='button'>`, `<button>`, and `<a>` elements.
-
-<div>
-  <h6 class="u-mb2 small u-caps">Large Buttons</h6>
-  <a href="" class="c-Btn u-m1">Button</a>
-  <a href="" class="c-Btn c-Btn--2 u-m1">Button</a>
-  <a href="" class="c-Btn c-Btn--3 u-m1">Button</a>
-  <a href="" class="c-Btn c-Btn--4 u-m1">Button</a>
-</div>
-*/
 
 :root {
   --btn-radius: .25rem;

@@ -1,35 +1,5 @@
 /*----------Radio Group----------*/
 
-/*
-@styleguide
-@chapter Components
-@title Radio Group
-
-<div class="c-RadioGroup small o-flex o-flex--j--sb u-w500 u-mxa u-py4 u-center">
-  <input type="radio" name="r" id="ru" class="c-RadioGroup__elm">
-  <label for="ru" class="c-RadioGroup__opt o-flex--center--v u-p2">
-    Recently Updated
-  </label>
-  <input type="radio" name="r" id="created" class="c-RadioGroup__elm" checked="">
-  <label for="created" class="c-RadioGroup__opt o-flex--center--v u-p2">
-    Created On
-  </label>
-  <input type="radio" name="r" id="az" class="c-RadioGroup__elm">
-  <label for="az" class="c-RadioGroup__opt o-flex--center--v u-p2">
-    A to Z
-  </label>
-</div>
-
-<h6 class="u-mb2 small u-caps">Links</h6>
-
-<div class="c-RadioGroup small o-flex o-flex--j--sb u-w500 u-mxa u-py4 u-center">
-  <a href="#" class="c-RadioGroup__opt o-flex--center--v u-p2">Recently Updated</a>
-  <a href="#" class="c-RadioGroup__opt o-flex--center--v u-p2 active">Created On</a>
-  <a href="#" class="c-RadioGroup__opt o-flex--center--v u-p2">A to Z</a>
-</div>
-
-*/
-
 :root {
   --rdg-corner: .425rem;
   --rdg-width: 27.5rem;

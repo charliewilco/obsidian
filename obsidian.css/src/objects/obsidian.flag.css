@@ -1,51 +1,6 @@
 /*---------Flag Object----------*/
 
 /*
-@styleguide
-
-@chapter Objects
-@title Flag
-
-The flag object is a UI pattern that’s very similar to the media object. There are two key differences, for one it doesn’t assume left aligned figure. And then the flag object is flexible in regards to vertical alignment. Like the above media object implementation, it doesn’t wrap content onto two lines.
-
-<div class='Ex'>
-  <div class="o-Flag o-Flag--top u-mb3">
-    <figure class="o-Flag__figure o-col--3/12 u-mr3">
-      <img src="/filler-image.svg" alt="" class="u-bl" />
-    </figure>
-
-    <div class="o-Flag__body small">
-      <h6 class="u-mb2">Top</h6>
-      <p class="u-m0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et porro provident ipsa nam, quod molestias doloribus dolore sequi quaerat, facilis repellendus est corporis dolorum sed. Culpa ipsam pariatur cumque maxime!</p>
-    </div>
-  </div>
-
-  <div class="o-Flag o-Flag--bottom u-mb3">
-    <figure class="o-Flag__figure o-col--3/12 u-mr3">
-      <img src="/filler-image.svg" alt="" class="u-bl" />
-    </figure>
-
-    <div class="o-Flag__body small">
-      <h6 class="u-mb2">Bottom</h6>
-      <p class="u-m0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et porro provident ipsa nam, quod molestias doloribus dolore sequi quaerat, facilis repellendus est corporis dolorum sed. Culpa ipsam pariatur cumque maxime!</p>
-    </div>
-  </div>
-
-  <div class="o-Flag o-Flag--reverse u-mb3">
-    <figure class="o-Flag__figure o-col--3/12">
-      <img src="/filler-image.svg" alt="" class="u-bl" />
-    </figure>
-
-    <div class="o-Flag__body small u-mr3">
-      <h6 class="u-mb2">Reversed</h6>
-      <p class="u-m0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et porro provident ipsa nam, quod molestias doloribus dolore sequi quaerat, facilis repellendus est corporis dolorum sed.</p>
-    </div>
-
-  </div>
-</div>
-*/
-
-/*
   NOTE: From 'The flag object' from Harry Roberts
   http://csswizardry.com/2013/05/the-flag-object/
 */
