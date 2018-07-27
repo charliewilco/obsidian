@@ -10,11 +10,13 @@
   "main": "lib/index.css",
   "browser": "dist/obsidian.min.css",
   "scripts": {
-    "prepublish": "npm run clean",
+    "style": "postcss src/index.css -o dist/obsidian.css",
+    "prepublish": "yarn clean",
     "lint": "stylelint './src/**/*.css'",
-    "clean": "del ./dist; del docs/index.html",
-    "dev": "postcss src/index.css",
-    "build": "NODE_ENV='production' postcss src/index.css -c postcss.config.prod.json -o dist/obsidian.min.css"
+    "clean": "del ./dist",
+    "dev": "yarn style -w",
+    "prebuild": "yarn clean && yarn style",
+    "build": "postcss dist/obsidian.css -u cssnano > dist/obsidian.min.css"
   },
   "author": "charles peters <charlespeters42@gmail.com>",
   "license": "MIT",
@@ -29,15 +31,11 @@
     "del-cli": "^1.1.0",
     "postcss-cli": "^6.0.0",
     "postcss-color-function": "^4.0.0",
-    "postcss-export-vars": "^0.2.0",
-    "postcss-gzip": "^1.0.0",
     "postcss-import": "^11.1.0",
-    "postcss-mdgx": "^0.14.0",
     "postcss-preset-env": "^5.3.0",
     "postcss-reporter": "^5.0.0",
     "stylelint": "^9.4.0",
-    "stylelint-config-wilco": "^1.0.2",
-    "wilco": "^0.2.0"
+    "stylelint-config-wilco": "^1.0.2"
   },
   "postcss": {
     "map": false,
@@ -46,13 +44,13 @@
         "skipDuplicates": true
       },
       "postcss-preset-env": {
-        "stage": 3,
+        "stage": 0,
         "autoprefixer": {
           "remove": true
-        },
-        "custom-properties": {
-          "preserve": true
         }
+      },
+      "css-mqpacker": {
+        "sort": true
       }
     }
   },
@@ -61,5 +59,15 @@
   ],
   "stylelint": {
     "extends": "stylelint-config-wilco"
+  },
+  "cssnano": {
+    "preset": [
+      "default",
+      {
+        "discardComments": {
+          "removeAllButFirst": true
+        }
+      }
+    ]
   }
 }
