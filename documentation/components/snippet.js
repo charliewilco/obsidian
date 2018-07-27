@@ -5,27 +5,53 @@ import "prismjs";
 import "prism-themes/themes/prism-base16-ateliersulphurpool.light.css";
 import { Trunk, Branch } from "./branches";
 
-export const TabbedNavigation = ({ goDirectToPosition }) => (
-  <nav className="o-flex o-flex--j--sb" style={{ display: "flex" }}>
-    <button onClick={() => goDirectToPosition(2)}>Output</button>
-    <div>
-      <button onClick={() => goDirectToPosition(0)}>HTML</button>
-      <button onClick={() => goDirectToPosition(1)}>CSS</button>
-    </div>
+export const NavButton = ({ active, children, onClick }) => (
+  <button
+    className={active ? "NavButton u-w700 active" : "NavButton u-w700"}
+    onClick={onClick}
+  >
+    {children}
     <style jsx>{`
-      nav {
+      .NavButton {
+        color: #147aab;
+        border: 0;
+        border-bottom: 3px solid transparent;
       }
-      button {
+
+      .NavButton + .NavButton {
+        margin-left: 0.5rem;
+      }
+
+      .NavButton.active {
+        border-bottom: 3px solid currentColor;
       }
     `}</style>
+  </button>
+);
+
+export const TabbedNavigation = ({ position, goDirectToPosition }) => (
+  <nav className="o-flex o-flex--j--sb u-my3">
+    <NavButton active={position === 0} onClick={() => goDirectToPosition(0)}>
+      Output
+    </NavButton>
+    <div>
+      <NavButton active={position === 1} onClick={() => goDirectToPosition(1)}>
+        HTML
+      </NavButton>
+      <NavButton active={position === 2} onClick={() => goDirectToPosition(2)}>
+        CSS
+      </NavButton>
+    </div>
   </nav>
 );
 
 export const Snippet = ({ component: Cx, snippet }) => {
   const html = pretty(renderToStaticMarkup(<Cx />));
+
   return (
     <div className="Snippet">
       <Trunk navigation={TabbedNavigation}>
+        <Branch component={Cx} />
         <Branch
           render={() => (
             <pre>
@@ -35,22 +61,20 @@ export const Snippet = ({ component: Cx, snippet }) => {
         />
         <Branch
           render={() => (
-            <pre>
+            <pre className="Snippet__code">
               <Prism className="language-css">{snippet}</Prism>
             </pre>
           )}
         />
-        <Branch component={Cx} />
       </Trunk>
       <style jsx>
         {`
           .Snippet {
             width: 100%;
-            max-width: 40rem;
             background: white;
           }
 
-          pre {
+          .Snippet__code {
             display: block;
             height: 100%;
             max-height: 25rem;

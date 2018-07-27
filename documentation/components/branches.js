@@ -71,7 +71,7 @@ export class Trunk extends Component {
   goToNext = () => this.setState(nextPosition);
 
   render() {
-    const { children, navigation: Nav } = this.props;
+    const { children, navigation: BranchNav } = this.props;
     return (
       <TrunkContext.Provider
         value={{
@@ -82,7 +82,7 @@ export class Trunk extends Component {
         }}
       >
         <TrunkContext.Consumer>
-          {context => <Nav {...context} />}
+          {context => <BranchNav {...context} />}
         </TrunkContext.Consumer>
         {Children.map(
           children,

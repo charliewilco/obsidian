@@ -30,57 +30,27 @@ export const pages = [
 
 export const subpages = [
   {
-    name: "",
-    href: ""
+    name: "Usage",
+    href: "/usage"
   },
   {
-    name: "",
-    href: ""
+    name: "Styleguide",
+    href: "/styleguide"
   },
   {
-    name: "",
-    href: ""
+    name: "Naming Classes",
+    href: "/naming-classes"
   },
   {
-    name: "",
-    href: ""
+    name: "ITCSS",
+    href: "/itcss"
   }
 ];
 
-export const Logo = ({ name, subtitle }) => (
-  <div className="u-p1">
-    <img
-      alt="Obsidian.css Logo"
-      className="u-bl u-mxa u-mb5"
-      src="/static/assets/obsidian-logo@2x.png"
-    />
-    {name && (
-      <>
-        <Link href="/">
-          <h1 className="h4 u-mb2">Obsidian.css</h1>
-        </Link>
-        {subtitle && <p className="h6 u-ltgray">A Modular CSS Library</p>}
-      </>
-    )}
-    <style jsx>{`
-      h1 {
-        color: #d04d36;
-        background-image: linear-gradient(#ea8466, #d04d36);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      img {
-        max-width: 7rem;
-      }
-    `}</style>
-  </div>
-);
-
 export const MoreContentNav = () => (
-  <nav className="u-bg--offwhite">
-    <h4>Further Reading</h4>
-    <ul className="o-UIList o-UIList--dividers u-w400 u-p3">
+  <nav className="u-p2">
+    <h4 className="h6">Further Reading</h4>
+    <ul className="o-UIList o-UIList--dividers u-w400">
       {subpages.map((page, idx) => (
         <li className="o-UIList__item" key={idx}>
           <Link href={page.href}>
@@ -90,21 +60,19 @@ export const MoreContentNav = () => (
       ))}
     </ul>
     <style jsx>{`
-      nav {
-        max-width: 12.5rem;
-        width: 100%;
-        border-right: 1px solid hsla(0, 0%, 74%, 0.25);
+      ul {
+        margin: 0;
+        list-style: inside none;
       }
     `}</style>
   </nav>
 );
 
 export const Nav = () => (
-  <nav className="u-bg--offwhite">
-    <Logo />
-    <ul className="o-UIList o-UIList--dividers u-w400 u-p3">
+  <nav className="u-bg--offwhite u-mb5">
+    <ul className="o-UIList o-UIList--dividers u-w400 u-px2 u-py3">
       {pages.map((page, idx) => (
-        <li className="o-UIList__item" key={idx}>
+        <li className="u-mr3" key={idx}>
           <Link href={page.href}>
             <a>{page.name}</a>
           </Link>
@@ -112,10 +80,18 @@ export const Nav = () => (
       ))}
     </ul>
     <style jsx>{`
+      ul {
+        font-family: inherit;
+        display: block;
+        list-style: inside none;
+      }
+
+      li {
+        display: inline-block;
+      }
+
       nav {
-        max-width: 12.5rem;
-        width: 100%;
-        border-right: 1px solid hsla(0, 0%, 74%, 0.25);
+        border-bottom: 1px solid hsla(0, 0%, 74%, 0.25);
       }
     `}</style>
   </nav>

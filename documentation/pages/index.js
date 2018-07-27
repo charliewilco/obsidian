@@ -1,6 +1,6 @@
 import Intro from "../markdown/intro.mdx";
 import { Installation } from "../components/installation";
-import { Logo } from "../components/navigation";
+import { LogoNamePlate as Logo } from "../components/logo";
 import { Article } from "../components/article";
 
 export default () => (
