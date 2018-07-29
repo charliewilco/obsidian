@@ -1,0 +1,1 @@
+An icon object is designed for the [Just a Few Icons](http://justafewicons.co/) project. It forces a width and height to the object and gives the `<svg>` a value of `currentColor` so that the fill of the icon can be changed with a color utility class.

@@ -1,0 +1,93 @@
+.Pane {
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.0175), 0 4px 8px rgba(0, 0, 0, 0.035);
+}
+
+.NavButton {
+  color: #147aab;
+  border: 0;
+  border-bottom: 3px solid transparent;
+}
+
+.NavButton + .NavButton {
+  margin-left: 0.5rem;
+}
+
+.NavButton.active {
+  border-bottom: 3px solid currentColor;
+}
+
+.SubNavList {
+  margin: 0;
+  list-style: inside none;
+}
+
+.NavList {
+  border-bottom: 1px solid hsla(0, 0%, 74%, 0.25);
+}
+
+.NavList__items {
+  font-family: inherit;
+  display: block;
+  list-style: inside none;
+}
+
+.NavList__item {
+  display: inline-block;
+}
+
+.Snippet {
+  width: 100%;
+  background: white;
+}
+
+.Snippet__code {
+  display: block;
+  height: 100%;
+  max-height: 25rem;
+  overflow-y: scroll;
+}
+
+.Logo {
+}
+
+.Logo--sm {
+  max-width: 3rem;
+}
+
+.Logo--md {
+  max-width: 7rem;
+}
+
+.GradientTitle {
+  color: #d04d36;
+  background-image: linear-gradient(#ea8466, #d04d36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Header {
+  background: #fff;
+  border-bottom: 1px solid hsla(0, 0%, 74%, 0.25);
+}
+
+.Intro {
+}
+
+.Intro h3 {
+  font-size: 1.53125rem;
+  margin-bottom: 1.625rem;
+}
+
+.Intro hr,
+.Rule {
+  background: hsla(0, 0%, 80%, 0.5);
+  margin: 2rem 0;
+}

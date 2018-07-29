@@ -1,0 +1,9 @@
+/*----------Body Text Default Elements----------*/
+
+p {
+  font-family: var(--body-text);
+}
+
+p:not(:last-of-type) {
+  margin-bottom: var(--base-spacing);
+}
