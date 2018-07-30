@@ -1,6 +1,6 @@
 export const Footer = () => (
-  <footer className="o-container o-container--lg o-container--center u-mb3 u-p3 u-py5@md small">
-    <div className="o-flex o-flex--wrap o-flex--center--h o-flex--j--sb">
+  <footer className="o-Container o-Container--lg o-Container--center u-mb3 u-p3 u-py5@md small">
+    <div className="o-Flex o-Flex--wrap o-Flex--center--h o-Flex--j--sb">
       <div className="o-col--4/12@md">
         <h4 className="h6">Obsidian.css</h4>
         <p className="u-sans">

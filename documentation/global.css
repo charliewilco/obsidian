@@ -30,7 +30,7 @@
 .NavButton {
   color: #147aab;
   border: 0;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .NavButton + .NavButton {
@@ -38,7 +38,7 @@
 }
 
 .NavButton.active {
-  border-bottom: 3px solid currentColor;
+  border-bottom: 2px solid currentColor;
 }
 
 .SubNavList {
@@ -71,11 +71,13 @@
 .NavList__link {
   display: block;
   line-height: 1;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .NavList__link.active {
   font-weight: 700;
-  border-bottom: 4px solid currentColor;
+  border-bottom: 2px solid currentColor;
 }
 
 .Snippet {

@@ -7,7 +7,7 @@ export const CardUI = () => (
         alt="Adam West is back as Batman"
       />
     </figure>
-    <header className="u-pt3 u-px3 u-mb2 o-flex o-flex--center--h">
+    <header className="u-pt3 u-px3 u-mb2 o-Flex o-Flex--center--h">
       <img
         className="o-icon o-icon--xs u-mr2"
         src="http://i.cdn.turner.com/cnn/.e1mo/img/4.0/logos/logo_cnn_badge_2up.png"

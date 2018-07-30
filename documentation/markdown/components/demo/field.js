@@ -1,5 +1,5 @@
 export const Field = () => (
-  <section className="o-flex o-flex--wrap">
+  <section className="o-Flex o-Flex--wrap">
     <div className="o-col--12/12 o-col--6/12@md u-p2">
       <label htmlFor="ti" className="u-gray u-mb1 u-bl">
         Text Field

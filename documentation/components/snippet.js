@@ -1,20 +1,19 @@
 import { renderToStaticMarkup } from 'react-dom/server';
 import Prism from 'react-prism';
+import cx from 'classnames';
 import pretty from 'pretty';
 import 'prismjs';
 import 'prism-themes/themes/prism-base16-ateliersulphurpool.light.css';
 import { Trunk, Branch } from './branches';
 
 export const NavButton = ({ active, children, onClick }) => (
-  <button
-    className={active ? 'NavButton u-w700 active' : 'NavButton u-w700'}
-    onClick={onClick}>
+  <button className={cx('NavButton u-w700 u-py2', { active })} onClick={onClick}>
     {children}
   </button>
 );
 
 export const TabbedNavigation = ({ position, goDirectToPosition }) => (
-  <nav className="o-flex o-flex--j--sb u-my3">
+  <nav className="o-Flex o-Flex--j--sb u-my3">
     <NavButton active={position === 0} onClick={() => goDirectToPosition(0)}>
       Output
     </NavButton>

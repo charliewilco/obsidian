@@ -1,7 +1,7 @@
 const IMAGE_URL = '/static/assets/filler-image.svg';
 
 export const Fit = () => (
-  <div className="o-flex o-flex--wrap o-flex--j--c">
+  <div className="o-Flex o-Flex--wrap o-Flex--j--c">
     <div className="o-col--5/12 u-m3">
       <h6 className="small u-caps">Cover / Center Top</h6>
       <div className="o-intrinsic o-intrinsic--3x1 u-bg--bluegreen">

@@ -1,6 +1,6 @@
 export const Main = props => (
   <main
-    className="o-container o-container--lg o-container--center u-px3"
+    className="o-Container o-Container--lg o-Container--center u-px3"
     {...props}
   />
 );

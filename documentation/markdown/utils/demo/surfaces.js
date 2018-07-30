@@ -1,5 +1,5 @@
 export const Surfaces = () => (
-  <div className="o-flex o-flex--j--sa u-center">
+  <div className="o-Flex o-Flex--j--sa u-center">
     <div className="u-br2 u-bg--bluegreen u-offwhite u-sh--1 u-py4 u-px3 u-m2">
       <ul className="list--reset">
         <li>Shadow 1</li>

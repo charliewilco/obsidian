@@ -12,10 +12,7 @@ export default class MyDocument extends Document {
       <html className="u-bg--palegray u-anti">
         <Head>
           <title>Next Obsidian.css</title>
-          <link
-            href="https://unpkg.com/obsidian.css@2.1.3/dist/obsidian.min.css"
-            rel="stylesheet"
-          />
+          <link href="https://unpkg.com/obsidian.css" rel="stylesheet" />
           <link rel="stylesheet" href="/_next/static/style.css" />
           <link rel="icon" href="/static/favicon.ico" />
         </Head>

@@ -3,7 +3,7 @@ import { MoreContentNav } from './navigation';
 
 const ArticleHeader = ({ title, description }) => (
   <>
-    <header className="o-container o-container--center o-container--sm u-center u-mb3 u-px3">
+    <header className="o-Container o-Container--center o-Container--sm u-center u-mb3 u-px3">
       <h1 className="h3 u-w300 u-mb2">{title}</h1>
       <p className="h6">{description}</p>
     </header>

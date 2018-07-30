@@ -2,7 +2,7 @@ const onClick = e => e.preventDefault();
 
 export const Tabs = () => (
   <section className="c-tabs">
-    <nav className="c-tabs__nav o-flex u-w700" data-tabs>
+    <nav className="c-tabs__nav o-Flex u-w700" data-tabs>
       <a
         onClick={onClick}
         href="#tabA"

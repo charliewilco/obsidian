@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const Logo = () => (
-  <div className="o-flex o-flex--center--h u-p1">
+  <div className="o-Flex o-Flex--center--h u-p1">
     <img
       alt="Obsidian.css Logo"
       className="Logo Logo--sm u-bl u-mr3"

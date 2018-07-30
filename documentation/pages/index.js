@@ -10,7 +10,7 @@ export default () => (
       <Logo name subtitle />
       <Installation />
     </header>
-    <section className="Intro o-container o-container--sm o-container--center">
+    <section className="Intro o-Container o-Container--sm o-Container--center">
       <Intro />
     </section>
   </Article>

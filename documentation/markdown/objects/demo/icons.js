@@ -1,6 +1,6 @@
 export const Icons = () => (
   <>
-    <div className="o-flex o-flex--j--sa u-mb3 u-ltgray">
+    <div className="o-Flex o-Flex--j--sa u-mb3 u-ltgray">
       <div className="u-center u-p1">
         <h6 className="small u-w400">Small Icon</h6>
         <svg viewBox="0 0 650 650" className="o-icon o-icon--sm u-blue">
@@ -65,7 +65,7 @@ export const Icons = () => (
         </svg>
       </div>
     </div>
-    <div className="o-flex o-flex--j--sa u-ltgray">
+    <div className="o-Flex o-Flex--j--sa u-ltgray">
       <div className="u-center u-p1">
         <h6 className="small u-w400">Small Icon</h6>
         <svg viewBox="0 0 650 650" className="o-icon o-icon--sm u-blue">

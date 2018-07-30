@@ -1,5 +1,5 @@
 export const Installation = () => (
-  <div className="o-container--xs">
+  <div className="o-Container--xs">
     <figure className="highlight">
       <pre className=" language-shell">
         <code className="language-shell h5 u-mono" data-lang="shell">
