@@ -1,1 +1,0 @@
-This modules includes utility classes that refer to heavily visually style components. These utilities add background colors, text colors, border radius modifications and box shadows. All background color and colors listed in [Settings](/settings/) are available.

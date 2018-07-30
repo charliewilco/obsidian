@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { withRouter } from 'next/router';
 
 export const pages = [
   {
@@ -47,15 +48,33 @@ export const subpages = [
   }
 ];
 
+export const ActiveSubLink = withRouter(({ router: { route }, name, href }) => (
+  <Link href={href}>
+    <a className={route === href ? 'u-w700' : ''}>{name}</a>
+  </Link>
+));
+
+export const ActiveLink = withRouter(({ router: { route }, name, href }) => (
+  <Link href={href}>
+    <a
+      className={
+        route === href
+          ? 'NavList__link u-px2 u-py3 active'
+          : 'NavList__link u-px2 u-py3'
+      }>
+      {name}
+    </a>
+  </Link>
+));
+
 export const MoreContentNav = () => (
-  <nav className="u-px2">
-    <h4 className="h6">Further Reading</h4>
+  <nav className="u-px2 u-center">
+    <hr className="Rule" />
+    <h4 className="h6 u-mb3">Further Reading</h4>
     <ul className="SubNavList u-w400">
       {subpages.map((page, idx) => (
-        <li key={idx}>
-          <Link href={page.href}>
-            <a>{page.name}</a>
-          </Link>
+        <li className="u-inbl u-mx2" key={idx}>
+          <ActiveSubLink {...page} />
         </li>
       ))}
     </ul>
@@ -64,12 +83,10 @@ export const MoreContentNav = () => (
 
 export const Nav = () => (
   <nav className="NavList u-bg--offwhite u-mb5">
-    <ul className="NavList__items u-w400 u-px2 u-py3">
+    <ul className="NavList__items u-w400">
       {pages.map((page, idx) => (
         <li className="NavList__item u-mr3" key={idx}>
-          <Link href={page.href}>
-            <a>{page.name}</a>
-          </Link>
+          <ActiveLink {...page} />
         </li>
       ))}
     </ul>

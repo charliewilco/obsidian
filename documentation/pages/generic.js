@@ -9,7 +9,7 @@ const DESCRIPTION = `
 `;
 
 export default () => (
-  <Article title="Generic" description={DESCRIPTION} className="u-sans">
+  <Article title="Generic" description={DESCRIPTION}>
     <Module title="Reset" component={Reset} />
   </Article>
 );

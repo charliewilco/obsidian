@@ -3,6 +3,30 @@
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.0175), 0 4px 8px rgba(0, 0, 0, 0.035);
 }
 
+.ModuleTable {
+  border: 1px solid rgba(125, 125, 125, 0.25);
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.ModuleTable thead {
+  background: rgba(125, 125, 125, 0.25);
+  text-align: left;
+}
+
+.ModuleTable th,
+.ModuleTable td {
+  padding: 0.5rem;
+}
+
+.ModuleTable td:not(:last-of-type) {
+  border-right: 1px solid rgba(125, 125, 125, 0.25);
+}
+
+.ModuleTable tr:not(:last-of-type) {
+  border-bottom: 1px solid rgba(125, 125, 125, 0.25);
+}
+
 .NavButton {
   color: #147aab;
   border: 0;
@@ -24,6 +48,14 @@
 
 .NavList {
   border-bottom: 1px solid hsla(0, 0%, 74%, 0.25);
+  overflow: auto;
+  white-space: nowrap;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch;
+}
+
+.NavList::-webkit-scrollbar {
+  display: none;
 }
 
 .NavList__items {
@@ -34,6 +66,16 @@
 
 .NavList__item {
   display: inline-block;
+}
+
+.NavList__link {
+  display: block;
+  line-height: 1;
+}
+
+.NavList__link.active {
+  font-weight: 700;
+  border-bottom: 4px solid currentColor;
 }
 
 .Snippet {

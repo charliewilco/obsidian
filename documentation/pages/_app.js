@@ -18,7 +18,6 @@ export default class MyApp extends App {
 
   render() {
     const { Component, pageProps } = this.props;
-    console.log(components);
     return (
       <Container>
         <MDXProvider components={components}>

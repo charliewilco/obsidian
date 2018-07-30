@@ -14,7 +14,7 @@ const DESCRIPTION = `
 `;
 
 export default () => (
-  <Article title="Elements" description={DESCRIPTION} nav>
+  <Article title="Elements" description={DESCRIPTION}>
     <Module title="Tables" component={Tables} />
     <Module title="Lists" component={Lists} />
     <Module title="Headlines" component={Headlines} />

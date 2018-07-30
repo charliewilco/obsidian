@@ -1,0 +1,34 @@
+/*----------Flex Object----------*/
+
+.o-flex { display: flex; }
+
+/* Wrap */
+
+.o-flex--wrap { flex-wrap: wrap; }
+
+/* Centering */
+
+.o-flex--center--h { align-items: center; }
+
+.o-flex--center--v {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Direction */
+
+.o-flex--d--r { flex-direction: row; }
+.o-flex--d--c { flex-direction: column; }
+
+/* Justified Content */
+
+.o-flex--j--sb { justify-content: space-between; }
+.o-flex--j--sa { justify-content: space-around; }
+.o-flex--j--c  { justify-content: center; }
+
+/* Ordering Flex Objects */
+
+.o-flex--or--first { order: 1; }
+.o-flex--or--last  { order: unset; }
+

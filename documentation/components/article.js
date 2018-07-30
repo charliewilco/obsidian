@@ -1,42 +1,34 @@
 import Head from 'next/head';
-import classNames from 'classnames';
 import { MoreContentNav } from './navigation';
 
-export const ArticleHeader = ({ title, description }) => (
-  <header className="u-mb3 u-px3">
-    <h1 className="h3 u-w300 u-mb2">{title}</h1>
-    <p className="h6">{description}</p>
+const ArticleHeader = ({ title, description }) => (
+  <>
+    <header className="o-container o-container--center o-container--sm u-center u-mb3 u-px3">
+      <h1 className="h3 u-w300 u-mb2">{title}</h1>
+      <p className="h6">{description}</p>
+    </header>
     <hr className="Rule" />
-  </header>
+  </>
 );
 
-const createTitle = title => (title ? `${title} | Obsidian.css` : 'Obsidian.css');
+export const NAME = 'Obsidian.css';
 
-export const Article = ({
-  className = '',
-  description,
-  title,
-  nav = true,
-  children,
-  spaced
-}) => {
-  const cx = classNames(
-    'o-container o-container--lg u-mxa u-pt2 u-pb4 u-mb4',
-    className,
-    {
-      'u-px3': spaced
-    }
-  );
-  return (
-    <div className="o-flex o-flex--around o-container o-container--center">
-      <Head>
-        <title>{createTitle(title)}</title>
-      </Head>
-      {nav && <MoreContentNav />}
-      <article className={cx}>
-        {title && <ArticleHeader description={description} title={title} />}
-        {children}
-      </article>
-    </div>
-  );
-};
+export const createTitle = t => (t ? `${t} | ${NAME}` : NAME);
+
+const Article = ({ description, title, children }) => (
+  <>
+    <Head>
+      <title>{createTitle(title)}</title>
+    </Head>
+    <article className="u-pt2 u-pb4 u-mb4">
+      {title && <ArticleHeader description={description} title={title} />}
+      {children}
+    </article>
+    <MoreContentNav />
+  </>
+);
+
+Article.displayName = 'Article';
+ArticleHeader.displayName = 'ArticleHeader';
+
+export { Article, ArticleHeader };

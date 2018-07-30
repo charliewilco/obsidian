@@ -8,7 +8,7 @@ import { Module } from '../components/module';
 const DESCRIPTION = `Settings are the basis of Obsidian.css, it contains all the variables like spacing, color and font declarations, as well as media queries and a simple theme.`;
 
 export default () => (
-  <Article wrapper title="Settings" description={DESCRIPTION} className="u-sans">
+  <Article title="Settings" description={DESCRIPTION}>
     <Module title="Media Queries" component={MediaQueries} />
     <Module title="Global Defaults" component={GlobalDefaults} />
     <Module title="Theme" component={Theme} />

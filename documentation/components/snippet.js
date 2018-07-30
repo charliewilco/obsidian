@@ -30,7 +30,7 @@ export const TabbedNavigation = ({ position, goDirectToPosition }) => (
 );
 
 export const Snippet = ({ component: Cx, snippet }) => (
-  <div className="Snippet">
+  <div className="Snippet u-mt4">
     <Trunk navigation={TabbedNavigation}>
       <Branch component={Cx} />
       <Branch

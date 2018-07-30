@@ -17,6 +17,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="stylesheet" href="/_next/static/style.css" />
+          <link rel="icon" href="/static/favicon.ico" />
         </Head>
         <body>
           <Main />

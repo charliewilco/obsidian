@@ -1,12 +1,15 @@
-import { Nav } from "./navigation";
-import { Header } from "./header";
-import { Footer } from "./footer";
+import { Nav } from './navigation';
+import { Header } from './header';
+import { Footer } from './footer';
+import { Main } from './main';
+
+import { version } from 'obsidian.css/package.json';
 
 export default ({ children }) => (
   <>
-    <Header />
+    <Header version={version} />
     <Nav />
-    <main className="o--container o-container--center">{children}</main>
+    <Main>{children}</Main>
     <Footer />
   </>
 );
