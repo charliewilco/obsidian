@@ -1,5 +1,5 @@
 - [ ] use postcss export vars
-- [ ] use right color function
+- [x] use right color function
 - [ ] use postcss report
-- [ ] update postcss-gzip
+- [x] update postcss-gzip
 - [ ] update wilco

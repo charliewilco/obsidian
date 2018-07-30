@@ -1,12 +1,8 @@
 {
   "name": "obsidian.css",
-  "version": "3.0.0-0",
+  "version": "3.0.0",
   "description": "A Modular CSS Library",
-  "keywords": [
-    "css",
-    "modular css",
-    "postcss"
-  ],
+  "keywords": ["css", "modular css", "postcss"],
   "main": "lib/index.css",
   "browser": "dist/obsidian.min.css",
   "scripts": {
@@ -15,7 +11,8 @@
     "clean": "del ./dist",
     "dev": "postcss src/index.css -o dist/obsidian.css -w",
     "prebuild": "yarn clean && postcss src/index.css -o dist/obsidian.css",
-    "build": "postcss dist/obsidian.css -u cssnano -u postcss-gzip -o dist/obsidian.min.css --no-map"
+    "build":
+      "postcss dist/obsidian.css -u cssnano -u postcss-gzip -o dist/obsidian.min.css --no-map"
   },
   "author": "charles peters <charlespeters42@gmail.com>",
   "license": "MIT",
@@ -25,14 +22,15 @@
   },
   "homepage": "https://obsidian.charlespeters.net",
   "devDependencies": {
+    "autoprefixer": "^9.0.1",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.0.4",
     "del-cli": "^1.1.0",
     "postcss-cli": "^6.0.0",
     "postcss-color-function": "^4.0.0",
+    "postcss-custom-properties": "^7.0.0",
     "postcss-gzip": "^1.0.1",
     "postcss-import": "^11.1.0",
-    "postcss-preset-env": "^5.3.0",
     "postcss-reporter": "^5.0.0",
     "stylelint": "^9.4.0",
     "stylelint-config-wilco": "^1.0.2"
@@ -43,20 +41,19 @@
       "postcss-import": {
         "skipDuplicates": true
       },
-      "postcss-preset-env": {
-        "stage": 0,
-        "autoprefixer": {
-          "remove": true
-        }
+      "postcss-custom-properties": {
+        "preserve": false
+      },
+      "postcss-color-function": {},
+      "autoprefixer": {
+        "remove": true
       },
       "css-mqpacker": {
         "sort": true
       }
     }
   },
-  "browserslist": [
-    "last 1 versions"
-  ],
+  "browserslist": ["last 1 versions"],
   "stylelint": {
     "extends": "stylelint-config-wilco"
   },
