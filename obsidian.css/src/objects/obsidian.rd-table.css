@@ -3,15 +3,21 @@
 :root {
   --Table-border: 1px solid #145878;
   --Table-label-color: var(--litegray);
-  --Table-label-size: .625rem;
+  --Table-label-size: 0.625rem;
   --Table-label-width: 7rem;
   --Table-label-alignment: left;
 }
 
-.o-RDTable { width: 100%; }
+.o-RDTable {
+  width: 100%;
+}
 
-.o-RDTable__heading { display: none; }
-.o-RDTable__content { display: block; }
+.o-RDTable__heading {
+  display: none;
+}
+.o-RDTable__content {
+  display: block;
+}
 
 .o-RDTable__content::before {
   content: attr(data-heading);
@@ -29,9 +35,13 @@
   border-bottom: var(--Table-border);
 }
 
-@media (--md) {
+@media only screen and (min-width: 48rem) {
   .o-RDTable__content,
-  .o-RDTable__heading { display: table-cell; }
+  .o-RDTable__heading {
+    display: table-cell;
+  }
 
-  .o-RDTable__content::before { display: none; }
+  .o-RDTable__content::before {
+    display: none;
+  }
 }

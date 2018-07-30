@@ -2,8 +2,8 @@
 
 :root {
   --tabs-active-color: white;
-  --tabs-radii: .375rem;
-  --tabs-spacer: .5rem;
+  --tabs-radii: 0.375rem;
+  --tabs-spacer: 0.5rem;
   --tabs-border: 1px solid var(--color-5);
   --tabs-background: var(--color-5);
   --tabs-marker-color: var(--color-1);
@@ -67,8 +67,7 @@
   position: static;
 }
 
-
-@media (--md) {
+@media only screen and (min-width: 48rem) {
   .c-Tabs__marker:not(:last-of-type) {
     margin-right: var(--tabs-spacer);
   }

@@ -8,7 +8,7 @@
 
 :root {
   --media-figure: 6.25rem;
-  --media-figure-sm: calc(var(--media-figure) * .75);
+  --media-figure-sm: calc(var(--media-figure) * 0.75);
 }
 
 .o-Media {
@@ -20,10 +20,11 @@
   max-width: var(--media-figure-sm);
 }
 
-.o-Media__body { flex: 1; }
+.o-Media__body {
+  flex: 1;
+}
 
-
-@media (--md) {
+@media only screen and (min-width: 48rem) {
   .o-Media__figure {
     max-width: var(--media-figure);
   }

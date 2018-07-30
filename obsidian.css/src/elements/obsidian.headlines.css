@@ -12,7 +12,7 @@
   --lh-3: 1.5;
 
   /* Multipliers */
-  --sm-multiplier: .875;
+  --sm-multiplier: 0.875;
   --md-multiplier: 1;
   --lg-multiplier: 1.125;
 
@@ -50,23 +50,34 @@
 }
 
 h1,
-.h1 { font-size: var(--headline-1-sm); }
+.h1 {
+  font-size: var(--headline-1-sm);
+}
 
 h2,
-.h2 { font-size: var(--headline-2-sm); }
+.h2 {
+  font-size: var(--headline-2-sm);
+}
 
 h3,
-.h3 { font-size: var(--headline-3-sm); }
+.h3 {
+  font-size: var(--headline-3-sm);
+}
 
 h4,
-.h4 { font-size: var(--headline-4-sm); }
+.h4 {
+  font-size: var(--headline-4-sm);
+}
 
 h5,
-.h5 { font-size: var(--headline-5-sm); }
+.h5 {
+  font-size: var(--headline-5-sm);
+}
 
 h6,
-.h6 { font-size: var(--headline-6-sm); }
-
+.h6 {
+  font-size: var(--headline-6-sm);
+}
 
 h1,
 h2,
@@ -85,46 +96,70 @@ h6,
   font-family: var(--headlines);
 }
 
-@media (--md) {
+@media only screen and (min-width: 48rem) {
   h1,
-  .h1 { font-size: var(--headline-1-md); }
+  .h1 {
+    font-size: var(--headline-1-md);
+  }
 
   h2,
-  .h2 { font-size: var(--headline-2-md); }
+  .h2 {
+    font-size: var(--headline-2-md);
+  }
 
   h3,
-  .h3 { font-size: var(--headline-3-md); }
+  .h3 {
+    font-size: var(--headline-3-md);
+  }
 
   h4,
-  .h4 { font-size: var(--headline-4-md); }
+  .h4 {
+    font-size: var(--headline-4-md);
+  }
 
   h5,
-  .h5 { font-size: var(--headline-5-md); }
+  .h5 {
+    font-size: var(--headline-5-md);
+  }
 
   h6,
-  .h6 { font-size: var(--headline-6-md); }
+  .h6 {
+    font-size: var(--headline-6-md);
+  }
 }
 
-
-@media (--lg) {
-
+@media only screen and (min-width: 57.75rem) {
   h1,
-  .h1 { font-size: var(--headline-1-lg); }
+  .h1 {
+    font-size: var(--headline-1-lg);
+  }
 
   h2,
-  .h2 { font-size: var(--headline-2-lg); }
+  .h2 {
+    font-size: var(--headline-2-lg);
+  }
 
   h3,
-  .h3 { font-size: var(--headline-3-lg); }
+  .h3 {
+    font-size: var(--headline-3-lg);
+  }
 
   h4,
-  .h4 { font-size: var(--headline-4-lg); }
+  .h4 {
+    font-size: var(--headline-4-lg);
+  }
 
   h5,
-  .h5 { font-size: var(--headline-5-lg); }
+  .h5 {
+    font-size: var(--headline-5-lg);
+  }
 
   h6,
-  .h6 { font-size: var(--headline-6-lg); }
+  .h6 {
+    font-size: var(--headline-6-lg);
+  }
 }
 
-.small { font-size: 87.5%; }
+.small {
+  font-size: 87.5%;
+}
