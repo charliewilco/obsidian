@@ -1,4 +1,31 @@
-export const Spacing = () => (
+import margin from '!raw-loader!obsidian.css/src/utilities/obsidian.spacing-margin.css';
+import padding from '!raw-loader!obsidian.css/src/utilities/obsidian.spacing-padding.css';
+
+const snippet = `
+/*---------Spacing Utilities----------*/
+
+/*
+  NOTE: Adapted from Basscss from Brent Jackson
+  http://www.basscss.com/#basscss-margin
+  http://www.basscss.com/#basscss-padding
+*/
+
+${margin}
+
+${padding}
+
+:root {
+  --spacing-1: calc(var(--base-spacing) / 4);
+  --spacing-2: calc(var(--base-spacing) / 2);
+  --spacing-3: calc(var(--base-spacing));
+  --spacing-4: calc(var(--base-spacing) * 2);
+  --spacing-5: calc(var(--base-spacing) * 2.4);
+  --spacing-6: calc(var(--base-spacing) * 4);
+}
+
+`;
+
+const Spacing = () => (
   <div>
     <div className="u-mb1">
       <div className="u-p3 u-bg--yellow" />
@@ -38,3 +65,5 @@ export const Spacing = () => (
     </div>
   </div>
 );
+
+export { Spacing, snippet };

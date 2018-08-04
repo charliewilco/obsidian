@@ -1,3 +1,8 @@
+import backgrounds from '!raw-loader!obsidian.css/src/utilities/obsidian.backgrounds.css';
+import colors from '!raw-loader!obsidian.css/src/utilities/obsidian.color-values.css';
+import corners from '!raw-loader!obsidian.css/src/utilities/obsidian.corners.css';
+import shadows from '!raw-loader!obsidian.css/src/utilities/obsidian.shadows.css';
+
 export const Surfaces = () => (
   <div className="o-Flex o-Flex--j--sa u-center">
     <div className="u-br2 u-bg--bluegreen u-offwhite u-sh--1 u-py4 u-px3 u-m2">
@@ -20,3 +25,22 @@ export const Surfaces = () => (
     </div>
   </div>
 );
+
+export const snippet = `
+  /*
+    Surfaces Utilities
+
+    Corners...........Border Radius Utils.
+    Background........Background Values (Color, None)
+    Colors............Color and Fill Values
+    Shadows...........Material Like Shadows.
+  */
+
+  ${backgrounds}
+
+  ${colors}
+
+  ${corners}
+
+  ${shadows}
+ `;

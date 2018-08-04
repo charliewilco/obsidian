@@ -7,7 +7,7 @@ export const ModuleTable = ({ children }) => (
 );
 
 export const ModuleContent = ({ children }) => (
-  <p className="u-sans u-w400">{children}</p>
+  <p className="u-sans u-w400 u-mb3">{children}</p>
 );
 
 export const Module = ({ title, component: Cx }) => (

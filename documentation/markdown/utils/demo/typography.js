@@ -1,4 +1,22 @@
-export const Typography = () => (
+import align from '!raw-loader!obsidian.css/src/utilities/obsidian.align.css';
+import columns from '!raw-loader!obsidian.css/src/utilities/obsidian.text-columns.css';
+import asst from '!raw-loader!obsidian.css/src/utilities/obsidian.type-assrt.css';
+
+const snippet = `
+/*
+  Typographic Utilities
+
+  Text Columns.........Responsive Text Columns
+  Align................Breakpoint Specific Text Align.
+  Type Assorted........Font Weights, Letter Spacing, Rendering, Text Transform
+*/
+
+${align}
+${columns}
+${asst}
+`;
+
+const Typography = () => (
   <>
     <div className="u-py3">
       <h6 className="small u-caps u-left">Aligned Left</h6>
@@ -45,3 +63,5 @@ export const Typography = () => (
     </div>
   </>
 );
+
+export { snippet, Typography };

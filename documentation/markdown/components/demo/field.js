@@ -6,7 +6,7 @@ export const Field = () => (
       </label>
       <input
         type="text"
-        className="c-field"
+        className="c-Field"
         id="ti"
         name="ti"
         defaultValue
@@ -19,7 +19,7 @@ export const Field = () => (
       </label>
       <input
         type="number"
-        className="c-field"
+        className="c-Field"
         id="num"
         name="num"
         defaultValue
@@ -32,7 +32,7 @@ export const Field = () => (
       </label>
       <input
         type="text"
-        className="c-field"
+        className="c-Field"
         id="tid"
         name="tid"
         defaultValue
@@ -49,7 +49,7 @@ export const Field = () => (
         name="txt"
         rows={8}
         cols={40}
-        className="c-field c-field--text"
+        className="c-Field c-Field--text"
         defaultValue={''}
       />
     </div>

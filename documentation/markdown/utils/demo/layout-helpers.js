@@ -1,4 +1,24 @@
-export const LayoutHelpers = () => (
+import display from '!raw-loader!obsidian.css/src/utilities/obsidian.display.css';
+import floats from '!raw-loader!obsidian.css/src/utilities/obsidian.floats.css';
+import width from '!raw-loader!obsidian.css/src/utilities/obsidian.width.css';
+
+const snippet = `
+/*
+  Layout Utilities
+
+  Display..........Breakpoint Specific Display Properties.
+  Floats...........Clearfix, Breakpoint Floats.
+  Width............max-width, width
+*/
+
+${display}
+
+${floats}
+
+${width}
+`;
+
+const LayoutHelpers = () => (
   <div className="u-cf">
     <div className="o-col--5/12 u-fl">
       <h6 className="small u-caps">Floated Left</h6>
@@ -19,3 +39,5 @@ export const LayoutHelpers = () => (
     </div>
   </div>
 );
+
+export { LayoutHelpers, snippet };

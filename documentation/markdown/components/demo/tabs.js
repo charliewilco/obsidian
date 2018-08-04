@@ -1,34 +1,34 @@
 const onClick = e => e.preventDefault();
 
 export const Tabs = () => (
-  <section className="c-tabs">
-    <nav className="c-tabs__nav o-Flex u-w700" data-tabs>
+  <section className="c-Tabs">
+    <nav className="c-Tabs__nav o-Flex u-w700" data-tabs>
       <a
         onClick={onClick}
         href="#tabA"
         data-tab
-        className="c-tabs__marker u-py2 u-px3 active">
+        className="c-Tabs__marker u-py2 u-px3 active">
         Buffalo Springfield
       </a>
       <a
         onClick={onClick}
         href="#tabB"
         data-tab
-        className="c-tabs__marker u-py2 u-px3">
+        className="c-Tabs__marker u-py2 u-px3">
         Early Solo Work
       </a>
       <a
         onClick={onClick}
         href="#tabC"
         data-tab
-        className="c-tabs__marker u-py2 u-px3">
+        className="c-Tabs__marker u-py2 u-px3">
         CSNY
       </a>
     </nav>
-    <div className="c-tabs__content u-p4" data-tabs-content>
+    <div className="c-Tabs__content u-p4" data-tabs-content>
       <div
         data-tabs-pane
-        className="c-tabs__pane active"
+        className="c-Tabs__pane active"
         id="tabA"
         data-tab-id="tabA">
         <h6>Buffalo Springfield</h6>
@@ -78,7 +78,7 @@ export const Tabs = () => (
           October 23–24, 2010, and at Bonnaroo in the summer of 2011.
         </p>
       </div>
-      <div data-tabs-pane className="c-tabs__pane" id="tabB" data-tab-id="tabB">
+      <div data-tabs-pane className="c-Tabs__pane" id="tabB" data-tab-id="tabB">
         <h6>Going solo, Crazy Horse</h6>
         <p>
           After the break-up of Buffalo Springfield, Young signed a solo deal with
@@ -105,7 +105,7 @@ export const Tabs = () => (
           high fever of 103 °F (39 °C) in bed.
         </p>
       </div>
-      <div data-tabs-pane className="c-tabs__pane" id="tabC" data-tab-id="tabC">
+      <div data-tabs-pane className="c-Tabs__pane" id="tabC" data-tab-id="tabC">
         <h6>Crosby, Stills, Nash, and Young</h6>
         <p>
           Shortly after the release of Everybody Knows This Is Nowhere, Young

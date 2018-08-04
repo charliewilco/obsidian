@@ -1,4 +1,5 @@
 import Document, { Head, Main, NextScript } from 'next/document';
+import 'obsidian.css/dist/obsidian.css';
 import '../global.css';
 
 export default class MyDocument extends Document {
@@ -12,7 +13,6 @@ export default class MyDocument extends Document {
       <html className="u-bg--palegray u-anti">
         <Head>
           <title>Next Obsidian.css</title>
-          <link href="https://unpkg.com/obsidian.css" rel="stylesheet" />
           <link rel="stylesheet" href="/_next/static/style.css" />
           <link rel="icon" href="/static/favicon.ico" />
         </Head>
