@@ -11,8 +11,7 @@
     "clean": "del ./dist",
     "dev": "postcss src/index.css -o dist/obsidian.css -w",
     "prebuild": "yarn clean && postcss src/index.css -o dist/obsidian.css",
-    "build":
-      "postcss dist/obsidian.css -u cssnano -u postcss-gzip -o dist/obsidian.min.css --no-map"
+    "build": "postcss dist/obsidian.css -u cssnano -u postcss-parker -o dist/obsidian.min.css --no-map"
   },
   "author": "charles peters <charlespeters42@gmail.com>",
   "license": "MIT",
@@ -31,6 +30,7 @@
     "postcss-custom-properties": "^7.0.0",
     "postcss-gzip": "^1.0.1",
     "postcss-import": "^11.1.0",
+    "postcss-parker": "^0.1.0",
     "postcss-reporter": "^5.0.0",
     "stylelint": "^9.4.0",
     "stylelint-config-wilco": "^1.0.2"

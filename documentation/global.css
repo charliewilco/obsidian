@@ -135,3 +135,7 @@
   background: hsla(0, 0%, 80%, 0.5);
   margin: 2rem 0;
 }
+
+li > p {
+  display: inline;
+}

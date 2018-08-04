@@ -9,7 +9,7 @@
   --color-5: var(--litegray);
 
   /* Font Choices */
-  --headlines: var(--ff-sans-serif);
+  --headlines: inherit;
   --default: var(--ff-sans-serif);
-  --body-text: var(--ff-serif);
+  --body-text: inherit;
 }

@@ -26,6 +26,11 @@ export const pages = [
   {
     name: 'Utilities',
     href: '/utilities'
+  },
+
+  {
+    name: 'PostCSS Plugins',
+    href: '/postcss'
   }
 ];
 
