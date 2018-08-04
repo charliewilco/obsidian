@@ -1,6 +1,4 @@
 import Document, { Head, Main, NextScript } from 'next/document';
-import 'obsidian.css/dist/obsidian.css';
-import '../global.css';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {

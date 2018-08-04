@@ -1,16 +1,16 @@
 export default () => (
-  <ul className="o-Flex o-Flex--j--sb list--reset u-py3 small">
+  <ul className="o-Flex o-Flex--j--sb o-UIList list--reset u-py3 small u-center u-system">
     <li className="u-mr4">
-      <span className="h3 u-w700 u-bl">7.7kb</span>
-      <span className="u-system u-caps u-lt-2 u-ltgray">Gzip Size</span>
+      <span className="h3 u-bl">7.7kb</span>
+      <span>Gzip Size</span>
     </li>
     <li className="u-mr4">
-      <span className="h3 u-w700 u-bl">824</span>
-      <span className="u-system u-caps u-lt-2 u-ltgray">Selectors</span>
+      <span className="h3 u-bl">824</span>
+      <span>Selectors</span>
     </li>
     <li className="">
-      <span className="h3 u-w700 u-bl">824</span>
-      <span className="u-system u-caps u-lt-2 u-ltgray">Rules</span>
+      <span className="h3 u-bl">824</span>
+      <span>Rules</span>
     </li>
   </ul>
 );

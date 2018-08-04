@@ -9,3 +9,4 @@
 - [ ] Responsive Table
 - [ ] Search UI
 - [ ] Media Block
+- [ ] Color Ramp

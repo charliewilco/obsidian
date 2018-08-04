@@ -9,7 +9,7 @@
     "deploy": "now && now alias"
   },
   "now": {
-    "alias": "obsidian.charlespeters.net"
+    "alias": "obsidian-next.charlespeters.net"
   },
   "dependencies": {
     "@mdx-js/mdx": "^0.15.0-1",
