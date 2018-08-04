@@ -16,7 +16,7 @@ export const NAME = 'Obsidian.css';
 
 export const createTitle = t => (t ? `${t} | ${NAME}` : NAME);
 
-const Article = ({ description, size = 'lg', title, children }) => {
+const Article = ({ description, meta, size = 'lg', title, children }) => {
   const cx = classNames(
     'o-Container o-Container--center',
     { [`o-Container--${size}`]: size },
@@ -26,6 +26,7 @@ const Article = ({ description, size = 'lg', title, children }) => {
     <>
       <Head>
         <title>{createTitle(title)}</title>
+        <meta name="description" content={description || meta} />
       </Head>
       <article className={cx}>
         {title && <ArticleHeader description={description} title={title} />}

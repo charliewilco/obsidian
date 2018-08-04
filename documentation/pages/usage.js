@@ -1,10 +1,12 @@
 import Content from '../markdown/usage.mdx';
 import { Article } from '../components/article';
 
-const DESCRIPTION = ``;
+const DESCRIPTION = `
+  Installation and implementation choices for Obsidian.css
+`;
 
 export default () => (
-  <Article size="sm" description={DESCRIPTION} title="Usage">
+  <Article size="sm" meta={DESCRIPTION} title="Usage">
     <Content />
   </Article>
 );

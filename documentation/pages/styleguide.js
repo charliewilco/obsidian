@@ -1,10 +1,12 @@
 import Content from '../markdown/styleguide.mdx';
 import { Article } from '../components/article';
 
-const DESCRIPTION = ``;
+const DESCRIPTION = `
+  Coding style for Obsidian.css
+`;
 
 export default () => (
-  <Article size="sm" description={DESCRIPTION} title="Styleguide">
+  <Article size="sm" meta={DESCRIPTION} title="Styleguide">
     <Content />
   </Article>
 );
