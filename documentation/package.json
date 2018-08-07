@@ -9,7 +9,7 @@
     "deploy": "now && now alias"
   },
   "now": {
-    "alias": "obsidian-next.charlespeters.net"
+    "alias": "obsidian.charlespeters.net"
   },
   "dependencies": {
     "@mdx-js/mdx": "^0.15.0-1",
@@ -18,7 +18,7 @@
     "@zeit/next-mdx": "^1.1.0",
     "classnames": "^2.2.6",
     "next": "^6.1.1",
-    "obsidian.css": "^3.0.0-0",
+    "obsidian.css": "^3.0.2",
     "pretty": "^2.0.0",
     "prism-themes": "^1.0.1",
     "prismjs": "^1.15.0",
