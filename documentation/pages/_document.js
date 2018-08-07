@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href="/_next/static/style.css" />
           <link rel="icon" href="/static/favicon.ico" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="theme-color" content="#6794AE" />
+          <meta name="theme-color" content="#147AAB" />
           <meta name="author" content="Charles Peters" />
         </Head>
         <body>
