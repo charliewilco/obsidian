@@ -1,4 +1,6 @@
-export const CardUI = () => (
+import snippet from '!raw-loader!obsidian.css/src/components/obsidian.card-ui.css';
+
+const CardUI = () => (
   <article className="c-Card u-ov--hid u-mxa">
     <figure className="c-Card__figure o-intrinsic o-intrinsic--16x9">
       <img
@@ -30,3 +32,5 @@ export const CardUI = () => (
     </div>
   </article>
 );
+
+export { CardUI, snippet };

@@ -1,4 +1,6 @@
-export const FormsDemo = () => (
+import snippet from '!raw-loader!obsidian.css/src/elements/obsidian.forms.css';
+
+const FormsDemo = () => (
   <form>
     <div className="u-py2">
       <div className="u-inbl u-py1 u-mr3">
@@ -32,3 +34,5 @@ export const FormsDemo = () => (
     </div>
   </form>
 );
+
+export { FormsDemo, snippet };

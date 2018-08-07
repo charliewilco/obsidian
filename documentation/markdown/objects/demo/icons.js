@@ -1,4 +1,6 @@
-export const Icons = () => (
+import snippet from '!raw-loader!obsidian.css/src/objects/obsidian.icons.css';
+
+const Icons = () => (
   <>
     <div className="o-Flex o-Flex--j--sa u-mb3 u-ltgray">
       <div className="u-center u-p1">
@@ -129,3 +131,5 @@ export const Icons = () => (
     </div>
   </>
 );
+
+export { Icons, snippet };

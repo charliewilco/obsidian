@@ -1,6 +1,8 @@
+import snippet from '!raw-loader!obsidian.css/src/utilities/obsidian.object-fit.css';
+
 const IMAGE_URL = '/static/assets/filler-image.svg';
 
-export const Fit = () => (
+const Fit = () => (
   <div className="o-Flex o-Flex--wrap o-Flex--j--c">
     <div className="o-col--5/12 u-m3">
       <h6 className="small u-caps">Cover / Center Top</h6>
@@ -54,3 +56,5 @@ export const Fit = () => (
     </div>
   </div>
 );
+
+export { Fit, snippet };

@@ -1,4 +1,6 @@
-export const SelectUI = () => (
+import snippet from '!raw-loader!obsidian.css/src/components/obsidian.select.css';
+
+const SelectUI = () => (
   <div className="o-Column--12/12 o-Column--6/12@md u-mxa u-p2">
     <label htmlFor="slct" className="u-gray u-mb1 u-bl">
       Select
@@ -16,3 +18,5 @@ export const SelectUI = () => (
     </div>
   </div>
 );
+
+export { SelectUI, snippet };

@@ -1,4 +1,6 @@
-export const Dropdown = () => (
+import snippet from '!raw-loader!obsidian.css/src/components/obsidian.dropdown.css';
+
+const Dropdown = () => (
   <>
     <a href="#" className="c-Btn">
       Button
@@ -36,3 +38,5 @@ export const Dropdown = () => (
     </div>
   </>
 );
+
+export { Dropdown, snippet };

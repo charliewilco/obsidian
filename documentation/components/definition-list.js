@@ -1,6 +1,6 @@
 export const DefinitionListItem = ({ title, description }) => (
   <>
-    <dt className="h6 u-w500">{title}</dt>
+    <dt className="h6 u-w400 u-mb1">{title}</dt>
     <dd className="u-mb4">{description}</dd>
   </>
 );

@@ -1,4 +1,6 @@
-export const Grid = () => (
+import snippet from '!raw-loader!obsidian.css/src/objects/obsidian.grid-columns.css';
+
+const Grid = () => (
   <>
     <div className="u-cf u-offwhite u-center u-mb3">
       <div className="o-Column--2/12 u-fl u-bg--red u-p2">
@@ -26,3 +28,5 @@ export const Grid = () => (
     </div>
   </>
 );
+
+export { Grid, snippet };

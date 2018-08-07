@@ -1,6 +1,7 @@
 const IMAGE_URL = '/static/assets/filler-image.svg';
+import snippet from '!raw-loader!obsidian.css/src/objects/obsidian.flag.css';
 
-export const Flag = () => (
+const Flag = () => (
   <>
     <div className="o-Flag u-mb3">
       <figure className="o-Flag__figure o-col--3/12 u-mr3">
@@ -55,3 +56,5 @@ export const Flag = () => (
     </div>
   </>
 );
+
+export { Flag, snippet };

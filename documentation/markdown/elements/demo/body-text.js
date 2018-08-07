@@ -1,4 +1,6 @@
-export const BodyText = () => (
+import snippet from '!raw-loader!obsidian.css/src/elements/obsidian.body-text.css';
+
+const BodyText = () => (
   <>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -18,3 +20,5 @@ export const BodyText = () => (
     </p>
   </>
 );
+
+export { BodyText, snippet };

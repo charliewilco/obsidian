@@ -1,4 +1,6 @@
-export const Flex = () => (
+import snippet from '!raw-loader!obsidian.css/src/objects/obsidian.flex.css';
+
+const Flex = () => (
   <>
     <div className="o-Flex u-center u-offwhite u-mb4">
       <div className="o-Flex__child u-bg--fuchsia u-m1 u-p2">
@@ -49,3 +51,5 @@ export const Flex = () => (
     </div>
   </>
 );
+
+export { Flex, snippet };

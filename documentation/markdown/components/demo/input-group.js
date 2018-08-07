@@ -1,4 +1,6 @@
-export const InputGroup = () => (
+import snippet from '!raw-loader!obsidian.css/src/components/obsidian.input-group.css';
+
+const InputGroup = () => (
   <div className="o-Container--xs u-p3 u-sh--2 u-bg--offwhite u-mxa">
     <h6 className="small u-mb3">Sign Up for Our Newsletter</h6>
     <div className="c-InputGroup o-Flex">
@@ -11,3 +13,5 @@ export const InputGroup = () => (
     </div>
   </div>
 );
+
+export { InputGroup, snippet };

@@ -1,4 +1,6 @@
-export const Intrinsic = () => (
+import snippet from '!raw-loader!obsidian.css/src/objects/obsidian.intrinsic.css';
+
+const Intrinsic = () => (
   <div className="o-Flex o-Flex--wrap">
     <div className="o-Column--12/12 o-Column--6/12@md u-p2">
       <div className="o-Intrinsic o-Intrinsic--16x9">
@@ -22,3 +24,5 @@ export const Intrinsic = () => (
     </div>
   </div>
 );
+
+export { snippet, Intrinsic };

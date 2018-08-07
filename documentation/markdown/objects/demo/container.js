@@ -1,4 +1,6 @@
-export const Container = () => (
+import snippet from '!raw-loader!obsidian.css/src/objects/obsidian.containers.css';
+
+const Container = () => (
   <div className="u-w700">
     <div className="o-Container--xs o-Container--wrap u-mb2 u-bg--blue u-p2 u-center u-offwhite">
       Xtra Small = 28.125rem / 450px
@@ -17,3 +19,5 @@ export const Container = () => (
     </div>
   </div>
 );
+
+export { Container, snippet };

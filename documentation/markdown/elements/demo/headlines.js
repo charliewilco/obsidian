@@ -1,4 +1,6 @@
-export const Headlines = () => (
+import snippet from '!raw-loader!obsidian.css/src/elements/obsidian.headlines.css';
+
+const Headlines = () => (
   <>
     <h1>Headline Level 1</h1>
     <h2>Headline Level 2</h2>
@@ -10,3 +12,5 @@ export const Headlines = () => (
     <small>Small</small>
   </>
 );
+
+export { Headlines, snippet };

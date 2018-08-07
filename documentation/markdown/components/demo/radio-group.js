@@ -1,4 +1,6 @@
-export const RadioGroup = () => (
+import snippet from '!raw-loader!obsidian.css/src/elements/obsidian.forms.css';
+
+const RadioGroup = () => (
   <>
     <h6 className="u-mb2 small u-caps">Radio Inputs</h6>
     <div className="c-RadioGroup small o-Flex o-Flex--j--sb u-w500 u-mxa u-py4 u-center">
@@ -35,3 +37,5 @@ export const RadioGroup = () => (
     </div>
   </>
 );
+
+export { RadioGroup, snippet };

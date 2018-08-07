@@ -1,4 +1,6 @@
-export const UILists = () => (
+import snippet from '!raw-loader!obsidian.css/src/elements/obsidian.lists.css';
+
+const UILists = () => (
   <div className="o-Flex o-Flex--wrap">
     <div className="o-col--12/12 o-col--4/12@md u-p2">
       <h6 className="u-mb2">Unordered List</h6>
@@ -20,3 +22,5 @@ export const UILists = () => (
     </div>
   </div>
 );
+
+export { UILists, snippet };

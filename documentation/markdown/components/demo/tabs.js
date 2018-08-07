@@ -1,6 +1,8 @@
+import snippet from '!raw-loader!obsidian.css/src/elements/obsidian.forms.css';
+
 const onClick = e => e.preventDefault();
 
-export const Tabs = () => (
+const Tabs = () => (
   <section className="c-Tabs">
     <nav className="c-Tabs__nav o-Flex u-w700" data-tabs>
       <a
@@ -137,3 +139,5 @@ export const Tabs = () => (
     </div>
   </section>
 );
+
+export { Tabs, snippet };

@@ -1,4 +1,6 @@
-export const Field = () => (
+import snippet from '!raw-loader!obsidian.css/src/components/obsidian.field.css';
+
+const Field = () => (
   <section className="o-Flex o-Flex--wrap">
     <div className="o-col--12/12 o-col--6/12@md u-p2">
       <label htmlFor="ti" className="u-gray u-mb1 u-bl">
@@ -55,3 +57,5 @@ export const Field = () => (
     </div>
   </section>
 );
+
+export { Field, snippet };

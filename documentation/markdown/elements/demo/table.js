@@ -1,4 +1,6 @@
-export const TableResponsive = () => (
+import snippet from '!raw-loader!obsidian.css/src/objects/obsidian.rd-table.css';
+
+const TableResponsive = () => (
   <table className="table">
     <thead>
       <tr>
@@ -55,3 +57,5 @@ export const TableResponsive = () => (
     </tbody>
   </table>
 );
+
+export { TableResponsive, snippet };
