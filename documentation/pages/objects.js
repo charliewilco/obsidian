@@ -2,6 +2,7 @@ import Icons from '../markdown/objects/icons.mdx';
 import UIList from '../markdown/objects/ui-list.mdx';
 import Containers from '../markdown/objects/container.mdx';
 import Intrinsic from '../markdown/objects/intrinsic.mdx';
+import TableUI from '../markdown/objects/responsive-table.mdx';
 import MediaBlock from '../markdown/objects/media-block.mdx';
 import Flag from '../markdown/objects/flag.mdx';
 import Flex from '../markdown/objects/flex.mdx';
@@ -17,6 +18,7 @@ const DESCRIPTION = `
 export default () => (
   <Article title="Objects" description={DESCRIPTION}>
     <Module title="Icons" component={Icons} />
+    <Module title="Responsive Table UI" component={TableUI} />
     <Module title="UI List" component={UIList} />
     <Module title="Containers" component={Containers} />
     <Module title="Flex Object" component={Flex} />

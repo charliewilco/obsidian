@@ -1,61 +1,37 @@
-import snippet from '!raw-loader!obsidian.css/src/objects/obsidian.rd-table.css';
+import snippet from '!raw-loader!obsidian.css/src/elements/obsidian.tables.css';
 
-const TableResponsive = () => (
-  <table className="table">
+const TableDefault = () => (
+  <table>
     <thead>
       <tr>
-        <th className="table__heading h6 u-left u-p2">Name</th>
-        <th className="table__heading h6 u-left u-p2">Type</th>
-        <th className="table__heading h6 u-left u-p2">Grade</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Grade</th>
       </tr>
     </thead>
     <tbody>
-      <tr className="table__row">
-        <td className="table__content u-p2" data-heading="Name">
-          Gizmo
-        </td>
-        <td className="table__content u-p2" data-heading="Type">
-          Robot
-        </td>
-        <td className="table__content u-p2" data-heading="Grade">
-          A+
-        </td>
+      <tr>
+        <td>Gizmo</td>
+        <td>Robot</td>
+        <td>A+</td>
       </tr>
-      <tr className="table__row">
-        <td className="table__content u-p2" data-heading="Name">
-          Sherlock Holmes
-        </td>
-        <td className="table__content u-p2" data-heading="Type">
-          Human
-        </td>
-        <td className="table__content u-p2" data-heading="Grade">
-          B-
-        </td>
+      <tr>
+        <td>Sherlock Holmes</td>
+        <td>Human</td>
+        <td>B-</td>
       </tr>
-      <tr className="table__row">
-        <td className="table__content u-p2" data-heading="Name">
-          Merlin
-        </td>
-        <td className="table__content u-p2" data-heading="Type">
-          Wizard
-        </td>
-        <td className="table__content u-p2" data-heading="Grade">
-          C
-        </td>
+      <tr>
+        <td>Merlin</td>
+        <td>Wizard</td>
+        <td>C</td>
       </tr>
-      <tr className="table__row">
-        <td className="table__content u-p2" data-heading="Name">
-          Richard Nixon
-        </td>
-        <td className="table__content u-p2" data-heading="Type">
-          Cyborg
-        </td>
-        <td className="table__content u-p2" data-heading="Grade">
-          B-
-        </td>
+      <tr>
+        <td>Richard Nixon</td>
+        <td>Cyborg</td>
+        <td>B-</td>
       </tr>
     </tbody>
   </table>
 );
 
-export { TableResponsive, snippet };
+export { TableDefault, snippet };
