@@ -139,9 +139,17 @@ First off, you're awesome for wanting to contribute. Second, please take a secon
 ### Getting Started
 
 Clone the repository and run the following in the root of the project:
+
+```sh
+yarn
+
+yarn workspace obsidian-documentation dev -p 5000 # open this in one tab
+yarn workspace obsidian.css dev # open this in another
 ```
-npm install && npm start
-```
+
+This project uses [yarn workspaces](https://yarnpkg.com/en/docs/workspaces).
+
+Inside this project there are PostCSS plugins, the core library, and the dev documenation.
 
 ### Issues
 
