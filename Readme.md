@@ -11,13 +11,13 @@ Styles are written in an adapted BEM naming convention and organized in an [ITCS
 ## Installation
 
 ```
-npm install obsidian.css --save
+yarn add obsidian.css --save
 ```
 
 or link to the CDN
 
 ```markup
-<link rel="stylesheet" href="//unpkg.com/obsidian.css/dist/obsidian.min.css" media="screen" title="Obsidian.css" charset="utf-8">
+<link rel="stylesheet" href="https://unpkg.com/obsidian.css" media="screen" title="Obsidian.css" charset="utf-8">
 ```
 
 ### Using in Build
