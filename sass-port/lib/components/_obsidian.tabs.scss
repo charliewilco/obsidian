@@ -1,0 +1,73 @@
+/*---------Tabs Component----------*/
+
+$tabs-active-color: white;
+$tabs-radii: .375rem;
+$tabs-spacer: .5rem;
+$tabs-border: 1px solid $color-5;
+$tabs-background: $color-5;
+$tabs-marker-color: $color-1;
+$tabs-marker-inactive-color: $color-5;
+
+.c-tabs {
+  z-index: 5;
+}
+
+.c-tabs__nav {
+  margin-bottom: -1px;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.c-tabs__marker {
+  flex: 1 1 auto;
+  min-width: 6rem;
+  border-right: $tabs-border;
+  border-left: $tabs-border;
+  border-top: $tabs-border;
+  border-radius: $tabs-radii $tabs-radii 0 0;
+  background: rgba($tabs-background, 25%);
+  color: $tabs-marker-inactive-color;
+}
+
+.c-tabs__marker:hover {
+  color: darken($litegray, 15%);
+  background: rgba($tabs-background, 75%);
+}
+
+.c-tabs__marker.active {
+  background: $tabs-active-color;
+  color: $tabs-marker-color;
+}
+
+.c-tabs__content {
+  z-index: 4;
+  border: $tabs-border;
+  background: $tabs-active-color;
+}
+
+.c-tabs__pane {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.c-tabs__pane.active {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  height: auto;
+  position: static;
+}
+
+
+@include media('md') {
+  .c-tabs__marker:not(:last-of-type) {
+    margin-right: $tabs-spacer;
+  }
+}

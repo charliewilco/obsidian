@@ -1,0 +1,30 @@
+{
+  "name": "obsidian-documentation",
+  "private": true,
+  "version": "3.0.0-0",
+  "scripts": {
+    "start": "next start",
+    "dev": "next dev",
+    "build": "next build",
+    "deploy": "now && now alias"
+  },
+  "now": {
+    "alias": "obsidian.charlespeters.net"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^0.15.0-1",
+    "@mdx-js/tag": "^0.15.0-1",
+    "@zeit/next-css": "^0.2.0",
+    "@zeit/next-mdx": "^1.1.0",
+    "classnames": "^2.2.6",
+    "next": "^6.1.1",
+    "obsidian.css": "^3.0.2",
+    "pretty": "^2.0.0",
+    "prism-themes": "^1.0.1",
+    "prismjs": "^1.15.0",
+    "raw-loader": "^0.5.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-prism": "^4.3.2"
+  }
+}

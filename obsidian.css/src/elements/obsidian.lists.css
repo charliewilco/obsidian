@@ -1,0 +1,7 @@
+/*----------List & List Item Elements---------*/
+
+li > ul,
+li > ol { margin-bottom: 0; }
+
+ul,
+ol { list-style-position: inside; }

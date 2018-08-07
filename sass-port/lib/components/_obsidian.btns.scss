@@ -1,0 +1,73 @@
+/*---------Buttons UI----------*/
+
+$btn-radius: .25rem;
+$btn-border: 2px solid;
+
+.c-btn {
+  background: $form-color;
+  color: white;
+  border: $btn-border;
+  border-color: transparent;
+  padding: $form-inner-sp;
+  max-width: $form-mxw;
+  border-radius: $btn-radius;
+  transition: color $base-dur linear, background $base-dur linear, border $base-dur linear;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.c-btn--xs {
+  font-size: 87.5%;
+  padding: ($base-spacing / 4) ($base-spacing * .75);
+}
+
+.c-btn--md {
+  font-size: 112.5%;
+  padding: ($base-spacing / 2) ($base-spacing * 2);
+}
+
+
+.c-btn--lg {
+  font-size: 125%;
+  padding: ($base-spacing * .75) ($base-spacing * 2.5);
+}
+
+.c-btn:hover {
+  border-color: currentColor;
+  color: $form-color;
+  background: none;
+}
+
+.c-btn--2 { background: $color-2; }
+.c-btn--2:hover { color: $color-2; }
+
+.c-btn--3 { background: $color-3; }
+.c-btn--3:hover { color: $color-3; }
+
+.c-btn--4 { background: $color-4; }
+.c-btn--4:hover { color: $color-4; }
+
+.c-btn--o {
+  color: $form-color;
+  border-color: currentColor;
+  background: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.c-btn--o:hover {
+  background: $form-color;
+  color: white;
+  border-color: transparent;
+}
+
+
+.c-btn--o--2 { color: $color-2; }
+.c-btn--o--2:hover { background: $color-2; }
+
+.c-btn--o--3 { color: $color-3; }
+.c-btn--o--3:hover { background: $color-3; }
+
+.c-btn--o--4 { color: $color-4; }
+.c-btn--o--4:hover { background: $color-4; }

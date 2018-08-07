@@ -1,0 +1,18 @@
+/*---------Link Defaults / Anchor Element----------*/
+
+:root {
+  --link: var(--color-1);
+  --link-hover: var(--blue-light);
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: var(--link);
+}
+
+a:active,
+a:hover {
+  color: var(--link-hover);
+  outline: 0;
+}

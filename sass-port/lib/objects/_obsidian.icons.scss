@@ -1,0 +1,38 @@
+/*---------Icon Object----------*/
+
+/*
+  NOTE: Designed with justafewicons.co in mind
+*/
+
+$icon-size: 3rem;
+$icon-xs: $icon-size * .375;
+$icon-sm: $icon-size * .625;
+$icon-md: $icon-size * 1.125;
+$icon-lg: $icon-size * 1.5;
+
+
+.o-icon {
+  width: $icon-size;
+  height: $icon-size;
+  fill: currentColor;
+}
+
+.o-icon--xs {
+  width: $icon-xs;
+  height: $icon-xs;
+}
+
+.o-icon--sm {
+  width: $icon-sm;
+  height: $icon-sm;
+}
+
+.o-icon--md {
+  width: $icon-md;
+  height: $icon-md;
+}
+
+.o-icon--lg {
+  width: $icon-lg;
+  height: $icon-lg;
+}

@@ -1,0 +1,18 @@
+/*---------Link Defaults / Anchor Element----------*/
+
+$link: $color-1;
+
+a,
+.link {
+  background-color: transparent;
+  text-decoration: none;
+  color: $link;
+}
+
+a:active,
+a:hover,
+.link:active,
+.link:hover {
+  color: lighten($link, 15%);
+  outline: 0;
+}

@@ -1,0 +1,18 @@
+/*---------Input Group----------*/
+
+:root {
+  --input-radius: var(--form-radius);
+}
+
+.c-InputGroup {
+  position: relative;
+  border-radius: var(--input-radius);
+  overflow: hidden;
+}
+
+.c-InputGroup--first {
+  border-radius: 0;
+  border-right: 0;
+}
+
+.c-InputGroup--last { border-radius: 0; }

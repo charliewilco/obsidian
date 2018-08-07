@@ -1,0 +1,17 @@
+.c-Search {
+  background: rgba(0, 0, 0, .5);
+  position: relative;
+  display: table;
+}
+
+.c-Search__input {
+  background: none;
+}
+
+.c-Search__btn {
+  position: absolute;
+  padding: .25rem;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}

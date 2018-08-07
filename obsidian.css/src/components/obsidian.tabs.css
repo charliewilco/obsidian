@@ -1,0 +1,74 @@
+/*---------Tabs Component----------*/
+
+:root {
+  --tabs-active-color: white;
+  --tabs-radii: 0.375rem;
+  --tabs-spacer: 0.5rem;
+  --tabs-border: 1px solid var(--color-5);
+  --tabs-background: var(--color-5);
+  --tabs-marker-color: var(--color-1);
+  --tabs-marker-inactive-color: var(--color-5);
+}
+
+.c-Tabs {
+  z-index: 5;
+}
+
+.c-Tabs__nav {
+  margin-bottom: -1px;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.c-Tabs__marker {
+  flex: 1 1 auto;
+  min-width: 6rem;
+  border-right: var(--tabs-border);
+  border-left: var(--tabs-border);
+  border-top: var(--tabs-border);
+  border-radius: var(--tabs-radii) var(--tabs-radii) 0 0;
+  background: color(var(--tabs-background) a(25%));
+  color: var(--tabs-marker-inactive-color);
+}
+
+.c-Tabs__marker:hover {
+  color: color(var(--litegray) blackness(+15%));
+  background: color(var(--tabs-background) a(75%));
+}
+
+.c-Tabs__marker.active {
+  background: var(--tabs-active-color);
+  color: var(--tabs-marker-color);
+}
+
+.c-Tabs__content {
+  z-index: 4;
+  border: var(--tabs-border);
+  background: var(--tabs-active-color);
+}
+
+.c-Tabs__pane {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.c-Tabs__pane.active {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  height: auto;
+  position: static;
+}
+
+@media only screen and (min-width: 48rem) {
+  .c-Tabs__marker:not(:last-of-type) {
+    margin-right: var(--tabs-spacer);
+  }
+}

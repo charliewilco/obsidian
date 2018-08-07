@@ -1,0 +1,10 @@
+{
+  "name": "postcss-parker",
+  "version": "0.1.0",
+  "main": "index.js",
+  "dependencies": {
+    "json-format": "^1.0.1",
+    "parker": "^0.0.10",
+    "postcss": "^7.0.2"
+  }
+}

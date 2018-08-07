@@ -1,0 +1,55 @@
+/*---------Range Component----------*/
+/*
+  TODO: Mozilla and MS Prefixes or equivalent for thumb and track pseudo selectors
+*/
+
+$range-thumb-w: $form-height / 2;
+$range-thumb-h: $form-height / 2;
+$range-thumb-bg: linear-gradient(lighten($form-offsetColor, 12.5%), lighten($form-offsetColor, 2.5%));
+$range-thumb-radius: 50%;
+$range-color: $color-1;
+$range-track-h: $range-thumb-h / 3;
+$range-shadow: $shadow-1;
+$range-timing: $base-dur / 2;
+
+
+.c-range {
+  max-width: $form-mxw;
+  width: $form-width;
+  height: $form-height;
+  appearance: none;
+}
+
+.c-range:focus { outline: none; }
+
+
+.c-range::-webkit-slider-runnable-track {
+  color: $range-color;
+  background: rgba($range-color, 87.5%);
+  height: $range-track-h;
+  border-radius: 3px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.c-range:focus::-webkit-slider-runnable-track {
+  background: $range-color;
+}
+
+.c-range::-webkit-slider-thumb {
+  border: 0;
+  height: $range-thumb-h;
+  width: $range-thumb-w;
+  border-radius: $range-thumb-radius;
+  background: $range-thumb-bg;
+  box-shadow: $range-shadow;
+  appearance: none;
+  cursor: pointer;
+  margin-top: $range-thumb-h / -3;
+  transition: all $range-timing linear;
+}
+
+.c-range::-webkit-slider-container,
+.c-range::-webkit-media-slider-container {
+  align-items: center;
+}

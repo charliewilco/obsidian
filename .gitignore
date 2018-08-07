@@ -2,3 +2,5 @@ node_modules
 *.swp
 dist/
 test/bundle.css
+index.html
+.next

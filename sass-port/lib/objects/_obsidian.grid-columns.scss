@@ -1,0 +1,99 @@
+/*----------Grid Object----------*/
+
+$col-1: percentage(1/12);
+$col-2: percentage(2/12);
+$col-3: percentage(3/12);
+$col-4: percentage(4/12);
+$col-5: percentage(5/12);
+$col-6: percentage(6/12);
+$col-7: percentage(7/12);
+$col-8: percentage(8/12);
+$col-9: percentage(9/12);
+$col-10: percentage(10/12);
+$col-11: percentage(11/12);
+$col-12: percentage(12/12);
+
+
+[class*='o-col--'] { max-width: 100%; }
+
+.o-col {
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+
+.o-col--1\/12  { width: $col-1; }
+.o-col--2\/12  { width: $col-2; }
+.o-col--3\/12  { width: $col-3; }
+.o-col--4\/12  { width: $col-4; }
+.o-col--5\/12  { width: $col-5; }
+.o-col--6\/12  { width: $col-6; }
+.o-col--7\/12  { width: $col-7; }
+.o-col--8\/12  { width: $col-8; }
+.o-col--9\/12  { width: $col-9; }
+.o-col--10\/12 { width: $col-10; }
+.o-col--11\/12 { width: $col-11; }
+.o-col--12\/12 { width: $col-12; }
+
+@include media('sm') {
+  .o-col\@sm {
+    float: left;
+    position: relative;
+    min-height: 1px;
+  }
+
+  .o-col--1\/12\@sm  { width: $col-1; }
+  .o-col--2\/12\@sm  { width: $col-2; }
+  .o-col--3\/12\@sm  { width: $col-3; }
+  .o-col--4\/12\@sm  { width: $col-4; }
+  .o-col--5\/12\@sm  { width: $col-5; }
+  .o-col--6\/12\@sm  { width: $col-6; }
+  .o-col--7\/12\@sm  { width: $col-7; }
+  .o-col--8\/12\@sm  { width: $col-8; }
+  .o-col--9\/12\@sm  { width: $col-9; }
+  .o-col--10\/12\@sm { width: $col-10; }
+  .o-col--11\/12\@sm { width: $col-11; }
+  .o-col--12\/12\@sm { width: $col-12; }
+}
+
+@include media('md') {
+  .o-col\@md {
+    float: left;
+    position: relative;
+    min-height: 1px;
+  }
+
+  .o-col--1\/12\@md  { width: $col-1; }
+  .o-col--2\/12\@md  { width: $col-2; }
+  .o-col--3\/12\@md  { width: $col-3; }
+  .o-col--4\/12\@md  { width: $col-4; }
+  .o-col--5\/12\@md  { width: $col-5; }
+  .o-col--6\/12\@md  { width: $col-6; }
+  .o-col--7\/12\@md  { width: $col-7; }
+  .o-col--8\/12\@md  { width: $col-8; }
+  .o-col--9\/12\@md  { width: $col-9; }
+  .o-col--10\/12\@md { width: $col-10; }
+  .o-col--11\/12\@md { width: $col-11; }
+  .o-col--12\/12\@md { width: $col-12; }
+}
+
+@include media('lg') {
+  .o-col\@lg {
+    float: left;
+    position: relative;
+    min-height: 1px;
+  }
+
+  .o-col--1\/12\@lg  { width: $col-1; }
+  .o-col--2\/12\@lg  { width: $col-2; }
+  .o-col--3\/12\@lg  { width: $col-3; }
+  .o-col--4\/12\@lg  { width: $col-4; }
+  .o-col--5\/12\@lg  { width: $col-5; }
+  .o-col--6\/12\@lg  { width: $col-6; }
+  .o-col--7\/12\@lg  { width: $col-7; }
+  .o-col--8\/12\@lg  { width: $col-8; }
+  .o-col--9\/12\@lg  { width: $col-9; }
+  .o-col--10\/12\@lg { width: $col-10; }
+  .o-col--11\/12\@lg { width: $col-11; }
+  .o-col--12\/12\@lg { width: $col-12; }
+}

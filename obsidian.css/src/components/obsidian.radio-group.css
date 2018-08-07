@@ -1,0 +1,41 @@
+/*----------Radio Group----------*/
+
+:root {
+  --rdg-corner: .425rem;
+  --rdg-width: 27.5rem;
+  --rdg-color: var(--color-1);
+  --rdg-offset-color: var(--color-5);
+  --rdg-timing: calc(var(--base-dur) / 2);
+}
+
+.c-RadioGroup {
+  max-width: var(--rdg-width);
+  width: 100%;
+}
+
+.c-RadioGroup__opt {
+  width: calc(100% / 3);
+  border: 1px solid var(--rdg-offset-color);
+  color: var(--rdg-offset-color);
+  flex: 1;
+  cursor: pointer;
+  transition: background var(--rdg-timing) ease-in-out, color var(--rdg-timing) ease-in-out;
+}
+
+.c-RadioGroup__opt:not(:last-of-type) { border-right: 0; }
+
+.c-RadioGroup__opt:first-of-type {
+  border-radius: var(--rdg-corner) 0 0 var(--rdg-corner);
+}
+
+.c-RadioGroup__opt:last-of-type {
+  border-radius: 0 var(--rdg-corner) var(--rdg-corner) 0;
+}
+
+.c-RadioGroup__elm { display: none; }
+
+.c-RadioGroup__elm:checked + .c-RadioGroup__opt,
+.c-RadioGroup__opt.active {
+  background: var(--rdg-color);
+  color: white;
+}

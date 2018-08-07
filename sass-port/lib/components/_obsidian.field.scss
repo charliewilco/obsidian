@@ -1,0 +1,40 @@
+/*---------Field Input Component----------*/
+
+$field-min: 5rem;
+
+.c-field {
+  padding: $form-inner-sp;
+  box-shadow: $form-shadow;
+  border: $form-border $form-border-color;
+  max-width: $form-mxw;
+  width: $form-width;
+  height: $form-height;
+  border-radius: $form-radius;
+}
+
+.c-field[disabled],
+.c-field:disabled {
+  opacity: .5;
+  background: rgba($form-color, 10%);
+  border-color: rgba($form-offsetColor, 50%);
+}
+
+.c-field::placeholder {
+  font-style: italic;
+}
+
+.c-field::-webkit-calendar-picker-indicator {
+  opacity: 1 !important;
+}
+
+.c-field--text {
+  resize: none;
+  min-height: $field-min;
+}
+
+.c-field:focus {
+  background: $offwhite;
+  color: $form-color;
+  border-color: $form-color;
+  outline: 4px auto $form-color;
+}

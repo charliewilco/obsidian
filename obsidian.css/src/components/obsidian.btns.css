@@ -1,0 +1,43 @@
+/*---------Buttons UI----------*/
+
+:root {
+  --btn-radius: .25rem;
+  --btn-color: var(--blue);
+  --btn-color-hover: var(--blue-dark);
+  --btn-border: 2px solid;
+}
+
+.c-Btn {
+  background: var(--btn-color);
+  color: white;
+  border: var(--btn-border);
+  border-color: transparent;
+  padding: var(--form-inner-sp);
+  max-width: var(--form-mxw);
+  border-radius: var(--btn-radius);
+  transition: color var(--base-dur) linear, background var(--base-dur) linear, border var(--base-dur) linear;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.c-Btn--xs {
+  font-size: 87.5%;
+  padding: calc(var(--base-spacing) / 4) calc(var(--base-spacing) * .75);
+}
+
+.c-Btn--md {
+  font-size: 112.5%;
+  padding: calc(var(--base-spacing) / 2) calc(var(--base-spacing) * 2);
+}
+
+
+.c-Btn--lg {
+  font-size: 125%;
+  padding: calc(var(--base-spacing) * .75) calc(var(--base-spacing) * 2.5);
+}
+
+.c-Btn:hover {
+  background-color: var(--btn-color-hover);
+  color: white;
+}
