@@ -1,8 +1,8 @@
 /*--------Responsive Table Object----------*/
 
 :root {
-  --Table-border: 1px solid #145878;
-  --Table-label-color: var(--litegray);
+  --Table-border: 1px solid #ccc;
+  --Table-label-color: var(--text);
   --Table-label-size: 0.625rem;
   --Table-label-width: 7rem;
   --Table-label-alignment: left;

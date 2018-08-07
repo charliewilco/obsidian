@@ -6,7 +6,7 @@
 ### Document 
 
 - [x] UI list
-- [ ] Responsive Table
+- [x] Responsive Table
 - [ ] Search UI
 - [x] Media Block
 - [x] Color Ramp
