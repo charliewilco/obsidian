@@ -6,7 +6,7 @@ Obsidian.css is a modular CSS library that focuses on code common to most projec
 
 This project works under the belief that when abstracted most CSS is shockingly similar across projects. More than likely you'll need a type scale, a grid system, spacing utilities, media blocks, sensible default styling for elements (forms, tables, buttons). This project is a collection of the CSS patterns that have stuck with me over the last two years and grown with me.
 
-Styles are written in an adapted BEM naming convention and organized in an [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4)-like methodology. It uses [cssnext](https://github.com/MoOx/postcss-cssnext) to compile variables, custom selectors and custom media queries.
+Styles are written in an adapted BEM naming convention and organized in an [ITCSS-like](/itcss) methodology. It uses PostCSS plugins to compile variables, color functions and add vendor prefixes.
 
 ## Installation
 
@@ -30,11 +30,11 @@ Example using Gulp.js:
 const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 const atImport = require('postcss-import');
-const cssnext  = require('postcss-cssnext');
+const env = require('postcss-preset-env');
 
 const processors = [
   atImport,
-  cssnext
+  env
 ];
 
 gulp.task('styles', () => {
@@ -73,7 +73,7 @@ And things should compile the way you'd expect.
 [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) (Inverted Triangle CSS) from Harry Roberts, is a way of structuring CSS in such a way that the most general selectors to trickle down to the most specific selectors, as if they're moving from the top of an bottom of a triangle to the pinnacle of it.
 
 
-In this implementation there are a few differences. Normally in ITCSS, you could have a tools like Sass functions, but most of the tools we'd need are coming in CSS and transpiled by [cssnext](cssnext.io/features/).
+In this implementation there are a few differences. Normally in ITCSS, you could have a tools like Sass functions, but most of the tools we'd need are coming in CSS and transpiled by [PostCSS plugins](https://postcss.org/).
 
 Objects have minimal visual styling in Obsidian. This is a set between the reset styling and the component level styling because it's beyond an element.
 

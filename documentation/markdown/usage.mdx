@@ -7,7 +7,7 @@ npm install obsidian.css --save
 or link to the CDN
 
 ```markup
-<link rel="stylesheet" href="//npmcdn.com/obsidian.css/dist/obsidian.min.css" media="screen" title="Obsidian.css" charset="utf-8">
+<link rel="stylesheet" href="https://unpkg.com/obsidian.css" media="screen" title="Obsidian.css" charset="utf-8">
 ```
 
 #### Using in Build
@@ -20,11 +20,11 @@ Example using Gulp.js:
 const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 const atImport = require('postcss-import');
-const cssnext  = require('postcss-cssnext');
+const env = require('postcss-preset-env');
 
 const processors = [
   atImport,
-  cssnext
+  env
 ];
 
 gulp.task('styles', ()=> {
