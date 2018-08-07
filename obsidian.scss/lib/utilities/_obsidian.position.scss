@@ -1,0 +1,13 @@
+/*----------Position Utilities----------*/
+
+.u-absolute { position: absolute; }
+.u-fixed    { position: fixed; }
+.u-static   { position: static; }
+.u-relative { position: relative; }
+
+.u-tblr {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

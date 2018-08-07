@@ -1,0 +1,19 @@
+/*----------Containers / Wrapper Object----------*/
+
+$container-lg: $base-container * .75;
+$container-md: $base-container * .625;
+$container-sm: $base-container * .5;
+$container-xs: $base-container * .375;
+
+.o-container,
+.o-container--full { max-width: $base-container; }
+.o-container--lg   { max-width: $container-lg; }
+.o-container--md   { max-width: $container-md; }
+.o-container--sm   { max-width: $container-sm; }
+.o-container--xs   { max-width: $container-xs; }
+
+.o-container--center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}

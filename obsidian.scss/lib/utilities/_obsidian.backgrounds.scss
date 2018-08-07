@@ -1,0 +1,21 @@
+/*----------Background Value Utilities----------*/
+
+.u-bg--none      { background: none; }
+.u-bg--cover     { background-position: cover; }
+
+.u-bg--offwhite  { background-color: $offwhite; }
+.u-bg--black     { background-color: $black; }
+.u-bg--red       { background-color: $red; }
+.u-bg--blue      { background-color: $blue; }
+.u-bg--bluegreen { background-color: $bluegreen; }
+.u-bg--yellow    { background-color: $yellow; }
+.u-bg--ygreen    { background-color: $ygreen; }
+.u-bg--green     { background-color: $green; }
+.u-bg--orange    { background-color: $orange; }
+.u-bg--purple    { background-color: $purple; }
+.u-bg--indigo    { background-color: $indigo; }
+.u-bg--fuchsia   { background-color: $fuchsia; }
+.u-bg--gray      { background-color: $gray; }
+.u-bg--palegray  { background-color: $palegray; }
+.u-bg--text      { background-color: $text; }
+.u-bg--ltgray    { background-color: $litegray; }

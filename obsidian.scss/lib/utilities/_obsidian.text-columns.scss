@@ -1,0 +1,24 @@
+/*---------Text Column Utilties----------*/
+/*
+  NOTE: there is no 1 for column sizes
+*/
+
+$column-size-2: ($base-container / 3) - ($base-spacing * 2 * 1);
+$column-size-3: ($base-container / 3) - ($base-spacing * 3 * 2);
+$column-size-4: ($base-container / 3) - ($base-spacing * 4 * 3);
+
+
+.u-tclm-2 {
+  columns: 2 $column-size-2;
+  column-gap: $base-spacing * 2;
+}
+
+.u-tclm-3 {
+  columns: 3 $column-size-3;
+  column-gap: $base-spacing * 3;
+}
+
+.u-tclm-4 {
+  columns: 4 $column-size-4;
+  column-gap: $base-spacing * 4;
+}

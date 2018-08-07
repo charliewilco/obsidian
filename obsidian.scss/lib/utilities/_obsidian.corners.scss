@@ -1,0 +1,13 @@
+/*----------Corner / Border Radius Utilities----------*/
+
+.u-br1 { border-radius: $radius-1; }
+.u-br2 { border-radius: $radius-2; }
+.u-br3 { border-radius: $radius-3; }
+.u-br4 { border-radius: $radius-4; }
+.u-br5 { border-radius: $radius-5; }
+
+/* Named Percentage Sizes */
+
+.u-br--quarter { border-radius: 25%; }
+.u-br--half    { border-radius: 50%; }
+.u-br--full    { border-radius: 100%; }

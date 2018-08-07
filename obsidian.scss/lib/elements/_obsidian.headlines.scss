@@ -1,0 +1,89 @@
+/*----------Headline Elements----------*/
+
+/*
+  NOTE: Originally based off the Golden Ratio and 1rem being modified at each break point
+*/
+
+/* Sizes */
+/* Headline Sizes */
+$headline-1: 3.125rem;
+$headline-2: 2.5rem;
+$headline-3: 2.125rem;
+$headline-4: 1.75rem;
+$headline-5: 1.5rem;
+$headline-6: 1.25rem;
+
+$lh-1: 1.125;
+$lh-2: 1.25;
+$lh-3: 1.5;
+
+$sm-multiplier: .875;
+$md-multiplier: 1;
+$lg-multiplier: 1.125;
+
+$headline-1-sm: $headline-1 * $sm-multiplier;
+$headline-2-sm: $headline-2 * $sm-multiplier;
+$headline-3-sm: $headline-3 * $sm-multiplier;
+$headline-4-sm: $headline-4 * $sm-multiplier;
+$headline-5-sm: $headline-5 * $sm-multiplier;
+$headline-6-sm: $headline-6 * $sm-multiplier;
+
+$headline-1-md: $headline-1 * $md-multiplier;
+$headline-2-md: $headline-2 * $md-multiplier;
+$headline-3-md: $headline-3 * $md-multiplier;
+$headline-4-md: $headline-4 * $md-multiplier;
+$headline-5-md: $headline-5 * $md-multiplier;
+$headline-6-md: $headline-6 * $md-multiplier;
+
+$headline-1-lg: $headline-1 * $lg-multiplier;
+$headline-2-lg: $headline-2 * $lg-multiplier;
+$headline-3-lg: $headline-3 * $lg-multiplier;
+$headline-4-lg: $headline-4 * $lg-multiplier;
+$headline-5-lg: $headline-5 * $lg-multiplier;
+$headline-6-lg: $headline-6 * $lg-multiplier;
+
+
+h1, .h1 { font-size: $headline-1-sm; }
+h2, .h2 { font-size: $headline-2-sm; }
+h3, .h3 { font-size: $headline-3-sm; }
+h4, .h4 { font-size: $headline-4-sm; }
+h5, .h5 { font-size: $headline-5-sm; }
+h6, .h6 { font-size: $headline-6-sm; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0;
+  line-height: $lh-3;
+  font-family: $headlines;
+}
+
+
+@include media('md') {
+  h1, .h1 { font-size: $headline-1-md; }
+  h2, .h2 { font-size: $headline-2-md; }
+  h3, .h3 { font-size: $headline-3-md; }
+  h4, .h4 { font-size: $headline-4-md; }
+  h5, .h5 { font-size: $headline-5-md; }
+  h6, .h6 { font-size: $headline-6-md; }
+}
+
+@include media('lg') {
+  h1, .h1 { font-size: $headline-1-lg; }
+  h2, .h2 { font-size: $headline-2-lg; }
+  h3, .h3 { font-size: $headline-3-lg; }
+  h4, .h4 { font-size: $headline-4-lg; }
+  h5, .h5 { font-size: $headline-5-lg; }
+  h6, .h6 { font-size: $headline-6-lg; }
+}
+
+.small { font-size: 87.5%; }

@@ -1,0 +1,27 @@
+{
+  "name": "obsidian.scss",
+  "version": "0.0.1",
+  "description": "A Sass port of Obsidian.css",
+  "homepage": "https://obsidian.charlespeters.net",
+  "main": "index.js",
+  "styles": "lib/_obsidian.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "node-sass ./lib/index.scss ./dist/obsidian-sassy.css -o dist --output-style compressed",
+    "watch": "watch 'npm run bundle' lib"
+  },
+  "author": "charles peters <charlespeters42@gmail.com> (https://charlespeters.net)",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^3.8.0",
+    "watch": "^0.19.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlespeters/obsidian.scss.git"
+  },
+  "keywords": ["sass", "modular", "css", "library", "obsidian"],
+  "bugs": {
+    "url": "https://github.com/charlespeters/obsidian.scss/issues"
+  }
+}

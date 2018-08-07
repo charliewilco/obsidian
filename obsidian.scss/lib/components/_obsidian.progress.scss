@@ -1,0 +1,44 @@
+/*---------Progress Component----------*/
+/*
+  TODO: Opera and MS Prefixes or equivalent for bar and value pseudo selectors
+  NOTE: Consider moving to Elements layer
+*/
+
+$progress-radius: .25rem;
+$progress-color: $color-1;
+$progress-height: 2rem;
+$progress-background: lighten($color-5, 5%);
+$progress-height: 1.5rem;
+
+@mixin progress-value() {
+  background-color: $progress-color;
+  border-radius: $progress-radius 0 0 $progress-radius;
+}
+
+
+/* Progress Element */
+
+.c-progress {
+  display: block;
+  width: 100%;
+  height: $progress-height;
+  appearance: none;
+  border: 0;
+  border-radius: $progress-radius;
+  background-color: $progress-background;
+}
+
+.c-progress::-webkit-progress-bar {
+  appearance: none;
+  border-radius: $progress-radius;
+  background-color: $progress-background;
+}
+
+/* Progress Value */
+.c-progress::-webkit-progress-value {
+  @include progress-value();
+}
+
+.c-progress::-moz-progress-bar {
+  @include progress-value();
+}

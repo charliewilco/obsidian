@@ -1,0 +1,54 @@
+/*---------Card UI----------*/
+
+$card-max: 25rem;
+$card-bg: white;
+$card-radius: $radius-2;
+$card-shadow: $shadow-2;
+$card-timing: $base-dur / 2;
+
+.c-card {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: $card-max;
+  background: $card-bg;
+  border-radius: $card-radius;
+  box-shadow: $card-shadow;
+  transform: scale(1, 1);
+  transition: transform $card-timing ease-in-out;
+  z-index: 1;
+}
+
+.c-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: $card-radius;
+  transition: opacity $card-timing ease-in-out;
+  box-shadow: $card-shadow;
+  opacity: .5;
+  height: 100%;
+  width: 100%;
+}
+
+.c-card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.c-card:hover::before {
+  opacity: 1;
+}
+
+.c-card__figure {
+  width: 100%;
+  z-index: inherit;
+}
+
+.c-card__content {
+  font-size: 87.5%;
+  z-index: inherit;
+}

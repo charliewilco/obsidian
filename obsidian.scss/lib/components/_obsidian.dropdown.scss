@@ -1,0 +1,59 @@
+/*---------Dropdown Component----------*/
+
+$curve: cubic-bezier(.16, .58, .8, .43);
+$dropdown-header: white;
+$dropdown-background: white;
+$dropdown-arrow-size: .625rem;
+$dropdown-width: 25rem;
+
+.c-dropdown {
+  background: $dropdown-background;
+  box-shadow: $shadow-1;
+  border-top: 2px solid $dropdown-header;
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms $curve, visibility 250ms $curve;
+  z-index: 999;
+  max-width: $dropdown-width;
+}
+
+.c-dropdown::before {
+  content: '';
+  position: absolute;
+  top: $dropdown-arrow-size * -1;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  border-left: .75rem solid transparent;
+  border-right: .75rem solid transparent;
+  border-bottom: $dropdown-arrow-size solid $dropdown-header;
+}
+
+.c-dropdown--l::before {
+  content: '';
+  left: $dropdown-arrow-size / 2;
+}
+
+.c-dropdown--r::before {
+  content: '';
+  right: $dropdown-arrow-size / 2;
+}
+
+.c-dropdown--c::before {
+  content: '';
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.c-dropdown.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.c-dropdown.active {
+  visibility: visible;
+  opacity: 1;
+}
