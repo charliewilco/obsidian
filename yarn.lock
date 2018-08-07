@@ -3794,7 +3794,7 @@ lodash@^3.2.0:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0, lodash@^4.5.1:
+lodash@^4.10.0, lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0, lodash@^4.5.1:
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
@@ -4917,6 +4917,13 @@ postcss-discard-unused@^2.2.1:
   dependencies:
     postcss "^5.0.14"
     uniqs "^2.0.0"
+
+postcss-export-vars@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/postcss-export-vars/-/postcss-export-vars-0.2.0.tgz#3fc7c3b14b3402c2f6c8a6e36a2298ace8d4f48f"
+  dependencies:
+    lodash "^4.10.0"
+    postcss "^5.0.16"
 
 postcss-filter-plugins@^2.0.0:
   version "2.0.3"
