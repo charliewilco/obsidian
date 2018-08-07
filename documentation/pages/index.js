@@ -2,10 +2,11 @@ import Intro from '../markdown/intro.mdx';
 import { Installation } from '../components/installation';
 import { LogoNamePlate as Logo } from '../components/logo';
 import { Article } from '../components/article';
-import { ModuleHeading, ModuleContent } from '../components/module';
+
+const DESCRIPTION = `Obsidian.css is a modular CSS library that focuses on code common to most projects.`;
 
 export default () => (
-  <Article>
+  <Article meta={DESCRIPTION}>
     <header className="Stage">
       <Logo name subtitle />
       <Installation />
