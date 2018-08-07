@@ -1,6 +1,6 @@
 !dist
-css.json
-parker.json
+!css.json
+!parker.json
 dist/index.html
 
 TODO.md
