@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "description": "A Modular CSS Library",
   "keywords": ["css", "modular css", "postcss"],
-  "main": "lib/index.css",
+  "main": "src/index.css",
   "browser": "dist/obsidian.min.css",
   "scripts": {
     "prepublish": "yarn clean && yarn build",
@@ -28,6 +28,7 @@
     "postcss-cli": "^6.0.0",
     "postcss-color-function": "^4.0.0",
     "postcss-custom-properties": "^7.0.0",
+    "postcss-export-vars": "^0.2.0",
     "postcss-gzip": "^1.0.1",
     "postcss-import": "^11.1.0",
     "postcss-parker": "^0.1.0",
@@ -40,6 +41,11 @@
     "plugins": {
       "postcss-import": {
         "skipDuplicates": true
+      },
+      "postcss-export-vars": {
+        "file": "css",
+        "type": "json",
+        "matches": []
       },
       "postcss-custom-properties": {
         "preserve": false
