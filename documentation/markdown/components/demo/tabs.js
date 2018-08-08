@@ -1,4 +1,4 @@
-import snippet from '!raw-loader!obsidian.css/src/elements/obsidian.forms.css';
+import snippet from '!raw-loader!obsidian.css/src/components/obsidian.tabs.css';
 
 const onClick = e => e.preventDefault();
 
