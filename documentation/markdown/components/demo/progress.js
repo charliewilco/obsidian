@@ -1,4 +1,4 @@
-import snippet from '!raw-loader!obsidian.css/src/elements/obsidian.forms.css';
+import snippet from '!raw-loader!obsidian.css/src/components/obsidian.range.css';
 
 const ProgressUI = () => (
   <div className="u-pt5 u-py3">

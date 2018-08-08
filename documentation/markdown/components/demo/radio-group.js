@@ -1,4 +1,4 @@
-import snippet from '!raw-loader!obsidian.css/src/elements/obsidian.forms.css';
+import snippet from '!raw-loader!obsidian.css/src/components/obsidian.radio-group.css';
 
 const RadioGroup = () => (
   <>
