@@ -24,7 +24,7 @@ export default () => (
     <Module title="Flex Object" component={Flex} />
     <Module title="Grid" component={Grid} />
     <Module title="Intrinsic Object" component={Intrinsic} />
-    <Module title="Flag" component={Flag} />
     <Module title="Media Block" component={MediaBlock} />
+    <Module title="Flag" component={Flag} />
   </Article>
 );
