@@ -1,6 +1,7 @@
+import * as React from 'react'
 import { Logo } from './logo';
 
-export const Header = ({ version }) => (
+export const Header: React.SFC<{ version: string }> = ({ version }) => (
   <header className="Header u-p2">
     <div className="o-Flex o-Flex--wrap o-Flex--center--h o-Flex--j--sb">
       <Logo />

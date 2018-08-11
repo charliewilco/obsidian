@@ -1,6 +1,30 @@
-import React, { Children, cloneElement, createContext, Component } from "react";
+import * as React from 'react';
 
-const DefaultNavigation = ({
+export interface TrunkState {
+  position: number;
+  isEnd: boolean;
+  isBeginning: boolean;
+  length: number;
+}
+
+export interface TrunkProps {
+  navigation:  component: new (props: any) => React.Component;
+}
+
+export interface BranchProps {
+  component: React.ReactNode;
+  render: (props: any) => React.ReactNode;
+}
+
+export interface NavActions {
+  goDirectToPosition: (position: number) => void;
+  goToPrevious: () => void;
+  goToNext: () => void;
+}
+
+export interface Context extends TrunkState, NavActions {}
+
+const DefaultNavigation: React.SFC<Context> = ({
   goToPrevious,
   goToNext,
   goDirectToPosition,
@@ -32,8 +56,9 @@ const DefaultNavigation = ({
   </nav>
 );
 
-export const TrunkContext = createContext();
-export const nextPosition = ({ position, length, isEnd }) => {
+export const TrunkContext = React.createContext({});
+
+const nextPosition = ({ position, length, isEnd }: TrunkState) => {
   let currentPosition = position !== length ? position + 1 : length;
   return {
     position: currentPosition,
@@ -42,7 +67,7 @@ export const nextPosition = ({ position, length, isEnd }) => {
   };
 };
 
-export const prevPosition = ({ position, length }) => {
+const prevPosition = ({ position, length }: TrunkState) => {
   let currentPosition = position !== length ? position - 1 : 0;
 
   return {
@@ -52,12 +77,12 @@ export const prevPosition = ({ position, length }) => {
   };
 };
 
-export class Trunk extends Component {
+export class Trunk extends React.Component<TrunkProps, TrunkState> {
   state = {
     position: 0,
     isEnd: false,
     isBeginning: true,
-    length: Children.count(this.props.children)
+    length: React.Children.count(this.props.children)
   };
 
   static defaultProps = {
@@ -72,6 +97,7 @@ export class Trunk extends Component {
 
   render() {
     const { children, navigation: BranchNav } = this.props;
+    const { position } = this.state
     return (
       <TrunkContext.Provider
         value={{
@@ -79,24 +105,20 @@ export class Trunk extends Component {
           goToPrevious: this.goToPrevious,
           goToNext: this.goToNext,
           goDirectToPosition: this.goDirectToPosition
-        }}
-      >
+        }}>
         <TrunkContext.Consumer>
           {context => <BranchNav {...context} />}
         </TrunkContext.Consumer>
-        {Children.map(
+        {React.Children.map(
           children,
-          (child, idx) =>
-            // child.type.name === 'Branch' &&
-            this.state.position === idx &&
-            cloneElement(child, { ...this.state })
+          (child, idx) => position === idx && React.cloneElement(child, { ...this.state })
         )}
       </TrunkContext.Provider>
     );
   }
 }
 
-export class Branch extends Component {
+export class Branch extends React.Component<BranchProps, void> {
   render() {
     const { component: Cx, render, ...props } = this.props;
 

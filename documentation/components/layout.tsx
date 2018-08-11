@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import ReactGA from 'react-ga';
 
 import { Nav } from './navigation';
@@ -11,15 +11,20 @@ import { version } from 'obsidian.css/package.json';
 import 'obsidian.css/dist/obsidian.css';
 import '../global.css';
 
-export default class Layout extends Component {
+export interface ILayoutProps {
+  analyticsID: string;
+  children: React.ReactNode;
+}
+
+export default class Layout extends React.Component<ILayoutProps, void> {
   static displayName = 'UILayout';
 
-  state = {
-    id: 'UA-36412149-3'
+  static defaultProps = {
+    analyticsID: 'UA-36412149-3'
   };
 
   componentDidMount() {
-    ReactGA.initialize(this.state.id);
+    ReactGA.initialize(this.props.analyticsID);
     ReactGA.pageview(document.location.pathname);
   }
 

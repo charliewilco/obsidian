@@ -1,12 +1,24 @@
+import * as React from 'react'
 import Head from 'next/head';
 import classNames from 'classnames';
 import { MoreContentNav } from './navigation';
 
-const ArticleHeader = ({ title, description }) => (
+export interface IArticleProps {
+  title?: string,
+  description?: string,
+  children: React.ReactNode,
+  meta?: string,
+  size?: 'sm' | 'md' | 'lg'
+}
+
+export const ArticleHeader: React.SFC<{
+  title?: string,
+  description?: string
+}> = ({ title, description }) => (
   <>
     <header className="o-Container o-Container--center o-Container--sm u-center u-mb3 u-px3">
       <h1 className="h3 u-w300 u-mb2">{title}</h1>
-      <p className="h6">{description}</p>
+      {description && (<p className="h6">{description}</p>)}
     </header>
     <hr className="Rule" />
   </>
@@ -14,9 +26,9 @@ const ArticleHeader = ({ title, description }) => (
 
 export const NAME = 'Obsidian.css';
 
-export const createTitle = t => (t ? `${t} | ${NAME}` : NAME);
+export const createTitle: string = (t: string) => (t ? `${t} | ${NAME}` : NAME);
 
-const Article = ({ description, meta, size = 'lg', title, children }) => {
+export const Article: React.SFC<IArticleProps> = ({ description, meta, size = 'lg', title, children }) => {
   const cx = classNames(
     'o-Container o-Container--center',
     { [`o-Container--${size}`]: size },
@@ -36,7 +48,3 @@ const Article = ({ description, meta, size = 'lg', title, children }) => {
     </>
   );
 };
-Article.displayName = 'Article';
-ArticleHeader.displayName = 'ArticleHeader';
-
-export { Article, ArticleHeader };
