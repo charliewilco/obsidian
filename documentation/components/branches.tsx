@@ -7,13 +7,15 @@ export interface TrunkState {
   length: number
 }
 
+// React.Component<any, any> | React.SFC<any>
+
 export interface TrunkProps {
-  navigation: new (props: any) => React.Component
+  navigation: new (props: any) => React.Component<any> | React.SFC<any>,
 }
 
 export interface BranchProps {
-  component: new (props: any) => React.Component,
-  render: (props: any) => React.ReactNode
+  component: new (props: any) => React.Component<any> | React.SFC<any>,
+  render: new (props: any) => React.Component<any> | React.SFC<any>
 }
 
 export interface NavActions {
@@ -26,7 +28,7 @@ export interface Context extends TrunkState, NavActions {}
 
 export const TrunkContext = React.createContext({});
 
-const nextPosition = ({ position, length, isEnd }: TrunkState) => {
+const nextPosition = ({ position, length }: TrunkState) => {
   let currentPosition = position !== length ? position + 1 : length;
   return {
     position: currentPosition,
@@ -71,11 +73,11 @@ export class Trunk extends React.Component<TrunkProps, TrunkState> {
           goDirectToPosition: this.goDirectToPosition
         }}>
         <TrunkContext.Consumer>
-          {context => <BranchNav {...context} />}
+          {(context: Context) => <BranchNav {...context} />}
         </TrunkContext.Consumer>
         {React.Children.map(
           children,
-          (child, idx) => position === idx && React.cloneElement(child, { ...this.state })
+          (child: React.ReactElement<any>, idx: number) => position === idx && React.cloneElement(child, { ...this.state })
         )}
       </TrunkContext.Provider>
     );
@@ -88,7 +90,7 @@ export class Branch extends React.Component<BranchProps, void> {
 
     return (
       <TrunkContext.Consumer>
-        {context =>
+        {(context: Context) =>
           Cx ? <Cx {...props} {...context} /> : render({ ...props, ...context })
         }
       </TrunkContext.Consumer>

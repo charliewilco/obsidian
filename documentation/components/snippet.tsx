@@ -5,7 +5,7 @@ import cx from 'classnames';
 import pretty from 'pretty';
 import 'prismjs';
 import 'prism-themes/themes/prism-base16-ateliersulphurpool.light.css';
-import { Trunk, Branch } from './branches';
+import { Trunk, Branch, NavActions } from './branches';
 
 export interface INavButton {
   active: boolean,
@@ -19,21 +19,27 @@ export const NavButton: React.SFC<INavButton> = ({ active, children, onClick }) 
   </button>
 );
 
-export const TabbedNavigation: React.SFC<{ position: number, goDirectToPosition: (number) => void }> = ({ position, goDirectToPosition }) => (
-  <nav className="o-Flex o-Flex--j--sb u-my3">
-    <NavButton active={position === 0} onClick={() => goDirectToPosition(0)}>
-      Output
-    </NavButton>
-    <div>
-      <NavButton active={position === 1} onClick={() => goDirectToPosition(1)}>
-        HTML
-      </NavButton>
-      <NavButton active={position === 2} onClick={() => goDirectToPosition(2)}>
-        CSS
-      </NavButton>
-    </div>
-  </nav>
-);
+
+export class TabbedNavigation extends React.Component<NavActions, void> {
+  render() {
+    const { position, goDirectToPosition } = this.props
+    return (
+      <nav className="o-Flex o-Flex--j--sb u-my3">
+        <NavButton active={position === 0} onClick={() => goDirectToPosition(0)}>
+          Output
+        </NavButton>
+        <div>
+          <NavButton active={position === 1} onClick={() => goDirectToPosition(1)}>
+            HTML
+          </NavButton>
+          <NavButton active={position === 2} onClick={() => goDirectToPosition(2)}>
+            CSS
+          </NavButton>
+        </div>
+      </nav>
+    );
+  }
+}
 
 interface ISnippet {
   component: new (props: any) => React.Component,

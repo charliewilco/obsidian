@@ -1,4 +1,15 @@
-export const Swatch = ({ color }) => (
+import * as React from 'react'
+
+interface IColor {
+  name: string,
+  value: string
+}
+
+interface ISwatchProps {
+  color: IColor
+}
+
+export const Swatch: React.SFC<ISwatchProps> = ({ color }) => (
   <div className="Swatch u-mb3 u-mx1">
     <div
       className="Swatch__value"
@@ -18,7 +29,7 @@ export const Swatch = ({ color }) => (
   </div>
 );
 
-export const ColorRamp = ({ colors }) => (
+export const ColorRamp: React.SFC<{ colors: IColor[] }> = ({ colors }) => (
   <dl className="SwatchContainer">
     {colors.map((color, idx) => (
       <Swatch color={color} key={idx} />
