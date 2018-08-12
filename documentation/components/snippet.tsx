@@ -1,3 +1,4 @@
+import * as React from 'react'
 import { renderToStaticMarkup } from 'react-dom/server';
 import Prism from 'react-prism';
 import cx from 'classnames';
@@ -6,13 +7,19 @@ import 'prismjs';
 import 'prism-themes/themes/prism-base16-ateliersulphurpool.light.css';
 import { Trunk, Branch } from './branches';
 
-export const NavButton = ({ active, children, onClick }) => (
+export interface INavButton {
+  active: boolean,
+  children: React.ReactNode,
+  onClick: () => void
+}
+
+export const NavButton: React.SFC<INavButton> = ({ active, children, onClick }) => (
   <button className={cx('NavButton u-w700 u-py2', { active })} onClick={onClick}>
     {children}
   </button>
 );
 
-export const TabbedNavigation = ({ position, goDirectToPosition }) => (
+export const TabbedNavigation: React.SFC<{ position: number, goDirectToPosition: (number) => void }> = ({ position, goDirectToPosition }) => (
   <nav className="o-Flex o-Flex--j--sb u-my3">
     <NavButton active={position === 0} onClick={() => goDirectToPosition(0)}>
       Output
@@ -28,7 +35,12 @@ export const TabbedNavigation = ({ position, goDirectToPosition }) => (
   </nav>
 );
 
-export const Snippet = ({ component: Cx, snippet }) => (
+interface ISnippet {
+  component: new (props: any) => React.Component,
+  snippet: string
+}
+
+export const Snippet: React.SFC<ISnippet> = ({ component: Cx, snippet }) => (
   <div className="Snippet u-mt4">
     <Trunk navigation={TabbedNavigation}>
       <Branch component={Cx} />

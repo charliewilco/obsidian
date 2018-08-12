@@ -24,9 +24,9 @@ export const ArticleHeader: React.SFC<{
   </>
 );
 
-export const NAME = 'Obsidian.css';
+export const NAME: string = 'Obsidian.css';
 
-export const createTitle: string = (t: string) => (t ? `${t} | ${NAME}` : NAME);
+export const createTitle = (t?: string): string => (t ? `${t} | ${NAME}` : NAME);
 
 export const Article: React.SFC<IArticleProps> = ({ description, meta, size = 'lg', title, children }) => {
   const cx = classNames(

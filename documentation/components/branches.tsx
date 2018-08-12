@@ -1,19 +1,19 @@
 import * as React from 'react';
 
 export interface TrunkState {
-  position: number;
-  isEnd: boolean;
-  isBeginning: boolean;
-  length: number;
+  position: number,
+  isEnd: boolean,
+  isBeginning: boolean,
+  length: number
 }
 
 export interface TrunkProps {
-  navigation:  component: new (props: any) => React.Component;
+  navigation: new (props: any) => React.Component
 }
 
 export interface BranchProps {
-  component: React.ReactNode;
-  render: (props: any) => React.ReactNode;
+  component: new (props: any) => React.Component,
+  render: (props: any) => React.ReactNode
 }
 
 export interface NavActions {
@@ -23,38 +23,6 @@ export interface NavActions {
 }
 
 export interface Context extends TrunkState, NavActions {}
-
-const DefaultNavigation: React.SFC<Context> = ({
-  goToPrevious,
-  goToNext,
-  goDirectToPosition,
-  length,
-  position,
-  isBeginning,
-  isEnd
-}) => (
-  <nav>
-    <button onClick={goToPrevious} disabled={isBeginning}>
-      Go to Previous
-    </button>
-    <ul>
-      {Array(length)
-        .fill()
-        .map((a, i) => (
-          <li key={i}>
-            <svg
-              size={20}
-              active={i === position}
-              onClick={() => goDirectToPosition && goDirectToPosition(i)}
-            />
-          </li>
-        ))}
-    </ul>
-    <button onClick={goToNext} disabled={isEnd}>
-      Go to Next
-    </button>
-  </nav>
-);
 
 export const TrunkContext = React.createContext({});
 
@@ -83,10 +51,6 @@ export class Trunk extends React.Component<TrunkProps, TrunkState> {
     isEnd: false,
     isBeginning: true,
     length: React.Children.count(this.props.children)
-  };
-
-  static defaultProps = {
-    navigation: DefaultNavigation
   };
 
   goDirectToPosition = position => this.setState({ position });

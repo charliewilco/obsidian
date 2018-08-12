@@ -7,7 +7,7 @@ const DESCRIPTION = `Obsidian.css is a modular CSS library that focuses on code 
 
 const Stage = () => (
   <header className="Stage">
-    <Logo name subtitle />
+    <Logo />
     <Installation />
   </header>
 );
