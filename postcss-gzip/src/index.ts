@@ -1,13 +1,14 @@
-const postcss = require("postcss");
+import * as postcss from 'postcss'
+import chalk from 'chalk'
 const path = require("path");
-const chalk = require("chalk");
+
 const gs = require("gzip-size");
 const pretty = require("pretty-bytes");
 
-module.exports = postcss.plugin("postcss-gzip", opts => {
+module.exports = postcss.plugin("postcss-gzip", (opts: any) => {
   opts = opts || {};
 
-  return function(root, result) {
+  return function(root: postcss.Root, result: postcss.Result) {
     const size = gs.sync(root.toString());
 
     let gzipSize = pretty(size);
