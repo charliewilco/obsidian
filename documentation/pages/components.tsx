@@ -10,6 +10,7 @@ import Tabs from '../markdown/components/tabs.mdx';
 import DropdownUI from '../markdown/components/dropdown.mdx';
 import { Article } from '../components/article';
 import { Module } from '../components/module';
+import { InstallationFull } from '../components/installation'
 
 const DESCRIPTION = `
     Components are modules with specific chunks of UI with more visual styling
@@ -28,5 +29,6 @@ export default () => (
     <Module title="Progress" component={Progress} />
     <Module title="Tabbed UI" component={Tabs} />
     <Module title="Dropdown UI" component={DropdownUI} />
+    <InstallationFull />
   </Article>
 );

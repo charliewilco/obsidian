@@ -32,7 +32,7 @@ export const Article: React.SFC<IArticleProps> = ({ description, meta, size = 'l
   const cx = classNames(
     'o-Container o-Container--center',
     { [`o-Container--${size}`]: size },
-    'u-pt2 u-pb4 u-mb4'
+    'u-pt2'
   );
   return (
     <>

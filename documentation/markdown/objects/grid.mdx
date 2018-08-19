@@ -1,6 +1,6 @@
 import { Snippet } from '../../components/snippet'
 import { Grid, snippet } from './demo/grid'
 
-This is a simple 12 column grid system that has responsive suffixes. `.o-col--[1-12]/12[@sm, @md, @lg]`.
+This is a simple 12 column grid system that has responsive suffixes. `.o-Column--[1-12]/12[@sm, @md, @lg]`. These are floated columns, so they need to be cleared unless they have a flex parent and occupy a `max-width: 100%` so they can't exceed the width of the parent.
 
 <Snippet component={Grid} snippet={snippet} />

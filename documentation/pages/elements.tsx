@@ -7,6 +7,7 @@ import Forms from '../markdown/elements/forms.mdx';
 import Images from '../markdown/elements/images.mdx';
 import { Article } from '../components/article';
 import { Module } from '../components/module';
+import { InstallationFull } from '../components/installation'
 
 const DESCRIPTION = `
   In this layer, elements refer to styles applied the specific type selectors.
@@ -22,5 +23,6 @@ export default () => (
     <Module title="Links" component={Links} />
     <Module title="Forms" component={Forms} />
     <Module title="Images" component={Images} />
+    <InstallationFull />
   </Article>
 );

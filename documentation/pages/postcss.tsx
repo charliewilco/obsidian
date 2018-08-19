@@ -1,5 +1,6 @@
 import Content from '../markdown/postcss.mdx';
 import { Article } from '../components/article';
+import { InstallationFull } from '../components/installation';
 
 const DESCRIPTION = `
   Through building Obsidian.css, it felt necessary to extend PostCSS with more plugins
@@ -10,5 +11,6 @@ const DESCRIPTION = `
 export default () => (
   <Article size="sm" meta={DESCRIPTION} title="PostCSS Plugins">
     <Content />
+    <InstallationFull />
   </Article>
 );

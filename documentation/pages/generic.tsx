@@ -1,6 +1,7 @@
 import { Article } from '../components/article';
 import { Module } from '../components/module';
 import Reset from '../markdown/generic/reset.mdx';
+import { InstallationFull } from '../components/installation'
 
 const DESCRIPTION = `
   Generic is the next layer down the inverted triangle, its purpose is provide
@@ -11,5 +12,6 @@ const DESCRIPTION = `
 export default () => (
   <Article title="Generic" description={DESCRIPTION}>
     <Module title="Reset" component={Reset} />
+    <InstallationFull />
   </Article>
 );

@@ -4,7 +4,7 @@ import Position from '../markdown/utils/position.mdx';
 import Spacing from '../markdown/utils/spacing.mdx';
 import Typography from '../markdown/utils/typography.mdx';
 import Surfaces from '../markdown/utils/surfaces.mdx';
-
+import { InstallationFull } from '../components/installation'
 import { Article } from '../components/article';
 import { Module } from '../components/module';
 
@@ -20,5 +20,6 @@ export default () => (
     <Module title="Positioning" component={Position} />
     <Module title="Spacing" component={Spacing} />
     <Module title="Typography" component={Typography} />
+    <InstallationFull />
   </Article>
 );

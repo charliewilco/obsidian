@@ -15,7 +15,7 @@ const Stage = () => (
 export default () => (
   <Article meta={DESCRIPTION}>
     <Stage />
-    <section className="Intro o-Container o-Container--sm o-Container--center">
+    <section className="Intro o-Container o-Container--sm o-Container--center u-mb6 u-pb4">
       <Intro />
     </section>
   </Article>

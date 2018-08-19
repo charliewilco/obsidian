@@ -3,4 +3,15 @@ import { ResetKitchenSink, snippet } from './demo/reset'
 
 This reset is meant to use [border-box](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) as the box-sizing property, define global typography settings, and clean up a few browser inconsistencies. It's adapted from [normalize.css](https://github.com/necolas/normalize.css/).
 
+Some key differences are:
+
+- Responsive images and media
+- Forms to be semi-consist and to inherit typography related styles
+
+You can also download it as a separate module, [Level.css](https://charliewilco.github.io/level.css/): 
+
+```
+yarn add level.css
+```
+
 <Snippet component={ResetKitchenSink} snippet={snippet} />

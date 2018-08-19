@@ -5,6 +5,7 @@ import Colors from '../markdown/settings/colors.mdx';
 import Overriding from '../markdown/settings/overriding.mdx';
 import { Article } from '../components/article';
 import { Module } from '../components/module';
+import { InstallationFull } from '../components/installation';
 
 const DESCRIPTION = `Settings are the basis of Obsidian.css, it contains all the variables like spacing, color and font declarations, as well as media queries and a simple theme.`;
 
@@ -15,5 +16,6 @@ export default () => (
     <Module title="Global Defaults" component={GlobalDefaults} />
     <Module title="Theme" component={Theme} />
     <Module title="Overriding Values" component={Overriding} />
+    <InstallationFull />
   </Article>
 );

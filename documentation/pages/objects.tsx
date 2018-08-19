@@ -9,6 +9,7 @@ import Flex from '../markdown/objects/flex.mdx';
 import Grid from '../markdown/objects/grid.mdx';
 import { Article } from '../components/article';
 import { Module } from '../components/module';
+import { InstallationFull } from '../components/installation';
 
 const DESCRIPTION = `
     Objects are design patterns that have no inherit visual design,
@@ -26,5 +27,6 @@ export default () => (
     <Module title="Intrinsic Object" component={Intrinsic} />
     <Module title="Media Block" component={MediaBlock} />
     <Module title="Flag" component={Flag} />
+    <InstallationFull />
   </Article>
 );
