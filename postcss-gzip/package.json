@@ -17,11 +17,7 @@
   "keywords": [],
   "author": "charles peters <charlespeters42@gmail.com> (https://charlespeters.net)",
   "license": "MIT",
-  "repository": "charlespeters/postcss-gzip",
-  "bugs": {
-    "url": "https://github.com/charlespeters/postcss-gzip/issues"
-  },
-  "homepage": "https://github.com/charlespeters/postcss-gzip#readme",
+  "repository": "charlespeters/obsidian",
   "devDependencies": {
     "@types/core-js": "^2.5.0",
     "@types/node": "^10.5.8",
