@@ -1,21 +1,24 @@
-const withMDX = require("@zeit/next-mdx")({
+const withTypescript = require('@zeit/next-typescript');
+const withMDX = require('@zeit/next-mdx')({
   extension: /\.mdx?$/
 });
 
-const withCSS = require("@zeit/next-css");
+const withCSS = require('@zeit/next-css');
 
 const raw = {
   test: /\.txt$/,
-  use: "raw-loader"
+  use: 'raw-loader'
 };
 
-module.exports = withCSS(
-  withMDX({
-    pageExtensions: ["js", "jsx", "mdx"],
-    webpack(config) {
-      config.module.rules.push(raw);
+module.exports = withTypescript(
+  withCSS(
+    withMDX({
+      pageExtensions: ['js', 'jsx', 'mdx'],
+      webpack(config) {
+        config.module.rules.push(raw);
 
-      return config;
-    }
-  })
+        return config;
+      }
+    })
+  )
 );

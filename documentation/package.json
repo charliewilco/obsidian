@@ -11,11 +11,15 @@
   "now": {
     "alias": "obsidian.charlespeters.net"
   },
+  "babel": {
+    "presets": ["next/babel", "@zeit/next-typescript/babel"]
+  },
   "dependencies": {
     "@mdx-js/mdx": "^0.15.0-1",
     "@mdx-js/tag": "^0.15.0-1",
     "@zeit/next-css": "^0.2.0",
     "@zeit/next-mdx": "^1.1.0",
+    "@zeit/next-typescript": "^1.1.0",
     "classnames": "^2.2.6",
     "next": "^6.1.1",
     "obsidian.css": "^3.1.0",
@@ -27,5 +31,10 @@
     "react-dom": "^16.4.1",
     "react-ga": "^2.5.3",
     "react-prism": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/next": "^6.1.2",
+    "@types/react": "^16.4.9",
+    "@types/react-dom": "^16.0.7"
   }
 }

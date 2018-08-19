@@ -1,10 +1,25 @@
 {
   "name": "postcss-parker",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "dependencies": {
     "json-format": "^1.0.1",
     "parker": "^0.0.10",
     "postcss": "^7.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "tsc -w",
+    "prepublish": "tsc"
+  },
+  "keywords": [],
+  "author": "charles peters <charlespeters42@gmail.com> (https://charlespeters.net)",
+  "license": "MIT",
+  "repository": "charlespeters/obsidian",
+  "devDependencies": {
+    "@types/core-js": "^2.5.0",
+    "@types/node": "^10.5.8",
+    "typescript": "^3.0.1"
   }
 }

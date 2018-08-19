@@ -1,6 +1,10 @@
 import { Snippet } from '../../components/snippet'
 import { RDTable, snippet } from './demo/rd-table'
 
-This is a responsive table implementation.
+This is a responsive table implementation. This is based off of this [demo](https://codepen.io/charlespeters/details/qdYYQE/) and makes heavy use of the `data-heading` attribute on the `<td>` elements.
+
+```html
+<td class="table__content" data-heading="Name">Gizmo</td>
+```
 
 <Snippet snippet={snippet} component={RDTable} />
