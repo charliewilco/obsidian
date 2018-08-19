@@ -156,3 +156,17 @@ li > p {
   max-width: 12.5rem;
   border: 1px solid #ccc;
 }
+
+.Figure {
+  width: calc(100% + 2rem);
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+@media (min-width: 48rem) {
+  .Figure {
+    width: 125%;
+    margin-left: -12.5%;
+    margin-right: -12.5%;
+  }
+}
