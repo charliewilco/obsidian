@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - "10"
+cache:
+  yarn: true
+install:
+  - yarn
+script:
+  - yarn workspace obsidian-documentation build
+  - yarn workspace obisidian.css build
+  - yarn workspace postcss-parker build
+  - yarn workspace postcss-gzip build
+before_deploy: yarn global add now
+deploy:
+  - provider: script # Run a custom deployment script which we will define below
+    script: yarn workspace obsidian-documentation now --token $NOW_TOKEN
+    skip_cleanup: true
+    on:
+      all_branches: true
+      master: false
+  - provider: script
+    script: yarn workspace obsidian now --token $NOW_TOKEN && now alias --token $NOW_TOKEN
+    skip_cleanup: true
+    on:
+      master: true
