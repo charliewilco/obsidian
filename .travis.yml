@@ -6,9 +6,9 @@ cache:
 install:
   - yarn
 script:
-  - yarn workspace obsidian.css build
   - yarn workspace postcss-parker build
   - yarn workspace postcss-gzip build
+  - yarn workspace obsidian.css build
   - yarn workspace obsidian-documentation build
 before_deploy: yarn global add now
 deploy:
