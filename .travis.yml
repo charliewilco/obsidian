@@ -13,13 +13,13 @@ script:
 before_deploy: yarn global add now
 deploy:
   - provider: script # Run a custom deployment script which we will define below
-    script: cd documentation && now --token $NOW_TOKEN
+    script: yarn workspace obsidian-documentation deploy:ci
     skip_cleanup: true
     on:
       all_branches: true
       master: false
   - provider: script
-    script: cd documentation && now --token $NOW_TOKEN && now alias --token $NOW_TOKEN
+    script: yarn workspace obsidian-documentation deploy 
     skip_cleanup: true
     on:
       master: true

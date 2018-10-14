@@ -6,7 +6,8 @@
     "start": "next start",
     "dev": "next dev",
     "build": "next build",
-    "deploy": "now && now alias"
+    "deploy:ci": "now --token $NOW_TOKEN",
+    "deploy": "now --token $NOW_TOKEN && now alias --token $NOW_TOKEN"
   },
   "now": {
     "alias": "obsidian.charlespeters.net"
