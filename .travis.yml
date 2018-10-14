@@ -19,7 +19,7 @@ deploy:
       all_branches: true
       master: false
   - provider: script
-    script: yarn workspace obsidian now --token $NOW_TOKEN && now alias --token $NOW_TOKEN
+    script: yarn workspace obsidian-documentation  now --token $NOW_TOKEN && now alias --token $NOW_TOKEN
     skip_cleanup: true
     on:
       master: true
