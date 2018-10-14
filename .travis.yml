@@ -6,10 +6,10 @@ cache:
 install:
   - yarn
 script:
-  - yarn workspace obsidian-documentation build
-  - yarn workspace obisidian.css build
+  - yarn workspace obsidian.css build
   - yarn workspace postcss-parker build
   - yarn workspace postcss-gzip build
+  - yarn workspace obsidian-documentation build
 before_deploy: yarn global add now
 deploy:
   - provider: script # Run a custom deployment script which we will define below
