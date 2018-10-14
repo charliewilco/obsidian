@@ -1,6 +1,7 @@
 # ![Obsidian.css](http://cl.ly/2T0B352h1d1n/obsidian-header.png)
 
 [![npm version](https://badge.fury.io/js/obsidian.css.svg)](https://badge.fury.io/js/obsidian.css)
+[![Build Status](https://travis-ci.org/charliewilco/obsidian.svg?branch=master)](https://travis-ci.org/charliewilco/obsidian)
 
 Obsidian.css is a modular CSS library that focuses on code common to most projects.
 
