@@ -11,6 +11,12 @@ export default class MyDocument extends Document {
       <html className="u-bg--palegray u-anti">
         <Head>
           <title>Obsidian.css</title>
+          {process.env.NODE_ENV === 'production' && (
+            <link
+              rel="stylesheet"
+              href="https://unpkg.com/obsidian.css/dist/obsidian.css"
+            />
+          )}
           <link rel="stylesheet" href="/_next/static/style.css" />
           <link rel="icon" href="/static/favicon.ico" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
