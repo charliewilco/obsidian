@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "10"
+  - '10'
 cache:
   yarn: true
 install:
@@ -19,7 +19,7 @@ deploy:
       all_branches: true
       master: false
   - provider: script
-    script: yarn workspace obsidian-documentation deploy 
+    script: yarn workspace obsidian-documentation deploy:token
     skip_cleanup: true
     on:
       master: true

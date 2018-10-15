@@ -5,7 +5,7 @@ const Icons = () => (
     <div className="o-Flex o-Flex--j--sa u-mb3 u-ltgray">
       <div className="u-center u-p1">
         <h6 className="small u-w400">Small Icon</h6>
-        <svg viewBox="0 0 650 650" className="o-icon o-icon--sm u-blue">
+        <svg viewBox="0 0 650 650" className="o-Icon o-Icon--sm u-blue">
           <g>
             <path
               d="M462.4,201.1c-4.8-53.3-43.9-100.6-96-117.2c-52.1-16.5-110-0.2-145.6,41.2
@@ -26,7 +26,7 @@ const Icons = () => (
       </div>
       <div className="u-center u-p1">
         <h6 className="small u-w400">Medium Icon</h6>
-        <svg viewBox="0 0 650 650" className="o-icon o-icon--md u-blue">
+        <svg viewBox="0 0 650 650" className="o-Icon o-Icon--md u-blue">
           <g>
             <path
               d="M462.4,201.1c-4.8-53.3-43.9-100.6-96-117.2c-52.1-16.5-110-0.2-145.6,41.2
@@ -47,7 +47,7 @@ const Icons = () => (
       </div>
       <div className="u-center u-p1">
         <h6 className="small u-w400">Large Icon</h6>
-        <svg viewBox="0 0 650 650" className="o-icon o-icon--lg u-blue">
+        <svg viewBox="0 0 650 650" className="o-Icon o-Icon--lg u-blue">
           <g>
             <path
               d="M462.4,201.1c-4.8-53.3-43.9-100.6-96-117.2c-52.1-16.5-110-0.2-145.6,41.2
@@ -70,7 +70,7 @@ const Icons = () => (
     <div className="o-Flex o-Flex--j--sa u-ltgray">
       <div className="u-center u-p1">
         <h6 className="small u-w400">Small Icon</h6>
-        <svg viewBox="0 0 650 650" className="o-icon o-icon--sm u-blue">
+        <svg viewBox="0 0 650 650" className="o-Icon o-Icon--sm u-blue">
           <g>
             <g>
               <path
@@ -90,7 +90,7 @@ const Icons = () => (
       </div>
       <div className="u-center u-p1">
         <h6 className="small u-w400">Medium Icon</h6>
-        <svg viewBox="0 0 650 650" className="o-icon o-icon--md u-blue">
+        <svg viewBox="0 0 650 650" className="o-Icon o-Icon--md u-blue">
           <g>
             <g>
               <path
@@ -110,7 +110,7 @@ const Icons = () => (
       </div>
       <div className="u-center u-p1">
         <h6 className="small u-w400">Large Icon</h6>
-        <svg viewBox="0 0 650 650" className="o-icon o-icon--lg u-blue">
+        <svg viewBox="0 0 650 650" className="o-Icon o-Icon--lg u-blue">
           <g>
             <g>
               <path

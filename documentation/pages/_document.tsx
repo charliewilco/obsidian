@@ -10,7 +10,6 @@ export default class MyDocument extends Document {
     return (
       <html className="u-bg--palegray u-anti">
         <Head>
-          <title>Obsidian.css</title>
           {process.env.NODE_ENV === 'production' && (
             <link
               rel="stylesheet"
