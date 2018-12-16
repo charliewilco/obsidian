@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "name": "obsidian-documentation",
+  "alias": "obsidian.charlespeters.net",
+  "builds": [{ "src": "documentation/next.config.js", "use": "@now/next" }]
+}

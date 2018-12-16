@@ -5,13 +5,7 @@
   "scripts": {
     "start": "next start",
     "dev": "next dev",
-    "build": "next build",
-    "deploy:ci": "now --token $NOW_TOKEN",
-    "deploy:token": "now --token $NOW_TOKEN && now alias --token $NOW_TOKEN",
-    "deploy": "now && now alias"
-  },
-  "now": {
-    "alias": "obsidian.charlespeters.net"
+    "build": "next build"
   },
   "babel": {
     "presets": ["next/babel", "@zeit/next-typescript/babel"]
