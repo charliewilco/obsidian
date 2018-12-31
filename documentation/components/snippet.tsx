@@ -20,7 +20,7 @@ export const NavButton: React.SFC<INavButton> = ({ active, children, onClick }) 
 );
 
 
-export class TabbedNavigation extends React.Component<NavActions, void> {
+export class TabbedNavigation extends React.Component<NavActions, {}> {
   render() {
     const { position, goDirectToPosition } = this.props
     return (
@@ -42,7 +42,7 @@ export class TabbedNavigation extends React.Component<NavActions, void> {
 }
 
 interface ISnippet {
-  component: new (props: any) => React.Component,
+  component: React.ComponentType<any>,
   snippet: string
 }
 

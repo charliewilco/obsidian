@@ -1,24 +1,27 @@
 const { PHASE_PRODUCTION_SERVER } =
   process.env.NODE_ENV === 'development'
     ? {}
-    : !process.env.NOW
+    : !process.env.NOW_REGION
       ? require('next/constants')
       : require('next-server/constants');
 
-module.exports = (phase, { defaultConfig }) => {
-  const raw = {
-    test: /\.txt$/,
-    use: 'raw-loader'
-  };
+const raw = {
+  test: /\.txt$/,
+  use: 'raw-loader'
+};
 
+const webpack = config => {
+  config.module.rules.push(raw);
+  return config;
+};
+
+module.exports = (phase, { defaultConfig }) => {
   if (phase === PHASE_PRODUCTION_SERVER) {
     // Config used to run in production.
-    return {
-      webpack(config) {
-        config.module.rules.push(raw);
 
-        return config;
-      }
+    return {
+      pageExtensions: ['js', 'jsx', 'mdx'],
+      webpack
     };
   }
   // ✅ Put the require call here.
@@ -33,11 +36,7 @@ module.exports = (phase, { defaultConfig }) => {
     withCSS(
       withMDX({
         pageExtensions: ['js', 'jsx', 'mdx'],
-        webpack(config) {
-          config.module.rules.push(raw);
-
-          return config;
-        }
+        webpack
       })
     )
   );

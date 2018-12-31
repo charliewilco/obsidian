@@ -1,11 +1,12 @@
 {
-  "name": "obsidian-documentation",
+  "name": "obsidian-docs",
   "private": true,
   "version": "3.0.0-0",
   "scripts": {
     "start": "next start",
     "dev": "next dev",
-    "build": "next build"
+    "build": "next build",
+    "types": "tsc --noEmit"
   },
   "babel": {
     "presets": ["next/babel", "@zeit/next-typescript/babel"]
