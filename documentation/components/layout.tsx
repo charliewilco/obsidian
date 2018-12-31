@@ -19,7 +19,7 @@ export interface ILayoutProps {
   children: React.ReactNode;
 }
 
-export default class Layout extends React.Component<ILayoutProps, void> {
+export default class Layout extends React.Component<ILayoutProps, {}> {
   static displayName = 'UILayout';
 
   static defaultProps = {

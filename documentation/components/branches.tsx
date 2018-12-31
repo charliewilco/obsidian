@@ -10,18 +10,19 @@ export interface TrunkState {
 // React.Component<any, any> | React.SFC<any>
 
 export interface TrunkProps {
-  navigation: new (props: any) => React.Component<any> | React.SFC<any>,
+  navigation: React.ComponentType<any>
 }
 
-export interface BranchProps {
-  component: new (props: any) => React.Component<any> | React.SFC<any>,
-  render: new (props: any) => React.Component<any> | React.SFC<any>
+export interface BranchProps<V = any> {
+  component?: React.ComponentType<any>;
+  render?: (props: Context & V) => React.ReactNode;
 }
 
 export interface NavActions {
   goDirectToPosition: (position: number) => void;
   goToPrevious: () => void;
   goToNext: () => void;
+  position: number;
 }
 
 export interface Context extends TrunkState, NavActions {}
@@ -84,7 +85,7 @@ export class Trunk extends React.Component<TrunkProps, TrunkState> {
   }
 }
 
-export class Branch extends React.Component<BranchProps, void> {
+export class Branch extends React.Component<BranchProps, any> {
   render() {
     const { component: Cx, render, ...props } = this.props;
 

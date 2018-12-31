@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-interface ModuleElements {
+export interface ModuleElements {
   children: React.ReactNode
 }
 
@@ -31,9 +31,16 @@ export const ModuleContent: React.SFC<ModuleElements> = ({ children }) => (
 );
 
 
+interface MDXProps {
+  LayoutProps: {
+    [key: string]: any;
+  }
+}
+
+
 interface IModuleProps {
   title: string,
-  component: new (props: any) => React.Component;
+  component: React.ComponentType<MDXProps>
 }
 
 export const Module: React.SFC<IModuleProps> = ({ title, component: Cx }) => (

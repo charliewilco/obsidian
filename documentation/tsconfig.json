@@ -2,9 +2,10 @@
   "compileOnSave": false,
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
+    "module": "commonjs",
     "jsx": "preserve",
     "allowJs": true,
+    "resolveJsonModule": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true,
