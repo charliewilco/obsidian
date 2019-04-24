@@ -33,19 +33,19 @@ const postcss = require('gulp-postcss');
 const atImport = require('postcss-import');
 const env = require('postcss-preset-env');
 
-const processors = [
-  atImport,
-  env
-];
+const processors = [atImport, env];
 
 gulp.task('styles', () => {
-  return gulp.src('path/to/stylesheet')
-    .pipe(postcss(processors))
-    // Probably other tasks
-    .pipe(gulp.dest('path/to/destination'));
-})
-
+  return (
+    gulp
+      .src('path/to/stylesheet')
+      .pipe(postcss(processors))
+      // Probably other tasks
+      .pipe(gulp.dest('path/to/destination'))
+  );
+});
 ```
+
 then import into your CSS and modify some variables:
 
 ```css
@@ -72,7 +72,6 @@ And things should compile the way you'd expect.
 ### ITCSS
 
 [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) (Inverted Triangle CSS) from Harry Roberts, is a way of structuring CSS in such a way that the most general selectors to trickle down to the most specific selectors, as if they're moving from the top of an bottom of a triangle to the pinnacle of it.
-
 
 In this implementation there are a few differences. Normally in ITCSS, you could have a tools like Sass functions, but most of the tools we'd need are coming in CSS and transpiled by [PostCSS plugins](https://postcss.org/).
 
@@ -132,7 +131,6 @@ Utility modifiers get a single hyphen `-`.
 - [More Transparent UI Code with Namespaces](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
 - [Dropbox CSS Styleguide](https://github.com/dropbox/css-style-guide)
 
-
 ## Contributing
 
 First off, you're awesome for wanting to contribute. Second, please take a second to go over a few things to make this process simpler for everyone. Third, you're awesome.
@@ -145,6 +143,7 @@ Clone the repository and run the following in the root of the project:
 yarn
 
 yarn workspace obsidian-documentation dev -p 5000 # open this in one tab
+
 yarn workspace obsidian.css dev # open this in another
 ```
 
