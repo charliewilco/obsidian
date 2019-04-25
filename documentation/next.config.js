@@ -35,6 +35,7 @@ module.exports = (phase, { defaultConfig }) => {
   return withTypescript(
     withCSS(
       withMDX({
+        target: 'serverless',
         pageExtensions: ['js', 'jsx', 'mdx'],
         webpack
       })
