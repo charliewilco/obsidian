@@ -20,10 +20,12 @@ jobs:
         run: npm i -g yarn
       - name: Install deps and build package
         run: yarn install --frozen-lockfile
-      - name: Build
-        run: |
-          yarn workspace postcss-parker build
-          yarn workspace postcss-gzip build
-          yarn workspace obsidian.css build
-          yarn workspace obsidian-documentation build
+      - name: Build postcss-parker  
+        run: yarn workspace postcss-parker build
+      - name: Build postcss-gzip  
+        run: yarn workspace postcss-gzip build
+      - name: Build obsidian.css 
+        run: yarn workspace obsidian.css build
+      - name: Build postcss-parker  
+        run: yarn workspace obsidian-documentation build
 
