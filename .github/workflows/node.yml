@@ -26,6 +26,6 @@ jobs:
         run: yarn workspace postcss-gzip build
       - name: Build obsidian.css 
         run: yarn workspace obsidian.css build
-      - name: Build postcss-parker  
+      - name: Build documentation 
         run: yarn workspace obsidian-documentation build
 
