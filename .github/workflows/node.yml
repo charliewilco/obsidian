@@ -1,0 +1,29 @@
+name: Node CI
+
+on: [push,pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install deps and build package
+        run: yarn install --frozen-lockfile
+      - name: Build postcss-parker  
+        run: yarn workspace postcss-parker build
+      - name: Build postcss-gzip  
+        run: yarn workspace postcss-gzip build
+      - name: Build obsidian.css 
+        run: yarn workspace obsidian.css build
+      - name: Build documentation 
+        run: yarn workspace obsidian-documentation build
+
