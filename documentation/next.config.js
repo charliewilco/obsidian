@@ -1,44 +1,20 @@
-const { PHASE_PRODUCTION_SERVER } =
-  process.env.NODE_ENV === 'development'
-    ? {}
-    : !process.env.NOW_REGION
-      ? require('next/constants')
-      : require('next-server/constants');
-
 const raw = {
   test: /\.txt$/,
   use: 'raw-loader'
 };
+
+const withMDX = require('@next/mdx')();
+const withCSS = require('@zeit/next-css');
 
 const webpack = config => {
   config.module.rules.push(raw);
   return config;
 };
 
-module.exports = (phase, { defaultConfig }) => {
-  if (phase === PHASE_PRODUCTION_SERVER) {
-    // Config used to run in production.
-
-    return {
-      pageExtensions: ['js', 'jsx', 'mdx'],
-      webpack
-    };
-  }
-  // ✅ Put the require call here.
-
-  const withCSS = require('@zeit/next-css');
-  const withTypescript = require('@zeit/next-typescript');
-  const withMDX = require('@zeit/next-mdx')({
-    extension: /\.mdx?$/
-  });
-
-  return withTypescript(
-    withCSS(
-      withMDX({
-        target: 'serverless',
-        pageExtensions: ['js', 'jsx', 'mdx'],
-        webpack
-      })
-    )
-  );
-};
+module.exports = withCSS(
+  withMDX({
+    target: 'serverless',
+    pageExtensions: ['tsx', 'js', 'jsx', 'mdx'],
+    webpack
+  })
+);
