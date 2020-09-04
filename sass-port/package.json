@@ -13,7 +13,7 @@
   "author": "charles peters <charlespeters42@gmail.com> (https://charlespeters.net)",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^3.8.0",
+    "node-sass": "^4.14.1",
     "watch": "^0.19.2"
   },
   "repository": {
