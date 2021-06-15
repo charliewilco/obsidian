@@ -5,7 +5,7 @@
   "dependencies": {
     "json-format": "^1.0.1",
     "parker": "^0.0.10",
-    "postcss": "^7.0.25"
+    "postcss": "^7.0.36"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
