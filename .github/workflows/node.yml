@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [14.x]
 
     steps:
       - uses: actions/checkout@v1
@@ -16,14 +16,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install deps and build package
+      - name: Install deps 
         run: yarn install --frozen-lockfile
-      - name: Build postcss-parker  
-        run: yarn workspace postcss-parker build
-      - name: Build postcss-gzip  
-        run: yarn workspace postcss-gzip build
-      - name: Build obsidian.css 
-        run: yarn workspace obsidian.css build
-      - name: Build documentation 
-        run: yarn workspace obsidian-documentation build
+      - name: Build packages
+        run: yarn build
 
