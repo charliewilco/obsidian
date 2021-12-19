@@ -3,4 +3,5 @@ node_modules
 dist/
 test/bundle.css
 index.html
+.turbo
 .next

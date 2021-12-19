@@ -1,18 +1,10 @@
-import * as React from 'react';
-import ReactGA from 'react-ga';
+import * as React from "react";
+import { initialize, pageview } from "react-ga";
 
-import { Nav } from './navigation';
-import { Header } from './header';
-import { Footer } from './footer';
-import { Main } from './main';
-
-import { version } from 'obsidian.css/package.json';
-
-if (process.env.NODE_ENV !== 'production') {
-  require('obsidian.css/dist/obsidian.css');
-}
-
-import '../global.css';
+import { Nav } from "./navigation";
+import { Header } from "./header";
+import { Footer } from "./footer";
+import { Main } from "./main";
 
 export interface ILayoutProps {
   analyticsID: string;
@@ -20,22 +12,22 @@ export interface ILayoutProps {
 }
 
 export default class Layout extends React.Component<ILayoutProps, {}> {
-  static displayName = 'UILayout';
+  static displayName = "UILayout";
 
   static defaultProps = {
-    analyticsID: 'UA-36412149-3'
+    analyticsID: "UA-36412149-3",
   };
 
   componentDidMount() {
-    ReactGA.initialize(this.props.analyticsID);
-    ReactGA.pageview(document.location.pathname);
+    initialize(this.props.analyticsID);
+    pageview(document.location.pathname);
   }
 
   render() {
     const { children } = this.props;
     return (
       <>
-        <Header version={version} />
+        <Header version="3.1.0" />
         <Nav />
         <Main>{children}</Main>
         <Footer />
