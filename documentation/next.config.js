@@ -1,20 +1,16 @@
 const raw = {
   test: /\.txt$/,
-  use: 'raw-loader'
+  use: "raw-loader"
 };
 
-const withMDX = require('@next/mdx')();
-const withCSS = require('@zeit/next-css');
+const withMDX = require("@next/mdx")();
 
 const webpack = config => {
   config.module.rules.push(raw);
   return config;
 };
 
-module.exports = withCSS(
-  withMDX({
-    target: 'serverless',
-    pageExtensions: ['tsx', 'js', 'jsx', 'mdx'],
-    webpack
-  })
-);
+module.exports = withMDX({
+  pageExtensions: ["tsx", "js", "jsx", "mdx"],
+  webpack
+});

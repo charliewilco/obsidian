@@ -1,29 +1,29 @@
-
-import * as postcss from 'postcss'
-import * as fs from 'fs'
-const Parker = require('parker/lib/Parker');
-const metrics = require('parker/metrics/All');
-const format = require('json-format');
+import * as postcss from "postcss";
+import * as fs from "fs";
+const Parker = require("parker/lib/Parker");
+const metrics = require("parker/metrics/All");
 
 let defaultOptions = {
-  outputFile: './parker.json'
+  outputFile: "./parker.json"
 };
 
-module.exports = postcss.plugin('postcss-parker', (options: any) => {
+const parker = (options = {}): postcss.Plugin => {
   let opts = Object.assign({}, defaultOptions, options);
+  return {
+    prepare(result) {
+      let reporter = new Parker(metrics);
+      let results = reporter.run(result.css);
 
-  return function(root: postcss.Root, result: postcss.Result) {
-    let reporter = new Parker(metrics);
+      let output = JSON.stringify(results, null, 2);
 
-    const { css } = root.toResult();
-
-    let results = reporter.run(css);
-
-    let output = format(results, { type: 'space', size: 2 });
-
-    fs.writeFile(opts.outputFile, output, (err: Error) => {
-      if (err) throw err;
-      console.log('The file has been saved!');
-    });
+      fs.writeFile(opts.outputFile, output, (err: Error) => {
+        if (err) throw err;
+        console.log("The file has been saved!");
+      });
+      return {};
+    },
+    postcssPlugin: "postcss-parker"
   };
-});
+};
+
+module.exports = parker;

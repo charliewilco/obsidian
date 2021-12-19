@@ -16,12 +16,13 @@
     "src/**/*.css"
   ],
   "scripts": {
-    "prepublish": "yarn clean && yarn build",
+    "prepublish": "del ./dist && yarn build",
     "lint": "stylelint './src/**/*.css'",
     "clean": "del ./dist",
-    "dev": "postcss src/index.css -o dist/obsidian.css -w",
-    "prebuild": "yarn clean && postcss src/index.css -o dist/obsidian.css",
-    "build": "postcss dist/obsidian.css -u cssnano -u postcss-parker -o dist/obsidian.min.css --no-map"
+    "dev": "yarn build:dev -w",
+    "build": "yarn build:dev && yarn build:prod",
+    "build:dev": "postcss src/index.css -o dist/obsidian.css",
+    "build:prod": "postcss dist/obsidian.css -u cssnano -o dist/obsidian.min.css --no-map"
   },
   "author": "charles peters <charlespeters42@gmail.com>",
   "license": "MIT",
@@ -31,21 +32,19 @@
   },
   "homepage": "https://obsidian.charlespeters.net",
   "devDependencies": {
-    "autoprefixer": "^9.7.3",
+    "autoprefixer": "^10.4.0",
     "css-mqpacker": "^7.0.0",
-    "cssnano": "^4.1.10",
-    "del-cli": "^3.0.0",
-    "postcss-cli": "^6.1.3",
+    "cssnano": "^5.0.13",
+    "del-cli": "^4.0.1",
+    "postcss-cli": "^9.1.0",
     "postcss-color-function": "^4.1.0",
-    "postcss-custom-properties": "^9.0.2",
+    "postcss-custom-properties": "^12.0.1",
     "postcss-export-vars": "^0.2.0",
-    "postcss-gzip": "^1.0.1",
-    "postcss-import": "^12.0.1",
-    "postcss-parker": "^0.1.0",
-    "postcss-reporter": "^6.0.1",
-    "stylelint": "^12.0.0",
+    "postcss-import": "^14.0.2",
+    "postcss-reporter": "^7.0.4",
+    "stylelint": "14.1.0",
     "stylelint-config-wilco": "^1.0.2",
-    "typescript": "^3.7.4"
+    "typescript": "^4.5.4"
   },
   "postcss": {
     "map": false,

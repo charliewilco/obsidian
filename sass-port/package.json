@@ -7,14 +7,14 @@
   "styles": "lib/_obsidian.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "node-sass ./lib/index.scss ./dist/obsidian-sassy.css -o dist --output-style compressed",
+    "build": "sass ./lib/index.scss ./dist/obsidian-sassy.css",
     "watch": "watch 'npm run bundle' lib"
   },
   "author": "charles peters <charlespeters42@gmail.com> (https://charlespeters.net)",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^3.8.0",
-    "watch": "^0.19.2"
+    "sass": "^1.45.0",
+    "watch": "^ 1.0.2"
   },
   "repository": {
     "type": "git",
